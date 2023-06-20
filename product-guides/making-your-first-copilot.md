@@ -18,7 +18,7 @@ If you want to learn more about how knowledge works. Go to [knowledge.md](../fun
 
 Navigate through the rest of the Knowledge setup process, and you will have your first knowledge ready!&#x20;
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Give the knowledge upload process a few minutes to fully sync up. You can continue to the next step, the sync up process will continue to run in the background.
@@ -66,6 +66,6 @@ select my-notion-workspace that we've just created earlier.![](<../.gitbook/asse
 
 Give a few examples of how you could use your copilot. This will help your users to understand what your assistants are capable of. For example, for a chat copilot about Notion QA, you can put: "Where is the PRD for the product landing page?"
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 After clicking + Create Copilot button, your copilot will be available for you to use! You can share this copilot via the URL.&#x20;

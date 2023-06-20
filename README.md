@@ -1,3 +1,7 @@
+---
+description: Customizing AI copilots for your specific use cases
+---
+
 # 👋 Welcome to Cortex
 
 ## Overview

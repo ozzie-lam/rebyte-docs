@@ -22,7 +22,7 @@ Notice that context-aware conversation is only available if the Callable develop
 
 Text generation UI is excellent for back-and-forth document editing. It resembles a rich text editor with AI helping you rewrite and generate paragraphs.&#x20;
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 #### Editing Field
 
@@ -56,4 +56,4 @@ Click the save button at the second left button corner. Saved edits will show up
 
 Search UI is excellent for finding relevant information from your unstructured documents. It resembles a search engine and includes a short summary of the information you are looking for
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
