@@ -18,7 +18,7 @@ If you want to learn more about how knowledge works. Go to [knowledge.md](../fun
 
 Navigate through the rest of the Knowledge setup process, and you will have your first knowledge ready!&#x20;
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Give the knowledge upload process a few minutes to fully sync up. You can continue to the next step, the sync up process will continue to run in the background.

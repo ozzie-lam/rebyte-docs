@@ -22,7 +22,7 @@ Notice that context-aware conversation is only available if the Callable develop
 
 Text generation UI is excellent for back-and-forth document editing. It resembles a rich text editor with AI helping you rewrite and generate paragraphs.&#x20;
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 #### Editing Field
 

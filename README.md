@@ -12,7 +12,7 @@ description: Customizing AI copilots for your specific use cases
 2. **Streamline**: Provide a robust environment ready for immediate deployment and scalable growth.
 3. **Safeguard**: Maintain an unwavering commitment to data privacy.
 
-If you are a non-developer, look into [Copilot](fundamentals/copilot.md). If you are a developer, look into [Callable](broken-reference).&#x20;
+If you are a non-developer, look into [Copilot](fundamentals/copilot.md). If you are a developer, look into [Callable](fundamentals/callable.md).&#x20;
 
 ## Get Started
 
