@@ -6,4 +6,4 @@ Callable is currently in private preview, only selected developers and customers
 
 Seems like you don't have access to this page yet. Please contact cortex@kinesys.ai!
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>

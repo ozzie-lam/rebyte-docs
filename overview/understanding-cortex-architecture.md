@@ -10,7 +10,7 @@
   * **Copilot:** is a managed UI that enables end-users to conveniently interact with AI applications
   * **API:** API and SDK clients are provided to support developers who wish to directly interact with their callables to power their own products
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ### A Basic Workflow
 
