@@ -18,3 +18,17 @@
 * [⚡ Callable](fundamentals/callable.md)
 * [🛠 Getting set up](fundamentals/getting-set-up/README.md)
   * [📝 Setting permissions](fundamentals/getting-set-up/setting-permissions.md)
+
+## Guides
+
+* [Getting Started](guides/getting-started.md)
+* [Documents](guides/documents.md)
+* [Calling Callables](guides/calling-callables.md)
+
+## API References
+
+* [Introduction](api-references/introduction.md)
+* [Authentication](api-references/authentication.md)
+* [Making Curl Requests](api-references/making-curl-requests.md)
+* [Node.js Library](api-references/node.js-library.md)
+* [Python Library](api-references/python-library.md)
