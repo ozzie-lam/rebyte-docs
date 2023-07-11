@@ -21,9 +21,10 @@
 
 ## Guides
 
-* [Getting Started](guides/getting-started.md)
+* [Getting Started with the SDK](guides/getting-started-with-the-sdk.md)
 * [Documents](guides/documents.md)
 * [Calling Callables](guides/calling-callables.md)
+* [Using the SDK to call Chatbot Callables](guides/using-the-sdk-to-call-chatbot-callables.md)
 
 ## API References
 
