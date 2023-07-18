@@ -19,6 +19,10 @@
 * [🛠 Getting set up](fundamentals/getting-set-up/README.md)
   * [📝 Setting permissions](fundamentals/getting-set-up/setting-permissions.md)
 
+## Use Cases
+
+* [Chatbot with Google Search Assistance](use-cases/chatbot-with-google-search-assistance.md)
+
 ## Guides
 
 * [Getting Started with the SDK](guides/getting-started-with-the-sdk.md)
