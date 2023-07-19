@@ -23,7 +23,7 @@
 
 * [Utilizing Model Examples to Convert Text to JSON](use-cases/utilizing-model-examples-to-convert-text-to-json.md)
 * [Chatbot with Google Search Assistance](use-cases/chatbot-with-google-search-assistance.md)
-* [Referencing Knowledges Through Knowledge Search Blocks](use-cases/referencing-knowledges-through-knowledge-search-blocks.md)
+* [Retrievals from Knowledge Search Blocks](use-cases/retrievals-from-knowledge-search-blocks.md)
 
 ## Guides
 
