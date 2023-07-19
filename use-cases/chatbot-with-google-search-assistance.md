@@ -1,10 +1,17 @@
-# Chatbot with Google Search Assistance
+---
+description: >-
+  This guide covers how to build a chat callable that refines user questions
+  with Google Searches to obtain a response from a LLM that references data from
+  websites.
+---
 
-This chat callable allows users to ask questions that could be enhanced with a google search.
+# Chatbot with Google Search Assistance
 
 ## Getting Started
 
 Create a **barebone** callable in the callable builder tab. Make sure to switch the input type to the **ChatDataset**.
+
+***
 
 ### Chat Inputs
 
@@ -47,6 +54,8 @@ Here is an example of what a `Message` object might look like:
 
 
 ```
+
+***
 
 ## Formatting Question for Search Query
 
@@ -105,5 +114,7 @@ Lastly, we need to combine the data from all relevant links together along with 
 Once this is finished, the last step is to run the final prompt in a language model prompt and extract the results.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-07-18 at 1.17.55 PM.png" alt=""><figcaption></figcaption></figure>
+
+***
 
 Congratulations, you have created a chatbot that uses google search to find relevant information about the question. Create some test cases and deploy your callable to start using it in any application.
