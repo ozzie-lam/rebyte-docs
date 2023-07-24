@@ -19,11 +19,27 @@
 * [🛠 Getting set up](fundamentals/getting-set-up/README.md)
   * [📝 Setting permissions](fundamentals/getting-set-up/setting-permissions.md)
 
-## Use Cases
+## Callable
 
-* [Utilizing Model Examples to Convert Text to JSON](use-cases/utilizing-model-examples-to-convert-text-to-json.md)
-* [Chatbot with Google Search Assistance](use-cases/chatbot-with-google-search-assistance.md)
-* [Retrievals from Knowledge Search Blocks](use-cases/retrievals-from-knowledge-search-blocks.md)
+* [Blocks](callable/blocks/README.md)
+  * [Models](callable/blocks/models/README.md)
+    * [Language Model](callable/blocks/models/language-model.md)
+    * [Language Model With Code](callable/blocks/models/language-model-with-code.md)
+  * [Data](callable/blocks/data/README.md)
+    * [Dataset Loader](callable/blocks/data/dataset-loader.md)
+  * [Tools](callable/blocks/tools/README.md)
+    * [Knowledge Search](callable/blocks/tools/knowledge-search.md)
+    * [Google Search](callable/blocks/tools/google-search.md)
+    * [Curl Request](callable/blocks/tools/curl-request.md)
+    * [Web Page Crawler](callable/blocks/tools/web-page-crawler.md)
+  * [Control](callable/blocks/control/README.md)
+    * [Code](callable/blocks/control/code.md)
+    * [Loop Until](callable/blocks/control/loop-until.md)
+    * [Map Reduce](callable/blocks/control/map-reduce.md)
+* [Understanding the Chat Template](callable/understanding-the-chat-template.md)
+* [Utilizing Model Examples to Convert Text to JSON](callable/utilizing-model-examples-to-convert-text-to-json.md)
+* [Chatbot with Google Search Assistance](callable/chatbot-with-google-search-assistance.md)
+* [Retrievals from Knowledge Search Blocks](callable/retrievals-from-knowledge-search-blocks.md)
 
 ## Guides
 

@@ -4,7 +4,7 @@ Setting up your team account, available to Enterprise plan.
 
 <details>
 
-<summary>Step1: Creating your organization</summary>
+<summary>Step 1: Creating your organization</summary>
 
 1. "+ Create Team" on the top navigation bar&#x20;
 2. Name your organization and confirm
