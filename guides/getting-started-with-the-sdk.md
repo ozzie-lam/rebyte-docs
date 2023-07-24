@@ -10,7 +10,7 @@
 
 {% tab title="Python" %}
 ```bash
-pip install trycortex-py
+pip install trycortex
 ```
 {% endtab %}
 {% endtabs %}
