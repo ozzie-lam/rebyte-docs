@@ -8,3 +8,9 @@ Search Blocks consist of the following fields:
 
 * **Query:** Provide the desired prompt to look for inside your knowledges
 * **Knowledge:** Add and select as many knowledges that you have created. Allows for specific include or exclude tags to better refine your retrieval.
+
+**Using Knowledge Block for Retrieval:**
+
+{% content-ref url="../../use-cases/retrievals-from-knowledge-search-blocks.md" %}
+[retrievals-from-knowledge-search-blocks.md](../../use-cases/retrievals-from-knowledge-search-blocks.md)
+{% endcontent-ref %}

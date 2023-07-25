@@ -36,10 +36,13 @@
     * [Code](callable/blocks/control/code.md)
     * [Loop Until](callable/blocks/control/loop-until.md)
     * [Map Reduce](callable/blocks/control/map-reduce.md)
-* [Understanding the Chat Template](callable/understanding-the-chat-template.md)
-* [Utilizing Model Examples to Convert Text to JSON](callable/utilizing-model-examples-to-convert-text-to-json.md)
-* [Chatbot with Google Search Assistance](callable/chatbot-with-google-search-assistance.md)
-* [Retrievals from Knowledge Search Blocks](callable/retrievals-from-knowledge-search-blocks.md)
+* [Use Cases](callable/use-cases/README.md)
+  * [Building a Company Help Desk](callable/use-cases/building-a-company-help-desk.md)
+  * [Creating a Social Media Manager Chatbot](callable/use-cases/creating-a-social-media-manager-chatbot.md)
+  * [Utilizing Model Examples to Convert Text to JSON](callable/use-cases/utilizing-model-examples-to-convert-text-to-json.md)
+  * [Retrievals from Knowledge Search Blocks](callable/use-cases/retrievals-from-knowledge-search-blocks.md)
+  * [Chatbot with Google Search Assistance](callable/use-cases/chatbot-with-google-search-assistance.md)
+* [Templates](callable/templates.md)
 
 ## Guides
 

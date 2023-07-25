@@ -10,7 +10,7 @@ Loads Data from the Dataset tab.
 
 </div>
 
-Parameters:
+**Parameters**:
 
-* **Select Data:** Choose an existing dataset
+* **Select Data:** Choose an existing dataset from your dataset
 
