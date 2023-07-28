@@ -47,7 +47,6 @@
 
 * [Getting Started with the SDK](guides/getting-started-with-the-sdk.md)
 * [Documents](guides/documents.md)
-* [Calling Callables](guides/calling-callables.md)
 
 ## API References
 
