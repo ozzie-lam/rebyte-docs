@@ -42,14 +42,12 @@
   * [Utilizing Model Examples to Convert Text to JSON](callable/use-cases/utilizing-model-examples-to-convert-text-to-json.md)
   * [Retrievals from Knowledge Search Blocks](callable/use-cases/retrievals-from-knowledge-search-blocks.md)
   * [Chatbot with Google Search Assistance](callable/use-cases/chatbot-with-google-search-assistance.md)
-* [Templates](callable/templates.md)
 
 ## Guides
 
 * [Getting Started with the SDK](guides/getting-started-with-the-sdk.md)
 * [Documents](guides/documents.md)
 * [Calling Callables](guides/calling-callables.md)
-* [Using the SDK to call Chatbot Callables](guides/using-the-sdk-to-call-chatbot-callables.md)
 
 ## API References
 
