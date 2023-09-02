@@ -2,11 +2,11 @@
 description: Customizing AI copilots for your specific use cases
 ---
 
-# 👋 Welcome to Cortex
+# 👋 Welcome to ReByte
 
 ## Overview
 
-**Cortex** is a powerful AI application development platform that allows anyone to create customized AI assistants for themselves or their users. Cortex is built with three design principles in mind:
+**ReByte** is a powerful AI application development platform that allows anyone to create customized AI assistants for themselves or their users. ReByte is built with three design principles in mind:
 
 1. **Personalize**: Create custom AI assistants tailored to each team's unique needs.
 2. **Streamline**: Provide a robust environment ready for immediate deployment and scalable growth.
@@ -28,8 +28,8 @@ We've put together some helpful guides for you to get setup with our product qui
 
 ## Quick links
 
-{% content-ref url="overview/understanding-cortex-architecture.md" %}
-[understanding-cortex-architecture.md](overview/understanding-cortex-architecture.md)
+{% content-ref url="overview/understanding-rebyte-architecture.md" %}
+[understanding-rebyte-architecture.md](overview/understanding-rebyte-architecture.md)
 {% endcontent-ref %}
 
 {% content-ref url="fundamentals/callable.md" %}

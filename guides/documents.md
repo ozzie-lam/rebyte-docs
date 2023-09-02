@@ -2,7 +2,7 @@
 
 ## Retrieving a Document
 
-First, find the name of the knowledge that contains the document you wish to retrieve in the knowledge tab of Cortex.
+First, find the name of the knowledge that contains the document you wish to retrieve in the knowledge tab of ReByte.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-06-27 at 3.09.15 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -10,13 +10,13 @@ Then, find the name of the documentID you want to retrieve.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-06-27 at 3.20.00 PM.png" alt=""><figcaption></figcaption></figure>
 
-Use the knowledgeName and documentID with the `.getDocument` function of cortex to retrieve the document. See the Node.js Library for the exact .json return structure.
+Use the knowledgeName and documentID with the `.getDocument` function of rebyte to retrieve the document. See the Node.js Library for the exact .json return structure.
 
 {% tabs %}
 {% tab title="Typescript" %}
 ```javascript
 try {
-    const res = await cortex.getDocument('tigers','testing.txt')
+    const res = await rebyte.getDocument('tigers','testing.txt')
     const document = res.data.document
     console.log(document.text);
 } catch (error) {
@@ -32,7 +32,7 @@ try {
 
 {% tab title="Python" %}
 ```python
-CortexAPI.getDocument('tigers','testing.txt')
+ReByteAPI.getDocument('tigers','testing.txt')
 ```
 {% endtab %}
 {% endtabs %}
@@ -85,7 +85,7 @@ const test = {
   }
 
 try {
-  let output = await cortex.uploadDocument('tigers','test1',test);
+  let output = await rebyte.uploadDocument('tigers','test1',test);
   console.log(output.data.document);
 } catch (error) {
   if (error.response) {
@@ -100,12 +100,12 @@ try {
 
 {% tab title="Python" %}
 ```python
-test = cortex.CreateDocument()
+test = rebyte.CreateDocument()
 test.source_url = "https://www.test.com/"
 test.text = "test"
 
-CortexAPI = cortex.CortexAPI("sk-...")
-CortexAPI.uploadDocument('tigers','test1',test)
+ReByteAPI = rebyte.ReByteAPI("sk-...")
+ReByteAPI.uploadDocument('tigers','test1',test)
 ```
 {% endtab %}
 {% endtabs %}
@@ -116,7 +116,7 @@ CortexAPI.uploadDocument('tigers','test1',test)
 {% tab title="Typescript" %}
 ```javascript
 try {
-  let output = await cortex.deleteDocument('tigers','test1');
+  let output = await rebyte.deleteDocument('tigers','test1');
   console.log(output.data.document);
 } catch (error:any) {
   if (error.response) {
@@ -131,7 +131,7 @@ try {
 
 {% tab title="Python" %}
 ```python
-CortexAPI.deleteDocument('tigers','test1')
+ReByteAPI.deleteDocument('tigers','test1')
 ```
 {% endtab %}
 {% endtabs %}

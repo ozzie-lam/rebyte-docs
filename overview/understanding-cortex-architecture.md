@@ -1,8 +1,8 @@
-# 💡 Understanding Cortex Architecture
+# 💡 Understanding ReByte Architecture
 
-## How Cortex work
+## How ReByte work
 
-**Cortex** can be seen as having three layers
+**ReByte** can be seen as having three layers
 
 * **Callable:** The infrastructure that handles all LLM-based workflows. It follows serverless function architecture (like AWS Lambda) that enables maximum scalability&#x20;
 * **Knowledge:** Managed vector database for fast information retrieval and near real-time syncing
@@ -16,7 +16,7 @@
 
 When the end user interacts with a **Copilot**, a few things happen in the background:
 
-1. Cortex Copilot client compiles users' input into a standard format defined by its UI standard protocol and includes session history. Since Callable is designed to be stateless and serverless, the copilot server will be responsible to store the history.&#x20;
+1. ReByte Copilot client compiles users' input into a standard format defined by its UI standard protocol and includes session history. Since Callable is designed to be stateless and serverless, the copilot server will be responsible to store the history.&#x20;
 2. The Copilot client sends an API request to a specific Callable
 3. The Callable is triggered and performs its predefined programming.&#x20;
    1. The Callable interacts with Knowledge to retrieve relevant information

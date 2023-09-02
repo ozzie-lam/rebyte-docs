@@ -1,20 +1,20 @@
 # ⚡ Making your first Callable
 
 {% hint style="info" %}
-Callable is currently in private preview, only selected developers and customers have access to Callable Builder. If you'd like to submit a request please contact cortex@kinesys.ai!
+Callable is currently in private preview, only selected developers and customers have access to Callable Builder. If you'd like to submit a request please contact rebyte@kinesys.ai!
 {% endhint %}
 
 Callable is the serverless function that powers each copilot, or any of your AI workflows. Let's build a Callable today that helps recommend movies to watch!&#x20;
 
 ## 1. Create a knowledge
 
-One of the powerful features of Cortex is to let AI interact with your own data. Knowledge is where you store your data.&#x20;
+One of the powerful features of ReByte is to let AI interact with your own data. Knowledge is where you store your data.&#x20;
 
 Head to the knowledge tab here and create a knowledge
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-Cortex supports multiple upload options. Let's use Web as our options. Enter the Knowledge name and description and go to the the next step
+ReByte supports multiple upload options. Let's use Web as our options. Enter the Knowledge name and description and go to the the next step
 
 <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 

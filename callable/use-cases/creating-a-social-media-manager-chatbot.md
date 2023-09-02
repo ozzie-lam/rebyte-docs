@@ -4,7 +4,7 @@
 
 Let's imagine that we are responsible for managing the social media presence of an up and coming startup and would like the help of a language model to help write twitter posts. We want to create a chat bot that can answer questions as if it has the knowledge of an expert social media manager.
 
-Cortex makes the process of building a personalized chat bot fast and simple. Let's look at how this can be done with the power of Callable and Copilot.
+ReByte makes the process of building a personalized chat bot fast and simple. Let's look at how this can be done with the power of Callable and Copilot.
 
 ## Getting Started
 

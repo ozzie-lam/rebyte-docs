@@ -2,11 +2,11 @@
 
 ## Callables
 
-After deploying a Callable, Cortex provides the direct curl request to send inputs to.
+After deploying a Callable, ReByte provides the direct curl request to send inputs to.
 
 ```sh
-curl -L https://trycortex.ai/api/sdk/p/[pID]/a/[aID]/r \
-    -H "Authorization: Bearer $CORTEX_API_KEY" \
+curl -L https://tryrebyte.ai/api/sdk/p/[pID]/a/[aID]/r \
+    -H "Authorization: Bearer $REBYTE_API_KEY" \
     -H "Content-Type: application/json" \
     -d '{
       "version": 1,
@@ -47,8 +47,8 @@ By providing a specified key and value pairs into the input, the HTTP response w
 Example curl request
 
 ```bash
-curl -L https://trycortex.ai/api/sdk/p/[pID]/knowledge/[knowledgeName]/d/[docID] \
-    -H "Authorization: Bearer $CORTEX_API_KEY" \
+curl -L https://tryrebyte.ai/api/sdk/p/[pID]/knowledge/[knowledgeName]/d/[docID] \
+    -H "Authorization: Bearer $REBYTE_API_KEY" \
     -H "Content-Type: application/json" \
     -d '{
       “text”: “value”

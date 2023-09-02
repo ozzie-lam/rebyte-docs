@@ -16,7 +16,7 @@ There is another division within each Knowledge, called Documents. Knowledge con
 
 For the simplest upload options, we allow users to directly upload files from their computers in various formats, such as pdf, docx, and txt.&#x20;
 
-Additionally, developers can also choose to upload and update their knowledge using our [SDK](https://github.com/trycortex-ai).
+Additionally, developers can also choose to upload and update their knowledge using our [SDK](https://github.com/tryrebyte-ai).
 
 ### Web
 

@@ -16,7 +16,7 @@ By default, Chat will have example questions you can ask the chatbot. Click any 
 
 Your chat session will be saved and available for access anytime on the left navigation bar. You can create a new conversation by clicking the + New Conversation button.
 
-Notice that context-aware conversation is only available if the Callable developer incorporates history in the Callable. All Callables created by Cortex Community will have history enabled.&#x20;
+Notice that context-aware conversation is only available if the Callable developer incorporates history in the Callable. All Callables created by ReByte Community will have history enabled.&#x20;
 
 ### Text Generation UI
 

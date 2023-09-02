@@ -1,10 +1,10 @@
 # Table of contents
 
-* [👋 Welcome to Cortex](README.md)
+* [👋 Welcome to ReByte](README.md)
 
 ## Overview
 
-* [💡 Understanding Cortex Architecture](overview/understanding-cortex-architecture.md)
+* [💡 Understanding ReByte Architecture](overview/understanding-rebyte-architecture.md)
 
 ## Product Guides
 

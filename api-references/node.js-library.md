@@ -1,6 +1,6 @@
 # Node.js Library
 
-{% embed url="https://github.com/kinesysai/cortex-ts" %}
+{% embed url="https://github.com/kinesysai/rebyte-ts" %}
 
 ## Documents
 

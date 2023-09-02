@@ -4,13 +4,13 @@ Copilots are UI-based AI assistants that are designed for **non-developers** to 
 
 ## 1. Create a knowledge
 
-One of the powerful features of Cortex is to let AI interact with your own data. Knowledge is where you store your data.&#x20;
+One of the powerful features of ReByte is to let AI interact with your own data. Knowledge is where you store your data.&#x20;
 
 Head to the knowledge tab here and create a knowledge
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-Cortex supports multiple upload options. You can directly upload your pdf, or Word doc, give the URLs of a particular website or connect with third-party applications like Notion and Slack, and we will sync up the knowledge automatically.&#x20;
+ReByte supports multiple upload options. You can directly upload your pdf, or Word doc, give the URLs of a particular website or connect with third-party applications like Notion and Slack, and we will sync up the knowledge automatically.&#x20;
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 

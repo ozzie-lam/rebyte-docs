@@ -4,38 +4,38 @@
 
 {% tabs %}
 {% tab title="Typescript" %}
-<pre class="language-bash"><code class="lang-bash"><strong>npm install cortex-ts
+<pre class="language-bash"><code class="lang-bash"><strong>npm install rebyte-ts
 </strong></code></pre>
 {% endtab %}
 
 {% tab title="Python" %}
 ```bash
-pip install trycortex
+pip install tryrebyte
 ```
 {% endtab %}
 {% endtabs %}
 
-## Create a CortexAPI
+## Create a ReByteAPI
 
-Create environment variables for your cortex API key.
+Create environment variables for your rebyte API key.
 
-Use the API key to create a CortexAPI.
+Use the API key to create a ReByteAPI.
 
 {% tabs %}
 {% tab title="Typescript" %}
 ```typescript
-import { CortexAPI } from 'cortex-ts';
-const {CORTEX_API_KEY} = process.env;
+import { ReByteAPI } from 'rebyte-ts';
+const {REBYTE_API_KEY} = process.env;
 
-const cortex = new CortexAPI(CORTEX_API_KEY);
+const rebyte = new ReByteAPI(REBYTE_API_KEY);
 ```
 {% endtab %}
 
 {% tab title="Python" %}
 ```python
-import cortex
+import rebyte
 
-CortexAPI = cortex.CortexAPI(API_KEY)
+ReByteAPI = rebyte.ReByteAPI(API_KEY)
 ```
 {% endtab %}
 {% endtabs %}
