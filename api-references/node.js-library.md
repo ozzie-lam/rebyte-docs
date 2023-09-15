@@ -1,7 +1,5 @@
 # Node.js Library
 
-{% embed url="https://github.com/kinesysai/rebyte-ts" %}
-
 ## Documents
 
 #### <mark style="color:purple;">.getDocument(knowledgeName: string, documentID: string)</mark>

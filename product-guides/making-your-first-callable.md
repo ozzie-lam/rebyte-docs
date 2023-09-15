@@ -1,7 +1,7 @@
 # ⚡ Making your first Callable
 
 {% hint style="info" %}
-Callable is currently in private preview, only selected developers and customers have access to Callable Builder. If you'd like to submit a request please contact rebyte@kinesys.ai!
+Callable is currently in private preview, only selected developers and customers have access to Callable Builder. If you'd like to submit a request please contact support@rebyte.ai!
 {% endhint %}
 
 Callable is the serverless function that powers each copilot, or any of your AI workflows. Let's build a Callable today that helps recommend movies to watch!&#x20;
