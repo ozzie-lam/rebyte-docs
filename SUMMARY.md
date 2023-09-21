@@ -4,7 +4,7 @@
 
 ## Overview
 
-* [💡 Understanding ReByte Architecture](overview/understanding-rebyte-architecture.md)
+* [💡 ReByte Concepts](overview/understanding-rebyte-architecture.md)
 
 [//]: # (## Callable Reference)
 
