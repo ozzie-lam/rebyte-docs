@@ -1,24 +1,55 @@
-# 💡 Understanding ReByte Architecture
+# 💡 ReByte Concepts
 
-## How ReByte work
+## LLM Serverless Callable
+* LLM Serverless Callable is a piece of sequential actions that can be executed on the LLM serverless runtime. It is the core building block of ReByte, and the main way for end users to create their own tools. Rebyte provides a GUI builder for end users to create/edit their own LLM callables. Rebyte provides a list of pre-built actions for common use cases, also private SDK for *software engineer* to build their own actions, and seamlessly integrate with the callable builder. Pre-built actions includes:
+  * LLM Actions
+    * Language Model Completion Interface
+    * Language Model Chat Interface
+  * Data Actions
+    * Dataset Loader, load pre defined datasets for later processing
+    * File Loader, extract/transform/load user's provided files
+    * Semantic Search, search for similar content over user's knowledge base
+  * Tools Actions
+    * Search Engine, search for information on Google/Bing
+    * Web Crawler, crawl web pages and extract information
+    * Http Request Maker, make any http request to any public/private API
+  * Control flow Actions
+    * Loop Until, run actions until a condition is met
+    * Parallel, execute multiple actions in parallel
+    * Vanilla Javascript, execute any vanilla javascript code, useful for doing pure data transformation
+  * Customized JsBundle(private beta)
+    * Software engineer can build their own JsBundle and submit to ReByte **Action MarketPlace**, so that end users can use it in their callables. JsBundle can use any npm packages, so greatly expand the capability of LLM callables.
 
-**ReByte** can be seen as having three layers
+## Knowledge
+* Knowledge is private data that is stored in rebyte managed vector database. Rebyte currently provides following connectors for end users to import their knowledge:
+  * Local file, supported file types are: 
+    * "doc",
+      "docx",
+      "img",
+      "epub",
+      "jpeg",
+      "jpg",
+      "png",
+      "xls",
+      "xlsx",
+      "ppt",
+      "pptx",
+      "md",
+      "txt",
+      "rtf",
+      "rst",
+      "pdf",
+      "json",
+      "html",
+  * Notion
+  * Discord
+  * GitHub
+  * More connectors are coming soon
+* Knowledge can be used in LLM callables to do semantic search, or to do data augmentation. A great example is to use knowledge to do semantic search on a user's private knowledge base, and use the search result to do data augmentation for a language model, aka **Retrieval Augmented Generation**.
+  
 
-* **Callable:** The infrastructure that handles all LLM-based workflows. It follows serverless function architecture (like AWS Lambda) that enables maximum scalability&#x20;
-* **Knowledge:** Managed vector database for fast information retrieval and near real-time syncing
-* **Client Interface**
-  * **Copilot:** is a managed UI that enables end-users to conveniently interact with AI applications
-  * **API:** API and SDK clients are provided to support developers who wish to directly interact with their callables to power their own products
-
-
-### A Basic Workflow
-
-When the end user interacts with a **Copilot**, a few things happen in the background:
-
-1. ReByte Copilot client compiles users' input into a standard format defined by its UI standard protocol and includes session history. Since Callable is designed to be stateless and serverless, the copilot server will be responsible to store the history.&#x20;
-2. The Copilot client sends an API request to a specific Callable
-3. The Callable is triggered and performs its predefined programming.&#x20;
-   1. The Callable interacts with Knowledge to retrieve relevant information
-   2. The Callable sends requests to the language model services
-4. The Callable returns a response in a predefined format to Copilot, and Copilot displays the messages to users.
-
+## Copilot
+* Copilot is the end user facing part of rebyte, it is a universal UI interface/protocol that allows user to wire up LLM callables and knowledge to create their own tools.
+  * Conversational based chat interface
+  * Available on all major platforms, Web and Mobile.
+  * Support long term memory out of the box, so that user can have a persistent conversation with the copilot.
