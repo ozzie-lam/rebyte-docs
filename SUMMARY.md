@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 Welcome to ReByte](README.md)
+* [👉 Welcome to ReByte](README.md)
 
 ## Overview
 
