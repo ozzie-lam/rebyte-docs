@@ -21,4 +21,10 @@
 ### Data
 ### Tools
 ### Control Flow
-### Customized JsBundle
+
+## Extending ReByte
+
+### JS Bundle Actions
+
+* [JsBundle Overview](extensions/jsbundle-overview.md)
+
