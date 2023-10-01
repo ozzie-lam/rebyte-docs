@@ -1,6 +1,9 @@
 # 💡 ReByte Concepts
 
 ## LLM Serverless Callable
+
+> Subroutine for your AI application.
+
 * LLM Serverless Callable is a piece of sequential actions that can be executed on the LLM serverless runtime. It is the core building block of ReByte, and the main way for end users to create their own tools. Rebyte provides a GUI builder for end users to create/edit their own LLM callables. Rebyte provides a list of pre-built actions for common use cases, also private SDK for *software engineer* to build their own actions, and seamlessly integrate with the callable builder. Pre-built actions includes:
   * LLM Actions
     * Language Model Completion Interface
@@ -21,6 +24,7 @@
     * Software engineer can build their own JsBundle and submit to ReByte **Action MarketPlace**, so that end users can use it in their callables. JsBundle can use any npm packages, so greatly expand the capability of LLM callables.
 
 ## Knowledge
+> Ingredient for your AI application.
 * Knowledge is private data that is stored in rebyte managed vector database. Rebyte currently provides following connectors for end users to import their knowledge:
   * Local file, supported file types are: 
     * "doc",

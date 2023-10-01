@@ -6,12 +6,17 @@
 
 * [💡 ReByte Concepts](overview/understanding-rebyte-architecture.md)
 
+## Developer Guide
+
+### LLM Callable
+
+
 ## Examples
 
 * [Retrieval Augmented Generation](examples/rag.md)
 * [Internet Connected Search and Generation](examples/icsg.md)
 
-## LLM Actions
+## LLM Callable Builder
 
 ### Models
 * [Prompt Template Language](callable/actions/models/prompt-template-language.md)
