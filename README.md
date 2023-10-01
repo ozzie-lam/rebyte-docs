@@ -6,8 +6,6 @@ description: >-
 
 # 👉 Welcome to ReByte
 
-
-
 <figure><img src=".gitbook/assets/medium-local-llm-devs.png" alt=""><figcaption></figcaption></figure>
 
 ## End User Programming
