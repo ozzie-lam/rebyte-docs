@@ -6,6 +6,10 @@ description: >-
 
 # 👉 Welcome to ReByte
 
+
+
+<figure><img src=".gitbook/assets/medium-local-llm-devs.png" alt=""><figcaption></figcaption></figure>
+
 ## End User Programming
 
 > Personal computer should run personal software.
@@ -15,6 +19,7 @@ In past decades, the software industry has been dominated by a small group of pe
 This will open the hood of software development to a much larger group of people, every person can use their personal computers to create their **personal** software tools. Every company can use their private data to create their **personal** software tools for internal or external uses.
 
 **ReByte** is built with one mission in mind: by leveraging large language model, to empower end users to create their own tools without the need for a data science or engineering background. Rebyte has three core components:
+
 * Large Language Model Callable: a serverless function that can be executed on ReByte cloud.
 * Knowledge: private data ingestion pipeline that can be used in LLM callable.
 * Agent UI Builder: User interface builder that allows developer to wire up LLM callables and knowledge to create their own tools.
