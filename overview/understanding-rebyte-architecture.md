@@ -52,8 +52,8 @@
 * Knowledge can be used in LLM callables to do semantic search, or to do data augmentation. A great example is to use knowledge to do semantic search on a user's private knowledge base, and use the search result to do data augmentation for a language model, aka **Retrieval Augmented Generation**.
   
 
-## Copilot
-* Copilot is the end user facing part of rebyte, it is a universal UI interface/protocol that allows user to wire up LLM callables and knowledge to create their own tools.
+## Agent
+* Agent is the end user facing part of rebyte, it is a universal UI interface/protocol that allows user to wire up LLM callables and knowledge to create their own tools.
   * Conversational based chat interface
   * Available on all major platforms, Web and Mobile.
   * Support long term memory out of the box, so that user can have a persistent conversation with the copilot.

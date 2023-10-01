@@ -17,7 +17,7 @@ This will open the hood of software development to a much larger group of people
 **ReByte** is built with one mission in mind: by leveraging large language model, to empower end users to create their own tools without the need for a data science or engineering background. Rebyte has three core components:
 * Large Language Model Callable: a serverless function that can be executed on ReByte cloud.
 * Knowledge: private data ingestion pipeline that can be used in LLM callable.
-* Copilot: a universal UI interface/protocol that allows user to wire up LLM callables and knowledge to create their own tools.
+* Agent UI Builder: User interface builder that allows developer to wire up LLM callables and knowledge to create their own tools.
 
 Also, **ReByte** is built to solve following problems in LLM application development:
 
