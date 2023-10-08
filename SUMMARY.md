@@ -16,9 +16,9 @@
 * [Retrieval Augmented Generation](examples/rag.md)
 * [Internet Connected Search and Generation](examples/icsg.md)
 
-## LLM Callable Builder Reference
+## LLM Agent Builder Reference
 
-#### LLM Callable Actions
+#### LLM Agent Actions
 
 * [Prompt Template Language](callable/prompt-template-language.md)
 

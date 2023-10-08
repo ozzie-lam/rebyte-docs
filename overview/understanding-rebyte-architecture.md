@@ -1,10 +1,10 @@
 # 💡 ReByte Concepts
 
-## LLM Serverless Callable
+## LLM Serverless Agent
 
 > Subroutine for your AI application.
 
-* LLM Serverless Callable is a piece of sequential actions that can be executed on the LLM serverless runtime. It is the core building block of ReByte, and the main way for end users to create their own tools. Rebyte provides a GUI builder for end users to create/edit their own LLM callables. Rebyte provides a list of pre-built actions for common use cases, also private SDK for *software engineer* to build their own actions, and seamlessly integrate with the callable builder. Pre-built actions includes:
+* LLM Serverless Agent is a piece of sequential actions that can be executed on the LLM serverless runtime. It is the core building block of ReByte, and the main way for end users to create their own tools. Rebyte provides a GUI builder for end users to create/edit their own LLM agents. Rebyte provides a list of pre-built actions for common use cases, also private SDK for *software engineer* to build their own actions, and seamlessly integrate with the agent builder. Pre-built actions includes:
   * LLM Actions
     * Language Model Completion Interface
     * Language Model Chat Interface
@@ -21,9 +21,9 @@
     * Parallel, execute multiple actions in parallel
     * Vanilla Javascript, execute any vanilla javascript code, useful for doing pure data transformation
   * Customized JsBundle(private beta)
-    * Software engineer can build their own JsBundle and submit to ReByte **Action MarketPlace**, so that end users can use it in their callables. JsBundle can use any npm packages, so greatly expand the capability of LLM callables.
+    * Software engineer can build their own JsBundle and submit to ReByte **Action MarketPlace**, so that end users can use it in their agents. JsBundle can use any npm packages, so greatly expand the capability of LLM agents.
 
-## Knowledge
+## Knowledge - capture private data
 > Ingredient for your AI application.
 * Knowledge is private data that is stored in rebyte managed vector database. Rebyte currently provides following connectors for end users to import their knowledge:
   * Local file, supported file types are: 
@@ -49,13 +49,16 @@
   * Discord
   * GitHub
   * More connectors are coming soon
-* Knowledge can be used in LLM callables to do semantic search, or to do data augmentation. A great example is to use knowledge to do semantic search on a user's private knowledge base, and use the search result to do data augmentation for a language model, aka **Retrieval Augmented Generation**.
+* Knowledge can be used in LLM Agents to do semantic search, or to do data augmentation. A great example is to use knowledge to do semantic search on a user's private knowledge base, and use the search result to do data augmentation for a language model, aka **Retrieval Augmented Generation**.
   
 
-## Agent
-* Agent is the end user facing part of rebyte, it is a universal UI interface/protocol that allows user to wire up LLM callables and knowledge to create their own tools.
-  * Conversational based chat interface
-  * Available on all major platforms, Web and Mobile.
-  * Support long term memory out of the box, so that user can have a persistent conversation with the copilot.
+## Agent UI builder
+* UI layer is the end user facing part of rebyte, it is a universal UI interface/protocol that allows user to wire up LLM Agents and knowledge to create their own tools.
+  
+  * A universal UI builder for lightweight tools
+  * Automatically wire up multiple LLM Agents and knowledge
+  * Fully hosted and managed by ReByte
 
 ## ReByte Runtime
+
+All Rebyte Agents are executed on ReByte Runtime, which is a serverless function runtime that serves similar functionality as AWS Lambda.
