@@ -16,12 +16,27 @@
 * [Retrieval Augmented Generation](examples/rag.md)
 * [Internet Connected Search and Generation](examples/icsg.md)
 
-## LLM Callable Builder
+## LLM Callable Builder Reference
 
-* [Prompt Template Language](callable/actions/models/prompt-template-language.md)
+#### LLM Callable Actions
+
+* [Prompt Template Language](callable/prompt-template-language.md)
+
+#### LLM Action
 * [LLM Completion](callable/actions/models/language-model.md)
 * [LLM Chat](callable/actions/models/language-model-chat.md)
 
-## JS Bundle Actions
+#### Data Action
+
+* [Dataset Loader](callable/actions/data/dataset-loader.md)
+* [File Loader](callable/actions/data/file-loader.md)
+
+#### Tool Action
+
+#### Control Action
+
+#### Code Action
+
+#### JS Bundle Action
 
 * [JsBundle Overview](extensions/jsbundle-overview.md)

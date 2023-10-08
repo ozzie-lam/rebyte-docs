@@ -1,16 +1,20 @@
 # Dataset Loader
 
-## Dataset Loader
+Loads Data from the Predefined Dataset. Each callable can have multiple datasets, dataset can be created or edited using dataset editor.
 
-Loads Data from the Dataset tab.
+Each dataset is essentially a list of JSON objects with same shape. Value of each field can be following types:
+* **string**
+* **number**
+* **boolean**
+* **array**
+* **object**
 
-<div align="center" data-full-width="true">
+Dataset can be used in the two ways:
+#### Load data for subsequent actions
+when a dataset is loaded in callable, subsequent actions can access the dataset content as normal action output. This is particularly useful when the dataset contains example data for few shots prompt.
+#### Determine the input shape of the callable
+when dataset is loaded in INPUT action, its shape determines the shape of the input of the whole callable.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-07-21 at 4.55.40 PM.png" alt=""><figcaption></figcaption></figure>
-
-</div>
-
-**Parameters**:
-
-* **Select Data:** Choose an existing dataset from your dataset
+### Spec
+* **Dataset Id:** Id of the dataset to load from
 
