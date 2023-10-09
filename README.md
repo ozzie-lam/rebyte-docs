@@ -6,9 +6,7 @@ description: >-
 
 # 👉 Welcome to ReByte
 
-<figure><img src=".gitbook/assets/medium-local-llm-devs.png" alt=""><figcaption></figcaption></figure>
-
-## End User Programming
+<figure><img src=".gitbook/assets/Screenshot 2023-10-08 at 5.40.02 PM.png" alt=""><figcaption></figcaption></figure>
 
 > Personal computer should run personal software.
 

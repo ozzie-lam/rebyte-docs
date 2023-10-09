@@ -18,25 +18,12 @@
 
 ## LLM Agent Builder Reference
 
-#### LLM Agent Actions
-
 * [Prompt Template Language](callable/prompt-template-language.md)
 
-#### LLM Action
+***
+
 * [LLM Completion](callable/actions/models/language-model.md)
 * [LLM Chat](callable/actions/models/language-model-chat.md)
-
-#### Data Action
-
 * [Dataset Loader](callable/actions/data/dataset-loader.md)
 * [File Loader](callable/actions/data/file-loader.md)
-
-#### Tool Action
-
-#### Control Action
-
-#### Code Action
-
-#### JS Bundle Action
-
 * [JsBundle Overview](extensions/jsbundle-overview.md)
