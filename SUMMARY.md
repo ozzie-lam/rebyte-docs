@@ -16,32 +16,35 @@
 * [Retrieval Augmented Generation](examples/rag.md)
 * [Internet Connected Search and Generation](examples/icsg.md)
 
-## LLM Agent Builder Reference
+## Prompt Template Language
 
-### Prompt Template Language
 * [Prompt Template Language](callable/prompt-template-language.md)
 
-### Model
+## Model
+
 * [LLM Completion](callable/actions/models/language-model.md)
 * [LLM Chat](callable/actions/models/language-model-chat.md)
-### Data
+
+## Data
+
 * [Dataset Loader](callable/actions/data/dataset-loader.md)
 * [File Loader](callable/actions/data/file-loader.md)
-### Javascript Code
-* [Javascript](callable/actions/tools/jscode.md)
-### Knowledge Search
-* [Knowledge Search](callable/actions/tools/knowledge-search.md)
-### Tools
+
+## Javascript Code
+
+* [Javascript](javascript-code/javascript.md)
+
+## Knowledge Search
+
+* [Javascript](javascript-code/javascript.md)
+
+## Tools
+
 * [HTTP Request](callable/actions/tools/curl-request.md)
 * [Google Search](callable/actions/tools/google-search.md)
-* [Web Scraping](callable/actions/tools/web-page-crawler.md)
-### Control Flow
-* [Loop](callable/actions/control-flow/if.md)
-* [Parallel](callable/actions/control-flow/parallel.md)
 
-### Rebyte Action Hub
+## Rebyte Action Hub
+
 * [JsBundle Overview](extensions/jsbundle-overview.md)
 
-
-## Knowledge Pipeline Reference
-
+## Knowledge Ingestion Pipeline Reference
