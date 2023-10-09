@@ -6,9 +6,7 @@ description: >-
 
 # 👉 Welcome to ReByte
 
-<figure><img src=".gitbook/assets/Screenshot 2023-10-08 at 5.40.02 PM.png" alt=""><figcaption></figcaption></figure>
-
-> Personal computer should run personal software.
+<figure><img src=".gitbook/assets/Screenshot 2023-10-08 at 6.23.24 PM.png" alt=""><figcaption></figcaption></figure>
 
 In past decades, the software industry has been dominated by a small group of people who have the ability to write code, a user has to be 'techie' just to open a terminal and start writing code. The recent emergence of LLM in the software industry will bring about a monumental transformation. First LLM provides a vehicle for **every software** to use LLM as human intention understanding. Secondly LLM provides a tool for every **end user** to write small piece of code without learning how to do traditional programming. Soon all normal computer users will have the ability to develop small software tools from scratch by describing what the software looks like and to describe modifications they’d like made to software they’re already using.
 
