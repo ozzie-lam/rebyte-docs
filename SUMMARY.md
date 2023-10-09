@@ -6,24 +6,31 @@
 
 * [💡 ReByte Concepts](overview/understanding-rebyte-architecture.md)
 
-## LLM Agent Builder
+## User Guide
+* [Terminology](overview/terminology.md)
+* Agent Builder
+  * [Prompt Template Language](callable/prompt-template-language.md)
+  * Model Action
+    * [LLM Completion](callable/actions/models/language-model.md)
+    * [LLM Chat](callable/actions/models/language-model-chat.md)
+  * Data Action
+    * [Dataset Loader](callable/actions/data/dataset-loader.md)
+    * [File Loader](callable/actions/data/file-loader.md)
+  * Code Action
+    * [Javascript](callable/actions/tools/jscode.md)
+  * Tool Action
+    * [Knowledge Search](callable/actions/tools/knowledge-search.md)
+    * [HTTP Request](callable/actions/tools/curl-request.md)
+    * [Google Search](callable/actions/tools/google-search.md)
+    * [Web Scraping](callable/actions/tools/web-page-crawler.md)
+  * Control Action
+    * [Loop](callable/actions/control/loop-until.md)
+    * [Parallel](callable/actions/control/map-reduce.md)
+  * Customized Action
+    * [JsBundle Overview](extensions/jsbundle-overview.md)
 
-* [Prompt Template Language](callable/prompt-template-language.md)
-
-***
-
-* [LLM Completion](callable/actions/models/language-model.md)
-* [LLM Chat](callable/actions/models/language-model-chat.md)
-* [Dataset Loader](callable/actions/data/dataset-loader.md)
-* [File Loader](callable/actions/data/file-loader.md)
-* [Javascript](javascript.md)
-* [Knowledge Search](callable/actions/tools/knowledge-search.md)
-* [HTTP Request](callable/actions/tools/curl-request.md)
-* [Google Search](callable/actions/tools/google-search.md)
-* [Web Scraping](callable/actions/tools/web-page-crawler.md)
-* [Loop](callable/actions/control/loop-until.md)
-* [Parallel](callable/actions/control/map-reduce.md)
-* [JsBundle Overview](extensions/jsbundle-overview.md)
+[//]: # (* Knowledge Pipeline)
+[//]: # (  * Local Files)
 
 ## Video Tutorials
 
@@ -34,36 +41,3 @@
 * [Working with external files](https://www.youtube.com/watch?v=8wQMToGqF8g)
 * [Retrieval Augmented Generation](examples/rag.md)
 * [Internet Connected Search and Generation](examples/icsg.md)
-
-## Prompt Template Language
-
-*
-
-## Model
-
-*
-*
-
-## Data
-
-*
-*
-
-## Javascript Code
-
-* [Javascript](javascript-code/javascript.md)
-
-## Knowledge Search
-
-*
-
-## Tools
-
-*
-*
-
-## Rebyte Action Hub
-
-*
-
-## Knowledge Ingestion Pipeline Reference
