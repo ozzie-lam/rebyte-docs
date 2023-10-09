@@ -30,15 +30,18 @@
 ### Javascript Code
 * [Javascript](callable/actions/tools/jscode.md)
 ### Knowledge Search
-* [Javascript](callable/actions/tools/jscode.md)
+* [Knowledge Search](callable/actions/tools/knowledge-search.md)
 ### Tools
 * [HTTP Request](callable/actions/tools/curl-request.md)
 * [Google Search](callable/actions/tools/google-search.md)
+* [Web Scraping](callable/actions/tools/web-page-crawler.md)
 ### Control Flow
+* [Loop](callable/actions/control-flow/if.md)
+* [Parallel](callable/actions/control-flow/parallel.md)
 
 ### Rebyte Action Hub
 * [JsBundle Overview](extensions/jsbundle-overview.md)
 
 
-## Knowledge Ingestion Pipeline Reference
+## Knowledge Pipeline Reference
 
