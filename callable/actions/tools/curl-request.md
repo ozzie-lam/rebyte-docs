@@ -1,11 +1,18 @@
-# Curl Request
+# Http Request
 
-Send Curl Requests with the Curl Request block
-
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-07-21 at 5.37.02 PM.png" alt=""><figcaption><p> </p></figcaption></figure>
+### Description
+Send Http/Https Requests
 
 **Parameters:**
+### spec
+| Parameter | Description                              |
+|-----------|------------------------------------------|
+| scheme    | HTTP or HTTPS                            |
+| method    | GET or POST                              |
+| host      | host of URL                              |
+| header    | header of HTTP request                   |
+| body      | post body, only available in POST request |
 
-* **URL:** The url you are sending the curl request to
-* **Headers:** Provide the header fields as a javascript object in the return
-* **Body:** Provide a JSON string with the body parameters you want send.
+### config
+None
+

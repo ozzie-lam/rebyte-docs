@@ -18,12 +18,27 @@
 
 ## LLM Agent Builder Reference
 
+### Prompt Template Language
 * [Prompt Template Language](callable/prompt-template-language.md)
 
-***
-
+### Model
 * [LLM Completion](callable/actions/models/language-model.md)
 * [LLM Chat](callable/actions/models/language-model-chat.md)
+### Data
 * [Dataset Loader](callable/actions/data/dataset-loader.md)
 * [File Loader](callable/actions/data/file-loader.md)
+### Javascript Code
+* [Javascript](callable/actions/tools/jscode.md)
+### Knowledge Search
+* [Javascript](callable/actions/tools/jscode.md)
+### Tools
+* [HTTP Request](callable/actions/tools/curl-request.md)
+* [Google Search](callable/actions/tools/google-search.md)
+### Control Flow
+
+### Rebyte Action Hub
 * [JsBundle Overview](extensions/jsbundle-overview.md)
+
+
+## Knowledge Ingestion Pipeline Reference
+

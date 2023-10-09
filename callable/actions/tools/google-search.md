@@ -1,15 +1,14 @@
-# Google Search
+# Web Search
 
-Find the most relevant links based on the Query through a google search
+### Description
+Search the web using Google Search API
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-07-21 at 5.15.25 PM.png" alt=""><figcaption></figcaption></figure>
+### spec
+| Parameter         | Description                                   |
+|-------------------|-----------------------------------------------|
+| query             | query sent to Google                          |
+| number of results | number of search results returned from Google |
 
-**Parameters:**
-
-* **Number of Results:** Specifies how many organic results will be returned
-* **Query:** Specify the question to search on google.
-
-Return:
-
-{% embed url="https://serpapi.com/search-api#api-results" %}
+### config
+None
 
