@@ -1,5 +1,7 @@
 # 💡 ReByte Concepts
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-10-09 at 10.09.47 AM.png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/Screenshot 2023-10-08 at 6.10.41 PM.png" alt=""><figcaption></figcaption></figure>
 
 > Subroutine for your AI application.
@@ -37,9 +39,10 @@
 * Knowledge can be used in LLM Agents to do semantic search, or to do data augmentation. A great example is to use knowledge to do semantic search on a user's private knowledge base, and use the search result to do data augmentation for a language model, aka **Retrieval Augmented Generation**.
 
 ## Tool Builder - build your own tools
+
 > End user facing UI for your AI application.
+
 * Tool is the end user facing part of rebyte, it is a universal UI interface/protocol that allows user to wire up LLM Agents and knowledge to create their own tools.
-  
   * A universal UI builder for lightweight tools
   * Automatically wire up multiple LLM Agents and knowledge
   * Fully hosted and managed by ReByte

@@ -1,43 +1,29 @@
 # Table of contents
 
-* [Welcome to ReByte](README.md)
+* [👉 Welcome to ReByte](README.md)
 
 ## Overview
 
-* [ReByte Concepts](overview/understanding-rebyte-architecture.md)
+* [💡 ReByte Concepts](overview/understanding-rebyte-architecture.md)
 
-## User Guide
+## LLM Agent Builder
 
-## Reference
-
-### LLM Agent Builder
-
-#### Prompt Template Language
 * [Prompt Template Language](callable/prompt-template-language.md)
 
-#### Model
+***
+
 * [LLM Completion](callable/actions/models/language-model.md)
 * [LLM Chat](callable/actions/models/language-model-chat.md)
-#### Data
 * [Dataset Loader](callable/actions/data/dataset-loader.md)
 * [File Loader](callable/actions/data/file-loader.md)
-#### Javascript Code
-* [Javascript](callable/actions/tools/jscode.md)
-#### Knowledge Search
+* [Javascript](javascript.md)
 * [Knowledge Search](callable/actions/tools/knowledge-search.md)
-#### Tools
 * [HTTP Request](callable/actions/tools/curl-request.md)
 * [Google Search](callable/actions/tools/google-search.md)
 * [Web Scraping](callable/actions/tools/web-page-crawler.md)
-#### Control Flow
 * [Loop](callable/actions/control/loop-until.md)
 * [Parallel](callable/actions/control/map-reduce.md)
-
-#### Rebyte Action Hub
 * [JsBundle Overview](extensions/jsbundle-overview.md)
-
-
-### Knowledge Pipeline Reference
 
 ## Video Tutorials
 
@@ -51,17 +37,17 @@
 
 ## Prompt Template Language
 
-* [Prompt Template Language](callable/prompt-template-language.md)
+*
 
 ## Model
 
-* [LLM Completion](callable/actions/models/language-model.md)
-* [LLM Chat](callable/actions/models/language-model-chat.md)
+*
+*
 
 ## Data
 
-* [Dataset Loader](callable/actions/data/dataset-loader.md)
-* [File Loader](callable/actions/data/file-loader.md)
+*
+*
 
 ## Javascript Code
 
@@ -69,15 +55,15 @@
 
 ## Knowledge Search
 
-* [Javascript](javascript-code/javascript.md)
+*
 
 ## Tools
 
-* [HTTP Request](callable/actions/tools/curl-request.md)
-* [Google Search](callable/actions/tools/google-search.md)
+*
+*
 
 ## Rebyte Action Hub
 
-* [JsBundle Overview](extensions/jsbundle-overview.md)
+*
 
 ## Knowledge Ingestion Pipeline Reference
