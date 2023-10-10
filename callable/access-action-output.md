@@ -42,3 +42,7 @@ This is done by using the dot (.) like \{{ product.name \}}. Specific members of
 Here are the full list of places where you can use the `{{ }}` syntax:
 * Prompt field in LLM action
 * URL field in HTTP action
+* URL field in Web Crawler action
+* File UUID field in File loader action
+* Query field in Knowledge action
+* Query field in Google Search action
