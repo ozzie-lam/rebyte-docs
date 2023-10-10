@@ -31,6 +31,10 @@ Also, **ReByte** is built to solve following problems in LLM application develop
    * LLM application could be hard to scale, due to its unpredictable and asynchronous nature.
    * By borrowing the idea of serverless function, we provide a scalable runtime for end users to scale their LLM application without worrying about the underlying infrastructure.
 
+
+
+<figure><img src=".gitbook/assets/Screenshot 2023-10-10 at 1.24.14 PM.png" alt=""><figcaption></figcaption></figure>
+
 ## Get Started
 
 [rebyte-concepts.md](overview/understanding-rebyte-architecture.md)
