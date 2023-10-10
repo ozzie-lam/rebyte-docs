@@ -1,6 +1,9 @@
-## Team
+# Team Overview
 
-### Team Overview
+<figure><img src="../.gitbook/assets/Screenshot 2023-10-09 at 10.09.47 AM.png" alt=""><figcaption></figcaption></figure>
+
+## Team Overview
+
 Team is a concept that allows multiple users in same organization to collaborate on the same knowledge and agent, also enforce access control. Team can have multiple members, and each member can have different access level. Each login user has one default team, named after the user's display name, for example, if your display name is "John Smith", then your default team name will be "John Smith's Personal Project".
 
 For example, if you are a developer in a company, you can create a team called "ACME" and invite your colleagues to join the team. Then you can create knowledge and agent under the team, and all your colleagues can access the knowledge and agent.
