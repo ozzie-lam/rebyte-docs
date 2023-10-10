@@ -9,6 +9,7 @@
 ## User Guide
 * [Terminology](overview/terminology.md)
 * Agent Builder
+  * [Agent Runtime](callable/runtime.md)
   * [Prompt Template Language](callable/prompt-template-language.md)
   * Model Action
     * [LLM Completion](callable/actions/models/language-model.md)
