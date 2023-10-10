@@ -11,6 +11,7 @@
 * Agent Builder
   * [Agent Runtime](callable/runtime.md)
   * [Prompt Template Language](callable/prompt-template-language.md)
+  * [How to Chain Actions](callable/access-action-output.md)
   * Model Action
     * [LLM Completion](callable/actions/models/language-model.md)
     * [LLM Chat](callable/actions/models/language-model-chat.md)
