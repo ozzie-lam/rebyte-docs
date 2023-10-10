@@ -6,9 +6,10 @@
 
 * [💡 ReByte Concepts](overview/understanding-rebyte-architecture.md)
 
-## User Guide
+
+## Builder's Guide
 * [Terminology](overview/terminology.md)
-* Agent Builder
+* **Agent Builder**
   * [Agent Runtime](callable/runtime.md)
   * [Prompt Template Language](callable/prompt-template-language.md)
   * [How to Chain Actions](callable/access-action-output.md)
@@ -31,15 +32,20 @@
   * Customized Action
     * [JsBundle Overview](extensions/jsbundle-overview.md)
 
-* Knowledge Pipeline
+* **Knowledge Pipeline**
   * [Knowledge Overview](knowledge/overview.md)
   * Knowledge type
     * [Local Files](knowledge/local-files.md)
     * [Notion](knowledge/notion.md)
     * [GitHub](knowledge/github.md)
     * [Discord](knowledge/discord.md)
-* ChatBot UI Protocol
+* **ChatBot UI Protocol**
   * [ChatBot UI Protocol](UI/overview.md)
+
+## User's Guide
+* **Team**
+  * [Team Overview](user/overview.md)
+  * [Access Control](user/access-control.md)
 
 ## Tutorials
 
