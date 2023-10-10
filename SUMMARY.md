@@ -30,15 +30,24 @@
   * Customized Action
     * [JsBundle Overview](extensions/jsbundle-overview.md)
 
-[//]: # (* Knowledge Pipeline)
-[//]: # (  * Local Files)
+* Knowledge Pipeline
+  * [Knowledge Overview](knowledge/overview.md)
+  * Knowledge type
+    * [Local Files](knowledge/local-files.md)
+    * [Notion](knowledge/notion.md)
+    * [GitHub](knowledge/github.md)
+    * [Discord](knowledge/discord.md)
+* ChatBot UI Protocol
+  * [ChatBot UI Protocol](UI/overview.md)
 
-## Video Tutorials
+## Tutorials
 
-* [ReByte Overview](https://www.youtube.com/watch?v=I5BMV52Am1U)
-* [Create RAG agent in 5 minutes](https://www.youtube.com/watch?v=I5BMV52Am1U)
-* [Improve RAG](https://www.youtube.com/watch?v=CNu8ya-Raw8)
-* [Trace every step of Agent](https://www.youtube.com/watch?v=eyUt6O6u4wE)
-* [Working with external files](https://www.youtube.com/watch?v=8wQMToGqF8g)
-* [Retrieval Augmented Generation](examples/rag.md)
-* [Internet Connected Search and Generation](examples/icsg.md)
+* Video
+  * [ReByte Overview](https://www.youtube.com/watch?v=I5BMV52Am1U)
+  * [Create RAG agent in 5 minutes](https://www.youtube.com/watch?v=I5BMV52Am1U)
+  * [Improve RAG](https://www.youtube.com/watch?v=CNu8ya-Raw8)
+  * [Trace every step of Agent](https://www.youtube.com/watch?v=eyUt6O6u4wE)
+  * [Working with external files](https://www.youtube.com/watch?v=8wQMToGqF8g)
+* Text
+  * [Retrieval Augmented Generation](examples/rag.md)
+  * [Internet Connected Search and Generation](examples/icsg.md)
