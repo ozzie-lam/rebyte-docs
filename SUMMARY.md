@@ -1,10 +1,10 @@
 # Table of contents
 
-* [👉 Welcome to ReByte](README.md)
+* [ReByte One Page](README.md)
 
 ## Overview
 
-* [💡 ReByte Concepts](overview/understanding-rebyte-architecture.md)
+* [ReByte Concepts](overview/understanding-rebyte-architecture.md)
 
 ## Builder's Guide
 
