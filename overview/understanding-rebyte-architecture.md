@@ -1,7 +1,5 @@
 # 💡 ReByte Concepts
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-10-09 at 10.09.47 AM.png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/Screenshot 2023-10-08 at 6.10.41 PM.png" alt=""><figcaption></figcaption></figure>
 
 > Subroutine for your AI application.
