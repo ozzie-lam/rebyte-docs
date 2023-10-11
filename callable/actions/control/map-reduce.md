@@ -14,8 +14,10 @@ Map over an array and executes a sequence of actions in parallel.
   *  None
 
 **Output**
+  * Each action inside map-reduce action will output **an array** of values. 
 
 **Example**
+  * [Map Reduce Example](https://rebyte.ai/p/21b2295005587a5375d8/callable/002c82cb615fda933a73#7)
 
 **Error Handling**
   * MapOver must refer an action that outputs a non-empty array.
