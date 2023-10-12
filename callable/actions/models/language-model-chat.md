@@ -1,19 +1,4 @@
-# Language Model Chat Interface
-
-This action directly maps the call to the LLM API chat interface. Rebyte current supports the following model providers:
-
-#### OpenAI
-For more information on the API detail, see the [OpenAI API documentation](https://platform.openai.com/docs/api-reference/completions/create).
-
-#### Anthropic
-
-[Anthropic API documentation](https://docs.anthropic.com/claude/docs).
-
-#### LLAMA2
-
-[LLAMA2](https://app.endpoints.anyscale.com/)
-
-
+# Chat Interface
 
 ### spec
 | Parameter   | Description                              |
