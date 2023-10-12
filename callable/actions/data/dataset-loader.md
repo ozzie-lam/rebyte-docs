@@ -12,7 +12,7 @@ Each dataset is essentially a list of JSON objects with same shape. Value of eac
 Dataset can be used in the two ways:
 #### Load data for subsequent actions
 when a dataset is loaded in callable, subsequent actions can access the dataset content as normal action output. This is particularly useful when the dataset contains example data for few shots prompt.
-#### Determine the input shape of the callable
+#### Determine the input shape of the agent
 when dataset is loaded in INPUT action, its shape determines the shape of the input of the whole callable.
 
 ### Spec

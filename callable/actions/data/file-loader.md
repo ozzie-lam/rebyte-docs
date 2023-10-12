@@ -16,6 +16,7 @@ Extract structure data from a file. Currently support following file types:
   "txt",
   "rtf",
   "rst",
+  "csv",
   "pdf",
   "json",
   "html",
@@ -24,13 +25,19 @@ When user uploads a file in callable builder, rebyte will assign a unique file i
 
 In Agent UI, user can upload a file to the copilot, and copilot will pass the file id to the underlying callable.
 
-**Parameters**:
+**Spec**
 
-* **File ID:** ID of the file to load from
+None
 
-**Output**:
+**Config**
+
+* **File ID:** UUID of the file to load from, can be fixed or reference to a variable.
+
+**Output**
   * JSON Array of structure data extracted from the file
   * Depends on file type, structure data can be different. For example, for a PDF file, the structure data is a list of pages, each page is a list of paragraphs, each paragraph is a list of lines, each line is a list of words. For a JSON file, the structure data is the JSON object itself.
 
-**Error Handing**:
+**Example**
+
+**Error Handing**
   * If the file id is invalid, or the file is not supported, the action will still return an empty array.
