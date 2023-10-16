@@ -43,4 +43,4 @@ There are four roles in Rebyte Project:
   * **Deploy agent**
   * **See all traces of the agent**
 * **Owner**: Owner has full access to the project, including creating new agents, knowledge, and apps. Owner can also invite new members to the project, generate API keys, and delete the project.
-  * **create new knowledge**
+  * **transfer owner to other users**
