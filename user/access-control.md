@@ -20,7 +20,25 @@ public/private/unlisted.
 Depending on context, the actual meaning of these three options are every different
 
 ### Role
-There are three roles in Rebyte Project:
-* **Owner**: Owner has full access to the project, including creating new agents, knowledge, and apps. Owner can also invite new members to the project, generate API keys, and delete the project.
+There are four roles in Rebyte Project:
+
+* **None** Any login user will automatically have this role in all projects. This role is used to indicate the user is not a member of the project.
+  * **use public app**
+  * **view public agent**
+  * **view public knowledge**
+  * **use unlisted app**
+  * **view unlisted agent**
+  
+* **User** User can only view the public resources in the project. User can use the agent, knowledge, and apps in the project.
+    * **list public/private/unlisted agent**
+    * **list public/private knowledge**
+    * **list public/private/unlisted app**
 * **Builder**: Builder can create new agents, knowledge, and apps. Builder can see all public/private/unlisted resources in the project. Builder can also invite new members to the project, generate API keys.
-* **User** User can only view the public resources in the project. User can use the agent, knowledge, and apps in the project. 
+  * **create new agent**
+  * **create new knowledge**
+  * **create new app**
+  * **can invite new members**
+  * **see invite link**
+
+* **Owner**: Owner has full access to the project, including creating new agents, knowledge, and apps. Owner can also invite new members to the project, generate API keys, and delete the project.
+  * **create new knowledge**
