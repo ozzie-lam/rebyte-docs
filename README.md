@@ -30,6 +30,7 @@ Also, **ReByte** is built to solve following problems in LLM application develop
 4. **Production Serving Ready**: Provide a robust runtime ready for immediate deployment and scalable growth.
    * LLM application could be hard to scale, due to its unpredictable and asynchronous nature.
    * By borrowing the idea of serverless function, we provide a scalable runtime for end users to scale their LLM application without worrying about the underlying infrastructure.
+5. **Deliver Tool instead of Prompt**: LLM application is a user facing tool, not a prompt. We want to make sure that end users can deliver their LLM application as a tool, instead of a prompt.
 
 At its core, ReByte defines an **Agent DSL** as an intermediate representation of any LLM application, and provides a hosted runtime for end users to execute their LLM application. Introduction to Agent DSL has obvious benefits:
 * can be used to build a GUI builder for end users to create their own LLM application.
