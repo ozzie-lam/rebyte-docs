@@ -1,10 +1,10 @@
 # Table of contents
 
-* [ReByte One Page](README.md)
+* [👉 ReByte One Page](README.md)
 
 ## Overview
 
-* [ReByte Concepts](overview/understanding-rebyte-architecture.md)
+* [💡 ReByte Concepts](overview/understanding-rebyte-architecture.md)
 
 ## Builder's Guide
 
@@ -27,7 +27,7 @@
     * [Google Search](callable/actions/tools/google-search.md)
     * [Web Scraping](callable/actions/tools/web-page-crawler.md)
   * [Control Action](builders-guide/agent-builder/control-action/README.md)
-    * [If Else](callable/actions/control/if-else.md) 
+    * [If Else](callable/actions/control/if-else.md)
     * [Loop](callable/actions/control/loop-until.md)
     * [Parallel](callable/actions/control/map-reduce.md)
     * [Early Return](callable/actions/control/early-return.md)
