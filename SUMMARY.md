@@ -32,7 +32,7 @@
     * [Parallel](callable/actions/control/map-reduce.md)
     * [Early Return](callable/actions/control/early-return.md)
   * [Customized Action](builders-guide/agent-builder/customized-action/README.md)
-    * [JsBundle Overview](extensions/jsbundle-overview.md)
+    * [Action Extension Overview](extensions/jsbundle-overview.md)
 * [Knowledge Pipeline](builders-guide/knowledge-pipeline/README.md)
   * [Knowledge Overview](knowledge/overview.md)
   * [Knowledge type](builders-guide/knowledge-pipeline/knowledge-type/README.md)
