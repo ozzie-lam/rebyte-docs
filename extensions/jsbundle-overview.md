@@ -6,9 +6,9 @@ Action Extension is a way to extend rebyte agent with your own code. We provide 
 ## Pre-built Action Extension
 
 * **Call Agent**: Invoke another agent inside current agent, and do some data transformation before/after the agent is called.
-* Data Visualization: Visualize data in a table or chart.
-* Stable Diffusion: generate a stable diffusion of a given text.
-* DALL-E: generate an image from a given text.
+* **Data Visualization**: Visualize data in a table or chart.
+* **Stable Diffusion**: generate a stable diffusion of a given text.
+* **DALL-E**: generate an image from a given text.
 * more to come...
 
 ## Rebyte CLI
