@@ -42,7 +42,7 @@
     * [Discord](builders-guide/knowledge-pipeline/knowledge-type/discord.md)
 * [ChatBot UI Protocol](builders-guide/chatbot-ui-protocol/README.md)
   * [Overview](UI/chatbot.md)
-* Use cases
+* [Use cases](use-cases/README.md)
   * [Knowledge-based chatbot](use-cases/knowledge-based-chatbot.md)
   * [Web page summary agent](use-cases/web-page-summary-agent.md)
   * [Bilibili subtitle agent](use-cases/bilibili-subtitle-agent.md)
