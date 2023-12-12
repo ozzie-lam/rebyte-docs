@@ -1,6 +1,6 @@
 ---
 description: >-
-  ReByte is a serial of infrastructure that enables end users to create their
+  ReByte is a series of infrastructure that enables users to create their
   own AI tools without the need for a data science or engineering background.
 ---
 
@@ -8,36 +8,40 @@ description: >-
 
 <figure><img src=".gitbook/assets/Screenshot 2023-10-08 at 6.23.24 PM.png" alt=""><figcaption></figcaption></figure>
 
-In past decades, the software industry has been dominated by a small group of people who have the ability to write code, a user has to be 'techie' just to open a terminal and start writing code. The recent emergence of LLM in the software industry will bring about a monumental transformation. First LLM provides a vehicle for **every software** to use LLM as human intention understanding. Secondly LLM provides a tool for every **end user** to write small piece of code without learning how to do traditional programming. Soon all normal computer users will have the ability to develop small software tools from scratch by describing what the software looks like and to describe modifications they’d like made to software they’re already using.
+In the past, the software industry has been dominated by a small group of coders, users have to be 'techie' just to open a terminal and start writing code. Just recently, large language models like ChatGPT and GPT-4 has great potential in doing all sorts of complex tasks. The emergence of such models is sure to bring some changes to the software industry. 
 
-This will open the hood of software development to a much larger group of people, every person can use their personal computers to create their **personal** software tools. Every company can use their private data to create their **personal** software tools for internal or external uses.
+Firstly, LLMs provide a vehicle for **every software** to use LLM as human intention understanding. Secondly, LLMs provide a tool for every **end user** to write small pieces of code without learning how to do traditional programming. Soon, everyone who has a computer will be able to develop their own software tools by describing what the software should look like and the modifications they’d like made to software they’re already using.
 
-**ReByte** is built with one mission in mind: by leveraging large language model, to empower end users to create their own tools without the need for a data science or engineering background. Rebyte has three core components:
+This will open the hood of software development to a much larger group of people. Every person can use their personal computers to create their **personal** software tools. Every company can use their private data to create their **personal** software tools for internal or external uses.
 
-* Large Language Model Agent: a serverless function that can be executed on ReByte cloud.
-* Knowledge: private data ingestion pipeline that can be used in LLM agent.
-* Agent UI Builder: User interface builder that allows developer to wire up LLM agents and knowledge to create their own tools.
+**ReByte** is built to accomplish one mission and one misson only: to give everyone the ability to create their own tools by using large language models. 
 
-Also, **ReByte** is built to solve following problems in LLM application development:
+Rebyte has three core components:
 
-1. **Predicable LLM application**: It works on the principle of treating each LLM interaction as a single step or functional transformation on working memory, offering a predictable and manageable way to guide the thought process of an LLM. This approach results in consistent, easier-to-follow interaction flows.
-2. **Iterative Nature of LLM Development**: Create tool on top of modern LLM models can be quite a challenging process, due to the nature of LLM models. LLM outputs are not deterministic, and the model performance can vary from time to time. ReByte's LLM agent builder is built to make this process as painless as possible.
-   * Provide a unified interface for end users to test, evaluate and deploy their LLM application.
-   * Log every single step of the LLM application, so that end users can easily trace what went wrong.
-3. **Painless Private Data integration**: Today's LLM tools heavily rely on private data. Frameworks such as Langchain and LlamaIndex, together with various vector databases, provide all necessary pieces for private data embedding and search. But as an end user, he still needs to figure out how to wire everything up to make it work, it requires tremendous engineer expertness to do it. We want to make sure that the data integration process is as painless as possible.
-   * Provide a hosted solution for end users to import from popular data sources, such as Notion, Google, GitHub, etc., as well as from user's local computer.
-   * Handle data source synchronization automatically, so that end users don't need to worry about data consistency.
+* Large Language Model Agent: A serverless function that can be executed on the ReByte cloud.
+* Knowledge: Private data ingestion pipeline that can be used in LLM agent.
+* Agent UI Builder: User interface builder that allows developers to wire up LLM agents and knowledge to create their own tools.
+
+Also, **ReByte** is built to solve the following problems in LLM application development:
+
+1. **Predicable LLM application**: It works on the principle of treating each LLM interaction as a single step or functional transformation on working memory, offering a predictable and manageable way to guide the thought process of a LLM. This approach results in consistent, easier-to-follow interaction flows.
+2. **Iterative Nature of LLM Development**: Creating tools on top of modern LLM models can be quite challenging, due to the nature of LLMs. LLMs' output are not deterministic, and their performance can vary from time to time. We want ReByte's LLM agent builder to make this process as easy as possible.
+   * We provide a unified interface for users to build, test and deploy their LLM application.
+   * We also keep logs of the application, so that users can easily fix the bugs when things go wrong.
+3. **Painless Private Data integration**: Today's LLM tools heavily rely on private data. Frameworks such as Langchain and LlamaIndex, together with various vector databases, provide the necessary pieces for private data embedding and search. But even for someone experiences in coding and engineering, it's hard to get the system running the first time, and usually takes hours to debug. That's why we want to make this data integration process as easy and painless as possible.
+   * We provide a hosted solution for users to import data from popular data sources, such as Notion, Google, GitHub, etc., as well as from user's local computers.
+   * We handle data source synchronization automatically, so users don't need to worry about data consistency.
 4. **Production Serving Ready**: Provide a robust runtime ready for immediate deployment and scalable growth.
-   * LLM application could be hard to scale, due to its unpredictable and asynchronous nature.
-   * By borrowing the idea of serverless function, we provide a scalable runtime for end users to scale their LLM application without worrying about the underlying infrastructure.
-5. **Deliver Tool instead of Prompt**: LLM application is a user facing tool, not a prompt. We want to make sure that end users can deliver their LLM application as a tool, instead of a prompt.
+   * It's rather hard to scale LLM applications, because of its unpredictable and asynchronous nature.
+   * Being inspired by serverless functions, we provide a scalable runtime for users to scale their LLM applications without having to know the details of the underlying infrastructure.
+5. **Deliver Tool instead of Prompt**: LLM applications are meant to be ready-to-use tools, not just prompts. We make sure that users can deliver their LLM applications as actual tools, instead of prompts.
 
-At its core, ReByte defines an **Agent DSL** as an intermediate representation of any LLM application, and provides a hosted runtime for end users to execute their LLM application. Introduction to Agent DSL has obvious benefits:
-* can be used to build a GUI builder for end users to create their own LLM application.
-* can be generated by fine-tuned model
+At its core, ReByte defines an **Agent DSL** as an intermediate representation of any LLM application, and provides a hosted runtime for users to execute their LLM applications. Introduction to Agent DSL has obvious benefits:
+* can be used to build a GUI builder for users to create their own LLM application.
+* can be generated by fine-tuned models
 * can be edited by human
 
-We believe that agent building process must be a collaborative process between human and machine, and DSL is the perfect medium for this collaboration.
+We believe that building good agents must take efforts from both human and machines, and DSL is the perfect medium for this collaboration.
 
 <figure><img src=".gitbook/assets/Screenshot 2023-10-10 at 1.24.14 PM.png" alt=""><figcaption></figcaption></figure>
 
