@@ -43,8 +43,11 @@
 * [ChatBot UI Protocol](builders-guide/chatbot-ui-protocol/README.md)
   * [ChatBot UI Protocol](UI/overview.md)
   * [ChatBot](overview/chatbot.md)
-* [Use cases](use-cases/README.md)
-  * [bilibili subtitle agent](use-cases/bilibili-subtitle-agent.md)
+* [Use cases]
+  * [Knowledge-based chatbot](use-cases/knowledge-based-chatbot.md)
+  * [Web page summary agent](use-cases/web-page-summary-agent.md)
+  * [Bilibili subtitle agent](use-cases/bilibili-subtitle-agent.md)
+  * [Search engine agent](use-cases/search-engine-agent.md)
 ## User's Guide
 
 * [Team](users-guide/team/README.md)
