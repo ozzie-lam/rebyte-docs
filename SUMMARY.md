@@ -41,8 +41,7 @@
     * [GitHub](builders-guide/knowledge-pipeline/knowledge-type/github.md)
     * [Discord](builders-guide/knowledge-pipeline/knowledge-type/discord.md)
 * [ChatBot UI Protocol](builders-guide/chatbot-ui-protocol/README.md)
-  * [ChatBot UI Protocol](UI/overview.md)
-  * [ChatBot](overview/chatbot.md)
+  * [Overview](UI/chatbot.md)
 * [Use cases]
   * [Knowledge-based chatbot](use-cases/knowledge-based-chatbot.md)
   * [Web page summary agent](use-cases/web-page-summary-agent.md)
