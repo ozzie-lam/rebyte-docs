@@ -8,11 +8,11 @@ description: >-
 
 <figure><img src=".gitbook/assets/Screenshot 2023-10-08 at 6.23.24 PM.png" alt=""><figcaption></figcaption></figure>
 
-In the past, the software industry has been dominated by a small group of coders, users have to be 'techie' just to open a terminal and start writing code. Just recently, large language models like ChatGPT and GPT-4 has great potential in doing all sorts of complex tasks. The emergence of such models is sure to bring some changes to the software industry. 
+In the past, the software industry was dominated by a small group of coders; users had to be 'techie' just to open a terminal and start writing code. Recently, large language models like ChatGPT and GPT-4 have shown great potential in performing a variety of complex tasks. The emergence of such models is sure to bring significant changes to the software industry.
 
-Firstly, LLMs provide a vehicle for **every software** to use LLM as human intention understanding. Secondly, LLMs provide a tool for every **end user** to write small pieces of code without learning how to do traditional programming. Soon, everyone who has a computer will be able to develop their own software tools by describing what the software should look like and the modifications they’d like made to software they’re already using.
+Firstly, LLMs provide a vehicle for **every software** to use LLM as human intention understanding.  Secondly, LLMs provide a way for **end users** to write small pieces of code without the need to learn traditional programming. Soon, anyone with a computer will be able to develop their own software tools by simply describing the desired features and the changes they want to implement in the software they are already using.
 
-This will open the hood of software development to a much larger group of people. Every person can use their personal computers to create their **personal** software tools. Every company can use their private data to create their **personal** software tools for internal or external uses.
+This will open the hood of software development to a much larger group of people. Everyone can use their personal computers to create their **personal** software tools. Every company can use their private data to create their **personal** software tools for internal or external uses.
 
 **ReByte** is built to accomplish one mission and one misson only: to give everyone the ability to create their own tools by using large language models. 
 
