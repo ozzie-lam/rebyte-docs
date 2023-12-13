@@ -8,7 +8,7 @@
 
 ## Builder's Guide
 
-* [Terminology](overview/terminology.md)
+* [Terminology](builders-guide/terminology.md)
 * [Building Agents](builders-guide/agent-builder/README.md)
   * [Agent Runtime](callable/runtime.md)
   * [Prompt Template Language](callable/prompt-template-language.md)
