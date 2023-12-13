@@ -4,7 +4,7 @@ Knowledge is the private data that is stored in rebyte managed vector database. 
 
 ### Knowledge Types
 * Local file, supported file types are:
-  * "doc", "docx", "img", "epub", "jpeg", "jpg", "png", "xls", "xlsx", "ppt", "pptx", "md", "txt", "rtf", "rst", "pdf", "json", "html" "eml",
+  * "doc", "docx", "img", "epub", "jpeg", "jpg", "png", "xls", "xlsx", "ppt", "pptx", "md", "txt", "rtf", "rst", "pdf", "json", "html" "eml"
 * Notion
 * Discord
 * GitHub

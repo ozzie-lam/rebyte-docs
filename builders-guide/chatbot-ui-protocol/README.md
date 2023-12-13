@@ -43,7 +43,7 @@ ReByte provide a universal protocal for ChatBot UI. This protocal is flexible an
 	}
 	```
 
-- Rich UI styles - You can use various styles to build ChatBot UI, for example: input, toggle list, drag down menu and so on.
+- **Rich UI styles** - You can use various styles to build ChatBot UI, for example: input, toggle list, drag down menu and so on.
 Please follow this format:
 
 	```json
