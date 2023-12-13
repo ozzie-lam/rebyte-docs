@@ -28,6 +28,8 @@
       * [HTTP Request](callable/actions/tools/curl-request.md)
       * [Google Search](callable/actions/tools/google-search.md)
       * [Web Scraping](callable/actions/tools/web-page-crawler.md)
+      * [Call Agent](callable/actions/tools/call-agent.md)
+      * [Http Request Maker](callable/actions/tools/http-request-maker.md)
     * [Control Action](builders-guide/agent-builder/control-action/README.md)
       * [If Else](callable/actions/control/if-else.md)
       * [Loop](callable/actions/control/loop-until.md)
