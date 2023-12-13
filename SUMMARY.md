@@ -31,7 +31,7 @@
     * [Control Action](builders-guide/agent-builder/control-action/README.md)
       * [If Else](callable/actions/control/if-else.md)
       * [Loop](callable/actions/control/loop-until.md)
-      * [Parallel](callable/actions/control/map-reduce.md)
+      * [Map Reduce](callable/actions/control/map-reduce.md)
     * [Early Return](callable/actions/control/early-return.md)
     * [Customized Action](builders-guide/agent-builder/customized-action/README.md)
     * [Action Extension Overview](extensions/jsbundle-overview.md)
