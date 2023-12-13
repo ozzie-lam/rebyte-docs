@@ -1,12 +1,9 @@
 # Chatbot
 
-
 ## Introduction
 ReByte provide a universal protocal for ChatBot UI. This protocal is flexible and scalable, which is why it is suitable to build UI for various ChatBots.
 
-### Introduction
-By call rebyte agent via API, developer could choose to build their own UI for their ChatBot, but it could be a tedious process.
-ReByte provides a unified protocol for ChatBot UI. This protocol is designed to be flexible and extensible, so that it can be used to build a wide range of ChatBot UI.
+<figure><img src=".gitbook/assets/chatbot.png" alt=""><figcaption></figcaption></figure>
 
 ## Features
 - **Multi-round conversation**- a.k.a., Long-term-memory. ChatBot UI can track chat history and use it to provide more content information.
