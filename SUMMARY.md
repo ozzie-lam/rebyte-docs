@@ -46,7 +46,6 @@
     * [Notion](builders-guide/knowledge-pipeline/knowledge-type/notion.md)
     * [Web crawler](builders-guide/knowledge-pipeline/knowledge-type/web-crawler.md)
 * [ChatBot UI Protocol](builders-guide/chatbot-ui-protocol/README.md)
-  * [Overview](builders-guide/chatbot-ui-protocal/README.md)
 * [Use cases](builders-guide/use-cases/README.md)
   * [Knowledge-based chatbot](builders-guide/use-cases/knowledge-based-chatbot.md)
   * [Web page summary agent](builders-guide/use-cases/web-page-summary-agent.md)
