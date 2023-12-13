@@ -13,6 +13,7 @@
   * [Agent Runtime](callable/runtime.md)
   * [Prompt Template Language](callable/prompt-template-language.md)
   * [How to Chain Actions](callable/access-action-output.md)
+  * [Default Action](builders-guide/agent-builder/default-action/README.md)
   * [Model Action](builders-guide/agent-builder/model-action/README.md)
     * [LLM Completion](callable/actions/models/language-model.md)
     * [LLM Chat](callable/actions/models/language-model-chat.md)
