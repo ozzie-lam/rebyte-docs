@@ -11,7 +11,7 @@ To create an agent，choose `retrieval based chatbot with own data` as template.
 <figure><img src=".gitbook/assets/knowledge-chatbot-1.img" alt=""><figcaption></figcaption></figure>
 
 In `RETRIEVALS`, choose the `Knowlegde` you created above.
-Click ` un TestCases`. If there's no problem with the test, you can deploy the agent.Agent。
+Click ` run TestCases`. If there's no problem with the test, you can deploy the agent.
 For more details, please check the Agent section.
 
 ## Create Apps
