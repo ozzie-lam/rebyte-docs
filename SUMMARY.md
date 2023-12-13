@@ -40,7 +40,7 @@
   * [Traces](builders-guide/building-agents/version-control/README.md)
   * [Version control]()
 * [Knowledge Pipeline](builders-guide/knowledge-pipeline/README.md)
-  * [Knowledge Overview](builders-guild/knowledge/overview.md)
+  * [Knowledge Overview](builders-guide/knowledge/overview.md)
   * [Knowledge type](builders-guide/knowledge-pipeline/knowledge-type/README.md)
     * [Local Files](builders-guide/knowledge-pipeline/knowledge-type/local-files.md)
     * [Notion](builders-guide/knowledge-pipeline/knowledge-type/notion.md)
