@@ -38,6 +38,7 @@
   * [Knowledge type](builders-guide/knowledge-pipeline/knowledge-type/README.md)
     * [Local Files](builders-guide/knowledge-pipeline/knowledge-type/local-files.md)
     * [Notion](builders-guide/knowledge-pipeline/knowledge-type/notion.md)
+    * [Web crawler](builders-guide/knowledge-pipeline/knowledge-type/web-crawler.md)
     * [GitHub](builders-guide/knowledge-pipeline/knowledge-type/github.md)
     * [Discord](builders-guide/knowledge-pipeline/knowledge-type/discord.md)
 * [ChatBot UI Protocol](builders-guide/chatbot-ui-protocol/README.md)
