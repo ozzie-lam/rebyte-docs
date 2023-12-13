@@ -1,4 +1,4 @@
-# Parallel
+# Map Reduce
 
 Map over an array and executes a sequence of actions in parallel. This is useful for doing multiple actions in parallel, such as scraping multiple web pages in parallel.
 

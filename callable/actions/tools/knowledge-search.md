@@ -1,6 +1,6 @@
 # Knowledge Search
 
-Search action allow Agents to make queries to specified knowledge base. This is useful for retrieving information from a knowledge base , later those retrieved information can be used as context for further generation. Retrieval Augmented Generation (RAG) agent is a good example of this use case.
+Search action allow agents to make queries to specified knowledge base. This is useful for retrieving information from a knowledge base , later those retrieved information can be used as context for further generation. Retrieval Augmented Generation (RAG) agent is a good example of this use case.
 
 Search Action consist of the following fields:
 
