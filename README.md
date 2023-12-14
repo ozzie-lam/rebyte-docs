@@ -6,7 +6,7 @@ description: >-
 
 # 👉 Welcome to ReByte
 
-<figure><img src=".gitbook/assets/Screenshot 2023-10-08 at 6.23.24 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/shapes at 23-12-14 10.46.28.png" alt=""><figcaption></figcaption></figure>
 
 In the past, the software industry was dominated by a small group of coders; users had to be 'techie' just to open a terminal and start writing code. Recently, large language models like ChatGPT and GPT-4 have shown great potential in performing a variety of complex tasks. The emergence of such models is sure to bring significant changes to the software industry.
 
