@@ -2,7 +2,7 @@
 
 ## **Geting started**
 
-* [Introduction](getting-started/introduction.md)
+* [Welcome to ReByte](Getting-Started/welcome-to-rebyte.md)
 * What Can I Do?
 * Quick Start**
 
@@ -25,7 +25,7 @@
   * Datasets
   * Execution
   * Traces
-* Deploy Your Agent
+* Publish Your Agent
 
 ## Knowledge
 
@@ -45,5 +45,5 @@
 * Teams
 
 ## Policies
-* [Privacy Policies](policies/privacy-policies.md)
-* [Terms of Service](policies/terms-of-service.md)
+* [Privacy Policies](Policies/privacy-policies.md)
+* [Terms of Service](Policies/terms-of-service.md)
