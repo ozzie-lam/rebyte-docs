@@ -1,12 +1,12 @@
 # Table of contents
 
-## Geting started
+## **Geting started**
 
 * Introduction 
 * **What Can I Do?**
 * **Quick Start**
 
-## Building Agents
+## **Building Agents**
 
 * Overview
 * How Agents Work
