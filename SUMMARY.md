@@ -2,10 +2,9 @@
 
 ## Geting started
 
-* Welcome to ReByte
-  * Introduction 
-  * What Can I Do?
-  * Quick Start
+* Introduction 
+* What Can I Do?
+* Quick Start
 
 ## Building Agents
 
