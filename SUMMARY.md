@@ -2,11 +2,11 @@
 
 ## **Geting started**
 
-* Introduction 
-* **What Can I Do?**
-* **Quick Start**
+* [Introduction](getting-started/introduction.md)
+* What Can I Do?
+* Quick Start**
 
-## **Building Agents**
+## Building Agents
 
 * Overview
 * How Agents Work
@@ -45,5 +45,5 @@
 * Teams
 
 ## Policies
-* Privacy Policies
-* Terms of Service
+* [Privacy Policies](policies/privacy-policies.md)
+* [Terms of Service](policies/terms-of-service.md)
