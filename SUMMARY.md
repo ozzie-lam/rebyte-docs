@@ -1,15 +1,16 @@
 # Table of contents
 
-## **Geting started**
+## Getting started
 
-* [666👉 Welcome to ReByte](Getting-Started/welcome-to-rebyte.md)
-* Concepts
+* [👉 Welcome to ReByte](getting-started/welcome-to-rebyte.md)
 * Quick Start
 
-## Building Agents
-
-* [Overview](BuildingAgents/overview.md)
-* How Agents Work
+## Agents
+* Quick Start
+* Concepts
+* How to
+* [Overview](building-agents/overview.md)
+* [Create Your Agent](building-agents/create-your-agent.md)
 * Design Your Agent
   * Actions
     * Input
@@ -32,7 +33,7 @@
 * Overview
 * Types
 
-## Building Apps
+## Apps
 
 * Apps with Chat Interface
 * Apps with Customized UI
