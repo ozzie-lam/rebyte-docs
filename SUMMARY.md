@@ -50,8 +50,14 @@
 
 * [Prompt Template Language](guides/prompt-template-language.md)
 * Best Practices
+  * [Search Engine Agent](guides/best-practices/search-engine-agent.md)
+  * [Knowledge Based Chatbot](guides/best-practices/knowledge-based-chatbot.md)
+  * [Web Page Summary Agent](guides/best-practices/web-page-summary-agent.md)
+  * [Bilibili Subtitle Agent](guides/best-practices/bilibili-subtitle-agent.md)
 * Collaboration*
-* Teams*
+* Teams
+  * [Overview](guides/teams/overview.md)
+  * [Access Control](guides/teams/access-control.md)
 
 ## Policies
 * [Privacy Policies](Policies/privacy-policies.md)
