@@ -28,7 +28,7 @@ Welcome! We will build a weather agent in 5 minutes.
 
 <figure><img src=".gitbook/assets/images/10.png" alt=""><figcaption></figcaption></figure>
 
-Step 3: Test Your Agent
+## Step 3: Test Your Agent
 
 * Click the "Datasets" tab, then click "Create Datasets". Fill in the name and description of the dataset.
 
@@ -46,15 +46,15 @@ Step 3: Test Your Agent
 
 <figure><img src=".gitbook/assets/images/13.png" alt=""><figcaption></figcaption></figure>
 
-Step 4: Deploy the Agent
+## Step 4: Deploy the Agent
 
-* Click "Deploy Agent" on the top right, then click "Deploy a new version".
+* Click "Deploy Agent" on the top right, then click "Deploy A New Version". 
 
-🎉 And we are finished building the agent! Time to build the app!
+* Use your agent on your ReByte app or integrate it into your own app using the URL we provide.
+
+<figure><img src=".gitbook/assets/images/12.png" alt=""><figcaption></figcaption></figure>
 
 You can see all your agents in the "My Agents".
 
 <figure><img src=".gitbook/assets/images/14.png" alt=""><figcaption></figcaption></figure>
 
-
-## Step 3: Build your first app
