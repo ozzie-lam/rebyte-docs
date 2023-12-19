@@ -6,7 +6,7 @@ description: >-
 
 # 👉 Welcome to ReByte
 
-<figure><img src=".gitbook/assets/shapes at 23-12-14 10.46.28.png" alt=""><figcaption></figcaption></figure>
+[//]: # (<figure><img src=".gitbook/assets/shapes at 23-12-14 10.46.28.png" alt=""><figcaption></figcaption></figure>)
 
 In the past, the software industry was dominated by a small group of coders; users had to be 'techie' just to open a terminal and start writing code. Recently, large language models like ChatGPT and GPT-4 have shown great potential in performing a variety of complex tasks. The emergence of such models is sure to bring significant changes to the software industry.
 
@@ -14,13 +14,13 @@ Firstly, LLMs provide a vehicle for **every software** to use LLM as human inten
 
 This will open the hood of software development to a much larger group of people. Everyone can use their personal computers to create their **personal** software tools. Every company can use their private data to create their **personal** software tools for internal or external uses.
 
-**ReByte** is built to accomplish one mission and one misson only: to give everyone the ability to create their own tools by using large language models. 
+**ReByte** is built with one mission: to give everyone the ability to create their own software tools without needing too much coding skills.
 
-Rebyte has three core components:
+In terms of functionality, **Rebyte** has some core components:
 
-* Large Language Model Agent: A serverless function that can be executed on the ReByte cloud.
-* Knowledge: Private data ingestion pipeline that can be used in LLM agent.
-* Agent UI Builder: User interface builder that allows developers to wire up LLM agents and knowledge to create their own tools.
+* Large Language Model Agent: A serverless function that can be executed on cloud. Those functions usually use LLMs to perform some tasks, but it's not required.
+* Knowledge: Private data ingestion pipeline that feed data to Rebyte system, later can be used by LLM agents.
+* App Builder: User interface builder that allows developers to wire up LLM agents and knowledge to create their own tools.
 
 Also, **ReByte** is built to solve the following problems in LLM application development:
 
@@ -43,7 +43,7 @@ At its core, ReByte defines an **Agent DSL** as an intermediate representation o
 
 We believe that building good agents must take efforts from both human and machines, and DSL is the perfect medium for this collaboration.
 
-<figure><img src=".gitbook/assets/Screenshot 2023-10-10 at 1.24.14 PM.png" alt=""><figcaption></figcaption></figure>
+[//]: # (<figure><img src=".gitbook/assets/Screenshot 2023-10-10 at 1.24.14 PM.png" alt=""><figcaption></figcaption></figure>)
 
 ## Get Started
 
