@@ -2,7 +2,7 @@
 
 ## Getting started
 
-* [👉 Welcome to ReByte](getting-started/welcome-to-rebyte.md)
+* [Welcome to Rebyte](overview/welcome-to-rebyte.md)
 
 ## Agents
 * [Quick Start](agents/quick-start.md)
@@ -29,22 +29,22 @@
       * [Loop-Until](agents/design-your-agent/actions/control-flow/loop-until.md)
       * [Map-Reduce](agents/design-your-agent/actions/control-flow/map-reduce.md)
       * [Early Return](agents/design-your-agent/actions/control-flow/early-return.md)
-    * Customized Action
+    * [Customized Action *](agents/design-your-agent/actions/customized-action.md)
 * Test Your Agent
-  * Datasets *
-  * Execution * 
-  * Traces *
-* Publish Your Agent *
+  * [Datasets *](agents/test-your-agent/datasets.md)
+  * [Execution *](agents/test-your-agent/execution.md) 
+  * [Traces *](agents/test-your-agent/traces.md)
+* [Publish Your Agent *](agents/publish-your-agent.md)
 
 ## Knowledge
-* Overview
-* Types
+* [Overview](knowledge/overview.md)
+* [Types](knowledge/types.md)
 
 ## Apps
 * Apps with Chat Interface 
-  * Quick Start *
+  * [Quick Start *](apps/apps-with-chat-interface/quick-start.md)
 * Apps with Customized UI
-  * Quick Start *
+  * [Quick Start *](apps/apps-with-cui/quick-start.md)
 
 ## guide
 * [Prompt Template Language](guide/prompt-template-language.md)
@@ -53,7 +53,7 @@
   * [Knowledge Based Chatbot](guide/best-practices/knowledge-based-chatbot.md)
   * [Web Page Summary Agent](guide/best-practices/web-page-summary-agent.md)
   * [Bilibili Subtitle Agent](guide/best-practices/bilibili-subtitle-agent.md)
-* Collaboration*
+* [Collaboration *](collaboration.md)
 * Teams
   * [Overview](guide/teams/overview.md)
   * [Access Control](guide/teams/access-control.md)

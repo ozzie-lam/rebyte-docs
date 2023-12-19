@@ -1,6 +1,6 @@
 # Team Overview
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-10-09 at 10.09.47 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-09 at 10.09.47 AM.png" alt=""><figcaption></figcaption></figure>
 
 ## Team Overview
 
