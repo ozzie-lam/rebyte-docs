@@ -5,6 +5,10 @@
 * [👉 Welcome to ReByte](getting-started/welcome-to-rebyte.md)
 * Quick Start
 
+## Building Agents
+
+* [Overview](Building-Agents/overview.md)
+* How Agents Work
 ## Agents
 * Quick Start
 * Concepts
