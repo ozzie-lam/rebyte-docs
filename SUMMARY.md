@@ -46,18 +46,17 @@
 * Apps with Customized UI
   * Quick Start *
 
-## Guides
-
-* [Prompt Template Language](guides/prompt-template-language.md)
+## guide
+* [Prompt Template Language](guide/prompt-template-language.md)
 * Best Practices
-  * [Search Engine Agent](guides/best-practices/search-engine-agent.md)
-  * [Knowledge Based Chatbot](guides/best-practices/knowledge-based-chatbot.md)
-  * [Web Page Summary Agent](guides/best-practices/web-page-summary-agent.md)
-  * [Bilibili Subtitle Agent](guides/best-practices/bilibili-subtitle-agent.md)
+  * [Search Engine Agent](guide/best-practices/search-engine-agent.md)
+  * [Knowledge Based Chatbot](guide/best-practices/knowledge-based-chatbot.md)
+  * [Web Page Summary Agent](guide/best-practices/web-page-summary-agent.md)
+  * [Bilibili Subtitle Agent](guide/best-practices/bilibili-subtitle-agent.md)
 * Collaboration*
 * Teams
-  * [Overview](Guides/teams/overview.md)
-  * [Access Control](Guides/teams/access-control.md)
+  * [Overview](guide/teams/overview.md)
+  * [Access Control](guide/teams/access-control.md)
 
 ## Policies
 * [Privacy Policies](Policies/privacy-policies.md)
