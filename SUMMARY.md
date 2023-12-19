@@ -17,13 +17,13 @@
       * [File Loader](agents/design-your-agent/actions/data/file-loader.md)
       * [Dataset Loader](agents/design-your-agent/actions/data/dataset-loader.md)
     * [Code]()
-    * Tool
-      * [Call Agent](agents/design-your-agent/actions/tool/call-agent.md)
-      * [Curl Request](agents/design-your-agent/actions/tool/curl-request.md)
-      * [Google Search](agents/design-your-agent/actions/tool/google-search.md)
-      * [Http Request Maker](agents/design-your-agent/actions/tool/http-request-maker.md)
-      * [Knowledge Search](agents/design-your-agent/actions/tool/knowledge-search.md)
-      * [Web Page Crawler](agents/design-your-agent/actions/tool/web-page-crawler.md)
+    * Tools
+      * [Call Agent](agents/design-your-agent/actions/tools/call-agent.md)
+      * [Curl Request](agents/design-your-agent/actions/tools/curl-request.md)
+      * [Google Search](agents/design-your-agent/actions/tools/google-search.md)
+      * [Http Request Maker](agents/design-your-agent/actions/tools/http-request-maker.md)
+      * [Knowledge Search](agents/design-your-agent/actions/tools/knowledge-search.md)
+      * [Web Page Crawler](agents/design-your-agent/actions/tools/web-page-crawler.md)
     * Control Flow
       * [If-Else](agents/design-your-agent/actions/control-flow/if-else.md)
       * [Loop-Until](agents/design-your-agent/actions/control-flow/loop-until.md)
