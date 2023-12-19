@@ -56,8 +56,8 @@
   * [Bilibili Subtitle Agent](guides/best-practices/bilibili-subtitle-agent.md)
 * Collaboration*
 * Teams
-  * [Overview](guides/teams/overview.md)
-  * [Access Control](guides/teams/access-control.md)
+  * [Overview](Guides/teams/overview.md)
+  * [Access Control](Guides/teams/access-control.md)
 
 ## Policies
 * [Privacy Policies](Policies/privacy-policies.md)
