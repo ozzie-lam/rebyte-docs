@@ -9,8 +9,9 @@
 
 * [Overview](Building-Agents/overview.md)
 * How Agents Work
+
 ## Agents
-* Quick Start
+* [Quick Start](agents/quick-start.md)
 * Concepts
 * How to
 * [Overview](building-agents/overview.md)
