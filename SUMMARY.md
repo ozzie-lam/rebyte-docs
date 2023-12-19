@@ -2,9 +2,9 @@
 
 ## **Geting started**
 
-* [Welcome to ReByte](Getting-Started/welcome-to-rebyte.md)
-* What Can I Do?
-* Quick Start**
+* [👉 Welcome to ReByte](Getting-Started/welcome-to-rebyte.md)
+* Concepts
+* Quick Start
 
 ## Building Agents
 

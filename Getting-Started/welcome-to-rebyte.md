@@ -1,8 +1,12 @@
-# 👉 Introduction
+# 👉 Welcome to ReByte
 
 <figure><img src=".gitbook/assets/shapes at 23-12-14 10.46.28.png" alt=""><figcaption></figcaption></figure>
 
-In the past, the software industry was dominated by a small group of coders; users had to be 'techie' just to open a terminal and start writing code. Recently, large language models like ChatGPT and GPT-4 have shown great potential in performing a variety of complex tasks. The emergence of such models is sure to bring significant changes to the software industry.
+## What is ReByte?
+
+ReByte is a platform that allows everyone to develop their AI-powered applications. On ReByte, anyone with or without programming experiences, can create various types of applications and publish them on our platform.
+
+## What can I do with ReByte?
 
 Firstly, LLMs provide a vehicle for **every software** to use LLM as human intention understanding.  Secondly, LLMs provide a way for **end users** to write small pieces of code without the need to learn traditional programming. Soon, anyone with a computer will be able to develop their own software tools by simply describing the desired features and the changes they want to implement in the software they are already using.
 
