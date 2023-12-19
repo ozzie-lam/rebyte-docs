@@ -8,7 +8,7 @@
 
 ## Building Agents
 
-* [Overview](BuildingAgents/overview.md)
+* [Overview](Building-Agents/overview.md)
 * How Agents Work
 * Design Your Agent
   * Actions
