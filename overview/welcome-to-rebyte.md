@@ -1,4 +1,4 @@
-1.png# 👉 Welcome to ReByte
+# 👉 Welcome to ReByte
 
 <figure><img src="images/1.png" alt=""><figcaption></figcaption></figure>
 
