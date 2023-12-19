@@ -12,13 +12,13 @@ Firstly, LLMs provide a vehicle for **every software** to use LLM as human inten
 
 This will open the hood of software development to a much larger group of people. Everyone can use their personal computers to create their **personal** software tools. Every company can use their private data to create their **personal** software tools for internal or external uses.
 
-**ReByte** is built to accomplish one mission and one misson only: to give everyone the ability to create their own tools by using large language models. 
+**ReByte** is built with one mission: to give everyone the ability to create their own software tools without needing too much coding skills.
 
-Rebyte has three core components:
+In terms of functionality, **Rebyte** has some core components:
 
-* Large Language Model Agent: A serverless function that can be executed on the ReByte cloud.
-* Knowledge: Private data ingestion pipeline that can be used in LLM agent.
-* Agent UI Builder: User interface builder that allows developers to wire up LLM agents and knowledge to create their own tools.
+* Large Language Model Agent: A serverless function that can be executed on cloud. Those functions usually use LLMs to perform some tasks, but it's not required.
+* Knowledge: Private data ingestion pipeline that feed data to Rebyte system, later can be used by LLM agents.
+* App Builder: User interface builder that allows developers to wire up LLM agents and knowledge to create their own tools.
 
 Also, **ReByte** is built to solve the following problems in LLM application development:
 
