@@ -19,7 +19,7 @@
     * [Code]()
     * Tool
       * [Call Agent](agents/design-your-agent/actions/tool/call-agent.md)
-      * [Curl Requests](agents/design-your-agent/actions/tool/curl-requests.md)
+      * [Curl Request](agents/design-your-agent/actions/tool/curl-request.md)
       * [Google Search](agents/design-your-agent/actions/tool/google-search.md)
       * [Http Request Maker](agents/design-your-agent/actions/tool/http-request-maker.md)
       * [Knowledge Search](agents/design-your-agent/actions/tool/knowledge-search.md)
