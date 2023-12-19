@@ -2,7 +2,7 @@
 
 ## **Geting started**
 
-* [👉 Welcome to ReByte](Getting-Started/welcome-to-rebyte.md)
+* [666👉 Welcome to ReByte](Getting-Started/welcome-to-rebyte.md)
 * Concepts
 * Quick Start
 
@@ -45,5 +45,5 @@
 * Teams
 
 ## Policies
-* [Privacy Policies](Policies/privacy-policies.md)
-* [Terms of Service](Policies/terms-of-service.md)
+* [666Privacy Policies](Policies/privacy-policies.md)
+* [666Terms of Service](Policies/terms-of-service.md)
