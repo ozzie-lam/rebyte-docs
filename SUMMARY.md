@@ -8,8 +8,8 @@
 * [Quick Start](agents/quick-start.md)
 * Design Your Agent
   * Actions
-    * Input
-    * Output
+    * [Input](agents/design-your-agent/actions/input.md)
+    * [Output](agents/design-your-agent/actions/output.md)
     * Model
     * Data
     * Code
