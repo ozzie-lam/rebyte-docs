@@ -3,19 +3,9 @@
 ## Getting started
 
 * [👉 Welcome to ReByte](getting-started/welcome-to-rebyte.md)
-* Quick Start
-
-## Building Agents
-
-* [Overview](Building-Agents/overview.md)
-* How Agents Work
 
 ## Agents
 * [Quick Start](agents/quick-start.md)
-* Concepts
-* How to
-* [Overview](building-agents/overview.md)
-* [Create Your Agent](building-agents/create-your-agent.md)
 * Design Your Agent
   * Actions
     * Input
@@ -34,14 +24,14 @@
 * Publish Your Agent
 
 ## Knowledge
-
 * Overview
 * Types
 
 ## Apps
-
 * Apps with Chat Interface
+  * Quick Start
 * Apps with Customized UI
+  * Quick Start
 
 ## Guides
 

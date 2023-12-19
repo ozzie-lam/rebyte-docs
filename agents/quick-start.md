@@ -8,13 +8,13 @@ Welcome! We will build a weather agent in 5 minutes.
 
 * Describe what you want to do with this agent and choose the right template for your agent. 
 
-<figure><img src=".gitbook/assets/images/8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="images/8.png" alt=""><figcaption></figcaption></figure>
 
 * Click the "Generate Agent Template" button and we will generate a basic template for you to build from. 
 
 * You can change the name, description and visibility of the agent and add tags for more information. Or you can simply regenerate the template if you think the current template is not good.
 
-<figure><img src=".gitbook/assets/images/9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="images/9.png" alt=""><figcaption></figcaption></figure>
 
 * Click the "Create Agent" and you will have your own agent in just a few seconds.
 
@@ -26,7 +26,7 @@ Welcome! We will build a weather agent in 5 minutes.
 
 * Write the instructions in the editor and tell the model what to do.
 
-<figure><img src=".gitbook/assets/images/10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="images/10.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3: Test Your Agent
 
@@ -34,17 +34,17 @@ Welcome! We will build a weather agent in 5 minutes.
 
 * Since this is a chatbot, the testing dataset will be in the form of a list of json object representing a conversation.
 
-<figure><img src=".gitbook/assets/images/11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="images/11.png" alt=""><figcaption></figcaption></figure>
 
 * Go back to the "Design" and choose the new dataset.
 
-<figure><img src=".gitbook/assets/images/11-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="images/11-1.png" alt=""><figcaption></figcaption></figure>
 
 * Click "Run Testcase" to test your agent, the results will be shown below each action.
 
 * See if the output is want you want. If not, go back to the "Design" and change the instructions.
 
-<figure><img src=".gitbook/assets/images/13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="images/13.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Deploy the Agent
 
@@ -52,9 +52,9 @@ Welcome! We will build a weather agent in 5 minutes.
 
 * Use your agent on your ReByte app or integrate it into your own app using the URL we provide.
 
-<figure><img src=".gitbook/assets/images/12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="images/12.png" alt=""><figcaption></figcaption></figure>
 
 You can see all your agents in the "My Agents".
 
-<figure><img src=".gitbook/assets/images/14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="images/14.png" alt=""><figcaption></figcaption></figure>
 
