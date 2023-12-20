@@ -53,7 +53,7 @@
   * [Knowledge Based Chatbot](guide/best-practices/knowledge-based-chatbot.md)
   * [Web Page Summary Agent](guide/best-practices/web-page-summary-agent.md)
   * [Bilibili Subtitle Agent](guide/best-practices/bilibili-subtitle-agent.md)
-* [Collaboration *](collaboration.md)
+* [Collaboration *](guide/collaboration.md)
 * Teams
   * [Overview](guide/teams/overview.md)
   * [Access Control](guide/teams/access-control.md)
