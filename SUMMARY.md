@@ -37,6 +37,7 @@
 * [Deploy Your Agent](agents/deploy-your-agent.md)
 
 ## Knowledge
+* [Quick Start](knowledge/quick-start.md)
 * [Overview](knowledge/overview.md)
 * [Types](knowledge/types.md)
 
