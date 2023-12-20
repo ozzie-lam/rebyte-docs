@@ -16,7 +16,7 @@
     * Data
       * [File Loader](agents/design-your-agent/actions/data/file-loader.md)
       * [Dataset Loader](agents/design-your-agent/actions/data/dataset-loader.md)
-    * [Code *]()
+    * [Code](agents/design-your-agent/actions/code.md)
     * Tools
       * [Call Agent](agents/design-your-agent/actions/tools/call-agent.md)
       * [Curl Request](agents/design-your-agent/actions/tools/curl-request.md)
@@ -38,7 +38,7 @@
 ## Knowledge
 * [Quick Start](knowledge/quick-start.md)
 * [Overview](knowledge/overview.md)
-* [Knowledge Types *](knowledge/knowledge-types.md)
+* [Knowledge Types](knowledge/knowledge-types.md)
 
 ## Apps
 * Apps with Chat Interface 

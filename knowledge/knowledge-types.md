@@ -10,6 +10,23 @@ Supports files types: DOC, DOCX, IMG, EPUB, JPEG, JPG, PNG, XLS, XLSX, PPT, PPTX
 
 ## Notion
 
-## Github
+Connect your Notion account and import your Notion pages into the knowledge.
 
-## Discord
+* Choose Notion as the data source for your knowledge.
+
+<figure><img src="" alt="notion"></figure>
+
+* In the pop-up page, login to your Notion account and choose the pages you want to import into your knowledge.
+
+<figure><img src="" alt="notion-2"></figure>
+
+* We stay synced with Notion, making sure the content is the latest version.
+
+<figure><img src="" alt="notion-3"></figure>
+
+
+<!-- ## Github
+
+
+
+## Discord -->
