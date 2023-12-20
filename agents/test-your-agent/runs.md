@@ -2,7 +2,7 @@
 
 Here we display all of your running records.
 
-<figure><img src="images/runs.png" alt=""></figure>
+<figure><img src="../../images/runs.png" alt=""></figure>
 
 You can filter them by "Status" and "Last Update".
 

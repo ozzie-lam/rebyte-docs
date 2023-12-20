@@ -13,7 +13,7 @@ You can run the dataset with the "Run Testcases" and observe the agent's respons
 
 * Use "Add Column" to add a new field to your dataset. "Add Row" to add a new dataset item.
 
-<figure><img src="images/datasets.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../images/datasets.png" alt=""><figcaption></figcaption></figure>
 
 
 ## Data types supported
