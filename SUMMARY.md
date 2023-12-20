@@ -31,9 +31,9 @@
       * [Early Return](agents/design-your-agent/actions/control-flow/early-return.md)
     * [Customized Action *](agents/design-your-agent/actions/customized-action.md)
 * Test Your Agent
-  * [Datasets *](agents/test-your-agent/datasets.md)
-  * [Execution *](agents/test-your-agent/execution.md) 
-  * [Traces *](agents/test-your-agent/traces.md)
+  * [Datasets](agents/test-your-agent/datasets.md)
+  * [Playground](agents/test-your-agent/playground.md) 
+  * [Runs](agents/test-your-agent/runs.md)
 * [Publish Your Agent *](agents/publish-your-agent.md)
 
 ## Knowledge
