@@ -29,7 +29,6 @@
       * [Loop-Until](agents/design-your-agent/actions/control-flow/loop-until.md)
       * [Map-Reduce](agents/design-your-agent/actions/control-flow/map-reduce.md)
       * [Early Return](agents/design-your-agent/actions/control-flow/early-return.md)
-    * [Customized Action *](agents/design-your-agent/actions/customized-action.md)
 * Test Your Agent
   * [Datasets](agents/test-your-agent/datasets.md)
   * [Playground](agents/test-your-agent/playground.md) 
@@ -37,8 +36,9 @@
 * [Deploy Your Agent](agents/deploy-your-agent.md)
 
 ## Knowledge
+* [Quick Start](knowledge/quick-start.md)
 * [Overview](knowledge/overview.md)
-* [Types](knowledge/types.md)
+* [Knowledge Types *](knowledge/knowledge-types.md)
 
 ## Apps
 * Apps with Chat Interface 

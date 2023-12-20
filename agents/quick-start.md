@@ -1,6 +1,6 @@
 # Quick Start
 
-Welcome! We will build a weather agent in 5 minutes.
+We will show you how to build a grammar agent in 5 minutes.
 
 ## Step 1: Create an Agent
 

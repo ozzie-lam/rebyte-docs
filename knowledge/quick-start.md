@@ -41,6 +41,8 @@ Or you can use the knowledge in your **agent**.
 
 <figure><img src="../images/use-knowledge-4.png" alt=""></figure>
 
+* The results are basically the same as searching in the "Knowledge" page
+
 
 
 
