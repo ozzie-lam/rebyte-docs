@@ -54,8 +54,7 @@ There are two types of agents in ReByte:
 * Knowledge is private data that is stored in rebyte managed vector database. Rebyte currently provides following
   connectors for end users to import their knowledge:
     * Local file, supported file types are:
-        * "doc", "docx", "img", "epub", "jpeg", "jpg", "png", "xls", "xlsx", "ppt", "pptx", "md", "txt", "rtf", "rst", "
-          pdf", "json", "html",
+        * "doc", "docx", "img", "epub", "jpeg", "jpg", "png", "xls", "xlsx", "ppt", "pptx", "md", "txt", "rtf", "rst", "pdf", "json", "html"
     * Notion
     * Discord
     * GitHub

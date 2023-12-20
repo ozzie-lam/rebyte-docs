@@ -1,73 +1,63 @@
 # Table of contents
 
-* [👉 ReByte One Page](README.md)
+## Getting started
 
-## Overview
+* [Welcome to Rebyte](overview/welcome-to-rebyte.md)
 
-* [💡 ReByte Concepts](overview/understanding-rebyte-architecture.md)
-
-## Builder's Guide
-
-* [Terminology](builders-guide/terminology.md)
-* [Building Agents](builders-guide/agent-builder/README.md)
-  * [Agent Runtime](callable/runtime.md)
-  * [Prompt Template Language](callable/prompt-template-language.md)
-  * [How to Chain Actions](callable/access-action-output.md)
+## Agents
+* [Quick Start](agents/quick-start.md)
+* Design Your Agent
   * Actions
-    * [Default Action](builders-guide/agent-builder/default-action/README.md)
-    * [Model Action](builders-guide/agent-builder/model-action/README.md)
-      * [LLM Completion](callable/actions/models/language-model.md)
-      * [LLM Chat](callable/actions/models/language-model-chat.md)
-    * [Data Action](builders-guide/agent-builder/data-action/README.md)
-      * [Dataset Loader](callable/actions/data/dataset-loader.md)
-      * [File Loader](callable/actions/data/file-loader.md)
-    * [Code Action](builders-guide/agent-builder/code-action/README.md)
-      * [Javascript](builders-guide/agent-builder/code-action/javascript.md)
-    * [Tool Action](builders-guide/agent-builder/tool-action/README.md)
-      * [Knowledge Search](callable/actions/tools/knowledge-search.md)
-      * [HTTP Request](callable/actions/tools/curl-request.md)
-      * [Google Search](callable/actions/tools/google-search.md)
-      * [Web Scraping](callable/actions/tools/web-page-crawler.md)
-      * [Call Agent](callable/actions/tools/call-agent.md)
-      * [Http Request Maker](callable/actions/tools/http-request-maker.md)
-    * [Control Action](builders-guide/agent-builder/control-action/README.md)
-      * [If Else](callable/actions/control/if-else.md)
-      * [Loop](callable/actions/control/loop-until.md)
-      * [Map Reduce](callable/actions/control/map-reduce.md)
-    * [Early Return](callable/actions/control/early-return.md)
-    * [Customized Action](builders-guide/agent-builder/customized-action/README.md)
-    * [Action Extension Overview](extensions/jsbundle-overview.md)
-  * [Datasets](builders-guide/building-agents/datasets/README.md)
-  * [Exececution](builders-guide/building-agents/exececution/README.md)
-  * [Traces](builders-guide/building-agents/traces/README.md)
-  * [Version control](builders-guide/building-agents/version-control/README.md)
-* [Knowledge Pipeline](builders-guide/knowledge/README.md)
-  * [Knowledge Overview](builders-guide/knowledge/overview.md)
-  * [Knowledge type](builders-guide/knowledge/knowledge-type/README.md)
-    * [Local Files](builders-guide/knowledge/knowledge-type/local-files.md)
-    * [Notion](builders-guide/knowledge/knowledge-type/notion.md)
-    * [Web crawler](builders-guide/knowledge/knowledge-type/web-crawler.md)
-* [ChatBot UI Protocol](builders-guide/chatbot-ui-protocol/README.md)
-* [API](builders-guide/api.md)
-* [Use cases](builders-guide/use-cases/README.md)
-  * [Knowledge-based chatbot](builders-guide/use-cases/knowledge-based-chatbot.md)
-  * [Web page summary agent](builders-guide/use-cases/web-page-summary-agent.md)
-  * [Bilibili subtitle agent](builders-guide/use-cases/bilibili-subtitle-agent.md)
-  * [Search engine agent](builders-guide/use-cases/search-engine-agent.md)
-## User's Guide
+    * [Input](agents/design-your-agent/actions/input.md)
+    * [Output](agents/design-your-agent/actions/output.md)
+    * Model
+      * [LLM Chat](agents/design-your-agent/actions/model/language-model-chat.md)
+      * [LLM Complete](agents/design-your-agent/actions/model/language-model-completion.md)
+    * Data
+      * [File Loader](agents/design-your-agent/actions/data/file-loader.md)
+      * [Dataset Loader](agents/design-your-agent/actions/data/dataset-loader.md)
+    * [Code](agents/design-your-agent/actions/code.md)
+    * Tools
+      * [Call Agent](agents/design-your-agent/actions/tools/call-agent.md)
+      * [Curl Request](agents/design-your-agent/actions/tools/curl-request.md)
+      * [Google Search](agents/design-your-agent/actions/tools/google-search.md)
+      * [Http Request Maker](agents/design-your-agent/actions/tools/http-request-maker.md)
+      * [Knowledge Search](agents/design-your-agent/actions/tools/knowledge-search.md)
+      * [Web Page Crawler](agents/design-your-agent/actions/tools/web-page-crawler.md)
+    * Control Flow
+      * [If-Else](agents/design-your-agent/actions/control-flow/if-else.md)
+      * [Loop-Until](agents/design-your-agent/actions/control-flow/loop-until.md)
+      * [Map-Reduce](agents/design-your-agent/actions/control-flow/map-reduce.md)
+      * [Early Return](agents/design-your-agent/actions/control-flow/early-return.md)
+* Test Your Agent
+  * [Datasets](agents/test-your-agent/datasets.md)
+  * [Playground](agents/test-your-agent/playground.md) 
+  * [Runs](agents/test-your-agent/runs.md)
+* [Deploy Your Agent](agents/deploy-your-agent.md)
 
-* [Team](users-guide/team/README.md)
-  * [Team Overview](user/overview.md)
-  * [Access Control](user/access-control.md)
+## Knowledge
+* [Quick Start](knowledge/quick-start.md)
+* [Overview](knowledge/overview.md)
+* [Knowledge Types](knowledge/knowledge-types.md)
 
-## Tutorials
+## Apps
+* Apps with Chat Interface 
+  * [Quick Start](apps/apps-with-chat-interface/quick-start.md)
+* Apps with Customized UI
+  * [Quick Start *](apps/apps-with-cui/quick-start.md)
 
-* [Video](tutorials/video/README.md)
-  * [ReByte Overview](https://www.youtube.com/watch?v=I5BMV52Am1U)
-  * [Create RAG agent in 5 minutes](https://www.youtube.com/watch?v=I5BMV52Am1U)
-  * [Improve RAG](https://www.youtube.com/watch?v=CNu8ya-Raw8)
-  * [Trace every step of Agent](https://www.youtube.com/watch?v=eyUt6O6u4wE)
-  * [Working with external files](https://www.youtube.com/watch?v=8wQMToGqF8g)
-* [Text](tutorials/text/README.md)
-  * [Retrieval Augmented Generation](examples/rag.md)
-  * [Internet Connected Search and Generation](examples/icsg.md)
+## guide
+* [Prompt Template Language](guide/prompt-template-language.md)
+* Best Practices
+  * [Search Engine Agent](guide/best-practices/search-engine-agent.md)
+  * [Knowledge Based Chatbot](guide/best-practices/knowledge-based-chatbot.md)
+  * [Web Page Summary Agent](guide/best-practices/web-page-summary-agent.md)
+  * [Bilibili Subtitle Agent](guide/best-practices/bilibili-subtitle-agent.md)
+* [Collaboration](guide/collaboration.md)
+* Teams
+  * [Overview](guide/teams/overview.md)
+  * [Access Control](guide/teams/access-control.md)
+
+## Policies
+* [Privacy Policies](Policies/privacy-policies.md)
+* [Terms of Service](Policies/terms-of-service.md)
