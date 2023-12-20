@@ -16,7 +16,7 @@
     * Data
       * [File Loader](agents/design-your-agent/actions/data/file-loader.md)
       * [Dataset Loader](agents/design-your-agent/actions/data/dataset-loader.md)
-    * [Code]()
+    * [Code *]()
     * Tools
       * [Call Agent](agents/design-your-agent/actions/tools/call-agent.md)
       * [Curl Request](agents/design-your-agent/actions/tools/curl-request.md)
@@ -53,7 +53,7 @@
   * [Knowledge Based Chatbot](guide/best-practices/knowledge-based-chatbot.md)
   * [Web Page Summary Agent](guide/best-practices/web-page-summary-agent.md)
   * [Bilibili Subtitle Agent](guide/best-practices/bilibili-subtitle-agent.md)
-* [Collaboration *](guide/collaboration.md)
+* [Collaboration](guide/collaboration.md)
 * Teams
   * [Overview](guide/teams/overview.md)
   * [Access Control](guide/teams/access-control.md)
