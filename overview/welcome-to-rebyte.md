@@ -1,6 +1,6 @@
 # 👉 Welcome to ReByte
 
-<figure><img src="images/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../images/1.png" alt=""><figcaption></figcaption></figure>
 
 ## What is ReByte?
 
@@ -41,4 +41,4 @@ At its core, ReByte defines an **Agent DSL** as an intermediate representation o
 
 We believe that building good agents must take efforts from both human and machines, and DSL is the perfect medium for this collaboration.
 
-<figure><img src="images/2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../images/2.png" alt=""><figcaption></figcaption></figure>
