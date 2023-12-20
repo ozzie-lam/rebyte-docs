@@ -16,7 +16,7 @@ Goes to a specified URL and retrieves the HTML from the page.
 ### config
 
 none
-
+<!-- 
 **Example**
 
-* [Web Crawl](https://rebyte.ai/p/21b2295005587a5375d8/callable/35358e328e30adf8a737)
+* [Web Crawl](https://rebyte.ai/p/21b2295005587a5375d8/callable/35358e328e30adf8a737) -->

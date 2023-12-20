@@ -10,9 +10,9 @@ Search Action consist of the following fields:
 * **Exclude Tags:** Add tags that you want to exclude in your search. Notes tags are exact match which means if you add "tag1" it will exclude all documents that have "tag1"
 * **Max Documents:** Maximum number of chunks to return. Chunk size is determined when knowledge is created.
 
-## Example
+<!-- ## Example
 
-* [Knowledge Search](https://rebyte.ai/p/21b2295005587a5375d8/callable/7b4e664f3109d1aedbf1)
+* [Knowledge Search](https://rebyte.ai/p/21b2295005587a5375d8/callable/7b4e664f3109d1aedbf1) -->
 
 ### Spec
 
@@ -22,9 +22,9 @@ Search Action consist of the following fields:
 
 ### Config
 
-| Parameter           | Description                    |
-| ------------------- | ------------------------------ |
-| knowledge to search | list of knowledge to search in |
-| number\_of\_results |                                |
-| include tags        |                                |
-| exclude tags        |                                |
+| Parameter           | Description                           |
+| ------------------- | --------------------------------------|
+| knowledge to search | list of knowledge to search in        |
+| number\_of\_results | number of results you'd like to have  |
+| include tags        |                                       |
+| exclude tags        |                                       |

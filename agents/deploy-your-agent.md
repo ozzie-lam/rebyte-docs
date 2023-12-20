@@ -10,6 +10,6 @@ Once you have finished designing and testing your agent, click "Deploy" to publi
 
 <figure><img src="../images/deployment.png" alt=""></figure>
 
-* To check the different versions you've already published, click on the "Versions" tab.
+* To check the different versions you've already published, click the "Versions" tab.
 
 <figure><img src="../images/versions.png" alt=""></figure>

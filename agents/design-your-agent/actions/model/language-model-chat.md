@@ -31,7 +31,7 @@ Rebyte uses similar message format as OpenAI. The message format is a JSON objec
 
 simple message
 
-````
+
 ```json
 {
     "content": "Hello, how are you?",
@@ -50,11 +50,12 @@ simple message
     }
 }
 ```
-````
+
+
 
 list of messages
 
-````
+
 ```json
 [
     {
@@ -78,8 +79,7 @@ list of messages
     }
 ]
 ```
-````
 
-### example
+<!-- ### example
 
-* [LLM chat](https://rebyte.ai/p/21b2295005587a5375d8/callable/719d2f31bf9fe977f699)
+* [LLM chat](https://rebyte.ai/p/21b2295005587a5375d8/callable/719d2f31bf9fe977f699) -->

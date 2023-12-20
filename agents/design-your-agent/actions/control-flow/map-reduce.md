@@ -17,9 +17,9 @@ Map over an array and executes a sequence of actions in parallel. This is useful
 
 * Each action inside map-reduce action will output **an array** of values.
 
-**Example**
+<!-- **Example**
 
-* [Map Reduce Example](https://rebyte.ai/p/21b2295005587a5375d8/callable/e5fc53ba2e8af8507418)
+* [Map Reduce Example](https://rebyte.ai/p/21b2295005587a5375d8/callable/e5fc53ba2e8af8507418) -->
 
 **Error Handling**
 

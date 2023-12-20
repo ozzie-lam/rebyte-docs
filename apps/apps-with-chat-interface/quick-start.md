@@ -1,6 +1,6 @@
 # Quick Start
 
-We will show to how to build an app with chat interface.
+We will show you how to build an app with chat interface.
 
 ## Step 1: Create an App
 
@@ -20,6 +20,6 @@ We will show to how to build an app with chat interface.
 
 ## Step 2: Use your App
 
-🎉 Now you can use your App in the chat interface!
-
 <figure><img src="../../images/useapp.png" alt=""></figure>
+
+🎉 Now you can use your App in the chat interface!

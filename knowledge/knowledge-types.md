@@ -14,15 +14,15 @@ Connect your Notion account and import your Notion pages into the knowledge.
 
 * Choose Notion as the data source for your knowledge.
 
-<figure><img src="" alt="notion"></figure>
+<figure><img src="../images/notion" alt="notion"></figure>
 
 * In the pop-up page, login to your Notion account and choose the pages you want to import into your knowledge.
 
-<figure><img src="" alt="notion-2"></figure>
+<figure><img src="../images/notion-2" alt="notion-2"></figure>
 
-* We stay synced with Notion, making sure the content is the latest version.
+* We stay synced with Notion, making sure the content is updated in time.
 
-<figure><img src="" alt="notion-3"></figure>
+<figure><img src="../images/notion-3" alt="notion-3"></figure>
 
 
 <!-- ## Github

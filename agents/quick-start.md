@@ -12,7 +12,7 @@ We will show you how to build a grammar agent in 5 minutes.
 
 * Click the "Generate Agent Template" button and we will generate a basic template for you to build from. 
 
-* You can change the name, description and visibility of the agent and add tags for more information. Or you can simply regenerate the template if you think the current template is not good.
+* You can change the name, description and visibility of the agent and add tags for more information. Or you can simply regenerate the template if you don't like the current one.
 
 <figure><img src="../images/9.png" alt=""></figure>
 
@@ -20,29 +20,31 @@ We will show you how to build a grammar agent in 5 minutes.
 
 ## Step 2: Design Your Agent
 
-* In the basic template, we have already created some actions for you. 
+* In the auto-generated template, we have already created some actions for you. 
 
-* To build a grammar mistake correction agent, there's no need for adding more actions. But for more complex agents, you add actions by clicking the plus button between different actions.
+* To build a simple agent like our grammar checker, there's no need to add more actions. For more complex agents, you can add actions by clicking the plus button between different actions.
 
-* Write the instructions in the editor and tell the model what to do.
+* Write the instructions more the model in the editor, describing what you want the model to do.
 
 <figure><img src="../images/10.png" alt=""></figure>
 
 ## Step 3: Test Your Agent
 
-* Click the "Datasets" tab, then click "Create Datasets". Fill in the name and description of the dataset.
+* Click the "Datasets" tab on the top, then click "Create Datasets". 
 
-* Since this is a chatbot, the testing dataset will be in the form of a list of json object representing a conversation.
+* Fill in the name and description of your dataset.
+
+* Since this is a chatbot, the testing dataset will be in the form of a (list of) json object representing a conversation.
 
 <figure><img src="../images/11.png" alt=""></figure>
 
-* Go back to the "Design" and choose the new dataset.
+* After you've created the dataset, go back to the "Design" panel and choose the new dataset as the input.
 
 <figure><img src="../images/11-1.png" alt="">/figure>
 
-* Click "Run Testcase" to test your agent, the results will be shown below each action.
+* Click "Run Testcases" to test your agent with the dataset.
 
-* See if the output is want you want. If not, go back to the "Design" and change the instructions.
+* The results will be shown below each action. See if the output is what you want. If not, change the settings of your agent and try again.
 
 <figure><img src="../images/13.png" alt=""></figure>
 
@@ -50,11 +52,13 @@ We will show you how to build a grammar agent in 5 minutes.
 
 * Click "Deploy Agent" on the top right, then click "Deploy A New Version". 
 
-* Use your agent on your ReByte app or integrate it into your own app using the URL we provide.
+* You can use your agent on your ReByte app or integrate it into your own app using the code we provide.
 
 <figure><img src="../images/12.png" alt=""></figure>
 
-You can see all your agents in the "My Agents".
+🎉 **Congratulations, you have created your first agent!**
+
+View all your agents in the "My Agents" tab. You can also clone, save, or delete your agents here.
 
 <figure><img src="../images/14.png" alt=""></figure>
 

@@ -1,6 +1,6 @@
 # Quick Start
 
-Welcome! We tell you now to create and use knowledge.
+Here we tell you now to create and use knowledge.
 
 ## Step 1: Create Knowledge
 
@@ -13,7 +13,9 @@ Welcome! We tell you now to create and use knowledge.
 
 ## Step 2: Upload Files
 
-* Click "Upload File" and upload your local file, once uploaded, we will generate a unique document id for your file.
+* Click "Upload File" and upload your local file. 
+
+* Once uploaded, we will generate a unique document id for your file.
 
 * Click "Insert Document" to upload this file.
 
@@ -23,25 +25,25 @@ Welcome! We tell you now to create and use knowledge.
 
 ## Step 3: Use Your Knowledge
 
-* You can search knowledge in the **search box** and hit enter. 
+* You can search knowledge in the **search box** and hit ENTER. 
 
 <figure><img src="../images/use-knowledge-1.png" alt=""></figure>
 
 <figure><img src="../images/use-knowledge-2.png" alt=""><figcaption>Search Results</figcaption></figure>
 
-Or you can use the knowledge in your **agent**. 
+Or you can use the knowledge in your **agent**(shown in Step 4). 
 
 ## Step 4: Use Knowledge in Agent
 
-* Use "Search Knowledge" actions and choose the knowledge you want to use.
+* Use "Search Knowledge" action and choose the knowledge you want to use.
 
 <figure><img src="../images/use-knowledge-3.png" alt=""><figcaption>Search Results</figcaption></figure>
 
-* You can fill in the query to the knowledge search and set the number of results.
+* You can fill in the query to the knowledge search and set the number of query results you'd like to have.
 
 <figure><img src="../images/use-knowledge-4.png" alt=""></figure>
 
-* The results are basically the same as searching in the "Knowledge" page
+* The results are the same as searching in the "Knowledge" page
 
 
 

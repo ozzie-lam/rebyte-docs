@@ -1,6 +1,6 @@
 # LLM Completion
 
-**Parameters**
+### Parameters
 
 - Advanced
     - Introduction
