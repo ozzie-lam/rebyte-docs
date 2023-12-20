@@ -42,7 +42,7 @@
 
 ## Apps
 * Apps with Chat Interface 
-  * [Quick Start *](apps/apps-with-chat-interface/quick-start.md)
+  * [Quick Start](apps/apps-with-chat-interface/quick-start.md)
 * Apps with Customized UI
   * [Quick Start *](apps/apps-with-cui/quick-start.md)
 
