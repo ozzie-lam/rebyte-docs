@@ -9,7 +9,7 @@ You can run the dataset with the "Run Testcases" and observe the agent's respons
 
 * Navigate to the `Datasets` tab on the top.
 
-* Click on `Create Dataset` button.
+* Click `Create Dataset`.
 
 * Use "Add Column" to add a new field to your dataset. "Add Row" to add a new dataset item.
 

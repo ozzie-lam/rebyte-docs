@@ -4,7 +4,7 @@ Welcome! We tell you now to create and use knowledge.
 
 ## Step 1: Create Knowledge
 
-* Navigate to the "Knowledge" tab in the sidebar and then click on "Create Knowledge".
+* Navigate to the "Knowledge" tab in the sidebar and then click "Create Knowledge".
 
 * Fill in the knowledge information and choose the source type for your knowledge. Here we choose "Self Managed" since we are going to use local files.
 

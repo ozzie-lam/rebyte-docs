@@ -4,7 +4,7 @@ We will show to how to build an app with chat interface.
 
 ## Step 1: Create an App
 
-* Navigate to the "My Apps" tab in the sidebar and then click on "Create App" on the top right. Choose "App With Chat Interface".
+* Navigate to the "My Apps" tab in the sidebar and then click "Create App" on the top right. Choose "App With Chat Interface".
 
 <figure><img src="../../images/createapp.png" alt=""></figure>
 
