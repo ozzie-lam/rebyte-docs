@@ -1,10 +1,10 @@
 # 👉 Welcome to ReByte
 
-<figure><img src="../images/1.png" alt=""><figcaption></figcaption></figure>
+[//]: # (<figure><img src="../images/1.png" alt=""><figcaption></figcaption></figure>)
 
 ## What is ReByte?
 
-ReByte is a platform that allows everyone to develop their AI-powered applications. On ReByte, anyone with or without programming experiences, can create various types of applications and publish them on our platform.
+ReByte is a platform that allows everyone to develop their AI-powered applications without needing too much coding skill. On ReByte, anyone with or without programming experiences, can create various types of applications and publish them on our platform.
 
 ## What can I do with ReByte?
 
@@ -16,7 +16,7 @@ This will open the hood of software development to a much larger group of people
 
 In terms of functionality, **Rebyte** has some core components:
 
-* Large Language Model Agent: A serverless function that can be executed on cloud. Those functions usually use LLMs to perform some tasks, but it's not required.
+* Language Model Agent: A serverless function that can be executed on cloud. Those functions usually use LLMs to perform some tasks, but it's not required.
 * Knowledge: Private data ingestion pipeline that feed data to Rebyte system, later can be used by LLM agents.
 * App Builder: User interface builder that allows developers to wire up LLM agents and knowledge to create their own tools.
 
@@ -41,4 +41,4 @@ At its core, ReByte defines an **Agent DSL** as an intermediate representation o
 
 We believe that building good agents must take efforts from both human and machines, and DSL is the perfect medium for this collaboration.
 
-<figure><img src="../images/2.png" alt=""><figcaption></figcaption></figure>
+[//]: # (<figure><img src="../images/2.png" alt=""><figcaption></figcaption></figure>)
