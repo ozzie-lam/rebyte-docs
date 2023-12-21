@@ -31,6 +31,10 @@ There are two types of agents in ReByte:
 
 #### Group Agent
 
+
+
+<figure><img src="../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+
 * Group Agent is a group of Stack Agents, the biggest difference between Group Agent and Stack Agent is that state transition between Stack Agents are solely controlled by LLM, yielding a non-deterministic behavior. AutoGpt is a great example of Group Agent. In Rebyte we build in a Group Agent builder that allows users to create their own Group Agents.
 
 ## User Facing App Builder - build your own tools
