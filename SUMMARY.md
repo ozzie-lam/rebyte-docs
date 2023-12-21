@@ -4,6 +4,9 @@
 
 * [Welcome to Rebyte](README.md)
 
+## Core Concepts
+* [understanding-rebyte-architecture](overview/understanding-rebyte-architecture.md)
+
 ## Agents
 
 * [Quick Start](agents/quick-start.md)
