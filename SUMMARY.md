@@ -62,8 +62,8 @@
 
 ## Community
 * [Overview](community/overview.md)
-* [Agent](community/agent.md)
-* [App](community/app.md)
+* [Agents](community/agents.md)
+* [Apps](community/apps.md)
 
 ## Policies
 * [Privacy Policies](Policies/privacy-policies.md)
