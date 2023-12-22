@@ -48,6 +48,7 @@
 
 ## guide
 * [Prompt Template Language](guide/prompt-template-language.md)
+* [Visibility](guide/visibility.md)
 * Best Practices
   * [Search Engine Agent](guide/best-practices/search-engine-agent.md)
   * [Knowledge Based Chatbot](guide/best-practices/knowledge-based-chatbot.md)
