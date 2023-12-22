@@ -30,15 +30,11 @@
       * [Map-Reduce](agents/design-your-agent/actions/control-flow/map-reduce.md)
       * [Early Return](agents/design-your-agent/actions/control-flow/early-return.md)
 * Test Your Agent
+  * [Overview](agents/test-your-agent/overview.md)
   * [Datasets](agents/test-your-agent/datasets.md)
   * [Playground](agents/test-your-agent/playground.md) 
   * [Runs](agents/test-your-agent/runs.md)
 * [Deploy Your Agent](agents/deploy-your-agent.md)
-
-## Knowledge
-* [Quick Start](knowledge/quick-start.md)
-* [Overview](knowledge/overview.md)
-* [Knowledge Types](knowledge/knowledge-types.md)
 
 ## Apps
 * Apps with Chat Interface 
@@ -46,7 +42,12 @@
 * Apps with Customized UI
   * [Quick Start *](apps/apps-with-cui/quick-start.md)
 
-## guide
+## Knowledge
+* [Overview](knowledge/overview.md)
+* [Quick Start](knowledge/quick-start.md)
+* [Knowledge Types](knowledge/knowledge-types.md)
+
+## Guide
 * [Prompt Template Language](guide/prompt-template-language.md)
 * [Visibility](guide/visibility.md)
 * Best Practices
@@ -58,6 +59,11 @@
 * Teams
   * [Overview](guide/teams/overview.md)
   * [Access Control](guide/teams/access-control.md)
+
+## Community
+* [Overview](community/overview.md)
+* [Agent](community/agent.md)
+* [App](community/app.md)
 
 ## Policies
 * [Privacy Policies](Policies/privacy-policies.md)

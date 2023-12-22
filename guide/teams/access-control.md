@@ -18,7 +18,9 @@ Following resources can be controlled by access control:
 
 There are three visibility options for each resource: public/private/unlisted.
 
-Depending on context, the actual meaning of these three options are every different
+Depending on context, the actual meaning of these three options are different.
+
+See more about agent/app and knowledge visibility in [Visibility](./visibility.md).
 
 ## Role
 
