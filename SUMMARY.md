@@ -34,29 +34,28 @@
       * [Loop-Until](agents/design-your-agent/actions/control-flow/loop-until.md)
       * [Map-Reduce](agents/design-your-agent/actions/control-flow/map-reduce.md)
       * [Early Return](agents/design-your-agent/actions/control-flow/early-return.md)
-* [Test Your Agent](agents/test-your-agent/README.md)
+* Test Your Agent
+  * [Overview](agents/test-your-agent/overview.md)
   * [Datasets](agents/test-your-agent/datasets.md)
   * [Playground](agents/test-your-agent/playground.md)
   * [Runs](agents/test-your-agent/runs.md)
 * [Deploy Your Agent](agents/deploy-your-agent.md)
 
-## Knowledge
-
-* [Quick Start](knowledge/quick-start.md)
-* [Overview](knowledge/overview.md)
-* [Knowledge Types](knowledge/knowledge-types.md)
-
 ## Apps
-
 * [Apps with Chat Interface](apps/apps-with-chat-interface/README.md)
   * [Quick Start](apps/apps-with-chat-interface/quick-start.md)
 * [Apps with Customized UI](apps/apps-with-customized-ui/README.md)
   * [Quick Start \*](apps/apps-with-cui/quick-start.md)
 
-## guide
+## Knowledge
+* [Overview](knowledge/overview.md)
+* [Quick Start](knowledge/quick-start.md)
+* [Knowledge Types](knowledge/knowledge-types.md)
 
+## Guide
 * [Prompt Template Language](guide/prompt-template-language.md)
-* [Best Practices](guide/best-practices/README.md)
+* [Visibility](guide/visibility.md)
+* Best Practices
   * [Search Engine Agent](guide/best-practices/search-engine-agent.md)
   * [Knowledge Based Chatbot](guide/best-practices/knowledge-based-chatbot.md)
   * [Web Page Summary Agent](guide/best-practices/web-page-summary-agent.md)
@@ -65,6 +64,11 @@
 * [Teams](guide/teams/README.md)
   * [Overview](guide/teams/overview.md)
   * [Access Control](guide/teams/access-control.md)
+
+## Community
+* [Overview](community/overview.md)
+* [Agents](community/agents.md)
+* [Apps](community/apps.md)
 
 ## Policies
 
