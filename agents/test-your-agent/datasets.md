@@ -23,4 +23,18 @@ We support the following data types:
 * String
 * Number
 * Boolean
-* Object
+* JSON Object
+
+## Usage
+
+Datasets can be used in two ways:
+
+#### 1.Load data for subsequent actions
+
+The loaded dataset can be used by subsequent actions.
+
+This is very useful when the dataset contains example data for few shots prompting.
+
+#### 2.Determine the input shape of the agent
+
+The the dataset of the `Input` action determines the shape of the input of the whole agent.

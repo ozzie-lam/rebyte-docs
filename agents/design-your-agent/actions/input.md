@@ -1,12 +1,10 @@
 # Input
 
-
-
 * The `Input Action` is used to send input information to the Agent. Other actions are based on the input information to perform the right operation.
 
 * The first action in the Agent must be an `Input Action`, you can not delete it or copy it.
 
-* You can select different input datasets to run your agent.
+* You can select different input datasets to run your agent. For more information about datasets, please refer to [Datasets](../../../agents/test-your-agent/datasets.md).
 
 ## Usage
 

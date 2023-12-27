@@ -1,28 +1,19 @@
 # Dataset Loader
 
-The dataset loader loads data from the predefined datasets. Each agent can have multiple datasets, which can be created and edited using the dataset editor.
+The `Dataset Loader` action allows you to load data from the agent's datasets. The data can be used in subsequent actions.
 
-Each dataset is essentially a list of JSON objects with same shape. Value of each field can be following types:
+### Usage
 
-* string
-* number
-* boolean
-* object
+* Add a `Dataset Loader` action to your agent and select the dataset you want to load from.
 
-Datasets can be used in two ways:
 
-#### Load data for subsequent actions
+* Refer to this data by using the dataset's name, like: `{{DATA_2}}` in downstream actions.
 
-When the dataset is loaded in agent, subsequent actions can access the dataset content as normal action output. This is particularly useful when the dataset contains example data for few shots prompting.
 
-#### Determine the input shape of the agent
+<figure><img src="../../../../images/dataset-loader.png"></figure>
 
-When the dataset is loaded in `INPUT` action, its shape determines the shape of the input of the whole agent.
+### Example Agent
 
-<!-- **Example**
+<!-- We provide example agents to help you understand the usage of actions. -->
 
-* [Dataset Loader](https://rebyte.ai/p/21b2295005587a5375d8/agent/fa56c8cf3f2080ef08d4) -->
-
-### Spec
-
-* **Dataset Id:** Id of the dataset to load from
+* [Dataset Loader](https://rebyte.ai/p/21b2295005587a5375d8/callable/fa56c8cf3f2080ef08d4/editor)
