@@ -34,6 +34,9 @@
       * [Loop-Until](agents/design-your-agent/actions/control-flow/loop-until.md)
       * [Map-Reduce](agents/design-your-agent/actions/control-flow/map-reduce.md)
       * [Early Return](agents/design-your-agent/actions/control-flow/early-return.md)
+  * Group Agent
+    * [Overview](agents/design-your-agent/group-agent/overview.md)
+    * [Quick Start](agents/design-your-agent/group-agent/quick-start.md)
 * Test Your Agent
   * [Overview](agents/test-your-agent/overview.md)
   * [Datasets](agents/test-your-agent/datasets.md)
