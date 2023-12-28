@@ -8,12 +8,6 @@ To use this action you just need to write your specifications and configure the 
 
 ### Specification
 
-<!-- | Parameter   | Description          |
-| ----------- | -------------------- |
-| Instruction | The system message   |
-| Messages    | Messages send to LLM |
-| Fuctions    |      hahaha          | -->
-
 <figure><img src="../../../../images/chat-spec.png"></figure>
 
 **Instruction**
