@@ -1,16 +1,91 @@
-# LLM Completion
+# Language Model Completion
 
-### Parameters
+## Usage
 
-- Advanced
-    - Introduction
-        - Supports tera syntax, use {{BlockName}} to reference previous Block output
-    - Examples
-        - Example Counts
-- Prompt
-    - Content sent to large language model
-    - Supports tera syntax, use {{BlockName}} to reference previous Block output
-    - Examples: tera, variables
+We provide `Language Model Completion` action to let the language model complete your prompt.
+
+### Specification
+
+<figure><img src="../../../../images/completion.png"></figure>
+
+**Prompt**
+* This is the prompt that will be sent to the model. 
+* The model will complete your prompt and respond with the completed content.
+
+### Configuration
+
+The configuration is the same as [Language Model Chat](./language-model-chat.md).
+
+You can choose the model you want to use by clicking the model's name, the default model is "gpt-3.5-turbo-1106".
+
+<figure><img src="../../../../images/chat-models.png"></figure>
+
+Click this button in the bottom right corner of the `Language Model Completion` action to open the configuration panel.
+
+<figure><img src="../../../../images/chat-config-button.jpg"></figure>
+
+There are five settings in the configuration panel, as shown below.
+
+<figure><img src="../../../../images/chat-config-2.png"></figure>
+
+<!-- | Parameter    | Description                              |
+| ------------ | ---------------------------------------- |
+| max\_tokens  | The maximum number of tokens to generate |
+| temperature  | What sampling temperature to use         |
+| JSON response|                                          |
+| Seed         |                                          |
+| Stop words   |                                          | -->
+
+**Temperature**
+  * "Temperature" controls the randomness of the model's output.
+  * The higher the model temperature, the more random the output is.
+  
+**Maximum Output Tokens**
+  * "Maximum Output tokens" specifies the maximum number of tokens to generate.
+  * Can use up to 40,000 tokens(the limit for models vary), including prompt and model returned content.
+  
+**JSON Response**
+  * "JSON Response" button enable JSON mode, which guarantees the messages the model generate are in JSON format.
+  * NOTE: This feature is a beta feature and only supported by OpenAI's "gpt-4-1106-preview" model now.
+
+**Seed**
+  * The "Seeds" is a parameter that can be specified when using the `Language Model Completion` and `Language Model Completion` actions. 
+  * It helps to ensure consistent outputs by making the system sample deterministically, resulting in the same result for repeated requests with the same seed and parameters.
+  * NOTE: This feature is a beta feature and may not be supported by all models.
+
+**Stop Words**
+  * Stop words are used to make the model stop at a desired point, such as the end of a sentence or a list. 
+
+### Message Format
+
+Rebyte uses a similar message format as OpenAI. The message format is a JSON object with the following fields:
+
+* role
+  * could be one from 'user', 'system', or 'assistant'
+* content
+  * content of this message
+* name(optional)
+  * name of role
+* context
+  * context of this message, for example, external file
+
+On the top right of the action, there are two more things to configure: "Stream Mode" and "Cache Mode".
+
+<figure><img src="../../../../images/stream-and-cache.jpg"></figure>
+
+**Stream**
+* This option allows you to receive partial chat responses as they are being generated, rather than waiting for the entire completion to be finished before receiving a response.
+
+* By setting stream mode, you can start processing or displaying the beginning of the chat before the full response is received.
+
+**Cache**
+
+* Caching involves storing frequently accessed data to improve response times without making repeated calls to a model. 
+* If you use the cache mode, the model will cache the response and return the cached response when the same request is made again. This will make your agent run faster.
+
+**Message Format Examples**
+
+1.Prompt Example
 
 ```xml
 Your role is that of a text editor. 
@@ -34,6 +109,21 @@ please reply to me with the phrase: "I apologize for being unable to retrieve co
 {{CODE_1.content}}
 ```
 
+## Example Agent
+
+* [LLM Completion](https://rebyte.ai/p/21b2295005587a5375d8/callable/719d2f31bf9fe977f699/editor)
+
+
+<!-- ### Parameters
+
+- Advanced
+    - Introduction
+        - Supports tera syntax, use {{BlockName}} to reference previous Block output
+    - Examples
+        - Example Counts
+- Prompt
+    - Content sent to large language model
+    - Supports tera syntax, use {{BlockName}} to reference previous Block output
 
 **Config**
 
@@ -69,4 +159,4 @@ JSON
         tokens:
         logprobs:
         top_logprobs:
-```
+``` -->
