@@ -2,9 +2,9 @@
 
 ## Usage
 
-We provide a simple `Language Model Chat` action for you to chat with the large language model. 
+We provide the `Language Model Chat` action to easily chat with the large language model and create complex uses. 
 
-Simply, you just need to write your specifications and configure the model, and the large language model will generate the response.
+To use this action you just need to write your specifications and configure the model, and the large language model will generate the response.
 
 ### Specification
 
@@ -13,6 +13,8 @@ Simply, you just need to write your specifications and configure the model, and 
 | Instruction | The system message   |
 | Messages    | Messages send to LLM |
 | Fuctions    |      hahaha          | -->
+
+<figure><img src="../../../../images/chat-spec.png"></figure>
 
 **Instruction**
 * This is the message that will be sent to the model. 
@@ -30,7 +32,7 @@ Simply, you just need to write your specifications and configure the model, and 
 
 ### Configuration
 
-You can choose the model you want to use by clicking the model's name.
+You can choose the model you want to use by clicking the model's name, the default model is "gpt-3.5-turbo-1106".
 
 <figure><img src="../../../../images/chat-models.png"></figure>
 
