@@ -54,9 +54,9 @@ Click this button in the bottom right corner of the `Language Model Chat` action
 There are five settings in the configuration panel, as shown below.
 
 
-<!-- <div align="center">     -->
+<div align="center">    
 <figure><img src="../../../../images/chat-config-2.png" width="60%" height="60%"> </figure>
-<!-- </div> -->
+</div>
 
 
 **Temperature**
