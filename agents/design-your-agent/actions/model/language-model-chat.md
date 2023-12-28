@@ -27,13 +27,13 @@ To use this action you just need to write your specifications and configure the 
 * Messages can be a list of strings or list of objects. If it's a list of objects, make sure each object has a `role` field as well as a `content` field.:
   * The `role` field specifies the role of the message, allowed roles are `user`, `assistant` and `system`.
   * The `content` contains the message to be sent to the model.
-* Supports Javascript format, for example, you can use `env.state.INPUT.messages` to get the agent's input.
+* Uses **Javascript** format, for example, you can use `env.state.INPUT.messages` to get the agent's input.
 * NOTE: Make sure to return an array.
 
 **Functions**
 * Function calling allows you to connect large language models to external tools by describing functions in an API call, enabling the model to intelligently generate JSON objects containing arguments for calling one or multiple functions. 
 * This capability provides a way to obtain structured data from the model, enabling tasks such as creating assistants that interact with external APIs and converting natural language into API calls.
-* Supports Javascript format.
+* Uses **Javascript** format.
 * NOTE: Make sure to return an array.
 
 ### Configuration
@@ -90,7 +90,6 @@ There are five settings in the configuration panel, as shown below.
 
 &nbsp;
 
-
 On the top right of the action, there are two more things to configure: "Stream Mode" and "Cache Mode".
 
 <figure><img src="../../../../images/stream-and-cache.jpg" ></figure>
@@ -118,14 +117,6 @@ Rebyte uses a similar message format as OpenAI. The message format is a JSON obj
 * Context(optional): context of this message.
 
 &nbsp;
-
-
-<!-- | Parameter         | Description                                          |
-| ----------------- | ---------------------------------------------------- |
-| role              | could be 'user', 'system', or 'assistant'            |
-| content           | content of this message                              |
-| name(optional)    | name of role                                         |
-| context(optional) | context of this message, for example, external file. | -->
 
 **Message Format Examples**
 

@@ -61,19 +61,6 @@ There are five settings in the configuration panel, as shown below.
 **Stop Words**
   * Stop words are used to make the model stop at a desired point, such as the end of a sentence or a list. 
 
-### Message Format
-
-Rebyte uses a similar message format as OpenAI. The message format is a JSON object with the following fields:
-
-* role
-  * could be one from 'user', 'system', or 'assistant'
-* content
-  * content of this message
-* name(optional)
-  * name of role
-* context
-  * context of this message, for example, external file
-
 On the top right of the action, there are two more things to configure: "Stream Mode" and "Cache Mode".
 
 <figure><img src="../../../../images/stream-and-cache.jpg"></figure>
@@ -87,6 +74,20 @@ On the top right of the action, there are two more things to configure: "Stream 
 
 * Caching involves storing frequently accessed data to improve response times without making repeated calls to a model. 
 * If you use the cache mode, the model will cache the response and return the cached response when the same request is made again. This will make your agent run faster.
+
+### Message Format
+
+Rebyte uses a similar message format as OpenAI. The message format is a JSON object with the following fields:
+
+* Role: could be one from 'user', 'system', or 'assistant'.
+  
+* Content: content of this message.
+ 
+* Name(optional): name of role.
+
+* Context(optional): context of this message.
+
+&nbsp;
 
 **Message Format Examples**
 
@@ -113,7 +114,6 @@ please reply to me with the phrase: "I apologize for being unable to retrieve co
 
 {{CODE_1.content}}
 ```
-
 
 ## Example Agent
 
