@@ -19,6 +19,7 @@ To use this action you just need to write your specifications and configure the 
 **Instruction**
 * This is the message that will be sent to the model. 
 * Write your prompt here and tell the large language model what to do.
+* Supports [Tera](https://keats.github.io/tera/docs/) format. For example, you can use `{{INPUT.messages[0].content}}` to get the content of the agent's input first message.
 
 **Messages**
 * This is the messages that will be sent to the LLM. 
@@ -26,10 +27,14 @@ To use this action you just need to write your specifications and configure the 
 * Messages can be a list of strings or list of objects. If it's a list of objects, make sure each object has a `role` field as well as a `content` field.:
   * The `role` field specifies the role of the message, allowed roles are `user`, `assistant` and `system`.
   * The `content` contains the message to be sent to the model.
+* Supports Javascript format, for example, you can use `env.state.INPUT.messages` to get the agent's input.
+* NOTE: Make sure to return an array.
 
 **Functions**
 * Function calling allows you to connect large language models to external tools by describing functions in an API call, enabling the model to intelligently generate JSON objects containing arguments for calling one or multiple functions. 
 * This capability provides a way to obtain structured data from the model, enabling tasks such as creating assistants that interact with external APIs and converting natural language into API calls.
+* Supports Javascript format.
+* NOTE: Make sure to return an array.
 
 ### Configuration
 
@@ -63,7 +68,8 @@ There are five settings in the configuration panel, as shown below.
   
 **JSON Response**
   * "JSON Response" button enable JSON mode, which guarantees the messages the model generate are in JSON format.
-  * NOTE: This feature is a beta feature and only supported by OpenAI's "gpt-4-1106-preview" model now.
+  * NOTE: This feature is a beta feature and only supported by OpenAI's "gpt-4-1106-preview" model now. 
+  * NOTE: When you use this feature, make sure the word "JSON" is in the context. Otherwise, the OpenAI's API will throw an error.
 
 **Seed**
   * The "Seeds" is a parameter that can be specified when using the `Language Model Chat` and `Language Model Completion` actions. 

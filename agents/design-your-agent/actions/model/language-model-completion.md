@@ -46,12 +46,13 @@ There are five settings in the configuration panel, as shown below.
   
 **JSON Response**
   * "JSON Response" button enable JSON mode, which guarantees the messages the model generate are in JSON format.
-  * NOTE: This feature is a beta feature and only supported by OpenAI's "gpt-4-1106-preview" model now.
+  * NOTE: This feature is a beta feature and only supported by OpenAI's "gpt-4-1106-preview" model now. 
+  * NOTE: When you use this feature, make sure the word "JSON" is in the context. Otherwise, the OpenAI's API will throw an error.
 
 **Seed**
   * The "Seeds" is a parameter that can be specified when using the `Language Model Completion` and `Language Model Completion` actions. 
   * It helps to ensure consistent outputs by making the system sample deterministically, resulting in the same result for repeated requests with the same seed and parameters.
-  * NOTE: This feature is a beta feature and may not be supported by all models.
+  * NOTE: This feature is a beta feature and only supported by OpenAI's model.
 
 **Stop Words**
   * Stop words are used to make the model stop at a desired point, such as the end of a sentence or a list. 
