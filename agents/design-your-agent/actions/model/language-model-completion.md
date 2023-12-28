@@ -20,9 +20,13 @@ You can choose the model you want to use by clicking the model's name, the defau
 
 <figure><img src="../../../../images/chat-models.png"></figure>
 
+&nbsp;
+
 Click this button in the bottom right corner of the `Language Model Completion` action to open the configuration panel.
 
 <figure><img src="../../../../images/chat-config-button.jpg"></figure>
+
+&nbsp;
 
 There are five settings in the configuration panel, as shown below.
 
@@ -110,9 +114,10 @@ please reply to me with the phrase: "I apologize for being unable to retrieve co
 {{CODE_1.content}}
 ```
 
+
 ## Example Agent
 
-* [LLM Completion](https://rebyte.ai/p/21b2295005587a5375d8/callable/719d2f31bf9fe977f699/editor)
+* [Language Model Completion](https://rebyte.ai/p/21b2295005587a5375d8/callable/719d2f31bf9fe977f699/editor)
 
 
 <!-- ### Parameters

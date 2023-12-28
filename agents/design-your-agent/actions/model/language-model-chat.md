@@ -42,13 +42,22 @@ You can choose the model you want to use by clicking the model's name, the defau
 
 <figure><img src="../../../../images/chat-models.png"></figure>
 
+&nbsp;
+
 Click this button in the bottom right corner of the `Language Model Chat` action to open the configuration panel.
 
 <figure><img src="../../../../images/chat-config-button.jpg"></figure>
 
+&nbsp;
+
+
 There are five settings in the configuration panel, as shown below.
 
-<figure><img src="../../../../images/chat-config-2.png"></figure>
+
+<div  align="center">    
+<figure><img src="../../../../images/chat-config-2.png" width="60%" height="60%"> </figure>
+</div>
+
 
 <!-- | Parameter    | Description                              |
 | ------------ | ---------------------------------------- |
@@ -79,23 +88,12 @@ There are five settings in the configuration panel, as shown below.
 **Stop Words**
   * Stop words are used to make the model stop at a desired point, such as the end of a sentence or a list. 
 
-### Message Format
+&nbsp;
 
-Rebyte uses a similar message format as OpenAI. The message format is a JSON object with the following fields:
-
-* role
-  * could be one from 'user', 'system', or 'assistant'
-* content
-  * content of this message
-* name(optional)
-  * name of role
-* context
-  * context of this message, for example, external file
 
 On the top right of the action, there are two more things to configure: "Stream Mode" and "Cache Mode".
 
-<figure><img src="../../../../images/stream-and-cache.jpg"></figure>
-
+<figure><img src="../../../../images/stream-and-cache.jpg" ></figure>
 
 **Stream**
 * This option allows you to receive partial chat responses as they are being generated, rather than waiting for the entire completion to be finished before receiving a response.
@@ -106,6 +104,20 @@ On the top right of the action, there are two more things to configure: "Stream 
 
 * Caching involves storing frequently accessed data to improve response times without making repeated calls to a model. 
 * If you use the cache mode, the model will cache the response and return the cached response when the same request is made again. This will make your agent run faster.
+
+### Message Format
+
+Rebyte uses a similar message format as OpenAI. The message format is a JSON object with the following fields:
+
+* Role: could be one from 'user', 'system', or 'assistant'.
+  
+* Content: content of this message.
+ 
+* Name(optional): name of role.
+
+* Context(optional): context of this message.
+
+&nbsp;
 
 
 <!-- | Parameter         | Description                                          |
@@ -169,4 +181,4 @@ On the top right of the action, there are two more things to configure: "Stream 
 
 ## Example Agent
 
-* [LLM Chat](https://rebyte.ai/p/21b2295005587a5375d8/callable/719d2f31bf9fe977f699/editor)
+* [Language Model Chat](https://rebyte.ai/p/21b2295005587a5375d8/callable/719d2f31bf9fe977f699/editor)
