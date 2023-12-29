@@ -2,6 +2,10 @@
 
 We will show to how to build an app using the customized UI.
 
+Before building an app, you need to think about **what you want your app to do**. Then, think about the **input,data flow and output** of the agent this app will connect with. 
+
+For example, if you want to build an App that can get the 7-day weather forcast for you, first think about that the user's query will be, how the agent will get the weather forcast, and how the agent should return the following 7 days' to the user(perhaps JSON format). Then, you can start building your app and agent.
+
 ## Step 1: Create an App
 
 * Navigate to the "My Apps" tab in the sidebar and then click on "Create App" on the top right.
@@ -33,9 +37,13 @@ If you want to make some changes to your app, you can change your app in two way
 
 Click "Make It An App" again and we will make changes for you based on your prompt and create a new version of your app.
 
+* NOTE: This may not give you the desired results on just one try. We recommend you to try and improve one thing at a time and create more versions until you get the best results.
+
 ## Step 3: Connect your App with Agent
 
 * Click the "Connect to Agent" on the top right and choose the agent you want to connect with.
+
+* NOTE: You must be familiar with the agent's function. Make sure the agent is suitable for your app, otherwise it will not connect successfully.
 
 <figure><img src="../../images/connect.png"></figure>
 
