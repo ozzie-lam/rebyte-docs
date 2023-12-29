@@ -1,6 +1,6 @@
 # Quick Start
 
-We will show to how to build an app using the custumized UI.
+We will show to how to build an app using the customized UI.
 
 ## Step 1: Create an App
 
