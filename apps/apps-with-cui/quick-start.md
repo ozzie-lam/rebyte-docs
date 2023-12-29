@@ -31,7 +31,7 @@ If you want to make some changes to your app, you can change your app in two way
 
 <figure><img src="../../images/text-prompt.png"></figure>
 
-Click "Make It An App" again and wait for the results.
+Click "Make It An App" again and we will make changes for you based on your prompt and create a new version of your app.
 
 ## Step 3: Connect your App with Agent
 
