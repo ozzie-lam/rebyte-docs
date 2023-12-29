@@ -8,12 +8,6 @@ To use this action you just need to write your specifications and configure the 
 
 ### Specification
 
-<!-- | Parameter   | Description          |
-| ----------- | -------------------- |
-| Instruction | The system message   |
-| Messages    | Messages send to LLM |
-| Fuctions    |      hahaha          | -->
-
 <figure><img src="../../../../images/chat-spec.png"></figure>
 
 **Instruction**
@@ -58,14 +52,6 @@ There are five settings in the configuration panel, as shown below.
 <figure><img src="../../../../images/chat-config-2.png" width="60%" height="60%"> </figure>
 </div>
 
-
-<!-- | Parameter    | Description                              |
-| ------------ | ---------------------------------------- |
-| max\_tokens  | The maximum number of tokens to generate |
-| temperature  | What sampling temperature to use         |
-| JSON response|                                          |
-| Seed         |                                          |
-| Stop words   |                                          | -->
 
 **Temperature**
   * "Temperature" controls the randomness of the model's output.

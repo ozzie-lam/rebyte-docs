@@ -32,13 +32,6 @@ There are five settings in the configuration panel, as shown below.
 
 <figure><img src="../../../../images/chat-config-2.png"></figure>
 
-<!-- | Parameter    | Description                              |
-| ------------ | ---------------------------------------- |
-| max\_tokens  | The maximum number of tokens to generate |
-| temperature  | What sampling temperature to use         |
-| JSON response|                                          |
-| Seed         |                                          |
-| Stop words   |                                          | -->
 
 **Temperature**
   * "Temperature" controls the randomness of the model's output.

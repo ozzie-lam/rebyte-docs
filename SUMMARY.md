@@ -17,7 +17,7 @@
     * [Output](agents/design-your-agent/actions/output.md)
     * [Model](agents/design-your-agent/actions/model/README.md)
       * [Language Model Chat](agents/design-your-agent/actions/model/language-model-chat.md)
-      * [Language Model Complete](agents/design-your-agent/actions/model/language-model-completion.md)
+      * [Language Model Completion](agents/design-your-agent/actions/model/language-model-completion.md)
     * [Data](agents/design-your-agent/actions/data/README.md)
       * [File Loader](agents/design-your-agent/actions/data/file-loader.md)
       * [Dataset Loader](agents/design-your-agent/actions/data/dataset-loader.md)
