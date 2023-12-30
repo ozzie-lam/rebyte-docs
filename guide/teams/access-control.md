@@ -47,11 +47,11 @@ Non-team users: users who are not part of the team.
 
 For team accounts, builders can develop, design, and use the agents, knowledge, and apps within the team account. Users can view and use the apps, knowledge, and agents in the team account.
 
-Regarding agents, users can view all agents' workflows and datasets within the team and can copy them to their personal accounts to modify and run. When an agent is set to Unlisted, users outside the team can use a link to view the agent. When an agent is set to Public, it appears in the team agent list for external users.
+Regarding agents, users can view all agents' workflows and datasets within the team and can copy them to their personal accounts to modify and run. When an agent is set to External Unlisted, users outside the team can use a link to view the agent. When an agent is set to Public, it appears in the team agent list for external users.
 
-Regarding knowledge, it can be set so only admins and owners can create knowledge, while builders can maintain it. Publicly set knowledge can be viewed by users outside the team.
+Regarding knowledge, it can be set so only admins and owners can create knowledge, while builders can maintain it. External Public set knowledge can be viewed by users outside the team.
 
-Regarding apps, there are four levels of permissions. Private apps can only be seen by builders, which is useful for maintaining apps that are still under development. Unlisted apps can be accessed and used by team users via a link. Apps set to Team Public can be viewed and used by all team members on the team app page. External Public means that users outside the team can also view and use the app.
+Regarding apps, there are four levels of permissions. Private apps can only be seen by builders, which is useful for maintaining apps that are still under development.team Unlisted apps can be accessed and used by team users via a link. Apps set to Team Public can be viewed and used by all team members on the team app page. External Public means that users outside the team can also view and use the app.
 
 For example, in an administrative team, the owner and admin manage the team's resources, builders are responsible for designing and building agents, knowledge, and apps, and users are responsible for viewing and using the agents, knowledge, and apps designed by the builders. When an app is not yet complete, a builder can set its permission to Private. Once the design is finished, it can be set to Team Public for team members to use. Setting it to External Public allows sharing with users outside the team.
 
