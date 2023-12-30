@@ -1,20 +1,20 @@
 # Access Control
 
-Rebyte is built with fine-grained access control from day one. You can control the visibility of your agents, data, app, and other resources in Rebyte. We believe this is critical to enable collaboration and sharing AI applications in enterprise environments.
+Rebyte is built with fine-grained access control. You can control the visibility of your agents, knowledge, apps and other resources in Rebyte. We believe that this is of vital importance for collaboration and sharing AI applications in enterprise environments.
 
-## types of accounts
+## Types of Accounts
 
 In Rebyte, there are two types of accounts: Personal and Team.
 
 We have designed corresponding permission rules for the core functions of the Rebyte system: agent, knowledge, and app.
 
-## personal accounts
+## Personal Accounts
 
-Personal accounts are aimed at individual users, who can develop agents and applications that meet their needs or use applications provided in the Rebyte community.
+Personal accounts are for individual users, who can develop agents and applications the way they like and use applications in the Rebyte community.
 
-For personal accounts, upgrading to a pro account allows the sharing of agents, knowledge, and apps with other users for viewing and use.
+For personal accounts, upgrading to a "pro" account allows the sharing of agents, knowledge, and apps with other users so that they can view and use.
 
-Sharing an agent means others can view the agent you have created, including its workflow and dataset. However, they cannot run or modify it. If another user wants to use it, they can clone the agent into their own account to modify and run.
+Sharing an agent means others can view the agent you have created, including its workflow and datasets. However, they cannot run or modify it. If another user wants to use it, they can clone the agent into their own account to run and make adjustments.
 
 Sharing knowledge allows other users to view the content in your knowledge base.
 
@@ -37,13 +37,13 @@ Further details are available in the following table:
 
 ## team accounts
 
-Team accounts are aimed at collaboration among teams, and there are three roles within a team account.
+Team accounts allows for collaboration among teams, and there are three roles in a team account.
 
-Builders (builder, admin, owner): develop and maintain the team's agents, knowledge, and apps.
+* Builders (builder, admin, owner): develop and maintain the team's agents, knowledge, and apps.
 
-Users: use applications within the team.
+* Users: use applications within the team.
 
-Non-team users: users who are not part of the team.
+* Non-team users: users who are not part of the team.
 
 For team accounts, builders can develop, design, and use the agents, knowledge, and apps within the team account. Users can view and use the apps, knowledge, and agents in the team account.
 
@@ -51,9 +51,9 @@ Regarding agents, users can view all agents' workflows and datasets within the t
 
 Regarding knowledge, it can be set so only admins and owners can create knowledge, while builders can maintain it. External Public set knowledge can be viewed by users outside the team.
 
-Regarding apps, there are four levels of permissions. Private apps can only be seen by builders, which is useful for maintaining apps that are still under development.team Unlisted apps can be accessed and used by team users via a link. Apps set to Team Public can be viewed and used by all team members on the team app page. External Public means that users outside the team can also view and use the app.
+Regarding apps, there are four access-levels. Private apps can only be seen by builders, which is useful for maintaining apps that are still under development.team Unlisted apps can be accessed and used by team users via a link. Apps set to Team Public can be viewed and used by all team members on the team app page. External Public means that users outside the team can also view and use the app.
 
-For example, in an administrative team, the owner and admin manage the team's resources, builders are responsible for designing and building agents, knowledge, and apps, and users are responsible for viewing and using the agents, knowledge, and apps designed by the builders. When an app is not yet complete, a builder can set its permission to Private. Once the design is finished, it can be set to Team Public for team members to use. Setting it to External Public allows sharing with users outside the team.
+For example, in an administrative team, the owner and admin manage the team's resources, builders are responsible for designing and building agents, knowledge, and apps. And users are responsible for viewing and using the agents, knowledge, and apps designed by the builders. When an app is not yet complete, a builder can set its access-level to Private. Once the design is finished, it can be set to Team Public for team members to use. Setting it to External Public allows sharing with users outside the team.
 
 Further details are available in the following table:
 
