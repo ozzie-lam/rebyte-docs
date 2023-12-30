@@ -62,3 +62,16 @@ There are four roles in Rebyte Project:
 | Private         |                      | list,view（design,dataset）,clone | list,view,edit,create     |
 | Unlisted        | view,clone with link | list,view,clone                 | list,view,edit,create     |
 | Public          | list,view,clone      | list,view,clone                 | list,view,edit,create     |
+
+| Personal-Access | Other users          | Personal user        |
+| --------------- | -------------------- | -------------------- |
+| App             |                      |                      |
+| Private         |                      | list,use,edit,create |
+| Public          | list,use             | list,use,edit,create |
+| Knowledge       |                      |                      |
+| Public          | list,view            | list,use,edit,create |
+| Private         |                      | list,use,edit,create |
+| Agent           |                      |                      |
+| Public          | list,view,clone      | list,use,edit,create |
+| Unlisted        | view,clone with link | list,use,edit,create |
+| Private         |                      | list,use,edit,create |
