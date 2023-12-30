@@ -2,51 +2,60 @@
 
 Rebyte is built with fine-grained access control from day one. You can control the visibility of your agents, data, app, and other resources in Rebyte. We believe this is critical to enable collaboration and sharing AI applications in enterprise environments.
 
-## Team
+## types of accounts
 
-Access control is based on project, or team. Project or team are same thing in Rebyte. We may interchangeably use these two terms in this document. There are two types of projects in Rebyte: **personal** vs **team** project. Personal project is created when a user is created, it's private to the user. Team project is created by a user, it's shared among team members.
+In Rebyte, there are two types of accounts: Personal and Team.
 
-## Resource
+We have designed corresponding permission rules for the core functions of the Rebyte system: agent, knowledge, and app.
 
-Following resources can be controlled by access control:
+## personal accounts
 
-* Agent
-* Knowledge
-* App
+Personal accounts are aimed at individual users, who can develop agents and applications that meet their needs or use applications provided in the Rebyte community.
 
-## Visibility
+For personal accounts, upgrading to a pro account allows the sharing of agents, knowledge, and apps with other users for viewing and use.
 
-There are three visibility options for each resource: public/private/unlisted.
+Sharing an agent means others can view the agent you have created, including its workflow and dataset. However, they cannot run or modify it. If another user wants to use it, they can clone the agent into their own account to modify and run.
 
-Depending on context, the actual meaning of these three options are different.
+Sharing knowledge allows other users to view the content in your knowledge base.
 
-See more about agent/app and knowledge visibility in [Visibility](./visibility.md).
+Sharing an app allows other users to use the app you have built.
 
-## Role
+Further details are available in the following table:
 
-There are four roles in Rebyte Project:
+| Personal-Access | Other users          | Personal user        |
+| --------------- | -------------------- | -------------------- |
+| App             |                      |                      |
+| Private         |                      | list,use,edit,create |
+| Public          | list,use             | list,use,edit,create |
+| Knowledge       |                      |                      |
+| Public          | list,view            | list,use,edit,create |
+| Private         |                      | list,use,edit,create |
+| Agent           |                      |                      |
+| Public          | list,view,clone      | list,use,edit,create |
+| Unlisted        | view,clone with link | list,use,edit,create |
+| Private         |                      | list,use,edit,create |
 
-* **None** Any login user will automatically have this role in all projects. This role is used to indicate the user is not a member of the project.
-  * **use public app**
-  * **view public agent**
-  * **view public knowledge**
-  * **use unlisted app**
-  * **view unlisted agent**
-* **User** User can only view the public resources in the project. User can use the agent, knowledge, and apps in the project.
-  * **list public/private/unlisted agent**
-  * **list public/private knowledge**
-  * **list public/private/unlisted app**
-* **Builder**: Builder can create new agents, knowledge, and apps. Builder can see all public/private/unlisted resources in the project. Builder can also invite new members to the project, generate API keys.
-  * **create new agent**
-  * **create new knowledge**
-  * **create new app**
-  * **can invite new members**
-  * **see invite link**
-  * **generate API keys**
-  * **Deploy agent**
-  * **See all traces of the agent**
-* **Owner**: Owner has full access to the project, including creating new agents, knowledge, and apps. Owner can also invite new members to the project, generate API keys, and delete the project.
-  * **transfer owner to other users**
+## team accounts
+
+Team accounts are aimed at collaboration among teams, and there are three roles within a team account.
+
+Builders (builder, admin, owner): develop and maintain the team's agents, knowledge, and apps.
+
+Users: use applications within the team.
+
+Non-team users: users who are not part of the team.
+
+For team accounts, builders can develop, design, and use the agents, knowledge, and apps within the team account. Users can view and use the apps, knowledge, and agents in the team account.
+
+Regarding agents, users can view all agents' workflows and datasets within the team and can copy them to their personal accounts to modify and run. When an agent is set to Unlisted, users outside the team can use a link to view the agent. When an agent is set to Public, it appears in the team agent list for external users.
+
+Regarding knowledge, it can be set so only admins and owners can create knowledge, while builders can maintain it. Publicly set knowledge can be viewed by users outside the team.
+
+Regarding apps, there are four levels of permissions. Private apps can only be seen by builders, which is useful for maintaining apps that are still under development. Unlisted apps can be accessed and used by team users via a link. Apps set to Team Public can be viewed and used by all team members on the team app page. External Public means that users outside the team can also view and use the app.
+
+For example, in an administrative team, the owner and admin manage the team's resources, builders are responsible for designing and building agents, knowledge, and apps, and users are responsible for viewing and using the agents, knowledge, and apps designed by the builders. When an app is not yet complete, a builder can set its permission to Private. Once the design is finished, it can be set to Team Public for team members to use. Setting it to External Public allows sharing with users outside the team.
+
+Further details are available in the following table:
 
 | Team-Access     | Non-team user        | Team user（member）               | Team Builder（admin、owner） |
 | --------------- | -------------------- | ------------------------------- | ------------------------- |
@@ -62,16 +71,3 @@ There are four roles in Rebyte Project:
 | Private         |                      | list,view（design,dataset）,clone | list,view,edit,create     |
 | Unlisted        | view,clone with link | list,view,clone                 | list,view,edit,create     |
 | Public          | list,view,clone      | list,view,clone                 | list,view,edit,create     |
-
-| Personal-Access | Other users          | Personal user        |
-| --------------- | -------------------- | -------------------- |
-| App             |                      |                      |
-| Private         |                      | list,use,edit,create |
-| Public          | list,use             | list,use,edit,create |
-| Knowledge       |                      |                      |
-| Public          | list,view            | list,use,edit,create |
-| Private         |                      | list,use,edit,create |
-| Agent           |                      |                      |
-| Public          | list,view,clone      | list,use,edit,create |
-| Unlisted        | view,clone with link | list,use,edit,create |
-| Private         |                      | list,use,edit,create |
