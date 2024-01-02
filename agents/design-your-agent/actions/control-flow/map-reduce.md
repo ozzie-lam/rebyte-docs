@@ -1,26 +1,34 @@
 # Map Reduce
 
-Map over an array and executes a sequence of actions in parallel. This is useful for doing multiple actions in parallel, such as scraping multiple web pages in parallel.
+The `Map Reduce` action allows you to map over an array and executes a sequence of actions in parallel. 
 
-**Spec:**
+This is useful for doing multiple actions in parallel, such as scraping multiple web pages.
 
-* **MapOver:** Reference of an action name that outputs an array
-* **Repeat:** Integer value that specifies the maximum iteration count
-  * If repeat is not specified, then the iteration will stop when the array is exhausted. There is a hard limit of **64** iterations.
-  * If repeat is specified, then the iteration will stop when the array is exhausted or the iteration count reaches the repeat value, whichever comes first.
+## Usage
 
-**Config:**
+* Add a `Map Reduce` action to your agent, and you will see two blocks with the same name ("MAP_REDUCE_1" for example) being added to the action.
 
-* None
+* The action added between the two blocks will be executed in parallel for each element in the array.
 
-**Output**
+<figure><img src="../../../../images/map-2.png"></figure>
 
-* Each action inside map-reduce action will output **an array** of values.
+* Set the following specifications for the `Map Reduce` action:
 
-<!-- **Example**
+### Specification
 
-* [Map Reduce Example](https://rebyte.ai/p/21b2295005587a5375d8/callable/e5fc53ba2e8af8507418) -->
+<figure><img src="../../../../images/map.png"></figure>
 
-**Error Handling**
+**MapOver**
 
-* MapOver must refer an action that outputs a non-empty array.
+  * Choose a previous action and we will map over this action's output.
+  * The output of the previous action must be an array. Also make sure the array is not empty.
+
+**Repeat** 
+
+* The value will specify the maximum iteration count
+* If "repeat" value is not specified, then the iteration will stop when the array is exhausted. There is a hard limit of 64 iterations.
+* If "repeat" value is specified, then the iteration will stop when the array is exhausted or the iteration count reaches the repeat value, whichever comes first.
+
+### Output
+
+* Each action inside map-reduce action will output an array of values.

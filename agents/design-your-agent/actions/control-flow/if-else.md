@@ -1,13 +1,19 @@
 # If Else
 
-This action will run the actions if some condition is met. 
+The `If Else` action allows you to run actions conditionally.
 
-The condition is a Javascript code that returns a boolean value. 
+## Usage
 
-The code can reference the output of previous actions by using the `env.state.ACTION_NAME` syntax. 
+* Add an `If Else` action to your agent, and you will see two blocks with the same name ("IF_ELSE_1" for example) being added to the action. 
 
-For example, if the previous action is named `ACTION_1`, then the code can reference the output of `ACTION_1` by using `env.state.ACTION_1`.
+<figure><img src="../../../../images/if.png"></figure>
+  
+* Fill in the condition in Javascript format. This function should return a boolean value.
 
-<!-- **Example**
+<figure><img src="../../../../images/if-2.png"></figure
+  
+* During execution, the system will judge if the condition is true. If so, the actions between the first and the second `If_Else` block will be executed. Otherwise, the execution will jump to after the second `If_Else` block.
 
-* [If Else](https://rebyte.ai/p/21b2295005587a5375d8/callable/f6f55d6029c8a0aedd53) -->
+## Example Agent
+
+* [If Else Agent](https://rebyte.ai/p/21b2295005587a5375d8/callable/f6f55d6029c8a0aedd53/editor)
