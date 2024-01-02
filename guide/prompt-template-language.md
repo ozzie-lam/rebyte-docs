@@ -2,7 +2,7 @@
 
 The Prompt Template Language is a simple language that allows you to create a prompt template that can be used to generate prompts for your LLM models. The Prompt Template Language is a subset of the [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) templating language. Here are some examples of how you can use the Prompt Template Language, for more information on the syntax, see the [Jinja documentation](https://jinja.palletsprojects.com/en/3.1.x/templates/).
 
-\{{ and \}} for expressions
+\{\{ and \}\} for expressions
 
 ```
 {{ 1 + 1 }}
@@ -34,7 +34,7 @@ for statements
 {# This is a comment #}
 ```
 
-Construct and attributes can be accessed by using the dot (.) like \{{ product.name \}}. Specific members of an array or tuple are accessed by using the .i notation, where i is a zero-based index. In dot notation variable can not be used after the dot (.).
+Construct and attributes can be accessed by using the dot (.) like \{\{ product.name \}\}. Specific members of an array or tuple are accessed by using the .i notation, where i is a zero-based index. In dot notation variable can not be used after the dot (.).
 
 ```
 {{ product.name }}
