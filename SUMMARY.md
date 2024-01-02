@@ -33,7 +33,7 @@
       * [If-Else](agents/design-your-agent/actions/control-flow/if-else.md)
       * [Loop-Until](agents/design-your-agent/actions/control-flow/loop-until.md)
       * [Map-Reduce](agents/design-your-agent/actions/control-flow/map-reduce.md)
-      * [Early Return](agents/design-your-agent/actions/control-flow/early-return.md)
+      * [Early-Return](agents/design-your-agent/actions/control-flow/early-return.md)
   * Group Agent
     * [Overview](agents/design-your-agent/group-agent/overview.md)
     * [Quick Start](agents/design-your-agent/group-agent/quick-start.md)
@@ -48,7 +48,7 @@
 * [Apps with Chat Interface](apps/apps-with-chat-interface/README.md)
   * [Quick Start](apps/apps-with-chat-interface/quick-start.md)
 * [Apps with Customized UI](apps/apps-with-customized-ui/README.md)
-  * [Quick Start \*](apps/apps-with-cui/quick-start.md)
+  * [Quick Start](apps/apps-with-cui/quick-start-weather.md)
 
 ## Knowledge
 * [Overview](knowledge/overview.md)
