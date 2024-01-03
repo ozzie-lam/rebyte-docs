@@ -21,22 +21,27 @@ The  `Code` action is a very frequently
 
 * For example, if the `MODEL_CALL` action returned a message containing a JSON string like this:`"{"location":"New York","weather":"parly couldy","temperatuee":"43"}"`.
 
-* And you want to get the "temperature" field from this JSON. You can add a `Code` action(named "CODE_1") and write the following code:
+* And you want to get the "weather" field from this JSON. You can add a `Code` action(named "CODE_1") and write the following code:
 
 ```javascript
 const _fun = (env) => {
   var jsonString = env.state.MODEL_CALL.message.content;
   var jsonObject = JSON.parse(jsonString);
-  var temperature = jsonObject.temperature;
-  return tempe
+  var weather = jsonObject.weather;
+  return weather;
 }
 ```
 
 <figure><img src="../../../images/code-2.png"></figure>
 
-* Now you can use {{CODE_1}} or env.state.CODE_1 to get the value of the "temperature" field.
+* Now you can use {{CODE_1}} or env.state.CODE_1 to get the value of the "weather" field.
 
 <figure><img src="../../../images/code-3.png"></figure>
 
   
 
+## Example Agent
+
+You can find the code shown in the example above in the following agent.
+
+[Code Action](https://rebyte.ai/p/21b2295005587a5375d8/callable/4929456b3b6bfcee316d/editor)
