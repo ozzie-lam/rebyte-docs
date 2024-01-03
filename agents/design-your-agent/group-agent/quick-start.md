@@ -36,7 +36,9 @@ In this tutorial, we will show you how to create a group agent that will discuss
 * NOTE: You must be familiar with the agent's function and the agent's input and output format. Also make sure the agent's output format is compatible with the next agent's input format.
   
 * Specify the execution order of the agents in the group agent. The agent will run the agents in the order you specified. For example, here we put "round robin" in Agent Selector Instruction, so the agent will run the agents one by one in a loop.
-
+  
+* Following the given order, the system will run the agents one by one. The first agent's output will be the input of the second agent, and so on.
+  
 * You can also set the maximum rounds of conversation between agents. If the conversation between agents exceeds the maximum rounds, the agent will stop running.
 
 And that's it!
