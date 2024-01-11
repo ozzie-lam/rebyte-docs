@@ -57,17 +57,17 @@ For example, in an administrative team, the owner and admin manage the team's re
 
 Further details are available in the following table:
 
-| Team-Access       | Non-team user        | Team user（member）               | Team Builder（admin、owner） |   |
-|-------------------|----------------------|-----------------------------------|------------------------------|---|
-| Team-App          |                      |                                   |                              |   |
-| Private           |                      |                                   | list,use,edit,create         |   |
-| team Unlisted     |                      | Use with link                     | list,use,edit,create         |   |
-| team Public       |                      | list,use                          | list,use,edit,create         |   |
-| External Public   | list,use             | list,use                          | list,use,edit,create         |   |
-| Team-Knowledge    |                      |                                   |                              |   |
-| External Public   | list,use             | list,use                          | list,use,edit,create         |   |
-| team Public       |                      | list,use                          | list,use,edit,create         |   |
-| Team-Agent        |                      |                                   |                              |   |
-| team Public       |                      | list,view（design,dataset）,clone | list,view,edit,create        |   |
-| External Unlisted | view,clone with link | list,view,clone                   | list,view,edit,create        |   |
-| External Public   | list,view,clone      | list,view,clone                   | list,view,edit,create        |   |
+| Team-Access       | Non-team user        | Team user（member）               | Team Builder（admin、owner）      |      |
+| ----------------- | -------------------- | --------------------------------- | --------------------------------- | ---- |
+| Team-App          |                      |                                   |                                   |      |
+| Private           |                      |                                   | list,use,edit,create              |      |
+| team Unlisted     |                      | Use with link                     | list,use,edit,create              |      |
+| team Public       |                      | list,use                          | list,use,edit,create              |      |
+| External Public   | list,use             | list,use                          | list,use,edit,create              |      |
+| Team-Knowledge    |                      |                                   |                                   |      |
+| External Public   | list,use             | list,use                          | list,use,edit,create(admin&owner) |      |
+| team Public       |                      | list,use                          | list,use,edit,create(admin&owner) |      |
+| Team-Agent        |                      |                                   |                                   |      |
+| team Public       |                      | list,view（design,dataset）,clone | list,view,edit,create             |      |
+| External Unlisted | view,clone with link | list,view,clone                   | list,view,edit,create             |      |
+| External Public   | list,view,clone      | list,view,clone                   | list,view,edit,create             |      |
