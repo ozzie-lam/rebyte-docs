@@ -1,6 +1,6 @@
 # Quick Start
 
-We will show you how to build a grammar agent in 5 minutes.
+We will show you how to build a weather agent in 10 minutes.
 
 ## Step 1: Create an Agent
 
@@ -8,13 +8,13 @@ We will show you how to build a grammar agent in 5 minutes.
 
 * Describe what you want to do with this agent and choose the right template for your agent. 
 
-<figure><img src="../images/8.png" alt=""></figure>
+<figure><img src="../images/weather-1.png" alt=""></figure>
 
 * Click the "Generate Agent Template" button and we will generate a basic template for you to build from. 
 
-* You can change the name, description and visibility of the agent and add tags for more information. Or you can simply regenerate the template if you don't like the current one.
+<figure><img src="../images/weather-2.png" alt=""></figure>
 
-<figure><img src="../images/9.png" alt=""></figure>
+* You can change the name, description and visibility of the agent and add tags for more information. Or you can simply regenerate the template if you don't like the current one.
 
 * Click the "Create Agent" and you will have your own agent in just a few seconds.
 
@@ -22,7 +22,15 @@ We will show you how to build a grammar agent in 5 minutes.
 
 * In the auto-generated template, we have already created some actions for you. 
 
-* To build a simple agent like our grammar checker, there's no need to add more actions. For more complex agents, you can add actions by clicking the plus button between different actions.
+<figure><img src="../images/weather-3.png" alt=""></figure>
+
+* The process of building the agent:
+  * To get the location from the user's input, so we need a `Language Model Chat` action. 
+  * To search for the weather, this can be done using the `You.com` search engine action. 
+  * To analyze the results, we should use another `Language Model Chat` to analyze the search results from the You.com search and generate a prompt to draw the picture.
+  * To draw the picture, we use `Stable Diffusion` action and return a base64 picture.
+
+<figure><img src="../images/weather-4.png" alt=""></figure>
 
 * Write the instructions more the model in the editor, describing what you want the model to do.
 
