@@ -1,8 +1,12 @@
 # Language Model Completion
 
+We provide `Language Model Completion` action to let the language model complete your prompt.
+
 ## Usage
 
-We provide `Language Model Completion` action to let the language model complete your prompt.
+* Add a `Language Model Completion` action to your agent.
+
+* Configure the action with specifications and parameters.
 
 ### Specification
 
