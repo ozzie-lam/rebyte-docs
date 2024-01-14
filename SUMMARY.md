@@ -49,6 +49,8 @@
   * [Quick Start](apps/apps-with-chat-interface/quick-start.md)
 * [Apps with Customized UI](apps/apps-with-customized-ui/README.md)
   * [Quick Start](apps/apps-with-cui/quick-start-weather.md)
+* [OpenAI GPTs with AI Agent]
+  * [Chat with Notion](apps/openai-gpts-with-ai-agent/chat-with-notion.md)
 
 ## Knowledge
 * [Overview](knowledge/overview.md)
