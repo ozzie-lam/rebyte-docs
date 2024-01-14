@@ -3,7 +3,6 @@
 
 
 <figure><img src="../../images/deign-your-agent-1.png"></figure>
-![截屏2024-01-11 17.23.06.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1596656e-c582-4668-acbb-9a7961ffa944/269abe87-45a9-4b7a-bbcc-5241e1805e0e/%E6%88%AA%E5%B1%8F2024-01-11_17.23.06.png)
 
 - Choose the knowledge base you just created and set the number of results. This action allows you to perform a search on the given knowledge base and return the results.
 - You can see all the search results in the chunks.
@@ -25,3 +24,4 @@
         
 - Now use a "Language Model Chat Interface" action to get a response based on the search results.
 - Write the instructions for the model in the editor, describing what you want the model to do. And the model will generate a response for you.
+<figure><img src="../../images/deign-your-agent-6.png"></figure>
