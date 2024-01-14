@@ -53,7 +53,7 @@ Today I'm going to show you how to use Notion pages as a knowledge base for GPT.
 
 If you're interested in how to design this agent, you can check it out by clicking on the following page
 
-[deign your Agent](https://www.notion.so/deign-your-Agent-7d7ecbce9c654f628e3e2e97a9db0fc7?pvs=21)
+[deign your Agent](https://rebyte-ai.gitbook.io/rbyte/apps/openai-gpts-with-ai-agent/deign-your-agent)
 
 ## Step 4: Create GPTs with ReByte API
 
