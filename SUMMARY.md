@@ -51,6 +51,7 @@
   * [Quick Start](apps/apps-with-cui/quick-start-weather.md)
 * OpenAI GPTs with AI Agent
   * [Chat with Notion](apps/openai-gpts-with-ai-agent/chat-with-notion.md)
+  * [Design Your Agent](apps/openai-gpts-with-ai-agent/design-your-agent.md)
 
 ## Knowledge
 * [Overview](knowledge/overview.md)
