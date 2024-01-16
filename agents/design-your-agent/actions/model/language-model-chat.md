@@ -29,25 +29,7 @@ To use this action you just need to write your specifications and configure the 
 * This capability provides a way to obtain structured data from the model, enabling tasks such as creating assistants that interact with external APIs and converting natural language into API calls.
 * Uses **Javascript** format.
 
-Here's an example on how to use "Functions":
-
-* First, uncomment the code in the "Functions" section.
-
-<figure><img src="../../../../images/openai-functions.png"></figure>
-
-* This is a detailed description of a weather API. You can use this API to get the weather information of a city.
-
-* For any given input, the model will see if there is a need to call your function. 
-  
-* If so, it will give you json with the arguments you need to call the function. 
-  
-<figure><img src="../../../../images/openai-functions-1.png"></figure>
-
-* Otherwise, it will respond like a normal chatbot.
-
-<figure><img src="../../../../images/openai-functions-2.png"></figure>
-
-* **NOTE**: If you use the "Functions" feature, you should use another action to call the actual function API. The language model only gives you the arguments you need to call the function API.
+* [Here](./function-calling.md) is a detailed example on how to use "Functions".
 
 ### Configuration
 
