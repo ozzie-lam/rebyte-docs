@@ -24,7 +24,6 @@
     * [Code](agents/design-your-agent/actions/code.md)
     * [Tools](agents/design-your-agent/actions/tools/README.md)
       * [Call Agent](agents/design-your-agent/actions/tools/call-agent.md)
-      * [Curl Request](agents/design-your-agent/actions/tools/curl-request.md)
       * [Google Search](agents/design-your-agent/actions/tools/google-search.md)
       * [Http Request Maker](agents/design-your-agent/actions/tools/http-request-maker.md)
       * [Knowledge Search](agents/design-your-agent/actions/tools/knowledge-search.md)
