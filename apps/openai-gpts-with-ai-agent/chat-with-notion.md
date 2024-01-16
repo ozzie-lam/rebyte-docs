@@ -51,9 +51,7 @@ Today I'm going to show you how to use Notion pages as a knowledge base for GPT.
 
 - Run TestCases and deploy it
 
-If you're interested in how to design this agent, you can check it out by clicking on the following page
-
-[deign your Agent](./design-your-agent)
+If want to know how to design this agent, see [here](./design-your-agent.md).
 
 ## Step 4: Create GPTs with ReByte API
 
