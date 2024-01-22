@@ -19,6 +19,8 @@ This `Loop` action allows you to run actions repeatedly when the condition is tr
 
 * During the execution, the system will judge if the condition is true. If so, the actions between the two loop blocks will be executed until the condition is no longer true. Otherwise, the execution will jump to after the second loop block.
 
+* **NOTE**: The "Loop" action's results are arrays. Make sure to use formats like `env.state.LOOP_1[0]` or `{{LOOP_1[0]}}`.
+
 
 ## Example Agent
 
