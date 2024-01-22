@@ -14,6 +14,8 @@ The `If Else` action allows you to run actions conditionally.
   
 * During execution, the system will judge if the condition is true. If so, the actions between the first and the second `If_Else` block will be executed. Otherwise, the execution will jump to after the second `If_Else` block.
 
+* * **NOTE**: The "If Else" action's results are arrays. Make sure to use formats like `env.state.LOOP_1[0]` or `{{LOOP_1[0]}}`.
+
 ## Example Agent
 
 * [If Else Agent](https://rebyte.ai/p/21b2295005587a5375d8/callable/f6f55d6029c8a0aedd53/editor)
