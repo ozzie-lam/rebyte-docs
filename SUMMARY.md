@@ -26,6 +26,7 @@
     * [Tools](agents/design-your-agent/actions/tools/README.md)
       * [Call Agent](agents/design-your-agent/actions/tools/call-agent.md)
       * [Google Search](agents/design-your-agent/actions/tools/google-search.md)
+      * [You.com Search](agents/design-your-agent/actions/tools/you-search.md)
       * [Http Request Maker](agents/design-your-agent/actions/tools/http-request-maker.md)
       * [Knowledge Search](agents/design-your-agent/actions/tools/knowledge-search.md)
       * [Web Page Crawler](agents/design-your-agent/actions/tools/web-page-crawler.md)
