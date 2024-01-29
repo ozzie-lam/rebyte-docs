@@ -33,6 +33,7 @@
       * [Code Interpreter](agents/design-your-agent/actions/tools/code-interpreter.md)
       * [Advance Code Executor](agents/design-your-agent/actions/tools/advance-code-executor.md)
       * [Dalle Image Generator](agents/design-your-agent/actions/tools/dalle-image-generator.md)
+      * [Stable Diffusion](agents/design-your-agent/actions/tools/stable-diffusion.md)
     * [Control Flow](agents/design-your-agent/actions/control-flow/README.md)
       * [If-Else](agents/design-your-agent/actions/control-flow/if-else.md)
       * [Loop-Until](agents/design-your-agent/actions/control-flow/loop-until.md)
