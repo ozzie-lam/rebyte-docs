@@ -1,21 +1,39 @@
 # You.com search
 
-With this "You.com" search action, you can go and search anything.
+With this "You.com" search action, you can go and search anything and you will get your results in seconds!
 
-### Description
+<img src="../../../../images/you-1.png" />
 
-Search the web using You.com API, you should put your search query in the "query" and you will get your results in seconds!
+## Usage
 
-### spec
 
-| Parameter         | Description                                   |
-| ----------------- | --------------------------------------------- |
-| query             | query sent to You.com                         |
+* First add a "You.com" search action with the plus signs.
+
+<img src="../../../../images/you-2.1.png" />
+
+* Choose the "You.com search" action.
+
+<img src="../../../../images/you-2.2.png" />
+
+* There are some parameters you can set.
+  * query: the search query.
+  * num_web_results: the number of web results you want to get.
+  * offset: the offset of the search results. If the offset is 0, the first result will be the first result of the search results. If the offset is 10, the first result will be the 11th result of the search results.
+  * country: the country code. For example, "US" for United States.
+  * safesearch: the safe search mode, it can be "strict", "moderate" or "off".
+
+<img src="../../../../images/you-3.png" />
+
+* Run the agent and see the search results.
 
 ### Output
+
+<img src="../../../../images/you-4.png" />
 
 * The output is a bit complex, it's a JSON object with two fields:"hits" and "latency". 
 
 * The search results are in the "hits" field, it's an array with 10 most related search results.
 
+## Example Agent
 
+* To see and use this action, please check the example agent:[You.com Search](https://rebyte.ai/p/21b2295005587a5375d8/callable/957f9dbbe6fafa5617bf/editor).
