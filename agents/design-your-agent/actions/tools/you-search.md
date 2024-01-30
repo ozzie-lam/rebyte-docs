@@ -2,18 +2,18 @@
 
 With this "You.com" search action, you can go and search anything and you will get your results in seconds!
 
-<img src="../../../../images/you-1.png" />
+<figure><img src="../../../../images/you-1.png" /></figure>
 
 ## Usage
 
 
 * First add a "You.com" search action with the plus signs.
 
-<img src="../../../../images/you-2.1.png" />
+<figure><img src="../../../../images/you-2.1.png" /></figure>
 
 * Choose the "You.com search" action.
 
-<img src="../../../../images/you-2.2.png" />
+<figure><img src="../../../../images/you-2.2.png" /></figure>
 
 * There are some parameters you can set.
   * query: the search query.
@@ -22,13 +22,13 @@ With this "You.com" search action, you can go and search anything and you will g
   * country: the country code. For example, "US" for United States.
   * safesearch: the safe search mode, it can be "strict", "moderate" or "off".
 
-<img src="../../../../images/you-3.png" />
+<figure><img src="../../../../images/you-3.png" /></figure>
 
 * Run the agent and see the search results.
 
 ### Output
 
-<img src="../../../../images/you-4.png" />
+<figure><img src="../../../../images/you-4.png" /></figure>
 
 * The output is a bit complex, it's a JSON object with two fields:"hits" and "latency". 
 
