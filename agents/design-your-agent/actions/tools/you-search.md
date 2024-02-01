@@ -20,6 +20,7 @@ With this "You.com" search action, you can go and search anything and you will g
   * num_web_results: the number of web results you want to get.
   * offset: the offset of the search results. If the offset is 0, the first result will be the first result of the search results. If the offset is 10, the first result will be the 11th result of the search results.
   * country: the country code. For example, "US" for United States.
+    * country list include:'AR', 'AU', 'AT', 'BE', 'BR', 'CA', 'CL', 'DK', 'FI', 'FR', 'DE', 'HK', 'IN', 'ID', 'IT', 'JP', 'KR', 'MY', 'MX', 'NL', 'NZ', 'NO', 'CN', 'PL', 'PT', 'PH', 'RU', 'SA', 'ZA', 'ES', 'SE', 'CH', 'TW', 'TR', 'GB', 'US'.
   * safesearch: the safe search mode, it can be "strict", "moderate" or "off".
 
 <figure><img src="../../../../images/you-3.png" /></figure>
