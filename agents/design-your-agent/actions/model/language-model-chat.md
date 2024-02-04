@@ -22,8 +22,10 @@ To use this action you just need to write your specifications and configure the 
   * The `role` field specifies the role of the message, allowed roles are `user`, `assistant` and `system`.
   * The `content` contains the message to be sent to the model.
 * Uses **Javascript** format, for example, you can use `env.state.INPUT.messages` to get the agent's input.
-* NOTE: Make sure to return an array.
+* **NOTE:** Make sure to return an array.
 
+* **NOTE:** If you want the model chat to have context, you should use a `Thread message loader` action to record and load the history messages. For more about this action, see [here](../tools/thread-message-loader.md).
+  
 **Functions**
 * Function calling allows you to connect large language models to external tools by describing functions in an API call, enabling the model to intelligently generate JSON objects containing arguments for calling one or multiple functions. 
 * This capability provides a way to obtain structured data from the model, enabling tasks such as creating assistants that interact with external APIs and converting natural language into API calls.
