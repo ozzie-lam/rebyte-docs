@@ -23,3 +23,5 @@ We will show you how to build an app with chat interface.
 <figure><img src="../../images/useapp.png" alt=""></figure>
 
 🎉 Now you can use your App in the chat interface!
+
+**You can try this app [here](https://rebyte.ai/copilot/b1518cc7d7d76055f4b3/session/2d1a606382)**
