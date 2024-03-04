@@ -67,7 +67,7 @@
 * [Knowledge Types](knowledge/knowledge-types.md)
 
 ## Guide
-* [A Guide to RAG query techniques](community/a-guide-to-rag-query-techniques.md]
+* [A Guide to RAG query techniques](community/a-guide-to-rag-query-techniques.md)
 * [Prompt Template Language](guide/prompt-template-language.md)
 * [Visibility](guide/visibility.md)
 * Best Practices
