@@ -30,11 +30,11 @@ RAG Fusion, an extension of Multi-Query Translation, includes a crucial reciproc
 
 Here's the prompt for the LLM.
 
-<figure><img src="../images/decomposition-1.png" alt=""></figure>
+<figure><img src="../images/rag-fusion-1.png" alt=""></figure>
 
 And the LLM generates three sub-queries.
 
-<figure><img src="../images/decomposition-2.png" alt=""></figure>
+<figure><img src="../images/rag-fusion-2.png" alt=""></figure>
 
 RAG Fusion is demonstrated in ReByte through a similar process of generating multiple queries and retrieving documents.
 
