@@ -68,6 +68,8 @@
 
 ## Guide
 * [A Guide to RAG query techniques](community/a-guide-to-rag-query-techniques.md)
+* [Build your own research assistant](community/research-assistant.md)
+* [Building an Investor Type Quiz App](community/investor-assistant.md)
 * [Prompt Template Language](guide/prompt-template-language.md)
 * [Visibility](guide/visibility.md)
 * Best Practices
