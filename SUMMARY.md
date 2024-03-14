@@ -66,6 +66,11 @@
 * [Quick Start](knowledge/quick-start.md)
 * [Knowledge Types](knowledge/knowledge-types.md)
 
+## Assistant APIs
+* [Thread](assistant/thread.md)
+* [Message](assistant/message.md)
+* [File](assistant/file.md)
+
 ## Guide
 * [A Guide to RAG query techniques](community/a-guide-to-rag-query-techniques.md)
 * [Build your own research assistant](community/research-assistant.md)
