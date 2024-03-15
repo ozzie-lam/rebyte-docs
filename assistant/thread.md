@@ -46,9 +46,17 @@ A thread object.
 
 Get list of threads.
 
+**Query parameters**
+* limit: An integer, with the maximum number of threads to return. Default is 20.
+* order: A string, with the order to return the threads. Default is desc.
+* before: A string, used as a cursor for use in pagination. after is an object ID that defines your place in the list.
+* after: A string, used as a cursor for use in pagination. before is an object ID that defines your place in the list.
+
+
+
 **Example Request**
 ```shell
-curl  --globoff 'https://rebyte.ai/api/sdk/threads?query=[%22cB1-_3wh5ZWtUPJU4xIuU%22]' \
+curl  'https://rebyte.ai/api/sdk/threads?limit=10&order=desc' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer $REBYTE_KEY' \
 -H 'Cookie: NEXT_LOCALE=en'

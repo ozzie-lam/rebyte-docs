@@ -11,8 +11,8 @@ Upload a file that can be used across various endpoints.
 * file(required): File object to be uploaded.
 
 **Example Request**
-```curl
-curl https://rebyte.ai/api/sdk/files \
+```shell
+curl 'https://rebyte.ai/api/sdk/files' \
   -H "Authorization: Bearer $REBYTE_KEY" \
   -F file="@mydata.jsonl"
 ```
@@ -37,8 +37,8 @@ Returns an object with message, fileId and path.
 Get list of files.
 
 **Example Request**
-```curl
-curl https://rebyte.ai/api/sdk/files \
+```shell
+curl 'https://rebyte.ai/api/sdk/files' \
   -H "Authorization: Bearer $REBYTE_KEY"
 ```
 
@@ -77,8 +77,8 @@ Returns a list of files.
 Retrieve file by fileId.
 
 **Example Request**
-```curl
-curl https://rebyte.ai/api/sdk/files/{fileId} \
+```shell
+curl 'https://rebyte.ai/api/sdk/files/{fileId}'' \
   -H "Authorization: Bearer $REBYTE_KEY" \
 ```
 
@@ -107,8 +107,8 @@ Returns a file object.
 Retrieve file content by fileId.
 
 **Example Request**
-```curl
-curl https://rebyte.ai/api/sdk/files/{fileId} \
+```shell
+curl 'https://rebyte.ai/api/sdk/files/{fileId}' \
   -H "Authorization: Bearer $REBYTE_KEY" \
 ```
 
@@ -119,4 +119,28 @@ Returns the content of the file.
 **Response**
 ```json
 content of the file...
+```
+
+## Delete file
+
+`DELETE https://rebyte.ai/api/sdk/files/{fileId}`
+
+Delete file by fileId.
+
+**Example Request**
+```shell
+curl --location --request DELETE 'https://rebyte.ai/api/sdk/files/{file_id}' \
+--H 'Authorization: Bearer $REBYTE_KEY'
+```
+
+**Return**
+
+Returns a message object.
+
+**Response**
+```json
+{
+    "message": "deleted",
+    "fileId": "09343664-ddb2-4d43-a4e5-02aa25d15b54"
+}
 ```
