@@ -10,6 +10,20 @@ Create a new thread.
 * messages: An array of messages to start the thread with.
 * metadata: Set of 16 key-value pairs that can be attached to an object. This can be useful for storing additional information about the object in a structured format. Keys can be a maximum of 64 characters long and values can be a maxium of 512 characters long.
 
+**Example Request**
+
+```shell
+curl 'https://rebyte.ai/api/sdk/threads' \
+--H 'Content-Type: application/json' \
+--H 'Authorization: Bearer $REBYTE_KEY' \
+--H 'Cookie: NEXT_LOCALE=en' \
+--data '{
+     "metadata": {
+        "user": "abc123"
+      }
+}'
+```
+
 **Return**
 
 A thread object.
@@ -31,6 +45,14 @@ A thread object.
 `GET https://rebyte.ai/api/sdk/threads`
 
 Get list of threads.
+
+**Example Request**
+```shell
+curl  --globoff 'https://rebyte.ai/api/sdk/threads?query=[%22cB1-_3wh5ZWtUPJU4xIuU%22]' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer $REBYTE_KEY' \
+-H 'Cookie: NEXT_LOCALE=en'
+```
 
 **Return**
 
@@ -71,6 +93,14 @@ Get a thread by id.
 **Path parameters**
 * thread_id(required): A string, with the ID of the thread to retrieve.
 
+**Example Request**
+```shell
+curl 'https://rebyte.ai/api/sdk/threads/{thread_id}' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer $REBYTE_KEY' \
+-H 'Cookie: NEXT_LOCALE=en'
+```
+
 **Returns**
 The thread object matching the specified ID.
 
@@ -97,6 +127,21 @@ Update a thread.
 
 **Request body**
 * metadata: Set of 16 key-value pairs that can be attached to an object. This can be useful for storing additional information about the object in a structured format. Keys can be a maximum of 64 characters long and values can be a maxium of 512 characters long.
+
+**Example Request**
+```shell
+curl 'https://rebyte.ai/api/sdk/threads/{thread_id}' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer $REBYTE_KEY' \
+-H 'Cookie: NEXT_LOCALE=en' \
+--data ' {
+    "metadata": 
+    {
+        "modified": "true",
+        "user": "czy"
+    }
+ }'
+```
 
 **Returns**
 The modified thread object matching the specified ID.
