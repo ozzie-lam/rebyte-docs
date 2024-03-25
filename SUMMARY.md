@@ -67,6 +67,7 @@
 * [Knowledge Types](knowledge/knowledge-types.md)
 
 ## Agent APIs
+
 * [API Overview](assistant/api.md)
 * [Thread](assistant/thread.md)
 * [Message](assistant/message.md)
