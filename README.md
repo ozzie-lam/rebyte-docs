@@ -1,5 +1,6 @@
 # Welcome to Rebyte
 
+<figure><img src="https://res.cloudinary.com/dfjwtidnh/image/upload/v1713596788/rebyte/home/reva_init_banner_vijxsw.png" alt=""><figcaption></figcaption></figure>
 
 ## What is ReByte?
 
@@ -19,7 +20,7 @@ In order to address these challenges, we have designed a platform called Rebyte,
 
 ### Flow Engineering
 
-Rebyte provides a low-code platform, similar to Langchain, for extending the capabilities of team assistants. As mentioned in a well-known paper, large language model agents can be divided into two categories: those driven by the reasoning capabilities of large language models, such as Chain of Thoughts, and those driven by "flow engineering," where team or enterprise developers design LLM agents that align with the team's workflow. Rebyte provides a complete set of tools to support the development of such customized tools, while minimizing the programming requirements for developers. Our goal is to enable developers to build large language model agents with just an understanding of JSON.
+Rebyte provides a low-code platform, similar to Langchain, for extending the capabilities of team assistants. As mentioned this [cognitive architecture blog post by langchain](https://blog.langchain.dev/openais-bet-on-a-cognitive-architecture/)), large language model agents can be divided into two categories: those driven by the reasoning capabilities of large language models, such as Chain of Thoughts, and those driven by "flow engineering," where team or enterprise developers design LLM agents that align with the team's workflow. Rebyte provides a complete set of tools to support the development of such customized tools, while minimizing the programming requirements for developers. Our goal is to enable developers to build large language model agents with just an understanding of JSON.
 
 ### Data Integration:
 
