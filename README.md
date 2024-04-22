@@ -1,41 +1,40 @@
 # Welcome to Rebyte
 
-<figure><img src=".gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
 
 ## What is ReByte?
 
-ReByte is a platform that allows everyone to quickly develop their AI-powered applications without needing too much coding skill. On ReByte, anyone with or without programming experiences, can create various types of applications and publish them for their own personal use, or for the team to use.
+Rebyte is an AI assistant that helps to boot your team's productivity by helping tedious and repetitive tasks.
 
 ## Rationale behind ReByte
 
-Previously, software development is a process that requires a lot of coding skills. But with the rise of **Language Models** \(LMs\), we are able to build software tools that can understand human intentions and generate code automatically. This is a huge step forward in software development, because it allows us to build software tools without needing to write too much code.
+There are already many AI assistants on the market, many of which are made by very good companies. However, we believe that the team AI assistant will be significantly different from these AI assistants in the following ways:
 
-This will open the hood of software development to a much larger group of people. Everyone can use their personal computers to create their **personal** software tools. Every company can use their private data to create their **personal** software tools for internal or external uses.
+Providing customized processes that can be seamlessly integrated into team's assistant. Each team has its own unique business processes.
 
-**ReByte** is built with one mission: to give everyone the ability to create their own software tools without needing too much coding skills.
+Each team's knowledge base is vastly different, and the AI assistant needs more context to better serve each team member.
 
-In terms of functionality, **Rebyte** has some core components:
+All problems can be boiled down to providing more context to AI assistants, including the context of data and the context of business logic.
 
-* Language Model Agent: A serverless function that can be executed on cloud. Those functions usually use LLMs to perform some tasks, but it's not required.
-* Knowledge: Private data ingestion pipeline that feed data to Rebyte system, later can be used by LLM agents.
-* App Builder: User interface builder that allows developers to wire up LLM agents and knowledge to create their own tools.
+In order to address these challenges, we have designed a platform called Rebyte, which focuses on the following key areas:
 
-Also, **ReByte** is built to solve the following problems in LLM application development:
+### Flow Engineering
 
-1. **Predicable LLM application**: It works on the principle of treating each LLM interaction as a single step or functional transformation on working memory, offering a predictable and manageable way to guide the thought process of a LLM. This approach results in consistent, easier-to-follow interaction flows.
-2. **Iterative Nature of LLM Development**: Creating tools on top of modern LLM models can be quite challenging, due to the nature of LLMs. LLMs' output are not deterministic, and their performance can vary from time to time. We want ReByte's LLM agent builder to make this process as easy as possible.
-   * We provide a unified interface for users to build, test and deploy their LLM application.
-   * We also keep logs of the application, so that users can easily fix the bugs when things go wrong.
-3. **Painless Private Data integration**: Today's LLM tools heavily rely on private data. Frameworks such as Langchain and LlamaIndex, together with various vector databases, provide the necessary pieces for private data embedding and search. But even for someone experiences in coding and engineering, it's hard to get the system running the first time, and usually takes hours to debug. That's why we want to make this data integration process as easy and painless as possible.
-   * We provide a hosted solution for users to import data from popular data sources, such as Notion, Google, GitHub, etc., as well as from user's local computers.
-   * We handle data source synchronization automatically, so users don't need to worry about data consistency.
-4. **Production Serving Ready**: Provide a robust runtime ready for immediate deployment and scalable growth.
-   * It's rather hard to scale LLM applications, because of its unpredictable and asynchronous nature.
-   * Being inspired by serverless functions, we provide a scalable runtime for users to scale their LLM applications without having to know the details of the underlying infrastructure.
-5. **Deliver Tool instead of Prompt**: LLM applications are meant to be ready-to-use tools, not just prompts. We make sure that users can deliver their LLM applications as actual tools, instead of prompts.
+Rebyte provides a low-code platform, similar to Langchain, for extending the capabilities of team assistants. As mentioned in a well-known paper, large language model agents can be divided into two categories: those driven by the reasoning capabilities of large language models, such as Chain of Thoughts, and those driven by "flow engineering," where team or enterprise developers design LLM agents that align with the team's workflow. Rebyte provides a complete set of tools to support the development of such customized tools, while minimizing the programming requirements for developers. Our goal is to enable developers to build large language model agents with just an understanding of JSON.
 
-At its core, ReByte defines an **Agent DSL** as an intermediate representation of any LLM application, and provides a hosted runtime for users to execute their LLM applications. Introduction to Agent DSL has obvious benefits:
+### Data Integration:
 
-* can be used to build a GUI builder for users to create their own LLM application.
-* can be generated by fine-tuned models
-* can be edited by human
+Rebyte will help to create a unified team knowledge base by integrating data from authorized sources with the team's permission. This comprehensive and integrated knowledge base is crucial for subsequent processing by large language models. Initially, Rebyte will integrate data from sources such as files, GitHub, Notion, web pages, and Twitter, and this list will continue to expand in the future.
+
+
+### Planning and execution
+
+Building upon the previous points, with data and processes in place, Rebyte introduces an assistant called **Reva** to automatically generate code for executing these enterprise-defined business logics.
+
+
+### Access control
+
+Data security is a constant concern within enterprises, and this is also true for team assistants. Rebyte has designed a role-based access control system that aims to provide enterprise IT personnel with the utmost flexibility in controlling which data can be accessed by whom.
+
+
+
+
