@@ -5,7 +5,8 @@
 * [Welcome to Rebyte](README.md)
 
 ## User's Guide
-
+* [User and Team](guide/teams/overview.md)
+* [Visibility and Access Control](guide/teams/access-control.md)
 
 ## Developers
 
@@ -72,22 +73,20 @@
 * [Message](assistant/message.md)
 * [File](assistant/file.md)
 
-## Guide
+## Examples
+
 * [A Guide to RAG query techniques](community/a-guide-to-rag-query-techniques.md)
 * [Build your own research assistant](community/research-assistant.md)
 * [Building an Investor Type Quiz App](community/investor-assistant.md)
 * [Prompt Template Language](guide/prompt-template-language.md)
-* [Visibility](guide/visibility.md)
 * Best Practices
   * [Search Engine Agent](guide/best-practices/search-engine-agent.md)
   * [Knowledge Based Chatbot](guide/best-practices/knowledge-based-chatbot.md)
   * [Web Page Summary Agent](guide/best-practices/web-page-summary-agent.md)
   * [Bilibili Subtitle Agent](guide/best-practices/bilibili-subtitle-agent.md)
-* [Collaboration](guide/collaboration.md)
-* [Teams](guide/teams/README.md)
-  * [Overview](guide/teams/overview.md)
-  * [Access Control](guide/teams/access-control.md)
-    
+
+
+
 
 ## Community
 * [Overview](community/overview.md)
