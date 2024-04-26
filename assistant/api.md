@@ -62,7 +62,7 @@ In the response, you will find the thread id. You can use this thread id to add 
 }
 ```
 
-1. Add messages to the thread
+3. Add messages to the thread
 
 ```shell
 curl 'https://rebyte.ai/api/sdk/threads/{thread_id}/messages' \
@@ -88,7 +88,7 @@ In the response, you can see the message information.
 }
 ```
 
-3. Run the agent on the thread
+4. Run the agent on the thread
 
 In order to run the agent on the thread, you should get the url from deploying your agent and make a request to this url.
 
@@ -119,7 +119,7 @@ curl -L https://rebyte.ai/api/sdk/p/21b2295005587a5375d8/a/f4222f209267e5b24cda/
 * You can also use "contentOnly:true" to get only the content of the messages.
 
 
-4. Get the messages from the thread
+5. Get the messages from the thread
 
 ```shell
 curl 'https://rebyte.ai/api/sdk/threads/{thread_id}/messages'     \
