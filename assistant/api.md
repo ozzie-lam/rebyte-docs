@@ -18,7 +18,7 @@ A typical integration of the Agent API has the following flow:
 
 1. Create an Agent.
 
-Here, we'll just use this ["Chat with GPT3.5 agent"](https://rebyte.ai/p/1b242a2dea62c603feca/callable/297c5b234e770dd73713/editor) as an example. Remember to test your agent first and make sure it works as expected. Also, click "Deploy" to make it available for the API.
+Here, we'll just use this ["Chat with GPT3.5 agent"](https://rebyte.ai/p/21b2295005587a5375d8/callable/f4222f209267e5b24cda/editor) as an example. Remember to test your agent first and make sure it works as expected. Also, click "Deploy" to make it available for the API.
 
 2. Create a thread
 
@@ -90,10 +90,10 @@ In the response, you can see the message information.
 
 3. Run the agent on the thread
 
-In order to run the agent on the thread, you should get the url from the "" and make a request to this url.
+In order to run the agent on the thread, you should get the url from deploying your agent and make a request to this url.
 
 ```shell
-curl -L https://rebyte.ai/api/sdk/p/1b242a2dea62c603feca/a/297c5b234e770dd73713/r \
+curl -L https://rebyte.ai/api/sdk/p/21b2295005587a5375d8/a/f4222f209267e5b24cda/r \
     -H "Authorization: Bearer $REBYTE_KEY" \
     -H "Content-Type: application/json" \
     -d '{
