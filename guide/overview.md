@@ -48,4 +48,4 @@ The team is a group of users who collaborate on Rebyte. Each team has its own sp
 
 ### How to contact the Rebyte team?
 
-Write to [support@Rebyte.ai](mailto:support@rebyte.tt); they are happy to help with your feedback or questions about Rebyte.
+Write to [support@rebyte.ai](mailto:support@rebyte.ai); they are happy to help with your feedback or questions about Rebyte.
