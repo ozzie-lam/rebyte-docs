@@ -5,6 +5,7 @@
 * [Welcome to Rebyte](README.md)
 
 ## User's Guide
+* [Overview](guide/overview.md)
 * [User and Team](guide/teams/overview.md)
 * [Visibility and Access Control](guide/teams/access-control.md)
 
