@@ -1,7 +1,5 @@
 # Welcome to Rebyte
 
-<figure><img src="https://res.cloudinary.com/dfjwtidnh/image/upload/v1713596788/rebyte/home/reva_init_banner_vijxsw.png" alt=""><figcaption></figcaption></figure>
-
 ## What is ReByte?
 
 Rebyte is an AI assistant that helps to boot your team's productivity by helping tedious and repetitive tasks.
