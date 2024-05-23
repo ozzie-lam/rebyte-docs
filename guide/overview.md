@@ -8,13 +8,16 @@ Rebyte is an AI-powered platform leveraging GPT4, Claude, Gemini, and Mistral to
 
 ### Assistants
 
-Rebyte assistants are AI-powered super agents that can do planning, reasoning, and execution. They can help with a wide range of tasks, from answering questions to creating documents specific to company's data. Assistants can leverage customized agents built by your team to provide more tailored responses.
+Rebyte assistants are AI-powered agents that can do planning, reasoning, and execution. They can help with a wide range of tasks, from answering questions to creating documents specific to company's data. Assistants can leverage customized agents built by your team to provide more tailored responses.
 
 Here are some typical tasks that assistants can help with:
 
 - Answering questions about your company, for example, financial data or company policies.
 - Drafting documents, such as memos or reports, based on your company's data as well as public information.
 - Providing insights into customer behavior or market trends, extract data from your company's data sources, and plot graphs or tables based on the data.
+- Professional Translation, translate document to target language with multiple rounds of proofreading and editing.
+
+If you are familiar with the concept of chatgpt, Rebyte assistants are similar to GPTs but with more focus on team productivity and collaboration.
 
 ### Agents
 
@@ -26,14 +29,19 @@ Here are some example agents:
 - Analyzing market trends from some Twitter accounts
 - Call internal APIs to retrieve data from your company's database
 
+
+You can think of agents as a way to encapsulate your company's knowledge and processes into reusable components that can be used by your assistants.
+Agent concept is similar to the concept of "skills" or "tools" in other AI assistant platforms, or flow engineering.
+
 ### Actions
 
 Action is a building block of an agent. Action is a single unit of work that an agent can perform, such as make a LLM call, read a file, or generate a document, run piece of code, etc.
 Actions can be chained together to form a sequence of actions that the agent will perform.
 
-Here're builtin actions that Rebyte supports:
+Here are builtin actions that Rebyte supports:
 
 - Call LLM
+- Internet Search
 - Load History messages
 - Load Dataset
 - Knowledge Search over vector database
@@ -43,7 +51,7 @@ Here're builtin actions that Rebyte supports:
 - If-else
 - Map-Reduce for parallel processing
 
-Action can also be extended by user to support more complex tasks.
+With extension API, you can create your own actions to perform custom tasks that are specific to your organization.
 
 ### Knowledge
 
