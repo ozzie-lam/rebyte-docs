@@ -44,9 +44,6 @@
       * [Loop-Until](agents/design-your-agent/actions/control-flow/loop-until.md)
       * [Map-Reduce](agents/design-your-agent/actions/control-flow/map-reduce.md)
       * [Early-Return](agents/design-your-agent/actions/control-flow/early-return.md)
-  * Group Agent
-    * [Overview](agents/design-your-agent/group-agent/overview.md)
-    * [Quick Start](agents/design-your-agent/group-agent/quick-start.md)
 * Test Your Agent
   * [Overview](agents/test-your-agent/overview.md)
   * [Datasets](agents/test-your-agent/datasets.md)
@@ -54,14 +51,21 @@
   * [Runs](agents/test-your-agent/runs.md)
 * [Deploy Your Agent](agents/deploy-your-agent.md)
 
-## Apps
-* [Apps with Chat Interface](apps/apps-with-chat-interface/README.md)
-  * [Quick Start](apps/apps-with-chat-interface/quick-start.md)
-* [Apps with Customized UI](apps/apps-with-customized-ui/README.md)
-  * [Quick Start](apps/apps-with-cui/quick-start-weather.md)
-* OpenAI GPTs with AI Agent
-  * [Chat with Notion](apps/openai-gpts-with-ai-agent/chat-with-notion.md)
-  * [Design Your Agent](apps/openai-gpts-with-ai-agent/design-your-agent.md)
+[//]: # (## Apps)
+
+[//]: # (* [Apps with Chat Interface]&#40;apps/apps-with-chat-interface/README.md&#41;)
+
+[//]: # (  * [Quick Start]&#40;apps/apps-with-chat-interface/quick-start.md&#41;)
+
+[//]: # (* [Apps with Customized UI]&#40;apps/apps-with-customized-ui/README.md&#41;)
+
+[//]: # (  * [Quick Start]&#40;apps/apps-with-cui/quick-start-weather.md&#41;)
+
+[//]: # (* OpenAI GPTs with AI Agent)
+
+[//]: # (  * [Chat with Notion]&#40;apps/openai-gpts-with-ai-agent/chat-with-notion.md&#41;)
+
+[//]: # (  * [Design Your Agent]&#40;apps/openai-gpts-with-ai-agent/design-your-agent.md&#41;)
 
 ## Knowledge
 * [Overview](knowledge/overview.md)
@@ -74,27 +78,41 @@
 * [Message](assistant/message.md)
 * [File](assistant/file.md)
 
-## Examples
+[//]: # (## Examples)
 
-* [A Guide to RAG query techniques](community/a-guide-to-rag-query-techniques.md)
-* [Build your own research assistant](community/research-assistant.md)
-* [Building an Investor Type Quiz App](community/investor-assistant.md)
-* [Prompt Template Language](guide/prompt-template-language.md)
-* Best Practices
-  * [Search Engine Agent](guide/best-practices/search-engine-agent.md)
-  * [Knowledge Based Chatbot](guide/best-practices/knowledge-based-chatbot.md)
-  * [Web Page Summary Agent](guide/best-practices/web-page-summary-agent.md)
-  * [Bilibili Subtitle Agent](guide/best-practices/bilibili-subtitle-agent.md)
+[//]: # ()
+[//]: # (* [A Guide to RAG query techniques]&#40;community/a-guide-to-rag-query-techniques.md&#41;)
+
+[//]: # (* [Build your own research assistant]&#40;community/research-assistant.md&#41;)
+
+[//]: # (* [Building an Investor Type Quiz App]&#40;community/investor-assistant.md&#41;)
+
+[//]: # (* [Prompt Template Language]&#40;guide/prompt-template-language.md&#41;)
+
+[//]: # (* Best Practices)
+
+[//]: # (  * [Search Engine Agent]&#40;guide/best-practices/search-engine-agent.md&#41;)
+
+[//]: # (  * [Knowledge Based Chatbot]&#40;guide/best-practices/knowledge-based-chatbot.md&#41;)
+
+[//]: # (  * [Web Page Summary Agent]&#40;guide/best-practices/web-page-summary-agent.md&#41;)
+
+[//]: # (  * [Bilibili Subtitle Agent]&#40;guide/best-practices/bilibili-subtitle-agent.md&#41;)
 
 
 
 
-## Community
-* [Overview](community/overview.md)
-* [Agents](community/agents.md)
-* [Apps](community/apps.md)
+[//]: # (## Community)
 
-## Policies
+[//]: # (* [Overview]&#40;community/overview.md&#41;)
 
-* [Privacy Policies](Policies/privacy-policies.md)
-* [Terms of Service](Policies/terms-of-service.md)
+[//]: # (* [Agents]&#40;community/agents.md&#41;)
+
+[//]: # (* [Apps]&#40;community/apps.md&#41;)
+
+[//]: # (## Policies)
+
+[//]: # ()
+[//]: # (* [Privacy Policies]&#40;Policies/privacy-policies.md&#41;)
+
+[//]: # (* [Terms of Service]&#40;Policies/terms-of-service.md&#41;)
