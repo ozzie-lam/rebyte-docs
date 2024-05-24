@@ -1,16 +1,22 @@
-# Team Overview
+# User and Team
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-09 at 10.09.47 AM.png" alt=""><figcaption></figcaption></figure>
+## Team Overview
 
-# User
+
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+## User
+
 Currently, Rebyte support the following login methods:
+
 * Email
 * Google
 * Github
 
 Rebyte uses email as the primary identifier for a user. Notably, GitHub does not provide **verifed email**, so if you log in with GitHub, you will be asked to provide an email address.
 
-# Team
+## Team
 
 Team is a concept that allows multiple users in same organization to collaborate on the same knowledge/agent/assistant, also enforce access control. Team can have multiple members, and each member can have different access level. Each login user has one default team, named after the user's display name, for example, if your display name is "John Smith", then your default team name will be "John Smith's Personal Team".
 
@@ -20,9 +26,7 @@ For example, if you are a developer in a company, you can create a team called "
 * Each team has its own API Key, which can be used to access all agents and knowledge that belongs to the team.
 * Team has a unique ID to identify the team, you can find the team ID in the team settings page. Team ID is particularly useful when you want to use ReByte via SDK.
 
-
-
-### Role
+#### Role
 
 Each member in a team has a role, which determines the access level of the member. There are 4 roles in a team:
 
