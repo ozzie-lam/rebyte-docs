@@ -10,8 +10,6 @@
 * [User And Team](guide/teams/overview.md)
 * [Use Team Assistant](guide/teams/use-assistant.md)
 
-[//]: # (* [Visibility and Access Control]&#40;guide/teams/access-control.md&#41;)
-
 ## Developers
 
 * [Agent Overview](overview/understanding-rebyte-architecture.md)
@@ -68,6 +66,4 @@
 * [Message](assistant/message.md)
 * [File](assistant/file.md)
 
-### How to contact the Rebyte team?
-
-Write to [cj@rebyte.ai](mailto:cj@rebyte.ai) We are happy to help with your feedback or questions about Rebyte.
+## How to contact the Rebyte team?

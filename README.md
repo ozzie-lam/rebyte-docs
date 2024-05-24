@@ -4,6 +4,8 @@
 
 Rebyte is an AI assistant that helps to boot your team's productivity by helping tedious and repetitive tasks.
 
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
 ## Rationale behind ReByte
 
 There are already many AI assistants on the market, many of which are made by very good companies. However, we believe that the team AI assistant will be significantly different from these AI assistants in the following ways:
