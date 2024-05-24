@@ -7,3 +7,13 @@ Each team contains one super assistant called **Revia**, it's a universal assist
 ## Other Assistants
 
 Team can also create other assistants, which are similar to **Revia** but with more focus on specific tasks. For example, you can create an assistant that helps with data analysis, or an assistant that helps with document generation.
+
+## Create Assistant
+
+You need to be a builder or owner of a team to create an assistant. 
+The following information is required to create an assistant:
+* Assistant Name: will be shown in conversation history
+* Assistant Instruction: explain what the assistant can do, what's objective of the assistant, what's the assistant's objective etc. Rebyte will use this information to generate response specific to the assistant. 
+* Assistant Homepage: markdown formatted text that will be shown in assistant's homepage, visible to all users of the assistant. Typically, this is used to provide instructions on how to use the assistant.
+* Available Agents: list of agents that the assistant can use. Agent could be built by your team or from Rebyte's agent marketplace. 
+* Visibility: whether the assistant is visible to all team members or only to the creator.
