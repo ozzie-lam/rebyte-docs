@@ -1,10 +1,11 @@
-# ReByte User Guide
+# One Page Guide
 
 ## What is ReByte?
 
 Rebyte is an AI-powered platform leveraging GPT4, Claude, Gemini, and Mistral to enhance team collaboration and productivity. Utilize AI assistants to gain deeper insights into any subject, streamline work processes, and boost overall efficiency. Whether you need assistance with company-related inquiries, drafting documents, or simplifying complex tasks, Rebyte's AI assistants have you covered. Create personalized assistants or collaborate with your team on shared assistants tailored to your specific needs.
 
 ## General concepts
+
 
 ### Assistants
 

@@ -50,6 +50,7 @@
   * [Playground](agents/test-your-agent/playground.md)
   * [Runs](agents/test-your-agent/runs.md)
 * [Deploy Your Agent](agents/deploy-your-agent.md)
+* [Agent API](agents/deploy-your-agent.md)
 
 [//]: # (## Apps)
 
