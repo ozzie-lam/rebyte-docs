@@ -1,51 +1,18 @@
 # Access Control
 
-Rebyte is built with fine-grained access control. You can control the visibility of your agents, knowledge, apps and other resources in Rebyte. We believe that this is of vital importance for collaboration and sharing AI applications in enterprise environments.
+Rebyte is built with fine-grained access control. You can control the visibility of your agents, knowledge, assistant and other resources in Rebyte. We believe that this is of vital importance for collaboration and sharing AI applications in enterprise environments.
 
-## Types of Accounts
+## Rules
 
-In Rebyte, there are two types of accounts: Personal and Team.
+There are three types of users regarding access control:
 
-We have designed corresponding permission rules for the core functions of the Rebyte system: agent, knowledge, and app.
+* **Builders** (builder/admin/owner of a team): develop and maintain the team's agents, knowledge, and apps.
 
-## Personal Accounts
+* **Users**: use assistants created by the team.
 
-Personal accounts are for individual users, who can develop agents and applications the way they like and use applications in the Rebyte community.
+* **External Users**: Rebyte users who are not part of the team.
 
-For personal accounts, upgrading to a "pro" account allows the sharing of agents, knowledge, and apps with other users so that they can view and use.
-
-Sharing an agent means others can view the agent you have created, including its workflow and datasets. However, they cannot run or modify it. If another user wants to use it, they can clone the agent into their own account to run and make adjustments.
-
-Sharing knowledge allows other users to view the content in your knowledge base.
-
-Sharing an app allows other users to use the app you have built.
-
-Further details are available in the following table:
-
-| Personal-Access | Other users          | Personal user        |
-| --------------- | -------------------- | -------------------- |
-| App             |                      |                      |
-| Private         |                      | list,use,edit,create |
-| Public          | list,use             | list,use,edit,create |
-| Knowledge       |                      |                      |
-| Public          | list,view            | list,use,edit,create |
-| Private         |                      | list,use,edit,create |
-| Agent           |                      |                      |
-| Public          | list,view,clone      | list,use,edit,create |
-| Unlisted        | view,clone with link | list,use,edit,create |
-| Private         |                      | list,use,edit,create |
-
-## team accounts
-
-Team accounts allows for collaboration among teams, and there are three roles in a team account.
-
-* Builders (builder, admin, owner): develop and maintain the team's agents, knowledge, and apps.
-
-* Users: use applications within the team.
-
-* Non-team users: users who are not part of the team.
-
-For team accounts, builders can develop, design, and use the agents, knowledge, and apps within the team account. Users can view and use the apps, knowledge, and agents in the team account.
+Builders can develop, design, and use the agents, knowledge, and assistants within the team. Users can view and use the assistants created by the team. External users can view and use the agents, knowledge, and apps that are set to External Public.
 
 Regarding agents, users can view all agents' workflows and datasets within the team and can copy them to their personal accounts to modify and run. When an agent is set to External Unlisted, users outside the team can use a link to view the agent. When an agent is set to Public, it appears in the team agent list for external users.
 

@@ -77,6 +77,3 @@ Rebyte use LLM embeddings to convert data into a format that can be used by agen
 
 The team is a group of users who collaborate on Rebyte. Each team has its own space where members can create and share assistants, agents, and knowledge. Team members can have different roles, such as admin, builder, or user, with varying permissions to manage and access the workspace.
 
-### How to contact the Rebyte team?
-
-Write to [support@rebyte.ai](mailto:support@rebyte.ai); they are happy to help with your feedback or questions about Rebyte.

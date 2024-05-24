@@ -7,8 +7,10 @@
 ## User's Guide
 
 * [Overview](guide/overview.md)
-* [User and Team](guide/teams/overview.md)
-* [Visibility and Access Control](guide/teams/access-control.md)
+* [User And Team](guide/teams/overview.md)
+* [Use Team Assistant](guide/teams/use-assistant.md)
+
+[//]: # (* [Visibility and Access Control]&#40;guide/teams/access-control.md&#41;)
 
 ## Developers
 
@@ -65,3 +67,7 @@
 * [Thread](assistant/thread.md)
 * [Message](assistant/message.md)
 * [File](assistant/file.md)
+
+### How to contact the Rebyte team?
+
+Write to [cj@rebyte.ai](mailto:cj@rebyte.ai) We are happy to help with your feedback or questions about Rebyte.

@@ -2,8 +2,6 @@
 
 ## Team Overview
 
-
-
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ## User
@@ -32,7 +30,7 @@ Each member in a team has a role, which determines the access level of the membe
 
 * **Owner**: User who sets up the team is the owner of the team, he has full access to the team, he can invite new members, change team settings, and access all agents and knowledge in the team.
 * **Admin**: Owner has full access to the team, he can invite new members, change team settings, and access all agents and knowledge in the team.
-* **Builder**: Builder can access create agents/knowledge/assistants in the team, but he cannot change team settings or invite new members.
+* **Builder**: Builder can access create agents/knowledge/assistants in the team, but builder cannot change team settings or invite new members.
 * **User**: User can access assistant created by the team, User can also contribute knowledge to shared knowledge base. Other than that, User cannot access agents or change team settings.
 
-see also: [Access Control](access-control.md) for more details.
+[//]: # (see also: [Access Control]&#40;access-control.md&#41; for more details.)
