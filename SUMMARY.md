@@ -5,6 +5,7 @@
 * [Welcome to Rebyte](README.md)
 
 ## User's Guide
+
 * [Overview](guide/overview.md)
 * [User and Team](guide/teams/overview.md)
 * [Visibility and Access Control](guide/teams/access-control.md)
@@ -32,7 +33,7 @@
       * [Http Request Maker](agents/design-your-agent/actions/tools/http-request-maker.md)
       * [Knowledge Search](agents/design-your-agent/actions/tools/knowledge-search.md)
       * [Web Page Crawler](agents/design-your-agent/actions/tools/web-page-crawler.md)
-      * [Code Interpreter](agents/design-your-agent/actions/tools/code-interpreter.md)
+      * [Code Interpreter](developers/design-your-agent/actions/tools/code-interpreter.md)
       * [Advance Code Executor](agents/design-your-agent/actions/tools/advanced-code-executor.md)
       * [Dalle Image Generator](agents/design-your-agent/actions/tools/dalle-image-generator.md)
       * [Stable Diffusion](agents/design-your-agent/actions/tools/stable-diffusion.md)
@@ -44,7 +45,7 @@
       * [Loop-Until](agents/design-your-agent/actions/control-flow/loop-until.md)
       * [Map-Reduce](agents/design-your-agent/actions/control-flow/map-reduce.md)
       * [Early-Return](agents/design-your-agent/actions/control-flow/early-return.md)
-* Test Your Agent
+* [Test Your Agent](developers/test-your-agent/README.md)
   * [Overview](agents/test-your-agent/overview.md)
   * [Datasets](agents/test-your-agent/datasets.md)
   * [Playground](agents/test-your-agent/playground.md)
@@ -52,68 +53,15 @@
 * [Deploy Your Agent](agents/deploy-your-agent.md)
 * [Agent API](agents/deploy-your-agent.md)
 
-[//]: # (## Apps)
-
-[//]: # (* [Apps with Chat Interface]&#40;apps/apps-with-chat-interface/README.md&#41;)
-
-[//]: # (  * [Quick Start]&#40;apps/apps-with-chat-interface/quick-start.md&#41;)
-
-[//]: # (* [Apps with Customized UI]&#40;apps/apps-with-customized-ui/README.md&#41;)
-
-[//]: # (  * [Quick Start]&#40;apps/apps-with-cui/quick-start-weather.md&#41;)
-
-[//]: # (* OpenAI GPTs with AI Agent)
-
-[//]: # (  * [Chat with Notion]&#40;apps/openai-gpts-with-ai-agent/chat-with-notion.md&#41;)
-
-[//]: # (  * [Design Your Agent]&#40;apps/openai-gpts-with-ai-agent/design-your-agent.md&#41;)
-
 ## Knowledge
+
 * [Overview](knowledge/overview.md)
 * [Quick Start](knowledge/quick-start.md)
 * [Knowledge Types](knowledge/knowledge-types.md)
 
 ## Agent API
+
 * [API Overview](assistant/api.md)
 * [Thread](assistant/thread.md)
 * [Message](assistant/message.md)
 * [File](assistant/file.md)
-
-[//]: # (## Examples)
-
-[//]: # ()
-[//]: # (* [A Guide to RAG query techniques]&#40;community/a-guide-to-rag-query-techniques.md&#41;)
-
-[//]: # (* [Build your own research assistant]&#40;community/research-assistant.md&#41;)
-
-[//]: # (* [Building an Investor Type Quiz App]&#40;community/investor-assistant.md&#41;)
-
-[//]: # (* [Prompt Template Language]&#40;guide/prompt-template-language.md&#41;)
-
-[//]: # (* Best Practices)
-
-[//]: # (  * [Search Engine Agent]&#40;guide/best-practices/search-engine-agent.md&#41;)
-
-[//]: # (  * [Knowledge Based Chatbot]&#40;guide/best-practices/knowledge-based-chatbot.md&#41;)
-
-[//]: # (  * [Web Page Summary Agent]&#40;guide/best-practices/web-page-summary-agent.md&#41;)
-
-[//]: # (  * [Bilibili Subtitle Agent]&#40;guide/best-practices/bilibili-subtitle-agent.md&#41;)
-
-
-
-
-[//]: # (## Community)
-
-[//]: # (* [Overview]&#40;community/overview.md&#41;)
-
-[//]: # (* [Agents]&#40;community/agents.md&#41;)
-
-[//]: # (* [Apps]&#40;community/apps.md&#41;)
-
-[//]: # (## Policies)
-
-[//]: # ()
-[//]: # (* [Privacy Policies]&#40;Policies/privacy-policies.md&#41;)
-
-[//]: # (* [Terms of Service]&#40;Policies/terms-of-service.md&#41;)

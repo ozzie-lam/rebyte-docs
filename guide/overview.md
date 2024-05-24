@@ -1,11 +1,14 @@
-# One Page Guide
+# Overview
 
 ## What is ReByte?
 
 Rebyte is an AI-powered platform leveraging GPT4, Claude, Gemini, and Mistral to enhance team collaboration and productivity. Utilize AI assistants to gain deeper insights into any subject, streamline work processes, and boost overall efficiency. Whether you need assistance with company-related inquiries, drafting documents, or simplifying complex tasks, Rebyte's AI assistants have you covered. Create personalized assistants or collaborate with your team on shared assistants tailored to your specific needs.
 
-## General concepts
 
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+## General concepts
 
 ### Assistants
 
@@ -13,10 +16,10 @@ Rebyte assistants are AI-powered agents that can do planning, reasoning, and exe
 
 Here are some typical tasks that assistants can help with:
 
-- Answering questions about your company, for example, financial data or company policies.
-- Drafting documents, such as memos or reports, based on your company's data as well as public information.
-- Providing insights into customer behavior or market trends, extract data from your company's data sources, and plot graphs or tables based on the data.
-- Professional Translation, translate document to target language with multiple rounds of proofreading and editing.
+* Answering questions about your company, for example, financial data or company policies.
+* Drafting documents, such as memos or reports, based on your company's data as well as public information.
+* Providing insights into customer behavior or market trends, extract data from your company's data sources, and plot graphs or tables based on the data.
+* Professional Translation, translate document to target language with multiple rounds of proofreading and editing.
 
 If you are familiar with the concept of chatgpt, Rebyte assistants are similar to GPTs but with more focus on team productivity and collaboration.
 
@@ -26,31 +29,28 @@ Agents are building blocks for assistants. They can be customized to perform spe
 
 Here are some example agents:
 
-- Answering questions about your company's financial data from a predefined xlsx file
-- Analyzing market trends from some Twitter accounts
-- Call internal APIs to retrieve data from your company's database
+* Answering questions about your company's financial data from a predefined xlsx file
+* Analyzing market trends from some Twitter accounts
+* Call internal APIs to retrieve data from your company's database
 
-
-You can think of agents as a way to encapsulate your company's knowledge and processes into reusable components that can be used by your assistants.
-Agent concept is similar to the concept of "skills" or "tools" in other AI assistant platforms, or flow engineering.
+You can think of agents as a way to encapsulate your company's knowledge and processes into reusable components that can be used by your assistants. Agent concept is similar to the concept of "skills" or "tools" in other AI assistant platforms, or flow engineering.
 
 ### Actions
 
-Action is a building block of an agent. Action is a single unit of work that an agent can perform, such as make a LLM call, read a file, or generate a document, run piece of code, etc.
-Actions can be chained together to form a sequence of actions that the agent will perform.
+Action is a building block of an agent. Action is a single unit of work that an agent can perform, such as make a LLM call, read a file, or generate a document, run piece of code, etc. Actions can be chained together to form a sequence of actions that the agent will perform.
 
 Here are builtin actions that Rebyte supports:
 
-- Call LLM
-- Internet Search
-- Load History messages
-- Load Dataset
-- Knowledge Search over vector database
-- Parse file to structured data
-- Run JS code
-- Loop until
-- If-else
-- Map-Reduce for parallel processing
+* Call LLM
+* Internet Search
+* Load History messages
+* Load Dataset
+* Knowledge Search over vector database
+* Parse file to structured data
+* Run JS code
+* Loop until
+* If-else
+* Map-Reduce for parallel processing
 
 With extension API, you can create your own actions to perform custom tasks that are specific to your organization.
 
@@ -60,18 +60,18 @@ Knowledge is the data that your agents and assistants can access. It can be your
 
 Currently, Rebyte supports the following data sources:
 
-- Local files
-- Web pages
-- Discord
-- Twitter
-- Notion
-- Google Drive
-- GitHub
+* Local files
+* Web pages
+* Discord
+* Twitter
+* Notion
+* Google Drive
+* GitHub
 
 Rebyte use LLM embeddings to convert data into a format that can be used by agents and assistants. Currently, Rebyte supports the two following embedding providers:
 
-- OpenAI embeddings
-- Voyager embeddings
+* OpenAI embeddings
+* Voyager embeddings
 
 ### Team
 
