@@ -61,9 +61,10 @@
 * [Quick Start](knowledge/quick-start.md)
 * [Knowledge Types](knowledge/knowledge-types.md)
 
-## Agent API
+## API
 
-* [API Overview](assistant/api.md)
+* [Overview](assistant/overview.md)
+* [Agent](assistant/api.md)
 * [Thread](assistant/thread.md)
 * [Message](assistant/message.md)
 * [File](assistant/file.md)
