@@ -69,4 +69,4 @@
 * [Message](assistant/message.md)
 * [File](assistant/file.md)
 
-## How to contact the Rebyte team?
+## Contact the Rebyte team?
