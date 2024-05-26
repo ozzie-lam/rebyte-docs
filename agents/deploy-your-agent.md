@@ -2,18 +2,13 @@
 
 Once you have finished designing and testing your agent, click "Deploy" to publish a new version or checkout the current version.
 
-* After deploying your agent, you can use it to create your ReByte app.
+## Versioning
 
-<figure><img src="../images/deployment-2.png" alt=""><figcaption></figcaption></figure>
+Correct versioning is extremely important for tracking changes and ensuring that your agent is working as expected.
 
-* You can use the "CURL" to integrate it into your own applications.
+### Rules
 
-<figure><img src="../images/deployment.png" alt=""><figcaption></figcaption></figure>
-
-* You can also integrate your agent into building OpenAI's GPTs using the "OpenAPI Spec". For more details, see [here](broken-reference).
-
-<figure><img src="../images/deployment-3.png" alt=""><figcaption></figcaption></figure>
-
-* To check the different versions you've already published, click the "Versions" tab.
-
-<figure><img src="../images/versions.png" alt=""><figcaption></figcaption></figure>
+* Each deployment will receive a new version number, starting from 1
+* You can specify the version number when calling the agent
+* Use special version number 'latest' to call the latest version of the agent
+* Each agent can have a 'live' version, which may be different from the latest version. A typical use case is to have a live version for production and a latest version for testing.
