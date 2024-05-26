@@ -69,4 +69,7 @@
 * [Message](assistant/message.md)
 * [File](assistant/file.md)
 
+## [Pricing](pricing/overview.md)
+
+
 ## Contact the Rebyte team?
