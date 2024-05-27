@@ -12,5 +12,5 @@ In this model, your team can use API to access all the agents and knowledge crea
 If you want to build an assistant for your customers, we charge based on the usage of actions, different type of actions have different price. Here is the price for different type of actions:
 
 * **LLM Actions**: actual token cost + $1 per 1000 action calls
-* **Other Actions**: $1 per 1000 action calls 
+* **Other Actions**: $1 per 1000 action calls
 
