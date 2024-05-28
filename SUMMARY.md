@@ -1,8 +1,9 @@
 # Table of contents
 
-## Getting started
+## One Minute Overview
 
-* [Welcome to Rebyte](README.md)
+* [One Pager](one-page.md)
+
 
 ## User's Guide
 
