@@ -10,6 +10,7 @@
 * [Overview](guide/overview.md)
 * [User And Team](guide/teams/overview.md)
 * [Use Team Assistant](guide/teams/use-assistant.md)
+* [Build More Assistants](guide/teams/build-assistant.md)
 
 ## Developers
 
