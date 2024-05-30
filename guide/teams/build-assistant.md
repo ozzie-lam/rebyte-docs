@@ -7,7 +7,7 @@ Besides **Revia**, you can build more assistants to help your team. To build a n
 
 ## Configurations
 
-There're several configurations you can set for your assistant, we only emphasize the most important configurations here.
+There are several configurations you can set for your assistant, we only emphasize the most important configurations here.
 
 ### Instructions
 Describe what you want the assistant to do. We will use this information in various places, such as making responsees more specific to your needs, or do query planning based on your instructions.
@@ -28,7 +28,3 @@ There're two categories of agents:
 - cons: you may not modify the agents to fit your needs
 
 All system agents are open source, you clone the agent to your team and modify it to fit your needs.
-
-
-
-
