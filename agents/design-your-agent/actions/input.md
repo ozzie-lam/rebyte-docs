@@ -4,7 +4,54 @@
 
 * The first action in the Agent must be an `Input Action`, you can not delete it or copy it.
 
-* You can select different input datasets to run your agent. For more information about datasets, please refer to [Datasets](../../../agents/test-your-agent/datasets.md).
+* In Design mode, you can specify a dataset as INPUT, each data in this dataset(each row) will be considered as a separate input to agent, and all inputs will be run in parallel. Each data row will receive a separate thread id.
+
+* In production mode, input are passed via agent API.
+
+* Rebyte defines a common data structure to handle messages passed into agent, it's strong recommended to use this format in order to make your agent work with assistant/thread API seamlessly.
+
+## Common Message Format
+
+```json
+{
+  "role": "role of this message, for example user, assistant",
+  "content": "content string of this messages",
+  "parts": [
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "url of this image"
+      }
+    },
+    {
+      "type": "file",
+      "file": {
+        "id": "uuid of this file",
+        "name": "name of this file, with extension"
+      }
+    }
+  ]
+}
+```
+
+if your agent wants to handle list of messages, use following format:
+```json
+{
+  "messages": [
+    {
+      "role": "",
+      "content": ""
+    },
+    {
+      "role": "",
+      "content": ""
+    }
+  ]
+}
+```
+
+**IMPORTANT**
+Only messages conform to this format will be saved to thread automatically, other messages will be ignored
 
 ## Usage
 
