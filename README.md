@@ -4,6 +4,20 @@
 
 Rebyte is an AI assistant that helps to boot your team's productivity by helping tedious and repetitive tasks.
 
+
+|                          | Rebyte                                                          | ChatGpt For Team                          |
+|--------------------------|-----------------------------------------------------------------|-------------------------------------------|
+| Super Assistant          | Revia                                                           | ChatGpt                                   |
+| other assistants         | Assistants                                                      | Gpts                                      |
+| LLM                      | OpenAI/Gemini/Anthropic/Mistral/Other OS Models                 | Only OpenAI                               |
+| Tools Used by Assistants | NoCode Platform for building Tool                               | Code interpreter/Browser/RAG/external API |
+| Data Integration         | Notion/Slack/Discord/Twitter... auto sync handled automatically | No Data Integration                       |
+
+
+
+
+
+
 <figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ## Rationale behind ReByte
