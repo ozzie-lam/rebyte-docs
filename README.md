@@ -5,13 +5,13 @@
 Rebyte is an AI assistant that helps to boot your team's productivity by helping tedious and repetitive tasks.
 
 
-|                          | Rebyte        | ChatGpt For Team                                            |
-|--------------------------|---------------|-------------------------------------------------------------|
-| Super Assistant          | Revia         | ChatGpt                                                     |
-| other assistants         | Assistants    | Gpts                                                        |
-| LLM                      | OpenAI/Gemini/Anthropic/Mistral/Other OS Models | Only OpenAI                                                 |
-| Tools Used by Assistants | Any complex workflow, workflow will be run by Rebyte Workflow Runtime | By enable/disable Code interpreter/Browser/RAG/external API |
-| Data Integration         | Notion/Slack/Discord/Twitter... auto sync handled automatically | No Data Integration                                         |
+|                          | Rebyte        | ChatGpt For Team                                           |
+|--------------------------|---------------|------------------------------------------------------------|
+| Super Assistant          | Revia         | ChatGpt                                                    |
+| other assistants         | Assistants    | Gpts                                                       |
+| LLM                      | OpenAI/Gemini/Anthropic/Mistral/Other OS Models | Only OpenAI                                                |
+| Tools Used by Assistants | Any complex workflow, workflow will be run by Rebyte Workflow Runtime | By selecting Code interpreter/Browser/RAG/external API etc |
+| Data Integration         | Notion/Slack/Discord/Twitter... auto sync handled automatically | No Data Integration                                        |
 
 
 
