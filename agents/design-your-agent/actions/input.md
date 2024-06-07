@@ -12,9 +12,20 @@
 
 ## Common Message Format
 
+Different LLM has different message format, but Rebyte defines a common message format to handle messages passed into agent, internally we will handle all compatibility issues.
+
+**Text Message**
 ```json
 {
   "role": "role of this message, for example user, assistant",
+  "content": "content string of this messages"
+}
+```
+
+**Message with Image URL**
+```json
+{
+  "role": "user",
   "content": "content string of this messages",
   "parts": [
     {
@@ -22,7 +33,36 @@
       "image_url": {
         "url": "url of this image"
       }
-    },
+    }
+  ]
+}
+```
+
+**Message with Image Data**
+```json
+{
+  "role": "user",
+  "content": "content string of this messages",
+  "parts": [
+    {
+      "type": "blob",
+      "blob": {
+        "mime_type": "image/png",
+        "url": "base64 encoded image data"
+      }
+    }
+  ]
+}
+```
+
+
+
+**Message with file**
+```json
+{
+  "role": "role of this message, for example user, assistant",
+  "content": "content string of this messages",
+  "parts": [
     {
       "type": "file",
       "file": {
@@ -34,17 +74,22 @@
 }
 ```
 
-if your agent wants to handle list of messages, use following format:
+**Multiple Messages**
+
 ```json
 {
   "messages": [
     {
       "role": "",
-      "content": ""
+      "content": "",
+      "parts": [
+      ]
     },
     {
       "role": "",
-      "content": ""
+      "content": "",
+      "parts": [
+      ]
     }
   ]
 }
