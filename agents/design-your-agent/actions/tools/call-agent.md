@@ -1,26 +1,26 @@
 # Call agent
 
-We provide `Call Agent` action so that you can call other agents in your agent as an action.
+We provide `Call Tool` action so that you can call other tools in your agent as an action.
 
 ## Usage
 
-* Add a `Call Agent` action to your agent. 
+* Add a `Call Tool` action to your agent. 
 
 <figure><img src="../../../../images/call-agent-1.png"></figure>
 
-* Choose the agent you want to call(let's call it **"Agent B"**) and select the right version.
+* Choose the agent you want to call(let's call it **"Tool B"**) and select the right version.
 
 <figure><img src="../../../../images/call-agent-2.png"></figure>
 
 <figure><img src="../../../../images/call-agent-3.png"></figure>
 
-* Fill in the "Input Args" of Agent B; And the output of Agent B is the output of this action.
+* Fill in the "Input Args" of Tool B; And the output of Tool B is the output of this action.
 
 <figure><img src="../../../../images/call-agent-4.png"></figure>
 
-* **NOTE**: Make sure you fully understand the input format of Agent B before filling in the "Input Args". Otherwise, the system will throw an error. 
+* **NOTE**: Make sure you fully understand the input format of Tool B before filling in the "Input Args". Otherwise, the system will throw an error. 
 
-* Use the "Block Configs" to configure Agent B's action.
+* Use the "Block Configs" to configure Tool B's action.
 
 ## Output
 

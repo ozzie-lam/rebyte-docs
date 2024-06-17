@@ -54,6 +54,6 @@ This action allows you to write vega-lite code to visualize your data. You can u
   <img src="../../../../images/visual-1-4.png" width="80%"/> 
 </figure>
 
-## Example Agent
+## Example Tool
 
 [Here](https://rebyte.ai/p/21b2295005587a5375d8/callable/2852459e7cc4370f1b50/editor) is a demo agent to show you how to uses the `visualize-everything` action.

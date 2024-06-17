@@ -35,9 +35,9 @@ Click "Make It An App" again and we will make changes for you based on your prom
 
 * NOTE: This may not give you the desired results on just one try. We recommend you to try and improve one thing at a time and create more versions until you get the best results.
 
-## Step 3: Connect your App with Agent
+## Step 3: Connect your App with Tool
 
-* Click the "Connect to Agent" on the top right and choose the agent you want to connect with.
+* Click the "Connect to Tool" on the top right and choose the agent you want to connect with.
 
 * NOTE: You must be familiar with the agent's function. Make sure the agent is suitable for your app, otherwise it will not connect successfully.
 

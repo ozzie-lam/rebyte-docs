@@ -1,6 +1,6 @@
 # Collaboration
 
-To avoid incosistency, ReByte has provided features that allow you to work with your teams on building agents.
+To avoid incosistency, ReByte has provided features that allow you to work with your teams on building tools.
 
 * If **two or more people** are on the same agent's page, we will automatically "lock" the page, which means no one can edit this agent.
 

@@ -1,8 +1,8 @@
 # Output
 
-* The `Output` action is used to send output information to the Agent.
+* The `Output` action is used to send output information to the Tool.
 
-* The last action in the Agent must be an `Output` action, you can not delete it or copy it.
+* The last action in the Tool must be an `Output` action, you can not delete it or copy it.
 
 * The last action before the output action will give the output to the `Output` action. The `Output` action then give the output to agent's users or apps calling the agent.
 

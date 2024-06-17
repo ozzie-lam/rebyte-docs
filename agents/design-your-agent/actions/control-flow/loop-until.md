@@ -22,6 +22,6 @@ This `Loop` action allows you to run actions repeatedly when the condition is tr
 * **NOTE**: The "Loop" action's results are arrays. Make sure to use formats like `env.state.LOOP_1[0]` or `{{LOOP_1[0]}}`.
 
 
-## Example Agent
+## Example Tool
 
 * [Loop Until](https://rebyte.ai/p/21b2295005587a5375d8/callable/0029ec181e52a9fc2bc3/editor)

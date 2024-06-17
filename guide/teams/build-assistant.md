@@ -17,14 +17,14 @@ We recommend you to write simple but clear instructions, so that the assistant c
 - generate a report based on the sales data
 
 ### Agents available to the assistant
-This is the most important configuration for your assistant. You can select agents that you want to be available to the assistant. The assistant can use these agents to perform tasks for you. For example, if you want the assistant to help you with data analysis, you can select agents that can read data from your database, generate reports, and plot graphs.
-There're two categories of agents:
+This is the most important configuration for your assistant. You can select tools that you want to be available to the assistant. The assistant can use these tools to perform tasks for you. For example, if you want the assistant to help you with data analysis, you can select tools that can read data from your database, generate reports, and plot graphs.
+There're two categories of tools:
 ** Agents made by you or your team members
-- pros: you can customize the agents to fit your needs
-- cons: you need to spend time building the agents
+- pros: you can customize the tools to fit your needs
+- cons: you need to spend time building the tools
 
 ** Agents made by Rebyte System
-- pros: you can use the agents immediately without building them, we will keep updating the agents to make them more powerful
-- cons: you may not modify the agents to fit your needs
+- pros: you can use the tools immediately without building them, we will keep updating the tools to make them more powerful
+- cons: you may not modify the tools to fit your needs
 
-All system agents are open source, you clone the agent to your team and modify it to fit your needs.
+All system tools are open source, you clone the agent to your team and modify it to fit your needs.

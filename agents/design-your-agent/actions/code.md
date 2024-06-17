@@ -40,7 +40,7 @@ const _fun = (env) => {
 
   
 
-## Example Agent
+## Example Tool
 
 You can find the code shown in the example above in the following agent.
 

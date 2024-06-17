@@ -11,6 +11,6 @@ This action allows you to return the result early without running the rest of th
 <figure><img src="../../../../images/return.png"></figure>
 
 
-## Example Agent
+## Example Tool
 
 [Early Return](https://rebyte.ai/p/21b2295005587a5375d8/callable/6b342c4a4042ccc17e58/editor#3)

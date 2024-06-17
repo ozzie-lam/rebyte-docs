@@ -113,6 +113,6 @@ please reply to me with the phrase: "I apologize for being unable to retrieve co
 {{CODE_1.content}}
 ```
 
-## Example Agent
+## Example Tool
 
 * [Language Model Completion](https://rebyte.ai/p/21b2295005587a5375d8/callable/719d2f31bf9fe977f699/editor)

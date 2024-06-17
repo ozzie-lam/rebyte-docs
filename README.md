@@ -37,11 +37,11 @@ We provide a universal user interface called **Revia** that can be used by all t
 
 ### Flow Engineering
 
-Rebyte provides a low-code platform, similar to Langchain, for extending the capabilities of team assistants. As mentioned this [cognitive architecture blog post by langchain](https://blog.langchain.dev/openais-bet-on-a-cognitive-architecture/)), large language model agents can be divided into two categories: those driven by the reasoning capabilities of large language models, such as Chain of Thoughts, and those driven by "flow engineering," where developers design LLM agents that align with the team's workflow. Rebyte provides a complete set of tools to support the development of such customized tools, while minimizing the programming requirements for developers. Our goal is to enable developers to build large language model agents with just an understanding of JSON.
+Rebyte provides a low-code platform, similar to Langchain, for extending the capabilities of team assistants. As mentioned this [cognitive architecture blog post by langchain](https://blog.langchain.dev/openais-bet-on-a-cognitive-architecture/)), large language model tools can be divided into two categories: those driven by the reasoning capabilities of large language models, such as Chain of Thoughts, and those driven by "flow engineering," where developers design LLM tools that align with the team's workflow. Rebyte provides a complete set of tools to support the development of such customized tools, while minimizing the programming requirements for developers. Our goal is to enable developers to build large language model tools with just an understanding of JSON.
 
 ### Plan and Execute
 
-ReByte Assistant uses a plan and execute model to interact with agents. It first creates a plan, run the plan step by step, and then execute the plan. For data analysis tasks, assistant can write python code itself, and then execute the code. Assistant is also self reflective and can correct itself if the plan is not executed as expected.
+ReByte Assistant uses a plan and execute model to interact with tools. It first creates a plan, run the plan step by step, and then execute the plan. For data analysis tasks, assistant can write python code itself, and then execute the code. Assistant is also self reflective and can correct itself if the plan is not executed as expected.
 
 ### Enterprise Data Integration
 

@@ -1,8 +1,8 @@
-# Design Your Agent
+# Design Your Tool
 
-## Mental Model of Agent Execution
+## Mental Model of Tool Execution
 
-* Agent contains a list of actions, for a single agent invocation, the actions will be executed in strict order. You can have multiple invocations of the same agent at the same time.
+* Tool contains a list of actions, for a single agent invocation, the actions will be executed in strict order. You can have multiple invocations of the same agent at the same time.
 * All actions except 'THREAD' are stateless across invocations.
 * 'THREAD' action is stateful across invocations, typically used to store the conversation history.
 * Downstream actions can access the output of actions that are executed before them.

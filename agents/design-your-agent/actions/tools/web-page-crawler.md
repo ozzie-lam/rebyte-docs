@@ -26,6 +26,6 @@ This action helps you retrieves the HTML content from  a certain web page.
   
 <figure><img src="../../../../images/web-3.png"></figure>
 
-## Example Agent
+## Example Tool
 
 * [Web Page Crawler](https://rebyte.ai/p/21b2295005587a5375d8/callable/35358e328e30adf8a737/editor) 

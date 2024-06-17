@@ -1,22 +1,22 @@
-# Agent API
+# Tool API
 
-The Agent API allows you to build AI agent within your own applications. It provides a set of APIs to interact with the agent, such as sending messages, uploading files, and creating threads.
+The Tool API allows you to build AI agent within your own applications. It provides a set of APIs to interact with the agent, such as sending messages, uploading files, and creating threads.
 
 ## Overview
 
-A typical integration of the Agent API has the following flow:
+A typical integration of the Tool API has the following flow:
 
-1. Create an Agent on rebyte Agent editor by defining its custom actions, such as `Model`, `Data`, `Tools`, `Control Flow`, etc. Pick the model and parameters that you want to use.
+1. Create an Tool on rebyte Tool editor by defining its custom actions, such as `Model`, `Data`, `Tools`, `Control Flow`, etc. Pick the model and parameters that you want to use.
 
 2. Create a Thread when a user starts a conversation.
 
 3. Add Messages to the Thread as the user asks questions.
 
-4. Run the Agent on the Thread to generate a response.
+4. Run the Tool on the Thread to generate a response.
 
 ## Step by step
 
-1. Create an Agent.
+1. Create an Tool.
 
 Here, we'll just use this ["Chat with GPT3.5 agent"](https://rebyte.ai/p/21b2295005587a5375d8/callable/f4222f209267e5b24cda/editor) as an example. Remember to test your agent first and make sure it works as expected. Also, click "Deploy" to make it available for the API.
 

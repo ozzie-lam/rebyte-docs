@@ -31,7 +31,7 @@ Today I'm going to show you how to use Notion pages as a knowledge base for GPT.
 
 <figure><img src="../../images/%25E6%2588%25AA%25E5%25B1%258F2024-01-11_17.04.55.png"></figure>
 
-## Step 2: Clone Agent
+## Step 2: Clone Tool
 
 - In Community select the tab "GPT Builder Actions" and click “knowledge_search_agent_for_gpts”
 
@@ -60,7 +60,7 @@ If want to know how to design this agent, see [here](https://rebyte-ai.gitbook.i
 
 <figure><img src="../../images/Untitled%203.png"></figure>
 
-- Copy and paste the OpenAPI code for the corresponding version of your ReByte Agent into the Action of GPTs, and set **Authentication** as API Key.
+- Copy and paste the OpenAPI code for the corresponding version of your ReByte Tool into the Action of GPTs, and set **Authentication** as API Key.
 
 <figure><img src="../../images/Untitled%204.png"></figure>
 

@@ -1,8 +1,8 @@
 # Input
 
-* The `Input Action` is used to send input information to the Agent. Other actions are based on the input information to perform the right operation.
+* The `Input Action` is used to send input information to the Tool. Other actions are based on the input information to perform the right operation.
 
-* The first action in the Agent must be an `Input Action`, you can not delete it or copy it.
+* The first action in the Tool must be an `Input Action`, you can not delete it or copy it.
 
 * In Design mode, you can specify a dataset as INPUT, each data in this dataset(each row) will be considered as a separate input to agent, and all inputs will be run in parallel. Each data row will receive a separate thread id.
 
@@ -129,7 +129,7 @@ You can use the input by using the `{{INPUT.message}}` variable in the instructi
 
 - Input type
     - Select from predefined Datasets
-    - When connecting to Chat, the latest 10 history dialogues will be sent to the Agent as input information by default, formatted as follows
+    - When connecting to Chat, the latest 10 history dialogues will be sent to the Tool as input information by default, formatted as follows
     
     ```json
     {

@@ -24,6 +24,6 @@ This action allows you to load history messages from a thread in your agent.
   <img src="../../../../images/thread-3.png" />
 </figure>
 
-## Example Agent
+## Example Tool
 
 [Here](https://rebyte.ai/p/21b2295005587a5375d8/callable/c6b378f9c462ebbe60a8/editor) is an example agent to show you how to use the `thread-message-loader` action.

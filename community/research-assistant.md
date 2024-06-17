@@ -32,7 +32,7 @@ In summary, an AI-powered research assistant developed on ReByte represents a si
 
 ## Demos
 
-Here, we've already built the app and agents. For more details, click the below links!
+Here, we've already built the app and tools. For more details, click the below links!
 
 [Research assistant app](https://rebyte.ai/copilot/1167e1b4f904deb2d5a8/session/5c300017f8)
 

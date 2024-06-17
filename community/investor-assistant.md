@@ -47,8 +47,8 @@ This project demonstrates the power of integrating APIs like Typeform with ReByt
 
 ## Demos
 
-To see the app and agents in action, explore the following links:
+To see the app and tools in action, explore the following links:
 
-[Investor Type Quiz Agent](https://rebyte.ai/p/21b2295005587a5375d8/callable/ffdc7bd0d262b62cbd03/editor)
+[Investor Type Quiz Tool](https://rebyte.ai/p/21b2295005587a5375d8/callable/ffdc7bd0d262b62cbd03/editor)
 
 [Investor Type Quiz App](https://rebyte.ai/copilot/0167ad764f8be5e1bd41/session/6afc350466)

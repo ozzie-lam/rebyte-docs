@@ -31,7 +31,7 @@ This action allows you to input text prompts and generate images using the Stabl
   
 * The base64 encoded image can be referenced using `env.state.REBYTE_OPENAI_IMAGE_GEN_1.images[0].base64` or `{{REBYTE_OPENAI_IMAGE_GEN_1.images[0].base64}}`.
 
-## Example Agent
+## Example Tool
 
 * [This](https://rebyte.ai/p/21b2295005587a5375d8/callable/3396e0e83a81396c1ba7/editor) is the "HowToUse" agent for stable diffusion action.
 

@@ -1,6 +1,6 @@
 # Knowledge
 
-In ReByte, we provide knowledge base capability, enabling agents to interact with your private data. Users can store and manage their personal data in the knowledge. 
+In ReByte, we provide knowledge base capability, enabling tools to interact with your private data. Users can store and manage their personal data in the knowledge. 
 
 Many data sources are supported, including: local files, notion, github, discord, etc.
 

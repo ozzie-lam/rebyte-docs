@@ -12,8 +12,8 @@ The `Dataset Loader` action allows you to load data from the agent's datasets. T
 
 <figure><img src="../../../../images/dataset-loader.png"></figure>
 
-## Example Agent
+## Example Tool
 
-<!-- We provide example agents to help you understand the usage of actions. -->
+<!-- We provide example tools to help you understand the usage of actions. -->
 
 * [Dataset Loader](https://rebyte.ai/p/21b2295005587a5375d8/callable/fa56c8cf3f2080ef08d4/editor)

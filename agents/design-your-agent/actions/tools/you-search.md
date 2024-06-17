@@ -35,6 +35,6 @@ With this "You.com" search action, you can go and search anything and you will g
 
 * The search results are in the "hits" field, it's an array with 10 most related search results.
 
-## Example Agent
+## Example Tool
 
 * To see and use this action, please check the example agent:[You.com Search](https://rebyte.ai/p/21b2295005587a5375d8/callable/b6e67fc59579d6304fef/editor).

@@ -38,6 +38,6 @@ We support various data types, including: DOC, DOCX, IMG, EPUB, JPEG, JPG, PNG, 
 
 * If the file id is invalid, or the file is not supported, the action will return an empty array. -->
 
-## Example Agent
+## Example Tool
 
 * [File Loader](https://rebyte.ai/p/21b2295005587a5375d8/callable/bb48d1c1658b5a08917a/editor)

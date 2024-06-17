@@ -2,23 +2,23 @@
 
 We will show you how to build a weather agent in 10 minutes.
 
-## Step 1: Create an Agent
+## Step 1: Create an Tool
 
-* Navigate to the "My Agents" tab in the sidebar and then click on "Create Agent".
+* Navigate to the "My Agents" tab in the sidebar and then click on "Create Tool".
 
 * Describe what you want to do with this agent and choose the right template for your agent. 
 
 <figure><img src="../images/weather-1.png" alt=""></figure>
 
-* Click the "Generate Agent Template" button and we will generate a basic template for you to build from. 
+* Click the "Generate Tool Template" button and we will generate a basic template for you to build from. 
 
 <figure><img src="../images/weather-2.png" alt=""></figure>
 
 * You can change the name, description and visibility of the agent and add tags for more information. Or you can simply regenerate the template if you don't like the current one.
 
-* Click the "Create Agent" and you will have your own agent in just a few seconds.
+* Click the "Create Tool" and you will have your own agent in just a few seconds.
 
-## Step 2: Design Your Agent
+## Step 2: Design Your Tool
 
 * In the auto-generated template, we have already created some actions for you. 
 
@@ -36,7 +36,7 @@ We will show you how to build a weather agent in 10 minutes.
 
 <figure><img src="../images/10.png" alt=""></figure>
 
-## Step 3: Test Your Agent
+## Step 3: Test Your Tool
 
 * Click the "Datasets" tab on the top, then click "Create Datasets". 
 
@@ -56,9 +56,9 @@ We will show you how to build a weather agent in 10 minutes.
 
 <figure><img src="../images/13.png" alt=""></figure>
 
-## Step 4: Deploy the Agent
+## Step 4: Deploy the Tool
 
-* Click "Deploy Agent" on the top right, then click "Deploy A New Version". 
+* Click "Deploy Tool" on the top right, then click "Deploy A New Version". 
 
 * You can use your agent on your ReByte app or integrate it into your own app using the code we provide.
 
@@ -66,7 +66,7 @@ We will show you how to build a weather agent in 10 minutes.
 
 🎉 **Congratulations, you have created your first agent!**
 
-View all your agents in the "My Agents" tab. You can also clone, save, or delete your agents here.
+View all your tools in the "My Agents" tab. You can also clone, save, or delete your tools here.
 
 <figure><img src="../images/14.png" alt=""></figure>
 

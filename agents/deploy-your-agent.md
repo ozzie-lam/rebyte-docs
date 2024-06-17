@@ -1,4 +1,4 @@
-# Deploy Your Agent
+# Deploy Your Tool
 
 Once you have finished designing and testing your agent, click "Deploy" to publish a new version or checkout the current version.
 

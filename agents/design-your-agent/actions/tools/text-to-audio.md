@@ -29,6 +29,6 @@ The output is a object with two fields:"args" and "base64String". The "args" fie
 }
 ```
 
-## Example Agent
+## Example Tool
 
 [Here](https://rebyte.ai/p/21b2295005587a5375d8/callable/30fb713f62a5a2b562a3/editor#1) is a simple example of an agent that uses the "text to audio" action.

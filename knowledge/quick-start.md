@@ -33,7 +33,7 @@ Here we tell you now to create and use knowledge.
 
 Or you can use the knowledge in your **agent**(shown in Step 4). 
 
-## Step 4: Use Knowledge in Agent
+## Step 4: Use Knowledge in Tool
 
 * Use "Search Knowledge" action and choose the knowledge you want to use.
 

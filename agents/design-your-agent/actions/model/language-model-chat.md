@@ -158,6 +158,6 @@ Rebyte uses a similar message format as OpenAI. The message format is a JSON obj
 ]
 ```
 
-## Example Agent
+## Example Tool
 
 * [Language Model Chat](https://rebyte.ai/p/21b2295005587a5375d8/callable/719d2f31bf9fe977f699/editor)

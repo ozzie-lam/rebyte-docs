@@ -41,9 +41,9 @@ We will show to how to build a simple weather app using the customized UI.
 
 * **NOTE**: This may not give you the desired results on just one try. We recommend you to try and improve one thing at a time and create more versions until you get the best results.
 
-## Step 3: Connect your App with Agent
+## Step 3: Connect your App with Tool
 
-* Click the "Connect to Agent" on the top right.
+* Click the "Connect to Tool" on the top right.
 
 <figure><img src="../../images/cui-5-1.png"></figure>
 

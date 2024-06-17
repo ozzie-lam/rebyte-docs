@@ -37,7 +37,7 @@ This action allows you to execute Deno code in your agent.
 }
 ```
 
-## Example Agent
+## Example Tool
 
 [Here](https://rebyte.ai/p/21b2295005587a5375d8/callable/2f9c66ce2d576e5dc181/editor) is a simple example of an agent that uses the "Deno code executor" action.
 

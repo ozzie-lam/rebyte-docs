@@ -6,13 +6,13 @@ Under Knowledge tab, click `Create Knowledge`. Fill in the name and description,
 
 For more details, please check the Knowledge section.
 
-### Create Agent
+### Create Tool
 
 To create an agent，choose `retrieval based chatbot with own data` as template.
 
 <figure><img src="../../builders-guide/use-cases/.gitbook/assets/knowledge-chatbot-1.img" alt=""><figcaption></figcaption></figure>
 
-In `RETRIEVALS`, choose the `Knowlegde` you created above. Click `run TestCases`. If there's no problem with the test, you can deploy the agent. For more details, please check the Agent section.
+In `RETRIEVALS`, choose the `Knowlegde` you created above. Click `run TestCases`. If there's no problem with the test, you can deploy the agent. For more details, please check the Tool section.
 
 ### Create Apps
 

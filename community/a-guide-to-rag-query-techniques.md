@@ -20,7 +20,7 @@ For implementation, we use "Map-Reduce" and "Knowledge Search" actions to retrie
 
 <figure><img src="../images/multi-query-3.png" alt=""></figure>
 
-[Agent Demo for Multi-Query](https://rebyte.ai/p/21b2295005587a5375d8/callable/cd26de3861da546c210f/editor)
+[Tool Demo for Multi-Query](https://rebyte.ai/p/21b2295005587a5375d8/callable/cd26de3861da546c210f/editor)
 
 [App Demo for Multi-Query](https://rebyte.ai/copilot/55f1b8fb7803c73c88d6/session/7bca7a6793)
 
@@ -38,7 +38,7 @@ And the LLM generates three sub-queries.
 
 RAG Fusion is demonstrated in ReByte through a similar process of generating multiple queries and retrieving documents.
 
-[Agent Demo for RAG Fusion](https://rebyte.ai/p/21b2295005587a5375d8/callable/103ce69a89b657efdfc0/editor)
+[Tool Demo for RAG Fusion](https://rebyte.ai/p/21b2295005587a5375d8/callable/103ce69a89b657efdfc0/editor)
 
 [App Demo for RAG Fusion](https://rebyte.ai/copilot/1583ecb2733c95dea108/session/8ccc51d47f)
 
@@ -56,7 +56,7 @@ And the LLM generates three sub-queries.
 
 Here, the "LLM-chat" action is used to generate sub-queries, which are then rocessed to form a comprehensive answer.
 
-[Agent Demo for Decomposition](https://rebyte.ai/p/21b2295005587a5375d8/callable/99a7ce76993d93a43411/editor)
+[Tool Demo for Decomposition](https://rebyte.ai/p/21b2295005587a5375d8/callable/99a7ce76993d93a43411/editor)
 
 [App Demo for Decomposition](https://rebyte.ai/copilot/b4c3ba4609e740a0a3d3/session/b0048540a6)
 
@@ -74,7 +74,7 @@ And the LLM generates three more general query.
 
 This technique is particularly effective in contexts where background information is as crucial as the query's specific details.
 
-[Agent Demo for Step-Back Prompting](https://rebyte.ai/p/21b2295005587a5375d8/callable/069845d6d867c11ef32d/editor)
+[Tool Demo for Step-Back Prompting](https://rebyte.ai/p/21b2295005587a5375d8/callable/069845d6d867c11ef32d/editor)
 
 [App Demo for Step-Back Prompting](https://rebyte.ai/copilot/f527fbc4eca2d3fe326f/session/1dd77d8bd5)
 

@@ -2,9 +2,9 @@
 
 In ReByte, you can set the visibility of your agent, app and knowledge.
 
-## Agent
+## Tool
 
-For agents, we provide 3 visibility options:
+For tools, we provide 3 visibility options:
 
 * Public: Anyone can see and clone your agent, but only you can edit the agent and see the runs.
 * Private: Only you can see your agent.
