@@ -1,80 +1,82 @@
-# Input
+# 入力
 
-* The `Input Action` is used to send input information to the Agent. Other actions are based on the input information to perform the right operation.
+- `入力アクション` は、エージェントに入力情報を送信するために使用されます。他のアクションは入力情報に基づいて適切な操作を実行します。
 
-* The first action in the Agent must be an `Input Action`, you can not delete it or copy it.
+- エージェントの最初のアクションは `入力アクション` でなければならず、それを削除したりコピーしたりすることはできません。
 
-* In Design mode, you can specify a dataset as INPUT, each data in this dataset(each row) will be considered as a separate input to agent, and all inputs will be run in parallel. Each data row will receive a separate thread id.
+- デザインモードでは、データセットを入力として指定できます。このデータセットの各データ（各行）はエージェントへの個別の入力として扱われ、すべての入力が並行して実行されます。各データ行は別個のスレッド ID を受け取ります。
 
-* In production mode, input are passed via agent API.
+- プロダクションモードでは、入力はエージェントの API を介して渡されます。
 
-* Rebyte defines a common data structure to handle messages passed into agent, it's strong recommended to use this format in order to make your agent work with assistant/thread API seamlessly.
+- imprai は、エージェントに渡されるメッセージを処理するための共通データ構造を定義しています。エージェントをアシスタント/スレッド API とシームレスに連携させるために、この形式を使用することを強くお勧めします。
 
-## Common Message Format
+## 共通メッセージ形式
 
-Different LLM has different message format, but Rebyte defines a common message format to handle messages passed into agent, internally we will handle all compatibility issues.
+異なる LLM には異なるメッセージ形式がありますが、imprai はエージェントに渡されるメッセージを処理するための共通メッセージ形式を定義しています。内部的にはすべての互換性の問題を処理します。
 
-**Text Message**
+**テキストメッセージ**
+
 ```json
 {
-  "role": "role of this message, for example user, assistant",
-  "content": "content string of this messages"
+  "role": "このメッセージの役割、例えばユーザー、アシスタント",
+  "content": "このメッセージの内容"
 }
 ```
 
-**Message with Image URL**
+**画像 URL を含むメッセージ**
+
 ```json
 {
-  "role": "user",
-  "content": "content string of this messages",
+  "role": "ユーザー",
+  "content": "このメッセージの内容",
   "parts": [
     {
       "type": "image_url",
       "image_url": {
-        "url": "url of this image"
+        "url": "この画像のURL"
       }
     }
   ]
 }
 ```
 
-**Message with Image Data**
+**画像データを含むメッセージ**
+
 ```json
 {
-  "role": "user",
-  "content": "content string of this messages",
+  "role": "ユーザー",
+  "content": "このメッセージの内容",
   "parts": [
     {
       "type": "blob",
       "blob": {
         "mime_type": "image/png",
-        "url": "base64 encoded image data"
+        "url": "base64でエンコードされた画像データ"
       }
     }
   ]
 }
 ```
 
+**ファイルを含むメッセージ**
 
-
-**Message with file**
 ```json
 {
-  "role": "role of this message, for example user, assistant",
-  "content": "content string of this messages",
+  "role": "このメッセージの役割、例えばユーザー、アシスタント",
+  "content": "このメッセージの内容",
   "parts": [
     {
       "type": "file",
       "file": {
-        "id": "uuid of this file",
-        "name": "name of this file, with extension"
+        "id": "このファイルのUUID",
+        "name": "拡張子を含むこのファイルの名前"
       }
     }
   ]
 }
 ```
 
-**Multiple Messages**
+**複数のメッセージ**
 
 ```json
 {
@@ -82,68 +84,47 @@ Different LLM has different message format, but Rebyte defines a common message 
     {
       "role": "",
       "content": "",
-      "parts": [
-      ]
+      "parts": []
     },
     {
       "role": "",
       "content": "",
-      "parts": [
-      ]
+      "parts": []
     }
   ]
 }
 ```
 
-**IMPORTANT**
-Only messages conform to this format will be saved to thread automatically, other messages will be ignored
+**重要**
+この形式に準拠しているメッセージのみが自動的にスレッドに保存されます。他のメッセージは無視されます。
 
-## Usage
+## 使用方法
 
-You can use the input by using the `{{INPUT.message}}` variable in the instructions or `env.state.INPUT.messages` in the code editor.
+指示内で `{{INPUT.message}}` 変数を使用したり、コードエディタで `env.state.INPUT.messages` を使用したりして入力を利用できます。
 
 <figure><img src="../../../images/input-action.png"></figure>
 
-## Data Format
+## データ形式
 
-* When used in agent page, the input is extracted from the predefined datasets.
+- エージェントページで使用される場合、入力は事前定義されたデータセットから抽出されます。
 
-* When connected to Apps, the input is from the app user's input and conversation history. By default, We will put the last 10 messages to the agent.
+- アプリに接続されている場合、入力はアプリユーザーの入力および会話履歴から取得されます。デフォルトでは、最後の 10 件のメッセージをエージェントに送ります。
 
-* The input data format is as follows:
+- 入力データ形式は次の通りです：
 
-    ```json
-    {
-    "messages":[{
-            "role": "user",
-            "content": "The content."
-        },
-        {
-            "role": "assistant",
-            "content": "The content."
-        }]
-    }
-    ```
-
-<!-- ### Parameters
-
-- Input type
-    - Select from predefined Datasets
-    - When connecting to Chat, the latest 10 history dialogues will be sent to the Agent as input information by default, formatted as follows
-    
-    ```json
-    {
-    "Messages":[
-    {
-        "role": "user",
-        "content": "The content."
-    },
-    {
-        "role": "assistant",
-        "content": "The content."
-    }
+  ```json
+  {
+    "messages": [
+      {
+        "role": "ユーザー",
+        "content": "内容"
+      },
+      {
+        "role": "アシスタント",
+        "content": "内容"
+      }
     ]
-    }
-    ```
-    - output
-        - Output the correct data -->
+  }
+  ```
+
+ご不明点がありましたら、お知らせください。

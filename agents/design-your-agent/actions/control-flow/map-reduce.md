@@ -1,34 +1,34 @@
 # Map Reduce
 
-The `Map Reduce` action allows you to map over an array and executes a sequence of actions in parallel. 
+`Map Reduce` アクションを使用すると、配列をマップしてアクションのシーケンスを並行して実行できます。
 
-This is useful for doing multiple actions in parallel, such as scraping multiple web pages.
+これは、複数のウェブページを同時にスクレイピングする場合などに便利です。
 
-## Usage
+## 使い方
 
-* Add a `Map Reduce` action to your agent, and you will see two blocks with the same name ("MAP_REDUCE_1" for example) being added to the action.
+- エージェントに `Map Reduce` アクションを追加すると、2 つの同じ名前のブロック（例："MAP_REDUCE_1"）がアクションに追加されます。
 
-* The action added between the two blocks will be executed in parallel for each element in the array.
+- 2 つのブロック間に追加されたアクションは、配列内の各要素に対して並行して実行されます。
 
 <figure><img src="../../../../images/map-2.png"></figure>
 
-* Set the following specifications for the `Map Reduce` action:
+- `Map Reduce` アクションに対して以下の仕様を設定します。
 
-### Specification
+### 仕様
 
 <figure><img src="../../../../images/map.png"></figure>
 
 **MapOver**
 
-  * Choose a previous action and we will map over this action's output.
-  * The output of the previous action must be an array. Also make sure the array is not empty.
+- 前のアクションを選択し、このアクションの出力に対してマップを行います。
+- 前のアクションの出力は配列でなければなりません。また、その配列が空でないことを確認してください。
 
-**Repeat** 
+**Repeat**
 
-* The value will specify the maximum iteration count
-* If "repeat" value is not specified, then the iteration will stop when the array is exhausted. There is a hard limit of 64 iterations.
-* If "repeat" value is specified, then the iteration will stop when the array is exhausted or the iteration count reaches the repeat value, whichever comes first.
+- この値は最大反復回数を指定します。
+- 「repeat」値が指定されていない場合、配列が終了するまで繰り返しが続きます。ハードリミットは 64 回の繰り返しです。
+- 「repeat」値が指定されている場合、配列が終了するか、繰り返し回数がリピート値に達するまでのいずれか早い方で停止します。
 
-### Output
+### 出力
 
-* Each action inside map-reduce action will output an array of values.
+- map-reduce アクション内の各アクションは、値の配列を出力します。

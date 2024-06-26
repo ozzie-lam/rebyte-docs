@@ -1,83 +1,83 @@
-# A Guide to 4 Key RAG Techniques
+# 4 つの重要な RAG 技術ガイド
 
-Welcome to our comprehensive overview of query translation techniques in Retriever-Augmented Generation (RAG) pipelines. In this series, we've explored four innovative methods revolutionizing user query processing. These are Multi-Query Translation, RAG Fusion, Decomposition, and Step-Back Prompting. We'll demonstrate how these techniques can be implemented in ReByte, complete with agent and app examples.
+検索拡張生成（RAG）パイプラインにおけるクエリ変換技術の包括的な概要へようこそ。このシリーズでは、ユーザークエリ処理を革新する 4 つの革新的な方法、すなわちマルチクエリ変換、RAG フュージョン、分解、およびステップバックプロンプティングについて探求します。これらの技術が ReByte でどのように実装されるかを、エージェントとアプリの例を用いて示します。
 
-## 1. Multi-Query Translation
+## 1. マルチクエリ変換
 
-Multi-Query Translation diversifies a user's query by rephrasing it into various forms. In ReByte, this is achieved using the "LLM-chat" action to generate multiple queries from a single user question. 
+マルチクエリ変換は、ユーザーのクエリをさまざまな形式に言い換えて多様化します。imprai では、「LLM-chat」アクションを使用して、単一のユーザークエリから複数のクエリを生成します。
 
-Here's the prompt for the LLM.
+以下は LLM のプロンプトです。
 
 <figure><img src="../images/multi-query-1.png" alt=""></figure>
 
-And the LLM generates three sub-queries.
+LLM が 3 つのサブクエリを生成します。
 
 <figure><img src="../images/multi-query-2.png" alt=""></figure>
 
-This technique enhances the likelihood of retrieving relevant information, as each query version might align differently with the documents in the database.
+この技術により、各クエリバージョンがデータベース内のドキュメントと異なる形で一致する可能性があるため、関連情報を取得する可能性が高まります。
 
-For implementation, we use "Map-Reduce" and "Knowledge Search" actions to retrieve information for each query, followed by another "LLM-chat" action to summarize the results.
+実装には、各クエリの情報を取得するために「Map-Reduce」および「ナレッジ検索」アクションを使用し、結果を要約するために別の「LLM-chat」アクションを使用します。
 
 <figure><img src="../images/multi-query-3.png" alt=""></figure>
 
-[Agent Demo for Multi-Query](https://rebyte.ai/p/21b2295005587a5375d8/callable/cd26de3861da546c210f/editor)
+[マルチクエリのエージェントデモ](https://rebyte.ai/p/21b2295005587a5375d8/callable/cd26de3861da546c210f/editor)
 
-[App Demo for Multi-Query](https://rebyte.ai/copilot/55f1b8fb7803c73c88d6/session/7bca7a6793)
+[マルチクエリのアプリデモ](https://rebyte.ai/copilot/55f1b8fb7803c73c88d6/session/7bca7a6793)
 
-## 2. RAG Fusion
+## 2. RAG フュージョン
 
-RAG Fusion, an extension of Multi-Query Translation, includes a crucial reciprocal rank fusion step. This method consolidates results from multiple queries into a single, optimized list, making it ideal for comprehensive information retrieval.
+RAG フュージョンは、マルチクエリ変換の拡張であり、重要な相互ランクフュージョンステップを含みます。この方法は、複数のクエリからの結果を単一の最適化されたリストに統合し、包括的な情報取得に理想的です。
 
-Here's the prompt for the LLM.
+以下は LLM のプロンプトです。
 
 <figure><img src="../images/rag-fusion-1.png" alt=""></figure>
 
-And the LLM generates three sub-queries.
+LLM が 3 つのサブクエリを生成します。
 
 <figure><img src="../images/rag-fusion-2.png" alt=""></figure>
 
-RAG Fusion is demonstrated in ReByte through a similar process of generating multiple queries and retrieving documents.
+RAG フュージョンは、imprai でマルチクエリを生成し、ドキュメントを取得する同様のプロセスで示されます。
 
-[Agent Demo for RAG Fusion](https://rebyte.ai/p/21b2295005587a5375d8/callable/103ce69a89b657efdfc0/editor)
+[RAG フュージョンのエージェントデモ](https://rebyte.ai/p/21b2295005587a5375d8/callable/103ce69a89b657efdfc0/editor)
 
-[App Demo for RAG Fusion](https://rebyte.ai/copilot/1583ecb2733c95dea108/session/8ccc51d47f)
+[RAG フュージョンのアプリデモ](https://rebyte.ai/copilot/1583ecb2733c95dea108/session/8ccc51d47f)
 
-## 3. Decomposition
+## 3. 分解
 
-Decomposition addresses complex queries by breaking them into smaller sub-questions, each solved independently. This approach, demonstrated in ReByte, simplifies the retrieval process and allows for detailed responses.
+分解は、複雑なクエリを小さなサブクエリに分解し、それぞれ独立して解決します。imprai で示されるこのアプローチは、取得プロセスを簡素化し、詳細な応答を可能にします。
 
-Here's the prompt for the LLM.
+以下は LLM のプロンプトです。
 
 <figure><img src="../images/decompositon-1.png" alt=""></figure>
 
-And the LLM generates three sub-queries.
+LLM が 3 つのサブクエリを生成します。
 
 <figure><img src="../images/decomposition-2.png" alt=""></figure>
 
-Here, the "LLM-chat" action is used to generate sub-queries, which are then rocessed to form a comprehensive answer.
+ここでは、「LLM-chat」アクションを使用してサブクエリを生成し、それらを処理して包括的な回答を形成します。
 
-[Agent Demo for Decomposition](https://rebyte.ai/p/21b2295005587a5375d8/callable/99a7ce76993d93a43411/editor)
+[分解のエージェントデモ](https://rebyte.ai/p/21b2295005587a5375d8/callable/99a7ce76993d93a43411/editor)
 
-[App Demo for Decomposition](https://rebyte.ai/copilot/b4c3ba4609e740a0a3d3/session/b0048540a6)
+[分解のアプリデモ](https://rebyte.ai/copilot/55f1b8fb7803c73c88d6/session/7bca7a6793)
 
-## 4. Step-Back Prompting
+## 4. ステップバックプロンプティング
 
-Step-Back Prompting abstracts a specific query into a more general one, broadening the scope of information retrieval. In ReByte, this method generates high-level questions from specific queries, facilitating the retrieval of a wider range of related information.
+ステップバックプロンプティングは、特定のクエリをより一般的なものに抽象化し、情報取得の範囲を広げます。imprai では、この方法により特定のクエリから高レベルの質問を生成し、関連情報の幅広い取得を促進します。
 
-Here's the prompt for the LLM.
+以下は LLM のプロンプトです。
 
 <figure><img src="../images/step-back-1.png" alt=""></figure>
 
-And the LLM generates three more general query.
+LLM が 3 つのより一般的なクエリを生成します。
 
 <figure><img src="../images/step-back-2.png" alt=""></figure>
 
-This technique is particularly effective in contexts where background information is as crucial as the query's specific details.
+この技術は、クエリの具体的な詳細と同様に、バックグラウンド情報が重要な文脈で特に効果を発揮します。
 
-[Agent Demo for Step-Back Prompting](https://rebyte.ai/p/21b2295005587a5375d8/callable/069845d6d867c11ef32d/editor)
+[ステップバックプロンプティングのエージェントデモ](https://rebyte.ai/p/21b2295005587a5375d8/callable/069845d6d867c11ef32d/editor)
 
-[App Demo for Step-Back Prompting](https://rebyte.ai/copilot/f527fbc4eca2d3fe326f/session/1dd77d8bd5)
+[ステップバックプロンプティングのアプリデモ](https://rebyte.ai/copilot/f527fbc4eca2d3fe326f/session/1dd77d8bd5)
 
-## Conclusion
+## 結論
 
-These query translation techniques form a robust toolkit in RAG systems, ensuring accurate, relevant, and comprehensive information retrieval. Multi-Query Translation and RAG Fusion expand search scope, Decomposition simplifies complex queries, and Step-Back Prompting elevates queries to a more abstract level. Stay tuned for further insights and advancements in query translation and RAG pipelines.
+これらのクエリ変換技術は、RAG システムにおいて正確で関連性の高い包括的な情報取得を確保するための強力なツールキットを形成します。マルチクエリ変換および RAG フュージョンは検索範囲を拡大し、分解は複雑なクエリを簡素化し、ステップバックプロンプティングはクエリをより抽象的なレベルに引き上げます。クエリ変換と RAG パイプラインにおけるさらなる洞察と進展を期待してください。

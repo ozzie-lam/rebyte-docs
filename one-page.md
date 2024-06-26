@@ -1,19 +1,19 @@
-# Rebyte One Pager
+# Rebyte ワンページャー
 
-Rebyte contains two things:
-* **Revia**: An AI Assistant for your team members. You can think of it as a private Chatgpt with your team's private knowledge and workflow.
-* **Builder Platform**: Builder in your team can capture your team's proprietary knowledge and workflow, and make them available to **Revia**.
+Rebyteは2つの要素を含んでいます：
+* **Revia**: チームメンバー向けのAIアシスタントです。これは、チームの私的な知識とワークフローを持つプライベートなChatGPTとして考えることができます。
+* **Builder Platform**: チーム内のビルダーがチームの専有知識とワークフローを捕捉し、それを**Revia**で利用できるようにします。
 
 ## Revia
-**Revia** is a universal user interface that can be used by all team members to interact with the AI assistant. This interface is designed to handle various types of tasks, such as data retrieval, question and answer, document generation, and data analysis, and more advanced tasks such as interactive chart and table, form filling and more.
+**Revia**は、すべてのチームメンバーがAIアシスタントと対話するために使用できる汎用ユーザーインターフェースです。このインターフェースは、データの取得、質問と回答、文書生成、データ分析、インタラクティブなチャートやテーブル、フォーム記入など、さまざまなタイプのタスクを処理するように設計されています。
 
-Besides Revia, team admin can build other assistants specific to some use cases, for example, a customer support assistant, a sales assistant, a marketing assistant, etc.
+Reviaの他にも、チーム管理者は特定のユースケースに特化した他のアシスタント（例：カスタマーサポートアシスタント、セールスアシスタント、マーケティングアシスタントなど）を構築することができます。
 
-The relationship between **Revia** and **Other Assistants** is like the relationship between **ChatGpt** and **Gpts**.
+**Revia**と**他のアシスタント**の関係は、**ChatGPT**と**GPTs**の関係に似ています。
 
 ## Builder Platform
-Only builders or admin in your team can access the builder platform. Those are main components in the builder platform:
-* **Actions**: represent a single unit of work that an agent can perform, such as make a LLM call, read a file, or generate a document, run piece of code, call external services etc. Actions can be chained together to form a sequence of actions that the agent will perform.
-* **Agents**: a no-code UI for capturing proprietary workflow, it represents a sequence of actions.
-* **Knowledge** : a data pipeline for aggregating data from various enterprise sources, embedding them, and making them available to agents.
-* **API**: all mentioned above can be accessed via API, so you can integrate Rebyte with your existing systems.
+チーム内のビルダーまたは管理者のみがBuilder Platformにアクセスできます。Builder Platformの主要なコンポーネントは次の通りです：
+* **アクション**: エージェントが実行できる単一の作業単位を表します。例として、LLMコールの実行、ファイルの読み取り、ドキュメントの生成、コードの実行、外部サービスの呼び出しなどがあります。アクションは連鎖させて、一連のアクションを形成し、エージェントが実行するシーケンスを作成できます。
+* **エージェント**: ノーコードUIで専有ワークフローを捕捉するためのもので、一連のアクションを表します。
+* **ナレッジ**: さまざまな企業ソースからデータを集約し、埋め込み、それをエージェントが利用できるようにするデータパイプラインです。
+* **API**: 上記のすべてはAPIを介してアクセスできるため、既存のシステムとRebyteを統合することができます。

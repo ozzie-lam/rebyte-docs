@@ -1,42 +1,43 @@
-# There are two ways to reference previous actions' output, depending on the action type.
+# 以前のアクションの出力を参照する方法
 
-## Plain javascript syntax
+アクションの種類に応じて、以前のアクションの出力を参照する方法には2つあります。
 
-Use the `env.state` object to access the output of previous actions. For example, if you want to access the output of the `INPUT` action, you can use `env.state.INPUT`.
+## プレーンJavaScript構文
+
+`env.state`オブジェクトを使用して、以前のアクションの出力にアクセスします。例えば、`INPUT`アクションの出力にアクセスする場合、`env.state.INPUT`を使用します。
 
 ```javascript   
 const llmOutput = env.state.LLM_CALL;
 ```
 
-This syntax is used in all fields that support javascript.
+この構文は、JavaScriptをサポートするすべてのフィールドで使用されます。
 
-## Prompt template language
+## プロンプトテンプレート言語
 
-This syntax is used in other fields that support the prompt template language. You can use the `{{}}` syntax to access the output of previous actions. For example, if you want to access the output of the `INPUT` action, you can use `{{INPUT}}`.
+この構文は、プロンプトテンプレート言語をサポートする他のフィールドで使用されます。以前のアクションの出力にアクセスするには、`{{}}`構文を使用します。例えば、`INPUT`アクションの出力にアクセスする場合、`{{INPUT}}`を使用します。
 
-for example, if you want to access the first message of the `INPUT` action, you can use `{{INPUT.messages[0].content}}`.
+例えば、`INPUT`アクションの最初のメッセージにアクセスする場合、`{{INPUT.messages[0].content}}`を使用します。
 ```markup
 {{INPUT.messages[0].content}}
 ```
 
-The Prompt Template Language is a simple language that allows you to create a prompt template that can be used to generate prompts for your LLM models. The Prompt Template Language is a subset of the [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) templating language. Here are some examples of how you can use the Prompt Template Language, for more information on the syntax, see the [Jinja documentation](https://jinja.palletsprojects.com/en/3.1.x/templates/).
+プロンプトテンプレート言語は、LLMモデルのプロンプトを生成するためのテンプレートを作成するためのシンプルな言語です。このプロンプトテンプレート言語は[Jinja](https://jinja.palletsprojects.com/en/3.1.x/)テンプレート言語のサブセットです。以下にプロンプトテンプレート言語の使用例を示します。構文に関する詳細は[Jinjaのドキュメント](https://jinja.palletsprojects.com/en/3.1.x/templates/)を参照してください。
 
-\{\{ and \}\} for expressions
+\{\{ と \}\} は式に使用されます。
 
 ```
 {{ 1 + 1 }}
 ```
 
-For referencing variables
+変数を参照する場合
 
 ```
 {{ variable_name }}
 ```
 
-for statements
+ステートメントには以下のように使用されます。
 
 ```markup
-
 {% raw %}
 {% for i in range(10) %}
 
@@ -44,44 +45,40 @@ for statements
 
 {% endfor %}
 {% endraw %}
-
 ```
 
-{# and #} for comments To comment out part of the template, wrap it in {# #}. Anything in between those tags will not be rendered.
+{# と #} はコメントに使用されます。テンプレートの一部をコメントアウトするには、{# #}で囲みます。そのタグ間にあるものはレンダリングされません。
 
 ```
-{# This is a comment #}
+{# これはコメントです #}
 ```
 
-Construct and attributes can be accessed by using the dot (.) like \{\{ product.name \}\}. Specific members of an array or tuple are accessed by using the .i notation, where i is a zero-based index. In dot notation variable can not be used after the dot (.).
+オブジェクトの属性にはドット（.）を使用してアクセスします。例えば、`{{ product.name }}`のように使用します。配列やタプルの特定のメンバーには、ゼロベースのインデックスを使用してアクセスします。ドット（.）の後に変数を使用することはできません。
 
 ```
 {{ product.name }}
 {{ product[0] }}
 ```
 
-Tests can be used against an expression to check some condition on it and are made in if blocks using the is keyword. For example, you would write the following to test if an expression is odd:
+テストは、ある表現が特定の条件を満たすかどうかを確認するために使用され、ifブロックでisキーワードを使って行います。例えば、表現が奇数であるかどうかをテストする場合、以下のように書きます。
 
 ```markup
-
 {% raw %}
 {% if number is odd %}
 
-    This is an odd number
+    これは奇数です
 
 {% endif %}
 {% endraw %}
-
 ```
 
-Tests can also be negated:
+テストは否定することもできます。
 
-```
-
+```markup
 {% raw %}
 {% if number is not odd %}
 
-    This is not an odd number
+    これは奇数ではありません
 
 {% endif %}
 {% endraw %}

@@ -1,8 +1,7 @@
-# Community Agents
+# コミュニティエージェント
 
-Under the "Agents" section, you can find agents that are built by the ReByte team. 
+「エージェント」セクションでは、imprai チームによって作成されたエージェントを見つけることができます。
 
 <figure><img src="../images/com-agents.png" alt=""></figure>
 
-You can use these agents freely and explore their functions.
-
+これらのエージェントは自由に使用でき、その機能を探索することができます。

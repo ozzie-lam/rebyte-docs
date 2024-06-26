@@ -1,30 +1,27 @@
-# Function Call
+# 関数呼び出し
 
-## Example 1
+## 例 1
 
-This is a simple demonstration of how to use the "Functions" feature. 
+これは、「ファンクション」機能の使用方法の単純なデモンストレーションです。
 
-* First, uncomment the code in the "Functions" section.
+- まず、「ファンクション」セクションのコードをコメント解除します。
 
 <figure><img src="../../../../images/openai-functions.png"></figure>
 
-* This is a detailed description of a weather API. You can use this API to get the weather information of a city.
+- これは、天気 API の詳細な説明です。この API を使用して都市の天気情報を取得できます。
 
-* For any given input, the model will see if there is a need to call your function. 
-  
-* If so, it will give you json with the arguments you need to call the function. 
-  
+- 与えられた入力に対して、モデルは関数を呼び出す必要があるかどうかを確認します。
+
+- 必要であれば、関数を呼び出すために必要な引数を含む JSON を提供します。
+
 <figure><img src="../../../../images/openai-functions-1.png"></figure>
 
-* Otherwise, it will respond like a normal chatbot.
+- それ以外の場合、通常のチャットボットのように応答します。
 
 <figure><img src="../../../../images/openai-functions-2.png"></figure>
 
-* **NOTE**: If you use the "Functions" feature, you should use another action to call the actual function API. The language model only gives you the arguments you need to call the function API.
+- **注意**: 「ファンクション」機能を使用する場合は、実際の関数 API を呼び出す別のアクションを使用する必要があります。言語モデルは関数 API を呼び出すために必要な引数のみを提供します。
 
-## Example 2
+## 例 2
 
-This is a more complex example of how to use the "Functions" feature. 
-
-I will show you how to use the "Functions" feature and how to connect the result of the "Functions" feature to "Http Request Maker" to call the actual function API.
-
+これは、「ファンクション」 機能の使用方法およびその結果を 「Http リクエストメーカー」に接続して実際の関数 API を呼び出す複雑な方法の例です。

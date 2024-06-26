@@ -1,11 +1,9 @@
-# Iterative Development Process of An Agent
+# エージェントの反復開発プロセス
 
-Language models are naturally unpredictable, even though lots of techniques have been developed to make them more predictable, for example OpenAI has a seed parameter that can be used to control the randomness of the model. This dramatically changes how we ship software. In the past, we would write a piece of code, compile it, and then ship it. Now, we write a software agent, the only we can guarantee that the agent is working as expected is to have this agent run through a list of test datasets, and evaluate the result to see if it is passing some threshold.
+言語モデルは、より予測可能にするための多くの技術が開発されているにもかかわらず、本来予測不可能です。たとえば、OpenAI には、モデルのランダム性を制御するために使用できるシードパラメーターがあります。しかし、これはソフトウェアのリリース方法を劇的に変えました。以前は、コードを書いてコンパイルし、それをリリースしていました。現在ではソフトウェアエージェントを作成し、そのエージェントが期待通りに動作することを保証する唯一の方法は、そのエージェントを一連のテストデータセットで実行し、結果を評価して特定のしきい値を超えているかどうかを確認することです。
 
-## Iterative Development process of an agent
+## エージェントの反復開発プロセス
 
-In Rebyte, the first thing to design an agent is to create a test dataset. A test dataset is attached to **INPUT** action of agent, which is always the first action of an agent. In Design Mode, all test cases will be run in parallel to make the whole process faster, also action can be set to 'cache' mode to further speed up the process and save token usage.
-
-
+imprai では、エージェントを設計する最初のステップとしてテストデータセットを作成します。テストデータセットは、エージェントの最初のアクションである**INPUT**アクションに紐づけされます。デザインモードでは、すべてのテストケースが並行して実行され、プロセス全体が高速化されます。また、アクションを「キャッシュ」モードに設定することで、さらにプロセスを高速化し、トークンの使用を節約できます。
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>

@@ -1,14 +1,15 @@
+## 始める前に
 
-## Before you start
+アプリを構築する前に、**アプリが何をするのか**を考える必要があります。そして、このアプリが接続するエージェントの**入力、データフロー、出力**を考える必要があります。
 
-Before building an app, you need to think about **what you want your app to do**. Then, think about the **input,data flow and output** of the agent this app will connect with. 
-# Overview
+# 概要
 
+例えば、現在の天気を取得し、その天気を描写する絵を描くアプリを作成したい場合を考えてみましょう。
 
-For example, if you want to build an App that can get the current weather and draw a picture descibing the weather for you. 
+- まず、ユーザーのクエリが何であるかを考えます。この場合、入力は都市名や「ニューヨークの天気は？」のような文になります。
+- 次に、エージェントが天気情報をどのように取得するかを考えます。imprai では、「Google 検索」や「You.com 検索」などのツールを提供しており、必要な情報を取得できます。ここでは、「You.com 検索」を使用して天気情報を取得できます。
+- また、エージェントがアプリに送信するデータについても考えます。例えば、天気情報を送信する際に、プレーンテキストや JSON データを送信するべきかを考えます。
+- 最後に、アプリのユーザーインターフェースがどのように見えるべきかを考えます。入力をどこで取得し、出力をどこに表示し、アプリがユーザーの入力にどのように反応するかなどです。
+- アプリが何をするのか明確なアイデアを持ったら、アプリとエージェントの構築を開始できます。
 
-* First think about that the user's query will be. In this case, the input would be a city name or a sentence like "What's the weather in New York?". 
-* Then, think about how the agent should get the weather information. In ReByte, we provide tools like "Google Search" or "You.com search" to help you get the information you want. Here, you can use "You.com search" to get the weather information.
-* Also, think about the data the agent should send the to your app. For example, to send the weather information, should you send a plain text or JSON data?
-* Finally, think about how the user interface of your app should look like: where to get the input, where to display the output and how the app should react to the user's input.
-* Once you have a clear idea of what you want your app to do, you can start building your app and agent.
+このようにして計画を立てることで、効率的にアプリを構築することができます。

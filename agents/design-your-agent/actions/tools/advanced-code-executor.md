@@ -1,43 +1,35 @@
 # Advanced Code Executor
 
-This action allows you to execute Deno code in your agent.
+このアクションを使用すると、エージェント内で Deno コードを実行できます。
 
-## Usage 
+## 使用方法
 
-* First, create a "code interpreter" action in your agent.
+- まず、エージェント内に「code interpreter」アクションを作成します。
 
 <figure><img src="../../../../images/acode-1.png"></figure>
 
-* Then, you can write your code in the action's editor.
-* NOTE: In this action, we only support Typescript and Javascript code.
+- 次に、アクションのエディターにコードを書くことができます。
+- 注意: このアクションでは、Typescript と Javascript のコードのみをサポートしています。
 
 <figure><img src="../../../../images/acode-2.png"></figure>
 
-* Finally, run the agent and see the result.
+- 最後に、エージェントを実行して結果を確認します。
 
 <figure><img src="../../../../images/acode-3.png"></figure>
 
-## Output
+## 出力
 
-* The output of the code will be a json object, the output is the code's execution result, the status_code is 0 if the code executed successfully, and the error field is empty. 
-* If the code execution fails, the status_code will be the corresponding error code and the error field will contain the error message.
-
-```json
-{
-  "status_code":0,
-  "output":"Hello, Deno!",
-  "error:"
-}
+- コードの出力は json オブジェクトで、output がコードの実行結果、status_code が 0 の場合はコードが正常に実行され、error フィールドが空です。
+- コードの実行に失敗した場合、status_code は対応するエラーコードになり、error フィールドにはエラーメッセージが含まれます。
 
 ```json
 {
-  "status_code":0,
-  "output":"Hello, Deno!",
+  "status_code": 0,
+  "output": "Hello, Deno!",
   "error:"
 }
 ```
 
-## Example Agent
+## サンプルエージェント
 
-[Here](https://rebyte.ai/p/21b2295005587a5375d8/callable/2f9c66ce2d576e5dc181/editor) is a simple example of an agent that uses the "Deno code executor" action.
-
+[こちら](https://rebyte.ai/p/21b2295005587a5375d8/callable/2f9c66ce2d576e5dc181/editor)は、「Deno コードエグゼキューター」アクションを使用するエージェントの簡単な例です。

@@ -1,43 +1,45 @@
-# Welcome to Rebyte
+# Rebyteへようこそ
 
-<figure><img src=".gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1.png" alt="Rebyteロゴ"><figcaption></figcaption></figure>
 
-## What is ReByte?
+## ReByteとは？
 
-Rebyte is your team assistant that helps you to create your own AI-powered applications without needing too much coding skills. On ReByte, you can create various types of applications and publish them for your own personal use, or for the team to use.
+Rebyteは、コーディングスキルをほとんど必要とせずに、独自のAI駆動アプリケーションを作成するためのチームアシスタントです。ReByte上では、さまざまなタイプのアプリケーションを作成し、個人用やチーム用に公開することができます。
 
-ReByte is a platform that allows everyone to quickly develop their AI-powered applications without needing too much coding skill. On ReByte, anyone with or without programming experiences, can create various types of applications and publish them for their own personal use, or for the team to use.
+ReByteは、コーディングスキルをほとんど必要とせずに、誰でも迅速にAI駆動アプリケーションを開発できるプラットフォームです。プログラミングの経験がある人もない人も、ReByte上でさまざまなタイプのアプリケーションを作成し、個人用やチーム用に公開することができます。
 
-## Rationale behind ReByte
+## ReByteの背景
 
-Previously, software development is a process that requires a lot of coding skills. But with the rise of **Language Models** \(LMs\), we are able to build software tools that can understand human intentions and generate code automatically. This is a huge step forward in software development, because it allows us to build software tools without needing to write too much code.
+これまで、ソフトウェア開発は多くのコーディングスキルを必要とするプロセスでした。しかし、**言語モデル（LM）**の台頭により、人間の意図を理解し、自動的にコードを生成できるソフトウェアツールを構築することが可能になりました。これはソフトウェア開発において大きな一歩前進であり、少ないコードでソフトウェアツールを構築できるようになります。
 
-This will open the hood of software development to a much larger group of people. Everyone can use their personal computers to create their **personal** software tools. Every company can use their private data to create their **personal** software tools for internal or external uses.
+これにより、ソフトウェア開発のフードをはるかに多くの人々に開くことができます。誰もが自分のパソコンを使って**個人用**のソフトウェアツールを作成することができます。すべての企業は自社のプライベートデータを使用して、内部または外部で使用する**個人用**のソフトウェアツールを作成することができます。
 
-**ReByte** is built with one mission: to give everyone the ability to create their own software tools without needing too much coding skills.
+**ReByte**は、コーディングスキルをほとんど必要とせずに、誰もが自分のソフトウェアツールを作成できる能力を提供するという使命のもとに構築されました。
 
-In terms of functionality, **Rebyte** has some core components:
+機能面では、**Rebyte**にはいくつかのコアコンポーネントがあります：
 
-* Language Model Agent: A serverless function that can be executed on cloud. Those functions usually use LLMs to perform some tasks, but it's not required.
-* Knowledge: Private data ingestion pipeline that feed data to Rebyte system, later can be used by LLM agents.
-* App Builder: User interface builder that allows developers to wire up LLM agents and knowledge to create their own tools.
+* 言語モデルエージェント: クラウド上で実行できるサーバーレス関数。これらの関数は通常、LLMを使用してタスクを実行しますが、必ずしも必要ではありません。
+* ナレッジ: Rebyteシステムにデータを供給するプライベートデータ取り込みパイプラインで、後にLLMエージェントが使用できます。
+* アプリビルダー: 開発者がLLMエージェントとナレッジを結びつけて独自のツールを作成できるユーザーインターフェースビルダー。
 
-Also, **ReByte** is built to solve the following problems in LLM application development:
+また、**ReByte**はLLMアプリケーション開発における以下の問題を解決するために構築されました：
 
-1. **Predicable LLM application**: It works on the principle of treating each LLM interaction as a single step or functional transformation on working memory, offering a predictable and manageable way to guide the thought process of a LLM. This approach results in consistent, easier-to-follow interaction flows.
-2. **Iterative Nature of LLM Development**: Creating tools on top of modern LLM models can be quite challenging, due to the nature of LLMs. LLMs' output are not deterministic, and their performance can vary from time to time. We want ReByte's LLM agent builder to make this process as easy as possible.
-   * We provide a unified interface for users to build, test and deploy their LLM application.
-   * We also keep logs of the application, so that users can easily fix the bugs when things go wrong.
-3. **Painless Private Data integration**: Today's LLM tools heavily rely on private data. Frameworks such as Langchain and LlamaIndex, together with various vector databases, provide the necessary pieces for private data embedding and search. But even for someone experiences in coding and engineering, it's hard to get the system running the first time, and usually takes hours to debug. That's why we want to make this data integration process as easy and painless as possible.
-   * We provide a hosted solution for users to import data from popular data sources, such as Notion, Google, GitHub, etc., as well as from user's local computers.
-   * We handle data source synchronization automatically, so users don't need to worry about data consistency.
-4. **Production Serving Ready**: Provide a robust runtime ready for immediate deployment and scalable growth.
-   * It's rather hard to scale LLM applications, because of its unpredictable and asynchronous nature.
-   * Being inspired by serverless functions, we provide a scalable runtime for users to scale their LLM applications without having to know the details of the underlying infrastructure.
-5. **Deliver Tool instead of Prompt**: LLM applications are meant to be ready-to-use tools, not just prompts. We make sure that users can deliver their LLM applications as actual tools, instead of prompts.
+1. **予測可能なLLMアプリケーション**: 各LLMの対話を作業メモリ上の単一のステップまたは機能変換として扱う原則に基づき、LLMの思考プロセスを予測可能で管理しやすい方法で導くことができます。このアプローチにより、一貫性があり、追跡しやすい対話フローを実現します。
+2. **LLM開発の反復的性質**: 現代のLLMモデル上にツールを構築することは、その性質により非常に困難です。LLMの出力は決定的ではなく、そのパフォーマンスは時間とともに変動します。ReByteのLLMエージェントビルダーは、このプロセスをできるだけ簡単にすることを目指しています。
+   * ユーザーがLLMアプリケーションを構築、テスト、デプロイするための統一インターフェースを提供します。
+   * アプリケーションのログも保持しており、問題が発生したときにユーザーが簡単にバグを修正できるようにします。
+3. **簡単なプライベートデータ統合**: 今日のLLMツールはプライベートデータに大きく依存しています。LangchainやLlamaIndexといったフレームワーク、およびさまざまなベクターデータベースは、プライベートデータの埋め込みと検索に必要な部品を提供します。しかし、コーディングやエンジニアリングに経験のある人でも、システムを最初に動かすのは難しく、通常はデバッグに何時間もかかります。そのため、私たちはこのデータ統合プロセスをできるだけ簡単に、そして苦痛なくすることを目指しています。
+   * Notion、Google、GitHubなどの一般的なデータソースやユーザーのローカルコンピュータからデータをインポートするためのホステッドソリューションを提供します。
+   * データソースの同期を自動的に処理するので、ユーザーはデータの整合性を気にする必要がありません。
+4. **プロダクション向けのサービング準備完了**: すぐに展開可能でスケーラブルな成長に対応する堅牢なランタイムを提供します。
+   * LLMアプリケーションをスケーリングするのは、その予測不可能で非同期的な性質のため、非常に難しいです。
+   * サーバーレス関数に触発され、基盤となるインフラストラクチャの詳細を知らなくても、ユーザーがLLMアプリケーションをスケールアップできるスケーラブルなランタイムを提供します。
+5. **プロンプトではなくツールを提供**: LLMアプリケーションは、単なるプロンプトではなく、実際に使用できるツールであるべきです。私たちは、ユーザーがLLMアプリケーションを実際のツールとして提供できることを確実にします。
 
-At its core, ReByte defines an **Agent DSL** as an intermediate representation of any LLM application, and provides a hosted runtime for users to execute their LLM applications. Introduction to Agent DSL has obvious benefits:
+ReByteの核となる部分では、**Agent DSL**が任意のLLMアプリケーションの中間表現として定義され、ユーザーがLLMアプリケーションを実行するためのホステッドランタイムを提供します。Agent DSLの導入には明確な利点があります：
 
-* can be used to build a GUI builder for users to create their own LLM application.
-* can be generated by fine-tuned models
-* can be edited by human
+* ユーザーが自分のLLMアプリケーションを作成するためのGUIビルダーを構築できます。
+* ファインチューニングされたモデルによって生成可能です。
+* 人間によって編集可能です。
+
+以上のように、ReByteはチームの生産性を最大限に引き出すための強力なツールセットを提供し、チームの特有のニーズに応じたカスタマイズが可能です。これにより、チームはより効率的かつ効果的に業務を遂行することができます。

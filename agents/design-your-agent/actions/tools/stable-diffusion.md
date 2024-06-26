@@ -1,38 +1,38 @@
 # Stable Diffusion
 
-This action allows you to input text prompts and generate images using the Stable Diffusion model.
+このアクションでは、テキストプロンプトを入力して Stable Diffusion モデルを使用して画像を生成することができます。
 
 <figure><img src="../../../../images/sd-1.png"></figure>
 
-## Usage
+## 使用法
 
-* First, add a "Stable Diffusion" action to your agent.
+1. まず、エージェントに「Stable Diffusion」アクションを追加します。
 
 <figure><img src="../../../../images/sd-2.png"></figure>
 
-* Fill in the prompt, image size and the response_format.
-  * prompt: detailed description of the image you want to generate.
-  * image size: the size of the image you want to generate. Should be one of the following: "1024x1024", "1792x1024", "1024x1792".
-  * response_format: the format of the response. Should be one of the following: "url", "b64_json".
-  
-<figure><img src="../../../../images/sd-3.png"></figure>
-  
-## Output 
+2. プロンプト、画像サイズ、および応答形式を入力します。
+   - プロンプト：生成する画像の詳細な説明。
+   - 画像サイズ：生成する画像のサイズ。以下のいずれかを指定する必要があります：「1024x1024」、「1792x1024」、「1024x1792」。
+   - 応答形式：応答の形式。以下のいずれかを指定する必要があります：「url」、「b64_json」。
 
-* The output of this action is a URL or a base64 encoded image.
+<figure><img src="../../../../images/sd-3.png"></figure>
+
+## 出力
+
+- このアクションの出力は、URLまたはBase64エンコードされた画像です。
 
 <figure><img src="../../../../images/sd-4.png"></figure>
 
-* Click the link and you will see the generated image!
+- リンクをクリックすると、生成された画像が表示されます！
 
 <figure><img src="../../../../images/sd-5.png"></figure>
 
-* You can use `env.state.REBYTE_OPENAI_IMAGE_GEN_1.images[0].url` or `{{REBYTE_OPENAI_IMAGE_GEN_1.images[0].url}}` to reference the URL in the next action. 
+- 次のアクションでURLを参照するには、`env.state.REBYTE_OPENAI_IMAGE_GEN_1.images[0].url`または`{{REBYTE_OPENAI_IMAGE_GEN_1.images[0].url}}`を使用できます。
   
-* The base64 encoded image can be referenced using `env.state.REBYTE_OPENAI_IMAGE_GEN_1.images[0].base64` or `{{REBYTE_OPENAI_IMAGE_GEN_1.images[0].base64}}`.
+- Base64エンコードされた画像は、`env.state.REBYTE_OPENAI_IMAGE_GEN_1.images[0].base64`または`{{REBYTE_OPENAI_IMAGE_GEN_1.images[0].base64}}`を使用して参照できます。
 
-## Example Agent
+## サンプルエージェント
 
-* [This](https://rebyte.ai/p/21b2295005587a5375d8/callable/3396e0e83a81396c1ba7/editor) is the "HowToUse" agent for stable diffusion action.
+- [これ](https://rebyte.ai/p/21b2295005587a5375d8/callable/3396e0e83a81396c1ba7/editor)は Stable Diffusion アクションの「HowToUse」エージェントです。
 
-* [This](https://rebyte.ai/copilot/c359f8a71fa2e7c6264a/session/d67c8195be) is the app for stable diffusion.
+- [これ](https://rebyte.ai/copilot/c359f8a71fa2e7c6264a/session/d67c8195be)は Stable Diffusion のためのアプリです。

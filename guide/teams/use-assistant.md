@@ -1,19 +1,20 @@
-# Assistant
+# アシスタント
 
 ## Revia
 
-Each team contains one super assistant called **Revia**, it's a universal assistant that can be used by all team members to interact with the AI assistant. **Revia** is created when the team is created, and it's always available to all team members. 
+各チームには**Revia**と呼ばれるスーパ―アシスタントが 1 つ含まれています。これは、すべてのチームメンバーが AI アシスタントと対話するために使用できるユニバーサルアシスタントです。**Revia**はチームが作成されると同時に作成され、すべてのチームメンバーがいつでも利用できます。
 
-## Other Assistants
+## その他のアシスタント
 
-Team can also create other assistants, which are similar to **Revia** but with more focus on specific tasks. For example, you can create an assistant that helps with data analysis, or an assistant that helps with document generation.
+チームは他のアシスタントも作成できます。これらは**Revia**に似ていますが、特定のタスクにより焦点を当てています。例えば、データ分析を支援するアシスタントや、文書生成を支援するアシスタントを作成することができます。
 
-## Create Assistant
+## アシスタントの作成
 
-You need to be a builder or owner of a team to create an assistant. 
-The following information is required to create an assistant:
-* Assistant Name: will be shown in conversation history
-* Assistant Instruction: explain what the assistant can do, what's objective of the assistant, what's the assistant's objective etc. Rebyte will use this information to generate response specific to the assistant. 
-* Assistant Homepage: markdown formatted text that will be shown in assistant's homepage, visible to all users of the assistant. Typically, this is used to provide instructions on how to use the assistant.
-* Available Agents: list of agents that the assistant can use. Agent could be built by your team or from Rebyte's agent marketplace. 
-* Visibility: whether the assistant is visible to all team members or only to the creator.
+アシスタントを作成するためには、チームのビルダーまたはオーナーである必要があります。
+アシスタントを作成するために必要な情報は次のとおりです：
+
+- アシスタント名: 会話履歴に表示されます
+- アシスタントの説明: アシスタントが何をできるのか、アシスタントの目的は何かなどを説明します。imprai はこの情報を使用して、アシスタントに固有の応答を生成します
+- アシスタントのホームページ: マークダウン形式のテキストで、アシスタントのホームページに表示されます。アシスタントのすべてのユーザーに表示されます。通常、これはアシスタントの使用方法に関する説明をするために使用されます。
+- 利用可能なエージェント: アシスタントが使用できるツールのリストです。ツールはチームによって作成されたものや、imprai のエージェントマーケットプレイスから入手できます
+- 可視性: アシスタントがすべてのチームメンバーに表示されるか、作成者のみに表示されるかを設定します。

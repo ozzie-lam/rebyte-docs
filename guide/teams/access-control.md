@@ -1,40 +1,34 @@
-# Access Control
+# アクセスコントロール
 
-Rebyte is built with fine-grained access control. You can control the visibility of your agents, knowledge, assistant and other resources in Rebyte. We believe that this is of vital importance for collaboration and sharing AI applications in enterprise environments.
+imprai は細かいアクセスコントロール機能を備えています。imprai では、エージェント、ナレッジ、アシスタント、およびその他のリソースの可視性を制御できます。企業環境で AI アプリケーションを共有しコラボレーションするためには、これが非常に重要だと考えています。
 
-## Rules
+## ルール
 
-There are three types of users regarding access control:
+アクセスコントロールに関しては、以下の 3 種類のユーザーがあります：
 
-* **Builders** (builder/admin/owner of a team): develop and maintain the team's agents, knowledge, and apps.
+- **ビルダー**（チームのビルダー/管理者/オーナー）：チームのエージェント、ナレッジ、アプリを開発および維持します。
+- **ユーザー**：チームが作成したアシスタントを使用します。
+- **外部ユーザー**：チームに所属していない imprai ユーザー。
 
-* **Users**: use assistants created by the team.
+ビルダーはチーム内でエージェント、ナレッジ、アシスタントを開発、設計、および使用できます。ユーザーはチームが作成したアシスタントを表示および使用できます。外部ユーザーは、外部公開に設定されたエージェント、ナレッジ、アプリを表示および使用できます。
 
-* **External Users**: Rebyte users who are not part of the team.
+エージェントに関しては、ユーザーはチーム内のすべてのエージェントのワークフローおよびデータセットを表示でき、個人アカウントにコピーして変更および実行することができます。エージェントが「外部非公開」に設定されている場合、チーム外のユーザーはリンクを使用してエージェントを表示できます。エージェントが「公開」に設定されている場合、外部ユーザーはチームエージェントリストに表示されます。
 
-Builders can develop, design, and use the agents, knowledge, and assistants within the team. Users can view and use the assistants created by the team. External users can view and use the agents, knowledge, and apps that are set to External Public.
+ナレッジに関しては、管理者およびオーナーのみがナレッジを作成できるように設定でき、ビルダーはナレッジを維持できます。外部公開に設定されたナレッジは、チーム外のユーザーが表示できます。
 
-Regarding agents, users can view all agents' workflows and datasets within the team and can copy them to their personal accounts to modify and run. When an agent is set to External Unlisted, users outside the team can use a link to view the agent. When an agent is set to Public, it appears in the team agent list for external users.
+アプリに関しては、4 つのアクセスレベルがあります。プライベートアプリはビルダーのみが表示でき、開発中のアプリを維持するために便利です。チーム非公開アプリは、リンクを介してチームユーザーがアクセスおよび使用できます。チーム公開に設定されたアプリは、チームアプリページでチームメンバー全員が表示および使用できます。外部公開に設定されたアプリは、チーム外のユーザーも表示および使用できます。
 
-Regarding knowledge, it can be set so only admins and owners can create knowledge, while builders can maintain it. External Public set knowledge can be viewed by users outside the team.
+例えば、管理チームでは、オーナーおよび管理者がチームのリソースを管理し、ビルダーがエージェント、ナレッジ、およびアプリを設計および構築します。ユーザーは、ビルダーが設計したエージェント、ナレッジ、およびアプリを表示および使用します。アプリがまだ完成していない場合、ビルダーはそのアクセスレベルをプライベートに設定できます。設計が完了したら、チームメンバーが使用できるようにチーム公開に設定できます。外部公開に設定すると、チーム外のユーザーと共有できます。
 
-Regarding apps, there are four access-levels. Private apps can only be seen by builders, which is useful for maintaining apps that are still under development.team Unlisted apps can be accessed and used by team users via a link. Apps set to Team Public can be viewed and used by all team members on the team app page. External Public means that users outside the team can also view and use the app.
+詳細は次の表に示されています：
 
-For example, in an administrative team, the owner and admin manage the team's resources, builders are responsible for designing and building agents, knowledge, and apps. And users are responsible for viewing and using the agents, knowledge, and apps designed by the builders. When an app is not yet complete, a builder can set its access-level to Private. Once the design is finished, it can be set to Team Public for team members to use. Setting it to External Public allows sharing with users outside the team.
-
-Further details are available in the following table:
-
-| Team-Access       | Non-team user        | Team user（member）               | Team Builder（admin、owner）      |      |
-| ----------------- | -------------------- | --------------------------------- | --------------------------------- | ---- |
-| Team-App          |                      |                                   |                                   |      |
-| Private           |                      |                                   | list,use,edit,create              |      |
-| team Unlisted     |                      | Use with link                     | list,use,edit,create              |      |
-| team Public       |                      | list,use                          | list,use,edit,create              |      |
-| External Public   | list,use             | list,use                          | list,use,edit,create              |      |
-| Team-Knowledge    |                      |                                   |                                   |      |
-| External Public   | list,use             | list,use                          | list,use,edit,create(admin&owner) |      |
-| team Public       |                      | list,use                          | list,use,edit,create(admin&owner) |      |
-| Team-Agent        |                      |                                   |                                   |      |
-| team Public       |                      | list,view（design,dataset）,clone | list,view,edit,create             |      |
-| External Unlisted | view,clone with link | list,view,clone                   | list,view,edit,create             |      |
-| External Public   | list,view,clone      | list,view,clone                   | list,view,edit,create             |      |
+| チームアクセス | 非チームユーザー | チームユーザー（メンバー） | チームビルダー（管理者、オーナー）           |     |
+| -------------- | ---------------- | -------------------------- | -------------------------------------------- | --- |
+| チームアプリ   |                  |                            |                                              |     |
+| プライベート   |                  |                            | リスト、使用、編集、作成                     |     |
+| チーム非公開   |                  | リンクで使用               | リスト、使用、編集、作成                     |     |
+| チーム公開     |                  | リスト、使用               | リスト、使用、編集、作成                     |     |
+| 外部公開       | リスト、使用     | リスト、使用               | リスト、使用、編集、作成                     |     |
+| チームナレッジ |                  |                            |                                              |     |
+| 外部公開       | リスト、使用     | リスト、使用               | リスト、使用、編集、作成（管理者＆オーナー） |     |
+| チーム公開     |                  | リスト、使用               |

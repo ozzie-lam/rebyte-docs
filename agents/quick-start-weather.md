@@ -1,72 +1,71 @@
-# Quick Start
+# クイックスタート
 
-We will show you how to build a weather agent in 10 minutes.
+10分で天気予報エージェントを作成する方法を説明します。
 
-## Step 1: Create an Agent
+## ステップ1：エージェントを作成する
 
-* Navigate to the "My Agents" tab in the sidebar and then click on "Create Agent".
+* サイドバーの「マイエージェント」タブに移動し、「エージェントを作成」をクリックします。
 
-* Describe what you want to do with this agent and choose the right template for your agent. 
+* このエージェントで何をしたいかを説明し、適切なテンプレートを選択します。
 
 <figure><img src="../images/weather-1.png" alt=""></figure>
 
-* Click the "Generate Agent Template" button and we will generate a basic template for you to build from. 
+* 「エージェントテンプレートを生成」ボタンをクリックすると、基本的なテンプレートが生成されます。
 
 <figure><img src="../images/weather-2.png" alt=""></figure>
 
-* You can change the name, description and visibility of the agent and add tags for more information. Or you can simply regenerate the template if you don't like the current one.
+* エージェントの名前、説明、可視性を変更し、追加情報を提供するためにタグを追加できます。現在のテンプレートが気に入らない場合は、再生成することもできます。
 
-* Click the "Create Agent" and you will have your own agent in just a few seconds.
+* 「エージェントを作成」をクリックすると、数秒でエージェントが作成されます。
 
-## Step 2: Design Your Agent
+## ステップ2：エージェントを設計する
 
-* In the auto-generated template, we have already created some actions for you. 
+* 自動生成されたテンプレートには、いくつかのアクションが既に作成されています。
 
 <figure><img src="../images/weather-3.png" alt=""></figure>
 
-* The process of building the agent:
-  * To get the location from the user's input, so we need a `Language Model Chat` action. 
-  * To search for the weather, this can be done using the `You.com` search engine action. 
-  * To analyze the results, we should use another `Language Model Chat` to analyze the search results from the You.com search and generate a prompt to draw the picture.
-  * To draw the picture, we use `Stable Diffusion` action and return a base64 picture.
+* エージェントを構築するプロセス：
+  * ユーザーの入力から場所を取得するため、`Language Model Chat`アクションが必要です。
+  * 天気を検索するためには、`You.com`検索エンジンアクションを使用します。
+  * 結果を分析するためには、You.com検索からの結果を分析し、画像を描くためのプロンプトを生成するために別の`Language Model Chat`を使用します。
+  * 画像を描くためには、`Stable Diffusion`アクションを使用し、Base64形式の画像を返します。
 
 <figure><img src="../images/weather-4.png" alt=""></figure>
 
-* Write the instructions more the model in the editor, describing what you want the model to do.
+* エディターでモデルに指示を書き、モデルに何をさせたいかを説明します。
 
 <figure><img src="../images/10.png" alt=""></figure>
 
-## Step 3: Test Your Agent
+## ステップ3：エージェントをテストする
 
-* Click the "Datasets" tab on the top, then click "Create Datasets". 
+* 上部の「データセット」タブをクリックし、「データセットを作成」をクリックします。
 
-* Fill in the name and description of your dataset.
+* データセットの名前と説明を記入します。
 
-* Since this is a chatbot, the testing dataset will be in the form of a (list of) json object representing a conversation.
+* これはチャットボットなので、テストデータセットは会話を表すJSONオブジェクト（リスト）の形式になります。
 
 <figure><img src="../images/11.png" alt=""></figure>
 
-* After you've created the dataset, go back to the "Design" panel and choose the new dataset as the input.
+* データセットを作成したら、「デザイン」パネルに戻り、新しいデータセットを入力として選択します。
 
 <figure><img src="../images/11-1.png" alt=""></figure>
 
-* Click "Run Testcases" to test your agent with the dataset.
+* 「テストケースを実行」をクリックして、データセットを使用してエージェントをテストします。
 
-* The results will be shown below each action. See if the output is what you want. If not, change the settings of your agent and try again.
+* 結果は各アクションの下に表示されます。出力が期待通りか確認し、そうでない場合はエージェントの設定を変更して再試行します。
 
 <figure><img src="../images/13.png" alt=""></figure>
 
-## Step 4: Deploy the Agent
+## ステップ4：エージェントをデプロイする
 
-* Click "Deploy Agent" on the top right, then click "Deploy A New Version". 
+* 右上の「エージェントをデプロイ」をクリックし、「新しいバージョンをデプロイ」をクリックします。
 
-* You can use your agent on your ReByte app or integrate it into your own app using the code we provide.
+* ReByteアプリでエージェントを使用するか、提供されるコードを使用して独自のアプリに統合できます。
 
 <figure><img src="../images/12.png" alt=""></figure>
 
-🎉 **Congratulations, you have created your first agent!**
+🎉 **おめでとうございます、最初のエージェントを作成しました！**
 
-View all your agents in the "My Agents" tab. You can also clone, save, or delete your agents here.
+「マイエージェント」タブですべてのエージェントを表示できます。ここでエージェントをクローン、保存、削除することもできます。
 
 <figure><img src="../images/14.png" alt=""></figure>
-

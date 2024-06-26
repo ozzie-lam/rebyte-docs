@@ -1,54 +1,54 @@
-# Building an Investor Type Quiz App
+# 投資家タイプクイズアプリの構築
 
-This comprehensive guide will take you through the steps of creating an investor type quiz app using ReByte's tools, in conjunction with the Typeform API. Typeform's API allows for the creation of user-friendly forms and surveys, making it an ideal choice for engaging with users in a clear and effective manner.
+この包括的なガイドでは、imprai のツールと Typeform API を使用して投資家タイプクイズアプリを作成する手順を説明します。Typeform の API はユーザーフレンドリーなフォームやアンケートを作成できるため、ユーザーとの明確で効果的なエンゲージメントに最適です。
 
-This is the final result of the app:
+最終的なアプリの結果は次の通りです：
 
 ![app](https://res.cloudinary.com/dfjwtidnh/image/upload/v1710077600/investor-0_uqamir.png)
 
-## Prerequisites
+## 前提条件
 
-* A [Typeform account](https://www.typeform.com/), along with a thorough understanding of the [Typeform API documentation](https://www.typeform.com/developers/).
-* Basic familiarity with ReByte's agent and app, as well as some programming knowledge.
+- [Typeform アカウント](https://www.typeform.com/)と、[Typeform API ドキュメント](https://www.typeform.com/developers/)の十分な理解。
+- imprai のエージェントとアプリに関する基本的な知識、およびいくつかのプログラミング知識。
 
-## How to Build
+## ビルド方法
 
-The app operates on a straightforward logic. It begins by collecting basic information from the user, then generates a form using the Typeform API to ask more detailed questions. After the user completes and submits the form, their responses are analyzed to determine their investor type.
+アプリはシンプルなロジックで動作します。まずユーザーから基本情報を収集し、その後 Typeform API を使用して詳細な質問を行うフォームを生成します。ユーザーがフォームに入力して送信すると、その回答が分析され、投資家タイプが決定されます。
 
-### Steps
+### 手順
 
-1. **Gather information from the user's input:** 
+1. **ユーザーの入力から情報を収集する:**
 
-   Utilize ReByte's `model-chat` action to extract information based on the user's initial input.
+   ReByte の`model-chat`アクションを利用して、ユーザーの初期入力に基づいて情報を抽出します。
 
    ![gather info](https://res.cloudinary.com/dfjwtidnh/image/upload/v1710077600/intestor-1_vj3kej.png)
 
-2. **Create a form using the Typeform API:**
-   
-   Implement pre-written code to select appropriate questions for the form. A call to the Typeform API via the "" action then generates a form URL.
+2. **Typeform API を使用してフォームを作成する:**
+
+   事前に書かれたコードを実装して、フォームの適切な質問を選択します。その後、アクションを通じて Typeform API を呼び出し、フォームの URL を生成します。
 
 ![code](https://res.cloudinary.com/dfjwtidnh/image/upload/v1710077600/investor-2_sun44v.png)
 
-3. **Collect the user's response:**
+3. **ユーザーの回答を収集する:**
 
-   Once the user submits the completed form, retrieve the results through the "http" action.
+   ユーザーがフォームを完了して送信すると、「http」アクションを通じて結果を取得します。
 
 ![get results](https://res.cloudinary.com/dfjwtidnh/image/upload/v1710077600/investor-3_k9ejp9.png)
 
-4. **Analyze the user's input:**
+4. **ユーザーの入力を分析する:**
 
-   Use a subsequent model chat action to process the user's responses and identify their investor type.
+   次のモデルチャットアクションを使用して、ユーザーの回答を処理し、投資家タイプを特定します。
 
    ![analyze](https://res.cloudinary.com/dfjwtidnh/image/upload/v1710077600/investor-4_puom38.png)
 
-### Conclusion
+### 結論
 
-This project demonstrates the power of integrating APIs like Typeform with ReByte's technology to create interactive, user-focused applications. The investor type quiz app not only engages users in a dynamic way but also provides valuable insights into their investment preferences, assisting them in making informed decisions. The steps outlined in this guide offer a framework that can be adapted to various applications, showcasing the flexibility and potential of these tools in the field of app development.
+このプロジェクトは、Typeform などの API を imprai の技術と統合して、インタラクティブでユーザーフォーカスのアプリケーションを作成する力を示しています。投資家タイプクイズアプリは、動的な方法でユーザーを引きつけるだけでなく、彼らの投資嗜好に関する貴重な洞察を提供し、情報に基づいた意思決定を支援します。このガイドで説明された手順は、さまざまなアプリケーションに適用できるフレームワークを提供し、アプリ開発の分野におけるこれらのツールの柔軟性と可能性を示しています。
 
-## Demos
+## デモ
 
-To see the app and agents in action, explore the following links:
+アプリとエージェントの動作を確認するには、以下のリンクを参照してください：
 
-[Investor Type Quiz Agent](https://rebyte.ai/p/21b2295005587a5375d8/callable/ffdc7bd0d262b62cbd03/editor)
+[投資家タイプクイズエージェント](https://rebyte.ai/p/21b2295005587a5375d8/callable/ffdc7bd0d262b62cbd03/editor)
 
-[Investor Type Quiz App](https://rebyte.ai/copilot/0167ad764f8be5e1bd41/session/6afc350466)
+[投資家タイプクイズアプリ](https://rebyte.ai/copilot/0167ad764f8be5e1bd41/session/6afc350466)

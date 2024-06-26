@@ -1,14 +1,14 @@
-# Deploy Your Agent
+# エージェントのデプロイ
 
-Once you have finished designing and testing your agent, click "Deploy" to publish a new version or checkout the current version.
+エージェントの設計とテストが完了したら、「デプロイ」をクリックして新しいバージョンを公開するか、現在のバージョンをチェックアウトします。
 
-## Versioning
+## バージョニング
 
-Correct versioning is extremely important for tracking changes and ensuring that your agent is working as expected.
+変更を追跡し、エージェントが期待通りに動作していることを確認するために、正しいバージョニングは非常に重要です。
 
-### Rules
+### ルール
 
-* Each deployment will receive a new version number, starting from 1
-* You can specify the version number when calling the agent
-* Use special version number 'latest' to call the latest version of the agent
-* Each agent can have a 'live' version, which may be different from the latest version. A typical use case is to have a live version for production and a latest version for testing.
+* 各デプロイメントは、1から始まる新しいバージョン番号を受け取ります。
+* エージェントを呼び出す際にバージョン番号を指定できます。
+* エージェントの最新バージョンを呼び出すために、特別なバージョン番号「latest」を使用します。
+* 各エージェントには「ライブ」バージョンがあり、これは最新のバージョンと異なる場合があります。典型的なユースケースとしては、プロダクションのためのライブバージョンと、テストのための最新バージョンを持つことです。

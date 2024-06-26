@@ -1,53 +1,49 @@
-# Quick Start
+# クイックスタート
 
-In this tutorial, we will show you how to create a group agent that will discuss a topic between two agent.
+このチュートリアルでは、2 つのエージェントについて議論するグループエージェントを作成する方法を示します。
 
-## Step 1: Create A Group Agent
+## ステップ 1: グループエージェントを作成
 
-* Navigate to the "Agents" tab in the sidebar and then click on "Create Agent" on the top right.
+- サイドバーの「エージェント」タブに移動し、右上の「エージェントを作成」をクリックします。
 
-* Choose the "Group Agent" option.
+- 「グループエージェント」オプションを選択します。
 
-* Fill in the name,description, and set the visibility of your group agent.
+- 名前、説明を記入し、グループエージェントの可視性を設定します。
 
 <figure><img src="../../../images/group-1.png"></figure>
 
+## ステップ 2: グループエージェントを設計
 
-## Step 2: Design Your Group Agent
+- このエージェントには 4 つのアクションしかありません：`入力（Input）`、`スレッド（Thread）`、`エージェントグループ（Agent Group）`、`出力（Output）`。これらのアクションを追加または削除することはできません。
 
-* This agent only has four actions:`Input`, `Thread`, `Agent Group` and `Output`, and you can't add or delete any action.
+- `入力`および`出力`アクションはスタックエージェントと同様です。独自のデータセットを作成してエージェントをテストすることができます。
 
-* The `Input` and `Output` actions are the same as a stack agent.You can create your own datasets to test your agent.
-
-**Thread**
+**スレッド（Thread）**
 
 <figure><img src="../../../images/group-2.png"></figure>
 
-* Configure the "Max Number of Previous Runs on Thread" in the `Thread` action using the toggle button. This is the maximum number of history messages that the agent will record and send to the model everytime it runs.
+- トグルボタンを使用して、`スレッド`アクションで「過去の実行の最大数」を設定します。これは、エージェントが毎回実行する際に記録しモデルに送信する履歴メッセージの最大数です。
 
-* The longer the history, the more context the model will have to work with. However, the longer the history, the slower the agent will run. 
-  
-**Agent Group**
+- 履歴が長いほど、モデルが利用できるコンテキストが増えます。ただし、履歴が長いほど、エージェントの実行速度は遅くなります。
+
+**エージェントグループ（Agent Group）**
 
 <figure><img src="../../../images/group-3.png"></figure>
 
-* Choose the agents you want to use in the `Agent Group` action. Here we choose the two student chatbot agents we created.
+- `エージェントグループ`アクションで使用するエージェントを選択します。ここでは、作成した 2 つの学生チャットボットエージェントを選びます。
 
-* NOTE: You must be familiar with the agent's function and the agent's input and output format. Also make sure the agent's output format is compatible with the next agent's input format.
-  
-* Specify the execution order of the agents in the group agent. The agent will run the agents in the order you specified. For example, here we put "round robin" in Agent Selector Instruction, so the agent will run the agents one by one in a loop.
-  
-* Following the given order, the system will run the agents one by one. The first agent's output will be the input of the second agent, and so on.
-  
-* You can also set the maximum rounds of conversation between agents. If the conversation between agents exceeds the maximum rounds, the agent will stop running.
+- 注意：エージェントの機能とエージェントの入力および出力フォーマットに精通している必要があります。また、エージェントの出力フォーマットが次のエージェントの入力フォーマットと互換性があることを確認してください。
 
-And that's it!
+- グループエージェント内のエージェントの実行順序を指定します。エージェントは指定した順序で実行されます。例えば、ここでは「ラウンドロビン」をエージェントセレクターの指示として設定しているため、エージェントは 1 つずつループで実行されます。
 
-## Step 3: Test Your Group Agent
+- 指定された順序に従い、システムはエージェントを 1 つずつ実行します。最初のエージェントの出力は、次のエージェントの入力となります。
 
-* This is basically the same a [testing a stack agent](../../test-your-agent/overview.md). 
-  
-* The only difference is that rather than focusing on the output of only one agent, you should take a good look at the output of all the agents in the group agent and try to find out if their behavior is what you want.
+- また、エージェント間の会話の最大ラウンド数を設定できます。エージェント間の会話が最大ラウンド数を超えると、エージェントは実行を停止します。
 
+これで完了です！
 
+## ステップ 3: グループエージェントをテスト
 
+- 基本的には[スタックエージェントをテストする](../../test-your-agent/overview.md)のと同じです。
+
+- 唯一の違いは、1 つのエージェントの出力だけに焦点を当てるのではなく、グループエージェント内のすべてのエージェントの出力をよく見て、それらの動作が期待通りであるかどうかを確認することです。

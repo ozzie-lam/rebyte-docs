@@ -1,21 +1,18 @@
 # Thread Messages Loader
 
-This action allows you to configure the number of historical messages to be memorized by the "thread" and sent to the large language model when using this agent.
+このアクションを使用すると、エージェントを使用する際に、「スレッド」に記憶される過去のメッセージの数を設定できます。これらのメッセージは、このエージェントを使用して新しいメッセージを受信するたびに、大規模言語モデルに送信されます。
 
-Everytime a new message is received by the agent, the "thread" will be updated with the new message and add the corresponding number of historical messages as content and send it to the large language model.
+エージェントが新しいメッセージを受信するたびに、「スレッド」は新しいメッセージでを更新し、対応する過去のメッセージの数が内容として追加され、大規模言語モデルに送信されます。
 
-## Usage
+## 使用方法
 
-* Add a "Thread Messages Loader" action to your agent.
+- エージェントに「スレッドメッセージローダー」アクションを追加します。
 
 <figure><img src="../../../../images/thread-1.png"></figure>
   
-* Specify the number of messages to be memorized by the "thread".
+* 「スレッド」に記憶されるメッセージの数を指定します。
 
 <figure><img src="../../../../images/thread-2.png"></figure>
 
-* The number of messages to be memorized by the "thread" can affect the performance of the large language model. 
-  
-* The **more messages** to be memorized, the **more context** the large language model can get, but this will also increase the response time of the large language model.
-  
-
+- 「スレッド」に記憶されるメッセージの数は、大規模言語モデルのパフォーマンスに影響を与えます。
+- 記憶されるメッセージが多いほど、大規模言語モデルが得られるコンテキストが多くなりますが、これにより大規模言語モデルの応答時間が増加します。

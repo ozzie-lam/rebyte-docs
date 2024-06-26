@@ -1,32 +1,32 @@
-# Output
+# 出力
 
-* The `Output` action is used to send output information to the Agent.
+* `出力` アクションは、エージェントに出力情報を送信するために使用されます。
 
-* The last action in the Agent must be an `Output` action, you can not delete it or copy it.
+* エージェントの最後のアクションは `出力` アクションでなければならず、それを削除したりコピーしたりすることはできません。
 
-* The last action before the output action will give the output to the `Output` action. The `Output` action then give the output to agent's users or apps calling the agent.
+* `出力` アクションの直前のアクションが `出力` アクションに出力を渡します。`出力` アクションはその後、エージェントのユーザーやエージェントを呼び出すアプリに出力を提供します。
 
-## Usage
+## 使用方法
 
-* You can insert a `Code` action before the `Output` action and specify the results you want to return to the user.
+* `出力` アクションの前に `コード` アクションを挿入し、ユーザーに返す結果を指定できます。
 
-* With no special settings, the `Output` action will return the last action's output to the user.
+* 特別な設定がない場合、`出力` アクションは最後のアクションの出力をユーザーに返します。
 
 <figure><img src="../../../images/output-1.png" alt=""></figure>
 
 <figure><img src="../../../images/output-2.png" alt=""></figure>
 
-## Data Format
+## データ形式
 
-* When used in agent page, the output is shown under the `Output` action.
+* エージェントページで使用される場合、出力は `出力` アクションの下に表示されます。
 
-* When connected to Apps, the output is sent to the App's user.
+* アプリに接続されている場合、出力はアプリのユーザーに送信されます。
 
-* The output data format is as follows:
+* 出力データ形式は次の通りです：
     
     ```json
     {
         "role": "assistant",
-        "content": "The content."
+        "content": "内容"
     }
     ```

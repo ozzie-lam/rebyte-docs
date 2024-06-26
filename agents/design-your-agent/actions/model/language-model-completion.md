@@ -1,118 +1,118 @@
-# Language Model Completion
+# 言語モデル完了
 
-We provide `Language Model Completion` action to let the language model complete your prompt.
+我々は、`Language Model Completion`アクションを提供しています。このアクションを使用すると、言語モデルがプロンプトを完了し、完成したコンテンツで応答します。
 
-## Usage
+## 使い方
 
-* Add a `Language Model Completion` action to your agent.
-* Configure the action with specifications and parameters.
+- エージェントに`Language Model Completion`アクションを追加します。
+- 仕様とパラメータを設定してアクションを構成します。
 
-### Specification
+### 仕様
 
 <figure><img src="../../../../images/completion.png" alt=""><figcaption></figcaption></figure>
 
-**Prompt**
+**プロンプト**
 
-* This is the prompt that will be sent to the model.
-* The model will complete your prompt and respond with the completed content.
+- これはモデルに送信されるプロンプトです。
+- モデルはプロンプトを完了し、完成したコンテンツで応答します。
 
-### Configuration
+### 設定
 
-The configuration is the same as [Language Model Chat](language-model-chat.md).
+構成は[言語モデルチャット](language-model-chat.md)と同じです。
 
-You can choose the model you want to use by clicking the model's name, the default model is "gpt-3.5-turbo-1106".
+使用するモデルを選択するには、モデルの名前をクリックします。デフォルトのモデルは「gpt-3.5-turbo-1106」です。
 
 <figure><img src="../../../../images/chat-models.png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
-Click this button in the bottom right corner of the `Language Model Completion` action to open the configuration panel.
+`Language Model Completion`アクションの右下にあるボタンをクリックして、構成パネルを開きます。
 
 <figure><img src="../../../../images/chat-config-button.jpg" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
-There are five settings in the configuration panel, as shown below.
+以下に、構成パネルにある 5 つの設定を示します。
 
 <figure><img src="../../../../images/chat-config-2.png" alt=""><figcaption></figcaption></figure>
 
-**Temperature**
+**Temperature（温度）**
 
-* "Temperature" controls the randomness of the model's output.
-* The higher the model temperature, the more random the output is.
+- 「Temperature」はモデルの出力のランダム性を制御します。
+- モデルの Temperature が高いほど、出力はよりランダムになります。
 
-**Maximum Output Tokens**
+**最大出力トークン**
 
-* "Maximum Output tokens" specifies the maximum number of tokens to generate.
-* Can use up to 40,000 tokens(the limit for models vary), including prompt and model returned content.
+- 「Maximum Output tokens」は生成するトークンの最大数を指定します。
+- プロンプトとモデルが返すコンテンツを含めて、最大 40,000 トークンまで使用できます。
 
-**JSON Response**
+**JSON 応答**
 
-* "JSON Response" button enable JSON mode, which guarantees the messages the model generate are in JSON format.
-* NOTE: This feature is a beta feature and only supported by OpenAI's "gpt-4-1106-preview" model now.
-* NOTE: When you use this feature, make sure the word "JSON" is in the context. Otherwise, the OpenAI's API will throw an error.
+- 「JSON Response」ボタンを有効にすると、モデルが生成するメッセージが JSON 形式であることが保証されます。
+- 注意：この機能はベータ機能であり、現在は OpenAI の 「gpt-4-1106-preview」モデルのみがサポートしています。
+- 注意：この機能を使用する場合は、コンテキストに「JSON」という単語が含まれていることを確認してください。それ以外の場合、OpenAI の API はエラー返します。
 
-**Seed**
+**Seed（シード）**
 
-* The "Seeds" is a parameter that can be specified when using the `Language Model Completion` and `Language Model Completion` actions.
-* It helps to ensure consistent outputs by making the system sample deterministically, resulting in the same result for repeated requests with the same seed and parameters.
-* NOTE: This feature is a beta feature and only supported by OpenAI's model.
+- 「Seeds」は、`Language Model Completion`アクションおよび`Language Model Completion`アクションを使用する際に指定できるパラメータです。
+- 同じシードとパラメータを使用して繰り返し要求した場合に同じ結果が得られるようにし、システムのサンプルを確定的に行うためのものです。
+- 注意：この機能はベータ機能であり、すべてのモデルでサポートされているわけではありません。
 
-**Stop Words**
+**ストップワード**
 
-* Stop words are used to make the model stop at a desired point, such as the end of a sentence or a list.
+- ストップワードは、モデルが必要な時点で停止するようにするために使用されます。これには、文やリストの最後などが含まれます。
 
-On the top right of the action, there are two more things to configure: "Stream Mode" and "Cache Mode".
+アクションの右上には、構成できるものが 2 つあります。「ストリームモード」と「キャッシュモード」です。
 
 <figure><img src="../../../../images/stream-and-cache.jpg" alt=""><figcaption></figcaption></figure>
 
-**Stream**
+**ストリーム**
 
-* This option allows you to receive partial chat responses as they are being generated, rather than waiting for the entire completion to be finished before receiving a response.
-* By setting stream mode, you can start processing or displaying the beginning of the chat before the full response is received.
+- このオプションを設定すると、完了が完了するのを待つことなく、部分的なチャット応答を受け取ることができます。
+- ストリームモードを設定することで、完全な応答が受け取られる前に、チャットの開始を処理または表示できます。
 
-**Cache**
+**キャッシュ**
 
-* Caching involves storing frequently accessed data to improve response times without making repeated calls to a model.
-* If you use the cache mode, the model will cache the response and return the cached response when the same request is made again. This will make your agent run faster.
+- キャッシュは、繰り返しモデルへの呼び出しを行わずに応答時間を改善するために、頻繁にアクセスされるデータを保存することを含みます。
+- キャッシュモードを使用すると、モデルは応答をキャッシュし、同じリクエストが再度行われた場合にキャッシュされた応答を返します。これにより、エージェントの実行が高速化されます。
 
-### Message Format
+### メッセージ形式
 
-Rebyte uses a similar message format as OpenAI. The message format is a JSON object with the following fields:
+imprai は、OpenAI と類似したメッセージ形式を使用します。メッセージ形式は、次のフィールドを持つ JSON オブジェクトです。
 
-* Role: could be one from 'user', 'system', or 'assistant'.
-* Content: content of this message.
-* Name(optional): name of role.
-* Context(optional): context of this message.
+- Role: 「user」、「system」、または「assistant」のいずれか。
+- Content: このメッセージの内容。
+- Name（オプション）: ロールの名前。
+- Context（オプション）: このメッセージのコンテキスト。
 
 &#x20;
 
-**Message Format Examples**
+**メッセージ形式の例**
 
-1.Prompt Example
+1. プロンプトの例
 
 ```xml
-Your role is that of a text editor. 
-You are expected to peruse the texts provided to you, comprehending them fully, and then distill and summarize them for me. The summary should encapsulate the main theme and essential details of the original text. It should be succinct and expressed in your own words. 
-The contents that need to be summarized will be enclosed within three single quotation marks.
+あなたの役割はテキストエディタです。
+あなたは、提供されたテキストを熟読し、それを完全に理解し、私のために要約してください。 要約は、元のテキストの主題と重要な詳細を要約する必要があります。 簡潔で自分の言葉で表現されている必要があります。
+要約する必要のある内容は、3つの単一引用符で囲まれます。
 
-The summary should be conducted in accordance with the following regulations:
-1. Thematic Statement: Succinctly summarize the main theme or key point of the original text. 
-2. Key Details: Enumerate the crucial details or facts from the original text that support the main theme or point. 
-3. Overall Conclusion: Distill the conclusion of the original text or the position of the author.
+要約は、次の規則に従って行われる必要があります。
+1. 主題の声明：元のテキストの主題または要点を簡潔に要約します。
+2. 主要な詳細：元のテキストから、主題またはポイントをサポートする重要な詳細または事実を列挙します。
+3. 全体的な結論：元のテキストの結論または著者の立場を要約します。
 
-Please organize the summary according to the following structure and reply me:
-Introduction: Introduce the main theme or background of the original text.(New line)
-Body Paragraph: List and explain the key details and arguments from the original text, summarizing them in your own words. (New line)
-Conclusion: Summarize the main points of the original text or present the author's conclusion.(New line)
+以下の構造に従って要約を纏めて、私に返信してください：
+イントロダクション：元のテキストの主題または背景を紹介します。（改行）
+本文パラグラフ：元のテキストからの主要な詳細と議論をリスト化し、自分の言葉で要約します。（改行）
+結論：元のテキストの主要なポイントを要約するか、著者の結論を提示します。（改行）
 
-This is the content that requires summarization:
+これは要約が必要なコンテンツです：
 
-please reply to me with the phrase: "I apologize for being unable to retrieve content from the URL you provided. Please verify the correctness of the web address"
+私に次のフレーズで返信してください：「提供されたURLからコンテンツを取得できませんでした。 Webアドレスの正確性を確認してください」
 
 {{CODE_1.content}}
 ```
 
-## Example Agent
+## サンプルエージェント
 
-* [Language Model Completion](https://rebyte.ai/p/21b2295005587a5375d8/callable/719d2f31bf9fe977f699/editor)
+- [言語モデル完了](https://rebyte.ai/p/21b2295005587a5375d8/callable/719d2f31bf9fe977f699/editor)

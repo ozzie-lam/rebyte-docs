@@ -1,30 +1,29 @@
-# Dalle Image Generator
+# Dalle 画像生成
 
-This action allows you to input text prompts and generate images using the [DALL-E](https://openai.com/blog/dall-e/) model.
+このアクションを使用すると、[DALL-E](https://openai.com/blog/dall-e/)モデルを使用してテキストプロンプトを入力し、画像を生成できます。
 
-## Usage
+## 使用法
 
-* First, add a "Dalle Image Generator" action to your agent.
+- まず、エージェントに「Dalle 画像生成」アクションを追加します。
 
 <figure><img src="../../../../images/dalle-1.png"></figure>
 
-* Fill in the prompt, image size and the response_format.
-  * prompt: detailed description of the image you want to generate.
-  * image size: the size of the image you want to generate. Should be one of the following: "1024x1024", "1792x1024", "1024x1792".
-  * response_format: the format of the response. Should be one of the following: "url", "base64".
-  
+- プロンプト、画像サイズ、response_format を入力します。
+  - prompt：生成したい画像の詳細な説明。
+  - 画像サイズ：生成したい画像のサイズ。次のいずれかである必要があります。「1024x1024」、「1792x1024」、「1024x1792」。
+  - response_format：レスポンスの形式。次のいずれかである必要があります。「url」、「base64」。
+
 <figure><img src="../../../../images/dalle-2.png"></figure>
   
-## Output 
+## 出力
 
-* The output of this action is a URL or a base64 encoded image.
+- このアクションの出力は、URL または base64 エンコードされた画像です。
 
 <figure><img src="../../../../images/dalle-3.png"></figure>
 
-* Click the link and you will see the generated image!
+- リンクをクリックすると、生成された画像が表示されます！
 
 <figure><img src="../../../../images/dalle-4.png"></figure>
 
-* You can use `env.state.REBYTE_OPENAI_IMAGE_GEN_1.images[0].url` or `{{REBYTE_OPENAI_IMAGE_GEN_1.images[0].url}}` to reference the URL in the next action. 
-  
-* The base64 encoded image can be referenced using `env.state.REBYTE_OPENAI_IMAGE_GEN_1.images[0].base64` or `{{REBYTE_OPENAI_IMAGE_GEN_1.images[0].base64}}`.
+- 次のアクションで URL を参照するには、 `env.state.REBYTE_OPENAI_IMAGE_GEN_1.images[0].url`または`{{REBYTE_OPENAI_IMAGE_GEN_1.images[0].url}}`を使用できます。
+- base64 エンコードされた画像は、 `env.state.REBYTE_OPENAI_IMAGE_GEN_1.images[0].base64`または`{{REBYTE_OPENAI_IMAGE_GEN_1.images[0].base64}}`を使用して参照できます。

@@ -1,23 +1,23 @@
-# Knowledge Based Chatbot
+# 知識ベースのチャットボット
 
-### Create Knowledge
+### 知識の作成
 
-Under Knowledge tab, click `Create Knowledge`. Fill in the name and description, choose the correct knowledge type and set up the maximum chunck of size.
+「ナレッジ」タブで「ナレッジを作成」をクリックします。名前と説明を入力し、正しいナレッジタイプを選択して、最大チャンクサイズを設定します。
 
-For more details, please check the Knowledge section.
+詳細については、ナレッジセクションを参照してください。
 
-### Create Agent
+### エージェントの作成
 
-To create an agent，choose `retrieval based chatbot with own data` as template.
+エージェントを作成するには、「retrieval based chatbot with own data」をテンプレートとして選択します。
 
 <figure><img src="../../builders-guide/use-cases/.gitbook/assets/knowledge-chatbot-1.img" alt=""><figcaption></figcaption></figure>
 
-In `RETRIEVALS`, choose the `Knowlegde` you created above. Click `run TestCases`. If there's no problem with the test, you can deploy the agent. For more details, please check the Agent section.
+「RETRIEVALS」では、上記で作成した「ナレッジ」を選択します。「テストケースの実行」をクリックします。テストに問題がなければ、エージェントをデプロイできます。詳細については、エージェントセクションを参照してください。
 
-### Create Apps
+### アプリの作成
 
-Under the `Apps` tab, choose `Create App` and fill in the `Chat App Name` and `Description`. Choose the agent and knowledge that you just created in the above steps.
+「アプリ」タブで「アプリを作成」を選択し、「チャットアプリ名」と「説明」を入力します。上記のステップで作成したエージェントと知識を選択します。
 
 <figure><img src="../../builders-guide/use-cases/.gitbook/assets/knowledge-chatbot-2.img" alt=""><figcaption></figcaption></figure>
 
-After completion, you can communicate with the chatbot, and your chatbot will have the knowledge in the knowledge base choose.
+完了後、チャットボットと通信でき、選択したナレッジベースの知識を持つチャットボットが利用可能になります。

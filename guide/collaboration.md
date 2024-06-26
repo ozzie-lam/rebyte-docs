@@ -1,12 +1,8 @@
-# Collaboration
+# コラボレーション
 
-To avoid incosistency, ReByte has provided features that allow you to work with your teams on building agents.
+一貫性を確保するために、imprai はチームと協力してエージェントを構築するための機能を提供しています。
 
-* If **two or more people** are on the same agent's page, we will automatically "lock" the page, which means no one can edit this agent.
-
-* To unlock, click the "lock" icon hovering at the bottom.
+- **2 人以上**が同じエージェントのページにいる場合、自動的にページが「ロック」されます。これにより、誰もそのエージェントを編集できなくなります。
+- ロックを解除するには、下部にホバーする「ロック」アイコンをクリックします。
 
 <figure><img src="../images/collaboration.png" alt=""></figure>
-
-
-

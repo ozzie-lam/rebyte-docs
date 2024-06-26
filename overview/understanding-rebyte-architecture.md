@@ -1,45 +1,48 @@
-# Agent and Knowledge
+# エージェントとナレッジ
 
-## Agent
+## エージェント
 
-> Backend subroutine for Assistant.
+> アシスタントのバックエンドサブルーチン
 
-In Rebyte, we define agent as a serverless API that can be executed on cloud, usually agents will leverage AI models to perform some tasks to achieve its intelligence, but this is not required. An agent without any AI model is just like a normal serverless API, but we will focus on AI agents in this document.
-Here are some typical examples of AI agents:
-* Based on user's query, find most relevant information from user's knowledge base, and summarize the result and return summary to user.
-* User describes a database query in natural language, agent will translate the query into SQL and execute the query on user's database to get results, then use LLM to generate a summary of the results and return to user.
-* Help user to do professional translation between two languages, user can describe the translation task in natural language, agent will not only do the translation but also evaluate the translation quality, if the quality is not good enough, agent will iterate the translation process until the quality is good enough. 
+Rebyteでは、エージェントをクラウド上で実行できるサーバーレスAPIとして定義します。通常、エージェントはAIモデルを活用していくつかのタスクを実行し、その知能を発揮しますが、これは必須ではありません。AIモデルを使用しないエージェントは通常のサーバーレスAPIと同様ですが、ここではAIエージェントに焦点を当てます。
 
-### This is a typical agent workflow
+以下はAIエージェントの典型的な例です：
+
+* ユーザーのクエリに基づいて、ユーザーのナレッジベースから最も関連性の高い情報を見つけ出し、その結果を要約してユーザーに返す。
+* ユーザーが自然言語でデータベースクエリを説明し、エージェントがそのクエリをSQLに翻訳してユーザーのデータベース上で実行し、その結果を要約してユーザーに返す。
+* ユーザーが自然言語で翻訳タスクを説明し、エージェントが翻訳を実行し、翻訳の品質を評価し、品質が十分でない場合は再度翻訳を行う。
+
+### これは典型的なエージェントのワークフローです
 
 <figure><img src="../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
 
-* Agent is a piece of sequential actions that can be executed on the LLM serverless runtime. It is the core building block of ReByte, and the main way for end users to create their own tools. Rebyte provides a GUI builder for end users to create/edit their own LLM agents. Rebyte provides a list of pre-built actions for common use cases, also private SDK for _software engineer_ to build their own actions, and seamlessly integrate with the agent builder. Pre-built actions includes:
-  * LLM Actions
-    * Language Model Completion Interface
-    * Language Model Chat Interface
-  * Data Actions
-    * Dataset Loader, load pre defined datasets for later processing
-    * File Loader, extract/transform/load user's provided files
-    * Semantic Search, search for similar content over user's knowledge base
-  * Tools Actions
-    * Search Engine, search for information on Google/Bing
-    * Web Crawler, crawl web pages and extract information
-    * Http Request Maker, make any http request to any public/private API
-  * Control flow Actions
-    * Loop Until, run actions until a condition is met
-    * Parallel, execute multiple actions in parallel
-    * Vanilla Javascript, execute any vanilla javascript code, useful for doing pure data transformation
+* エージェントは、LLMサーバーレスランタイム上で実行できる一連の順次アクションです。これはReByteのコアビルディングブロックであり、エンドユーザーが自分のツールを作成するための主な方法です。ReByteはエンドユーザーが自分のLLMエージェントを作成/編集するためのGUIビルダーを提供します。また、一般的なユースケースのための事前構築されたアクションのリストも提供しており、ソフトウェアエンジニアが独自のアクションを構築し、エージェントビルダーとシームレスに統合するためのプライベートSDKも提供しています。事前構築されたアクションには以下が含まれます：
 
-## Knowledge - capture private data
+  * LLMアクション
+    * 言語モデルコンプリートインターフェース
+    * 言語モデルチャットインターフェース
+  * データアクション
+    * データセットローダー、後で処理するための事前定義されたデータセットをロード
+    * ファイルローダー、ユーザー提供のファイルを抽出/変換/ロード
+    * セマンティック検索、ユーザーのナレッジベース上で類似のコンテンツを検索
+  * ツールアクション
+    * 検索エンジン、Google/Bingで情報を検索
+    * ウェブクローラー、ウェブページをクロールして情報を抽出
+    * Httpリクエストメーカー、任意の公開/非公開APIにhttpリクエストを送信
+  * 制御フローアクション
+    * 条件が満たされるまでループする
+    * 並列、複数のアクションを並行して実行
+    * バニラJavascript、任意のバニラJavascriptコードを実行（純粋なデータ変換に便利）
 
-> Ingredient for your Assistant.
+## ナレッジ - プライベートデータのキャプチャ
 
-* Knowledge is private data that is stored in rebyte managed vector database. Rebyte currently provides following connectors for end users to import their knowledge:
-  * Local file, supported file types are:
+> アシスタントのための材料
+
+* ナレッジはReByteが管理するベクトルデータベースに保存されるプライベートデータです。ReByteは現在、エンドユーザーがナレッジをインポートするための次のコネクタを提供しています：
+  * ローカルファイル、サポートされるファイルタイプは以下の通りです：
     * "doc", "docx", "img", "epub", "jpeg", "jpg", "png", "xls", "xlsx", "ppt", "pptx", "md", "txt", "rtf", "rst", "pdf", "json", "html"
   * Notion
   * Discord
   * GitHub
-  * More connectors are coming soon
-* Knowledge can be used in LLM Agents to do semantic search, or to do data augmentation. A great example is to use knowledge to do semantic search on a user's private knowledge base, and use the search result to do data augmentation for a language model, aka **Retrieval Augmented Generation**.
+  * その他のコネクタも近日中に提供予定
+  * ナレッジは、LLMエージェントにおいてセマンティック検索やデータ拡張に使用できます。優れた例として、ナレッジを活用してユーザーのプライベートナレッジベース上でセマンティック検索を行い、その検索結果を用いて言語モデルのデータ拡張を行う、いわゆる**リトリーバルオーグメンテッドジェネレーション（Retrieval Augmented Generation）**があります。

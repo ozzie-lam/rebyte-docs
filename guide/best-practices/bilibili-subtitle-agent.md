@@ -1,9 +1,8 @@
-# Bilibili subtitle agent
+# Bilibili字幕エージェント
 
-Help you get bilibili subtitles and summarize the content.
+Bilibiliの字幕を取得し、コンテンツを要約するのに役立ちます。
 
-
-### Setup the testing data in `Datasets`
+### `Datasets`でテストデータを設定
 
 ```json
 [
@@ -14,93 +13,91 @@ Help you get bilibili subtitles and summarize the content.
 ]
 ```
 
+### `Code Action`からコンテンツを抽出
 
-### Extract content from `Code Action`
-
-```js
+```javascript
 _fun = (env) => {
-  // use `env.state.Action_NAME` to refer output from previous Actions.
+  // `env.state.Action_NAME`を使用して前のアクションの出力を参照します。
   return env.state.INPUT.messages.slice(-1)[0].content
-} 
+}
 ```
 
-### Use LLM to process user's input
+### ユーザーの入力を処理するためにLLMを使用
 
 ```javascript
 _fun = (env) => {
-  // use `env.state.Action_NAME` to refer output from previous Actions.
+  // `env.state.Action_NAME`を使用して前のアクションの出力を参照します。
  return env.state.GET_BV.completion.text
 }
 ```
 
-### Extract content from `Code Action`
+### `Code Action`からコンテンツを抽出
 
 ```javascript
 _fun = (env) => {
-  // use `env.state.Action_NAME` to refer output from previous Actions.
+  // `env.state.Action_NAME`を使用して前のアクションの出力を参照します。
  return env.state.GET_BV.completion.text
 }
 ```
 
-### Use `Http Request Maker` and request for CID
+### `Http Request Maker`を使用してCIDをリクエスト
 
 ```javascript
 api.bilibili.com/x/player/pagelist?bvid={{BV}}
 ```
 
-### Extract content from `Code Action`
+### `Code Action`からコンテンツを抽出
 
 ```javascript
 _fun = (env) => {
-  // use `env.state.Action_NAME` to refer output from previous Actions.
+  // `env.state.Action_NAME`を使用して前のアクションの出力を参照します。
  return env.state.GET_CID.body.data[0].cid
 }
 ```
 
-### Use `Http Request Maker` and request for the url for subtitles
+### `Http Request Maker`を使用して字幕のURLをリクエスト
 
 ```javascript
 api.bilibili.com/x/player/v2?bvid={{BV}}&cid={{CID}}
 ```
 
-### Extract content from `Code Action`
+### `Code Action`からコンテンツを抽出
 
 ```javascript
 _fun = (env) => {
-  // use `env.state.Action_NAME` to refer output from previous Actions.
+  // `env.state.Action_NAME`を使用して前のアクションの出力を参照します。
   // const data = JSON.stringify(env.state.GET_URL.body)
   // const regex = /<subtitle>(.*?)<\/subtitle>/;
   // const match = data.match(regex);
   // const subtitleURL = match ? match[1] : "";
   // const obj = subtitleURL.replace(new RegExp("\\\\\"","gm"),"\"")
   // const result = JSON.parse(obj)['subtitles'][0]['subtitle_url'].replace("//", "")
-  const url = env.state.GET_URL.body.data.subtitle.subtitles[0].subtitle_url
+  const url = env.state.GET_URL.body.data.subtitle.subtitles[0].subtitle_url;
   const result = url.replace(/\/\//g, "");
-  return result
-  
+  return result;
 }
 ```
 
-### Use `Http Request Maker` and request for the subtitles
+### `Http Request Maker`を使用して字幕をリクエスト
 
 ```javascript
 {{GET_CC_URL}}
 ```
 
-### Extract content from `Code Action`
+### `Code Action`からコンテンツを抽出
 
 ```javascript
 _fun = (env) => {
-  // use `env.state.Action_NAME` to refer output from previous Actions.
-  let arr = []
+  // `env.state.Action_NAME`を使用して前のアクションの出力を参照します。
+  let arr = [];
   for(let i in env.state.GET_CC.body.body) {
-    arr.push(env.state.GET_CC.body.body[i].content)
+    arr.push(env.state.GET_CC.body.body[i].content);
   }
- return arr.join(',')
+  return arr.join(',');
 }
 ```
 
-### Send subtitles to the LLM to summarize
+### 字幕をLLMに送信して要約
 ```json
 {% if GET_URL.body.data.subtitle.subtitles[0].subtitle_url == "" %}
 please reply to me with the phrase: "I apologize for being unable to retrieve content from the URL you provided. Please verify the correctness of the web address"
@@ -116,11 +113,11 @@ Please provide a summary of the above passage and respond to me in Chinese.
 {% endif %}
 ```
 
-### Extract content from `Code Action`
+### `Code Action`からコンテンツを抽出
 
 ```javascript
 _fun = (env) => {
-  // use `env.state.Action_NAME` to refer output from previous Actions.
+  // `env.state.Action_NAME`を使用して前のアクションの出力を参照します。
  return {
    role: "assistant",
    content: env.state.OUTPUT_STREAM.completion.text,
@@ -129,4 +126,4 @@ _fun = (env) => {
 }
 ```
 
-### Output the final results
+### 最終結果を出力

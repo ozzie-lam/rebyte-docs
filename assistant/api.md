@@ -1,38 +1,35 @@
-# Agent API
+# エージェント API
 
-The Agent API allows you to build AI agent within your own applications. It provides a set of APIs to interact with the agent, such as sending messages, uploading files, and creating threads.
+エージェント API を使用すると、独自のアプリケーション内で AI エージェントを構築できます。メッセージの送信、ファイルのアップロード、スレッドの作成など、エージェントと対話するための一連の API を提供します。
 
-## Overview
+## 概要
 
-A typical integration of the Agent API has the following flow:
+エージェント API の典型的な統合フローは以下の通りです：
 
-1. Create an Agent on rebyte Agent editor by defining its custom actions, such as `Model`, `Data`, `Tools`, `Control Flow`, etc. Pick the model and parameters that you want to use.
+1. `Model`、`Data`、`Tools`、`Control Flow`などのカスタムアクションを定義して imprai エージェントエディタでエージェントを作成します。使用したいモデルとパラメータを選択します。
 
-2. Create a Thread when a user starts a conversation.
+2. ユーザーが会話を開始するときにスレッドを作成します。
 
-3. Add Messages to the Thread as the user asks questions.
+3. ユーザーが質問するたびにスレッドにメッセージを追加します。
 
-4. Run the Agent on the Thread to generate a response.
+4. スレッド上でエージェントを実行して応答を生成します。
 
-## Step by step
+## ステップバイステップ
 
-1. Create an Agent.
+1. エージェントを作成します。
 
-Here, we'll just use this ["Chat with GPT3.5 agent"](https://rebyte.ai/p/21b2295005587a5375d8/callable/f4222f209267e5b24cda/editor) as an example. Remember to test your agent first and make sure it works as expected. Also, click "Deploy" to make it available for the API.
+ここでは、["Chat with GPT3.5 agent"](https://imprai.ai/p/21b2295005587a5375d8/callable/f4222f209267e5b24cda/editor)を例として使用します。まずエージェントをテストし、期待通りに動作することを確認してください。また、「デプロイ」をクリックして API で使用可能にします。
 
-2. Create a thread
+2. スレッドを作成します。
 
-Before using the API, get your API key from the API console on the sidebar. You should use this key to authenticate your requests.
+API を使用する前に、サイドバーの API コンソールから API キーを取得してください。このキーを使用してリクエストを認証します。
 
-
-When creating a thread, you can append the messages to the thread when creating it.
-You can also attach metadata to the thread. This can be useful for storing additional information about the object in a structured format.
-
+スレッドを作成する際には、作成時にメッセージをスレッドに追加できます。また、スレッドにメタデータを付与することもできます。これにより、オブジェクトに関する追加情報を構造化形式で保存することができます。
 
 ```shell
-curl 'https://rebyte.ai/api/sdk/threads' \
+curl 'https://imprai.ai/api/sdk/threads' \
 --H 'Content-Type: application/json' \
---H 'Authorization: Bearer $REBYTE_KEY' \
+--H 'Authorization: Bearer $imprai_KEY' \
 --H 'Cookie: NEXT_LOCALE=en' \
 --d '{
      "metadata": {
@@ -44,17 +41,17 @@ curl 'https://rebyte.ai/api/sdk/threads' \
             "content":"Hi, how are you?"
         },
         {
-            "role":"asistant",
+            "role":"assistant",
             "content":"Hi, I am good. What about you? Is there anything I can help?"
         }
     ]
 }'
 ```
 
-In the response, you will find the thread id. You can use this thread id to add messages to the thread and run the agent on the thread.
+レスポンスにはスレッド ID が含まれています。このスレッド ID を使用して、スレッドにメッセージを追加し、エージェントをスレッド上で実行できます。
 
-* Example Response 
-  
+- レスポンスの例
+
 ```shell
 {
     "id": "UHSHhnkWGElWShQS5ZtOa",
@@ -62,21 +59,21 @@ In the response, you will find the thread id. You can use this thread id to add 
 }
 ```
 
-3. Add messages to the thread
+3. スレッドにメッセージを追加します。
 
 ```shell
-curl 'https://rebyte.ai/api/sdk/threads/{thread_id}/messages' \
+curl 'https://imprai.ai/api/sdk/threads/{thread_id}/messages' \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $REBYTE_KEY" \
+  -H "Authorization: Bearer $imprai_KEY" \
   -d '{
       "role": "user",
       "content": "How does AI work? Explain it in simple terms."
     }'
 ```
 
-In the response, you can see the message information.
+レスポンスにはメッセージ情報が含まれています。
 
-* Example Response
+- レスポンスの例
 
 ```shell
 {
@@ -88,90 +85,17 @@ In the response, you can see the message information.
 }
 ```
 
-4. Run the agent on the thread
+4. スレッド上でエージェントを実行します。
 
-In order to run the agent on the thread, you should get the url from deploying your agent and make a request to this url.
+エージェントをスレッド上で実行するには、エージェントをデプロイした際の URL を取得し、この URL にリクエストを送信します。
 
 ```shell
-curl -L https://rebyte.ai/api/sdk/p/21b2295005587a5375d8/a/f4222f209267e5b24cda/r \
-    -H "Authorization: Bearer $REBYTE_KEY" \
+curl -L https://imprai.ai/api/sdk/p/21b2295005587a5375d8/a/f4222f209267e5b24cda/r \
+    -H "Authorization: Bearer $imprai_KEY" \
     -H "Content-Type: application/json" \
     -d '{
     "version": 1,\
     "config": {
         "MODEL_CALL": {
-            "provider_id": "openai",
-            "model_id": "gpt-3.5-turbo-1106",
-            "use_cache": true,
-            "use_stream": false,
-            "seed": null,
-            "response_format": null
-        }
-    },
-    "thread_id":"UHSHhnkWGElWShQS5ZtOa",
-    "blocking": true,\
-    "inputs": []
-    }'
-```
-
-* When calling the agent, you should specify the thread id, and you will be able to get all the messages and metadata from the thread.
-
-* You can also use "contentOnly:true" to get only the content of the messages.
-
-
-5. Get the messages from the thread
-
-```shell
-curl 'https://rebyte.ai/api/sdk/threads/{thread_id}/messages'     \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $REBYTE_KEY" \
-```
-
-In the response, you will get the list of all messages on the thread.
-
-* Example Response
-
-```shell
-{
-    "list": [
-        {
-            "id": "u8YmkrO4lYZD8r8Nl5cFh",
-            "created_at": 1714051597,
-            "thread_id": "UHSHhnkWGElWShQS5ZtOa",
-            "role": "user",
-            "content": "Teach me how to make pancake."
-        },
-        {
-            "id": "pJWH0zkmgnQONAHr6bnA4",
-            "created_at": 1714050770,
-            "thread_id": "UHSHhnkWGElWShQS5ZtOa",
-            "role": "assistant",
-            "content": "Bitcoin is a decentralized digital currency, often referred to as a cryptocurrency. It was created in 2009 by an unknown person using the pseudonym Satoshi Nakamoto. Bitcoin transactions are recorded on a public ledger called a blockchain, and it operates without the need for a central authority or government. Bitcoin can be used for online transactions, as an investment, or as a store of value. It is also known for its potential to provide financial privacy and security.",
-            "agent_id": "297c5b234e770dd73713",
-            "name": "chat_with_gpt3_5",
-            "run_id": "4ed010c66458a2ac738932d950830218a2224e7ba22e12718ad66872be6832e7"
-        },
-        {
-            "id": "iEw3QFJys-zpacEbNgsF1",
-            "created_at": 1714050764,
-            "thread_id": "UHSHhnkWGElWShQS5ZtOa",
-            "role": "user",
-            "content": "What is bitcoin?"
-        },
-        {
-            "id": "xNQZdrCSJkYhM13b25Mhp",
-            "created_at": 1714050764,
-            "thread_id": "UHSHhnkWGElWShQS5ZtOa",
-            "role": "assistant",
-            "content": "Hi, how are you?"
-        },
-        {
-            "id": "tfSLCfLflDquhQ7680j8z",
-            "created_at": 1714050764,
-            "thread_id": "UHSHhnkWGElWShQS5ZtOa",
-            "role": "user",
-            "content": "Hello!"
-        }
-    ]
-}
+            "provider_id": "open
 ```

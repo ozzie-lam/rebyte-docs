@@ -1,9 +1,9 @@
-# Overview
+# 概要
 
-In ReByte community, we present you with a lot of carefully-designed apps and agents that are ready to use. 
+imprai コミュニティでは、慎重に設計された多くのアプリやエージェントを提供しています。これらはすぐに使用可能です。
 
-To enter the community, click the "Community" tab on the left side of the screen.
+コミュニティに入るには、画面の左側にある「コミュニティ」タブをクリックしてください。
 
-Here we have listed many different apps and agents, feel free to use them or clone them to add more functions.
+ここにはさまざまなアプリやエージェントがリストされています。自由に使用したり、クローンして機能を追加したりできます。
 
-🎊 We will regularly update the agents and apps in the ReByte community, making sure that you can always find the best ones here. 
+🎊 imprai コミュニティでは定期的にエージェントやアプリを更新し、常に最高のものを見つけられるようにしています。

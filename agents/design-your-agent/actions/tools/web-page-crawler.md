@@ -1,31 +1,32 @@
-# Web Page Crawler
+# ウェブページクローラー
 
-This action helps you retrieves the HTML content from  a certain web page.
+このアクションは、特定のウェブページから HTML コンテンツを取得します。
 
-## Usage 
+## 使用方法
 
-* First, add a web crawl action to your agent using the **+** button in the agent editor.
+1. まず、エージェントエディタで **+** ボタンを使用してウェブクロールアクションを追加します。
 
 <figure><img src="../../../../images/web-1.png"></figure>
 
-* Specify the URL that you want to crawl and the CSS selector that you want to use to get the content from the page.
+2. クローリングしたい URL と、ページからコンテンツを取得するために使用する CSS セレクタを指定します。
 
-**Parameters:**
-* URL: The URL that you want to get data from
-* CSS selector: we will only get content using your specified CSS selector
+**パラメータ:**
+
+- URL：データを取得したい URL
+- CSS セレクタ：指定した CSS セレクタを使用してコンテンツを取得します
 
 <figure><img src="../../../../images/web-2.png"></figure>
 
-* Run the agent and you will see the results in the action's output.
+3. エージェントを実行し、アクションの出力で結果を確認します。
 
-## Output
-
-* The output is a json object with the following fields:
-    * `data`: the content of the page
-    * `response`: the response object from the request
-  
 <figure><img src="../../../../images/web-3.png"></figure>
 
-## Example Agent
+## 出力
 
-* [Web Page Crawler](https://rebyte.ai/p/21b2295005587a5375d8/callable/35358e328e30adf8a737/editor) 
+- 出力は以下のフィールドを持つ JSON オブジェクトです：
+  - `data`: ページのコンテンツ
+  - `response`: リクエストからのレスポンスオブジェクト
+
+## サンプルエージェント
+
+- [ウェブページクローラー](https://rebyte.ai/p/21b2295005587a5375d8/callable/35358e328e30adf8a737/editor)

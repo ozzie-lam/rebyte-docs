@@ -1,17 +1,23 @@
-# Term of Service
+# 利用規約
 
-Welcome to RealChar AI! Please read these terms of service carefully before using our services. By accessing or using our services, you agree to be bound by these terms.
+RealChar AIへようこそ！当社のサービスを利用する前に、この利用規約を注意深くお読みください。サービスにアクセスまたは利用することにより、これらの規約に同意したものとみなされます。
 
-1. Use of Services RealChar AI provides its services to you, subject to these terms of service. You may use our services only for lawful purposes and in accordance with these terms. By using our services, you represent and warrant that you are at least 18 years old.
+1. **サービスの利用**
+   RealChar AIは、この利用規約に基づいてお客様にサービスを提供します。お客様は、合法的な目的でのみ当社のサービスを利用することができます。サービスを利用することにより、お客様は少なくとも18歳であることを表明し、保証します。
 
-2. Intellectual Property Rights The content and materials available onRealChar AI, including but not limited to text, graphics, logos, button icons, images, audio clips, data compilations, and software, are the property of RealChar AI or its content suppliers and are protected by copyright laws.
+2. **知的財産権**
+   RealChar AIのコンテンツおよび資料（テキスト、グラフィックス、ロゴ、ボタンアイコン、画像、音声クリップ、データコンピレーション、ソフトウェアを含むがこれに限定されない）は、RealChar AIまたはそのコンテンツ提供者の財産であり、著作権法によって保護されています。
 
-3. User Content You retain all rights in, and are solely responsible for, the content you submit to RealChar AI. You grantRealChar AI a non-exclusive, worldwide, perpetual, irrevocable, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, prepare derivative works of, display, and perform your content in connection with the services provided byRealChar AI and its successors and affiliates.
+3. **ユーザーコンテンツ**
+   お客様は、RealChar AIに提出するコンテンツに対するすべての権利を保持し、そのコンテンツに対して単独で責任を負います。お客様は、RealChar AIおよびその後継者および関連会社が提供するサービスに関連して、お客様のコンテンツを使用、複製、配布、派生作品の作成、表示および実行するための、非独占的、全世界的、永続的、取消不能、ロイヤリティフリー、サブライセンス可能、および譲渡可能なライセンスをRealChar AIに付与します。
 
-4. Limitation of Liability RealChar AI shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from your access to or use of or inability to access or use the services provided by RealChar AI, including, without limitation, any damages resulting from or related to any failures of performance, error, omission, interruption, defect, delay in operation or transmission, computer virus, or line failure.
+4. **責任の制限**
+   RealChar AIは、間接的、偶発的、特別、結果的、または懲罰的損害、あるいは利益または収益の損失（直接的または間接的を問わない）、データ、使用、善意、またはその他の無形資産の損失について、一切の責任を負いません。これには、RealChar AIのサービスへのアクセスまたは利用、またはアクセスや利用の不能に起因する、または関連するパフォーマンスの失敗、エラー、脱漏、中断、欠陥、操作または伝送の遅延、コンピュータウイルス、または回線障害に起因する損害が含まれますが、これに限定されません。
 
-5. Indemnification You agree to indemnify, defend, and hold harmless RealChar AI, its affiliates, officers, directors, employees, agents, licensors, and suppliers from and against all claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or related to your violation of these terms of service or your use of the services provided by RealChar AI.
+5. **補償**
+   お客様は、RealChar AI、その関連会社、役員、取締役、従業員、代理人、ライセンサー、および供給者を、これらの利用規約の違反またはRealChar AIが提供するサービスの利用に起因する、または関連するすべての請求、責任、損害、判決、賞与、損失、費用、経費（合理的な弁護士費用を含む）から補償し、防御し、免責することに同意します。
 
-6. Termination RealChar AI reserves the right to terminate your access to all or any part of the services provided by RealChar AI at any time, with or without cause, with or without notice, effective immediately. If you wish to terminate your account, you may simply discontinue using the services provided by RealChar AI.
+6. **サービスの終了**
+   RealChar AIは、理由の有無にかかわらず、通知の有無にかかわらず、即時にお客様のサービスへのアクセスを終了する権利を留保します。お客様がアカウントを終了したい場合は、単にRealChar AIのサービスの利用を中止するだけで済みます。
 
-These terms of service constitute the entire agreement between you andRealChar AI and govern your use of the services provided by RealChar AI, superseding any prior agreements between you and RealChar AI. If any provision of these terms of service is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall be enforced.
+これらの利用規約は、お客様とRealChar AIとの間の完全な合意を構成し、RealChar AIが提供するサービスの利用を規定します。これにより、お客様とRealChar AIとの間の以前の合意はすべて無効となります。これらの利用規約のいずれかの条項が無効または執行不能とされた場合、該当条項は削除され、残りの条項は執行されます。

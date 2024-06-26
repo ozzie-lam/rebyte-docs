@@ -1,40 +1,38 @@
-# Datasets
+# データセット
 
-After designing your agent, you can test it with datasets.
+ツールを設計した後、データセットを使用してテストすることができます。
 
-You can run the dataset with the "Run Testcases" and observe the agent's response and maybe troubleshoot issues based on it.
+「テストケースｍｐ実行」ボタンを使用してデータセットを実行し、ツールの応答を観察し、それに基づいて問題をトラブルシューティングすることができます。
 
+## データセットの作成
 
-## Dataset Creation
+- 画面上部の`データセット`タブに移動します。
 
-* Navigate to the `Datasets` tab on the top.
+- `データセットを作成`をクリックします。
 
-* Click `Create Dataset`.
-
-* Use "Add Column" to add a new field to your dataset. "Add Row" to add a new dataset item.
+- 「列を追加」を使用してデータセットに新しいフィールドを追加します。「行を追加」を使用して新しいデータセットアイテムを追加します。
 
 <figure><img src="../../images/datasets.png" alt=""><figcaption></figcaption></figure>
 
+## サポートされているデータタイプ
 
-## Data types supported
+以下のデータタイプをサポートしています：
 
-We support the following data types:
+- 文字列（String）
+- 数値（Number）
+- ブール値（Boolean）
+- JSON オブジェクト（JSON Object）
 
-* String
-* Number
-* Boolean
-* JSON Object
+## 使用方法
 
-## Usage
+データセットは 2 つの方法で使用できます：
 
-Datasets can be used in two ways:
+#### 1. 後続のアクションのためにデータをロードする
 
-#### 1.Load data for subsequent actions
+ロードされたデータセットは後続のアクションで使用できます。
 
-The loaded dataset can be used by subsequent actions.
+データセットにいくつかのプロンプトのアンプルデータが含まれている場合に非常に便利です。
 
-This is very useful when the dataset contains example data for few shots prompting.
+#### 2. エージェントの入力形式を決定する
 
-#### 2.Determine the input shape of the agent
-
-The the dataset of the `Input` action determines the shape of the input of the whole agent.
+`入力`アクションのデータセットは、エージェント全体の入力形式を決定します。

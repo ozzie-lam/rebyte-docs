@@ -1,8 +1,8 @@
-# Search engine agent
+# 検索エージェント
 
-Summarize web page contents for you.
+ウェブページの内容を要約します。
 
-### Setup the testing data in `Datasets`
+### `Datasets`でテストデータを設定
 
 ```json
 [
@@ -21,46 +21,45 @@ Summarize web page contents for you.
 ]
 ```
 
-
-### Use `Code Action` to get the last message
-
-```javascript
-_fun = (env) => {
-  // use `env.state.Action_NAME` to refer output from previous Actions.
-  return env.state.INPUT.messages.slice(-1)[0].content
-}
-```
-
-### Use `Code Action` to get the chat history
+### `Code Action`を使用して最後のメッセージを取得
 
 ```javascript
 _fun = (env) => {
-  // use `env.state.Action_NAME` to refer output from previous Actions.
- return env.state.INPUT.messages.slice(0, env.state.INPUT.messages.length - 1).map((m) => m.content).join("\n")
+  // `env.state.Action_NAME`を使用して前のアクションの出力を参照します。
+  return env.state.INPUT.messages.slice(-1)[0].content;
 }
 ```
 
-### Use `Code Action` to extract content
+### `Code Action`を使用してチャット履歴を取得
+
+```javascript
+_fun = (env) => {
+  // `env.state.Action_NAME`を使用して前のアクションの出力を参照します。
+  return env.state.INPUT.messages.slice(0, env.state.INPUT.messages.length - 1).map((m) => m.content).join("\n");
+}
+```
+
+### `Code Action`を使用してコンテンツを抽出
 
 ```txt
-{# Your prompt here, for example: 'Answer those question based on the following content.' #}
-{# Begin your prompt below: #}
-This is the question: {{EXTRACT_QUESTION}}
-This is the conversation history: {{HISTORY}}
+{# あなたのプロンプトをここに入力してください。例: '以下の内容に基づいてこれらの質問に答えてください。' #}
+{# プロンプトの開始: #}
+これが質問です: {{EXTRACT_QUESTION}}
+これが会話履歴です: {{HISTORY}}
 
-Add necessary contexts to the question with the help of conversation history. If the contexts are irrelevant don't change the question. Give the question here:
+会話履歴を参考にして質問に必要な文脈を追加してください。文脈が関連しない場合は、質問を変更しないでください。ここで質問を与えてください:
 ```
 
-### Use `Google_search` to search for related contents
+### `Google_search`を使用して関連コンテンツを検索
 ```javascript
 {{REFINED_QUESTION.completion.text}}
 ```
 
-### Use `Code Action` to extract content
+### `Code Action`を使用してコンテンツを抽出
 
 ```javascript
-// Extracts title, snipet and link from the google search's organic results.
-// capped at 3
+// Google検索のオーガニック結果からタイトル、スニペット、リンクを抽出します。
+// 3つに制限
 _fun = (env) => {
   if (!env.state.GOOGLE_SEARCH.organic_results) {
     return [
@@ -77,61 +76,61 @@ _fun = (env) => {
 }
 ```
 
-### Map the results for parallel processing
+### 結果を並列処理のためにマッピング
 
 ```javascript
 SEARCH_EXTRACT
 ```
 
-### Use `WEB_CRAWL` to scan the page 
+### `WEB_CRAWL`を使用してページをスキャン
 ```javascript
 {{SEARCH_RESULT_LOOP.link}}
 ```
 
-### Use `Code Action` to extract content
+### `Code Action`を使用してコンテンツを抽出
 ```javascript
-// for each link, crawl its content and capped at 2000 bytes
+// 各リンクについて、そのコンテンツをクロールし、2000バイトに制限
 _fun = (env) => {
   return {
     content: env.state.WEB_CRAWL_1.data ? env.state.WEB_CRAWL_1.data[0].results[0].text.slice(0, 2000) : "",
   };
-} 
+}
 ```
 
-### Use LLM to analyze the contents
+### LLMを使用してコンテンツを分析
 ```json
-{# Your prompt here, for example: 'Answer those question based on the following content.' #}
-{# Begin your prompt below: #}
+{# あなたのプロンプトをここに入力してください。例: '以下の内容に基づいてこれらの質問に答えてください。' #}
+{# プロンプトの開始: #}
 
-Given the following question:
+次の質問に基づいて:
 """
 {{EXTRACT_QUESTION}}
 """
 
-Extract the text from the following content relevant to the question and summarize it:
+以下のコンテンツから質問に関連するテキストを抽出し、要約してください:
 """
 {# {{GOOGLE_REFERENCES.content}} #}
 {{SEARCH_RESULT_LOOP.snippet}}
 """
 
-Extracted summarized content:
+抽出された要約コンテンツ:
 """
 ```
 
-### Use `Code Action`` to extract content
+### `Code Action`を使用してコンテンツを抽出
 ```javascript
 _fun = (env) => {
   return {
     summary: env.state.MODEL_SUMMARIZE.completion.text.trim(),
     link: env.state.SEARCH_RESULT_LOOP.link
-  };    
+  };
 }
 ```
 
-Use `Code Action` to extract content and make prompt
+### `Code Action`を使用してコンテンツを抽出およびプロンプトを作成（続き）
+
 ```javascript
 const _example = (example) => {
-  // prompt = `QUESTION: ${example.question}\n`;
   let prompt = "CONTENT:\n";
   prompt += '"""\n';
   example.forEach((d, i) => {
@@ -142,32 +141,46 @@ const _example = (example) => {
     prompt += `content: ${d.summary.replaceAll('\n', ' ')}\n`;
   });
   prompt += '"""\n';
-  console.log(prompt)
+  console.log(prompt);
   return prompt;
 }
 
 _fun = (env) => {
-  prompt = 'Given the following questions, reference links and associated content, create a final answer with references. If some of answer can be formatted in table format, format in table format. Answer should be accurate and concise. \n\n Never tell me "As a language model ..." or "As an artificial intelligence...", I already know you are a LLM. Just tell me the answer. \n\n';
-  // env.state.EXAMPLES.forEach((e) => {
-  // prompt += _example(e);
-  // prompt += `FINAL:\n"""\n${e.final}\n"""\n`;
-  // prompt += "\n";
-  // });
+  let prompt = 'Given the following questions, reference links and associated content, create a final answer with references. If some of answer can be formatted in table format, format in table format. Answer should be accurate and concise. \n\n Never tell me "As a language model ..." or "As an artificial intelligence...", I already know you are a LLM. Just tell me the answer. \n\n';
   prompt += "QUESTION:" + env.state.EXTRACT_QUESTION + "\n";
   prompt += _example(env.state.FORMAT_SUMMARY);
 
   prompt += `FINAL:\n"""\n`;
 
-  return { prompt }
+  return { prompt };
 }
 ```
 
-### Send the prompt to LLM
-```json
-{{FINAL_PROMPT.prompt}}
-```
-### Extract `OUTPUT_STREAM` as output
+### プロンプトをLLMに送信
 ```json
 {{FINAL_PROMPT.prompt}}
 ```
 
+### `OUTPUT_STREAM`を出力として抽出
+```json
+{{FINAL_PROMPT.prompt}}
+```
+
+## まとめ
+
+以上の手順で、ウェブページの内容を要約する検索エージェントを作成することができます。このエージェントは、ユーザーの質問を受け取り、関連するウェブコンテンツを検索して要約し、質問に対する答えを提供します。
+
+主要なステップは次の通りです：
+
+1. **テストデータの設定：** `Datasets` にテストデータを設定します。
+2. **最後のメッセージの取得：** `Code Action` を使用して最後のメッセージを取得します。
+3. **チャット履歴の取得：** `Code Action` を使用してチャット履歴を取得します。
+4. **コンテンツの抽出：** `Code Action` を使用して質問と履歴からコンテンツを抽出します。
+5. **Google検索を使用して関連コンテンツを検索：** `Google_search` を使用して関連コンテンツを検索します。
+6. **検索結果の抽出：** `Code Action` を使用して検索結果を抽出します。
+7. **ページのスキャン：** `WEB_CRAWL` を使用してページをスキャンします。
+8. **コンテンツの分析と要約：** LLMを使用してコンテンツを分析し、要約します。
+9. **プロンプトの作成と送信：** `Code Action`を使用してプロンプトを作成し、LLMに送信します。
+10. **最終結果の出力：** `OUTPUT_STREAM`を使用して最終結果を出力します。
+
+これらのステップを通じて、ユーザーの質問に対して迅速かつ正確に答える検索エージェントを実装することができます。

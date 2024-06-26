@@ -1,78 +1,76 @@
-# Overview
+# 概要
 
-## What is ReByte?
+## imprai とは？
 
-Rebyte is an AI-powered platform leveraging GPT4, Claude, Gemini, and Mistral to enhance team collaboration and productivity. Utilize AI assistants to gain deeper insights into any subject, streamline work processes, and boost overall efficiency. Whether you need assistance with company-related inquiries, drafting documents, or simplifying complex tasks, Rebyte's AI assistants have you covered. Create personalized assistants or collaborate with your team on shared assistants tailored to your specific needs.
-
+imprai は、GPT-4 や Claude、Gemini や Mistral を活用してチームのコラボレーションと生産性を向上させる AI プラットフォームです。AI アシスタントを利用して、あらゆるテーマについて深い洞察を得て、作業プロセスを合理化し、全体的な効率を向上させます。企業関連の問合せ、文書の作成、複雑なタスクの簡略化など、imprai の AI アシスタントがサポートします。パーソナライズされたアシスタントを作成したり、チームと協力して特定のニーズに合わせた共有アシスタントを作成することができます。
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-## General concepts
+## 一般的な概念
 
-### Assistants
+### アシスタント
 
-Rebyte assistants are AI-powered agents that can do planning, reasoning, and execution. They can help with a wide range of tasks, from answering questions to creating documents specific to company's data. Assistants can leverage customized agents built by your team to provide more tailored responses.
+imprai のアシスタントは、計画、推論、実行を行う AI 搭載ツールです。質問に答えることから会社のデータに基づいた文書の作成まで、幅広いタスクをサポートします。アシスタントは、チームが構築したカスタマイズされたツールを利用して、より具体的で適切な応答を提供します。
 
-Here are some typical tasks that assistants can help with:
+アシスタントがサポートする典型的なタスクは以下の通りです：
 
-* Answering questions about your company, for example, financial data or company policies.
-* Drafting documents, such as memos or reports, based on your company's data as well as public information.
-* Providing insights into customer behavior or market trends, extract data from your company's data sources, and plot graphs or tables based on the data.
-* Professional Translation, translate document to target language with multiple rounds of proofreading and editing.
+- 企業の財務データや企業方針などに関する質問への応答
+- メモやレポートなど、会社のデータおよび公開情報に基づいた文書の作成
+- 顧客動向や市場動向に関する洞察を提供したり、会社のデータソースからデータを抽出したりしてグラフや表を作成
+- 複数回の校正と編集を通じて文書を対象言語に翻訳
 
-If you are familiar with the concept of chatgpt, Rebyte assistants are similar to GPTs but with more focus on team productivity and collaboration.
+ChatGPT の概念に慣れている方には、imprai のアシスタントは GPT に似ていると感じるかもしれませんが、チ imprai はームの生産性とコラボレーションにより焦点を当てています。
 
-### Agents
+### エージェント
 
-Agents are building blocks for assistants. They can be customized to perform specific tasks, such as data retrieval, document generation, or data analysis, main idea behind agent is to capture proprietary knowledge and automate repetitive tasks within your organization.
+エージェントはアシスタントの構成要素です。データの取得やドキュメントの生成、データ分析など特定のタスクを実行するようにカスタマイズできます。エージェントの主な目的は、独自の知識を取込み、組織内の反復的タスクを自動化することです。
 
-Here are some example agents:
+以下はツールの例です：
 
-* Answering questions about your company's financial data from a predefined xlsx file
-* Analyzing market trends from some Twitter accounts
-* Call internal APIs to retrieve data from your company's database
+- 事前定義された xlsx ファイルから企業の財務データに関する質問への応答
+- いくつかの Twitter アカウントから市場動向を分析
+- 企業のデータベースからデータを取得するための内部 API 呼出し
 
-You can think of agents as a way to encapsulate your company's knowledge and processes into reusable components that can be used by your assistants. Agent concept is similar to the concept of "skills" or "tools" in other AI assistant platforms, or flow engineering.
+ツールは、会社の知識やプロセスを再利用可能なコンポーネントとしてカプセル化し、アシスタントで使用できるようにする方法と考えることができます。ツールの概念は、他の AI アシスタントプラットフォームやフローエンジニアリングにおける「スキル」や「ツール」の概念に似ています。
 
-### Actions
+### アクション
 
-Action is a building block of an agent. Action is a single unit of work that an agent can perform, such as make a LLM call, read a file, or generate a document, run piece of code, etc. Actions can be chained together to form a sequence of actions that the agent will perform.
+アクションはエージェントの構成要素であり、エージェントが実行できる単一の作業単位です。例えば、LLM コール、ファイル読込み、文書生成、コード実行などです。アクションは連鎖させて、エージェントが実行するアクションのシーケンスを形成できます。
 
-Here are builtin actions that Rebyte supports:
+imprai がサポートする組込みアクションは以下の通りです：
 
-* Call LLM
-* Internet Search
-* Load History messages
-* Load Dataset
-* Knowledge Search over vector database
-* Parse file to structured data
-* Run JS code
-* Loop until
-* If-else
-* Map-Reduce for parallel processing
+- LLM コール
+- インターネット検索
+- 履歴メッセージの読込み
+- データセットの読込み
+- ベクトルデータベース上でのナレッジ検索
+- ファイルを構造化データに解析
+- JS コードの実行
+- ループ処理
+- if-else
+- 並列処理のための Map-Reduce
 
-With extension API, you can create your own actions to perform custom tasks that are specific to your organization.
+拡張 API を使用して、組織固有のカスタムタスクを実行するための独自のアクションを作成できます。
 
-### Knowledge
+### ナレッジ
 
-Knowledge is the data that your agents and assistants can access. It can be your company's data, such as Notion pages, Google Drive files, or local files, as well as public data sources like Wikipedia or news websites. Knowledge is the foundation for your agents and assistants to provide accurate and relevant information.
+ナレッジは、エージェントやアシスタントがアクセスできるデータです。これには、Notion ページや Google Drive ファイル、ローカルファイルなどの企業データや、Wikipedia やニュースサイトなどのパブリックデータソースが含まれます。ナレッジは、エージェントやアシスタントが正確で関連性のある情報を提供するための基盤です。
 
-Currently, Rebyte supports the following data sources:
+現在、imprai は以下のデータソースをサポートしています：
 
-* Local files
-* Web pages
-* Discord
-* Twitter
-* Notion
-* Google Drive
-* GitHub
+- ローカルファイル
+- ウェブページ
+- Discord
+- Twitter
+- Notion
+- Google Drive
+- GitHub
 
-Rebyte use LLM embeddings to convert data into a format that can be used by agents and assistants. Currently, Rebyte supports the two following embedding providers:
+imprai は、LLM 埋込みを使用してデータをエージェントやアシスタントが使用できる形式に変換します。現在、imprai は以下の 2 つの埋め込みプロバイダーをサポートしています：
 
-* OpenAI embeddings
-* Voyager embeddings
+- OpenAI
+- Voyager
 
-### Team
+### チーム
 
-The team is a group of users who collaborate on Rebyte. Each team has its own space where members can create and share assistants, agents, and knowledge. Team members can have different roles, such as admin, builder, or user, with varying permissions to manage and access the workspace.
-
+チームは imprai 上でコラボレーションするユーザーのグループです。各チームには、メンバーがアシスタント、エージェント、およびナレッジを作成して共有できる独自のスペースがあります。チームメンバーは、管理者、ビルダー、ユーザーなど、異なる役割を持ち、ワークスペースの管理とアクセスに関するさまざまな権限を持ちます。

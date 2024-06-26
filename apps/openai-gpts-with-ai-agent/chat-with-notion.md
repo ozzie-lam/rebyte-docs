@@ -1,78 +1,71 @@
-# Chat with Notion
+# Notion とチャット
 
-Today I'm going to show you how to use Notion pages as a knowledge base for GPT.
+ここでは、Notion ページを GPT のナレッジベースとして使用する方法を紹介します。
 
-## Step 1: Create Knowledge with Notion
+## ステップ 1：Notion でナレッジを作成する
 
-- Navigate to the Knowledge page and create a new knowledge.
-
-<figure><img src="../../images/%25E6%2588%25AA%25E5%25B1%258F2024-01-11_16.58.50.png"></figure>
-
-
-- Fill in the name and description of the knowledge.
+- ナレッジページに移動し、新しいナレッジを作成します。
 
 <figure><img src="../../images/%25E6%2588%25AA%25E5%25B1%258F2024-01-11_16.58.50.png"></figure>
 
-- Since we are using Notion as the knowledge base, we need to select `Notion` as the knowledge source.
+- ナレッジの名前と説明を入力します。
+
+<figure><img src="../../images/%25E6%2588%25AA%25E5%25B1%258F2024-01-11_16.58.50.png"></figure>
+
+- Notion をナレッジベースとして使用するので、`Notion`をナレッジソースとして選択します。
 
 <figure><img src="../../images/%25E6%2588%25AA%25E5%25B1%258F2024-01-11_17.00.17.png"></figure>
 
-- Choose a chunk size and create knowledge.
+- チャンクサイズを選択し、ナレッジを作成します。
 
-- Connect your Notion account to ReByte and choose the page you want to use.
+- Notion アカウントを imprai に接続し、使用したいページを選択します。
 
 <figure><img src="../../images/%25E6%2588%25AA%25E5%25B1%258F2024-01-11_17.01.41.png"></figure>
 
-
 <figure><img src="../../images/%25E6%2588%25AA%25E5%25B1%258F2024-01-11_17.01.41%201.png"></figure>
 
-
-- Now you should have your knowledge of the content from Notion.
+- これで、Notion のコンテンツがナレッジとして利用できるようになります。
 
 <figure><img src="../../images/%25E6%2588%25AA%25E5%25B1%258F2024-01-11_17.04.55.png"></figure>
 
-## Step 2: Clone Agent
+## ステップ 2：エージェントをクローンする
 
-- In Community select the tab "GPT Builder Actions" and click “knowledge_search_agent_for_gpts”
+- コミュニティで「GPT Builder Actions」タブを選択し、「knowledge_search_agent_for_gpts」をクリックします。
 
 <figure><img src="../../images/Untitled.png"></figure>
 
-- copy it to your own project
-  
+- それを自分のプロジェクトにコピーします。
+
 <figure><img src="../../images/Untitled%201.png"></figure>
 
+## ステップ 3：ナレッジを選択し、**デプロイする**
 
-## Step 3: Select your knowledges and **Deploy it**
-
-- Find the action called RETRIEVALS and select the knowledge you created
-
+- RETRIEVALS というアクションを見つけ、作成したナレッジを選択します。
 
 <figure><img src="../../images/Untitled%202.png"></figure>
 
-- Run TestCases and deploy it
+- テストケースを実行し、デプロイします。
 
-If want to know how to design this agent, see [here](https://rebyte-ai.gitbook.io/rbyte/apps/openai-gpts-with-ai-agent/design-your-agent).
+このエージェントの設計方法については、[こちら](https://rebyte-ai.gitbook.io/rbyte/apps/openai-gpts-with-ai-agent/design-your-agent)をご覧ください。
 
-## Step 4: Create GPTs with ReByte API
+## ステップ 4：imprai API で GPT を作成する
 
-- Fill in the name, description, and avatar for your GPTs.
-
+- GPT の名前、説明、アバターを入力します。
 
 <figure><img src="../../images/Untitled%203.png"></figure>
 
-- Copy and paste the OpenAPI code for the corresponding version of your ReByte Agent into the Action of GPTs, and set **Authentication** as API Key.
+- 対応するバージョンの imprai エージェントの OpenAPI コードを GPT のアクションにコピーし、**認証**を API キーとして設定します。
 
 <figure><img src="../../images/Untitled%204.png"></figure>
 
 <figure><img src="../../images/Untitled%205.png"></figure>
 
-- Fill in ReByte's API key (**Select Bearer for Auth Type**).
+- imprai の API キーを入力します（**Auth Type として Bearer を選択**）。
 
 <figure><img src="../../images/Untitled%206.png"></figure>
 
-- Save and release your GPTs!
-- Now you can use it!
-
+- 保存して GPT をリリースします！
+- これで使用可能です！
 
 <figure><img src="../../images/Untitled%207.png"></figure>
 

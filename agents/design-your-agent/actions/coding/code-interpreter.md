@@ -1,22 +1,21 @@
-# Code Interpreter
+# コードインタープリター
 
-We provide `Code Interpreter` action to solve your task by generating code and executing it.
+私たちは、コードを生成して実行することでタスクを解決するための「コードインタープリター」アクションを提供しています。
 
-## Usage
+## 使用方法
 
-* Add a `Code Interpreter` action to your agent. 
+- エージェントに「コードインタープリター」アクションを追加します。
 
 <figure><img src="../../../../images/ci-1.png"></figure>
 
-* Fill in the "Code for Messages" as the input the "Code Interpreter" action. 
+- 「メッセージ用コード」に「コードインタープリター」アクションへの入力します。
 
 <figure><img src="../../../../images/ci-2.png"></figure>
-  
-* Set the "Max Rounds of Code Interation" to limit the number of messages from the code interpreter.
 
-## Output
+- 「コードの最大反復回数」を設定して、コードインタープリターからのメッセージ数を制限します。
 
-The output of this action is as follows:
+## 出力
+
+このアクションの出力は以下の通りです：
 
 <figure><img src="../../../../images/ci-3.png"></figure>
-

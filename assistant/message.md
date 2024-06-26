@@ -1,24 +1,25 @@
-# Message
+# メッセージ
 
-## Insert Message
+## メッセージの挿入
 
 `POST https://rebyte.ai/api/sdk/threads/{threadId}/messages`
 
-Create a new message in a thread.
+スレッドに新しいメッセージを作成します。
 
-**Path parameters**
-* thread_id(required): A string with the ID of the thread to create a message for.
+**パスパラメータ**
 
-**Request body**
-* role(required): A string, containing the role of the entity that is creating the message. Currently only user is supported.
-* content(required):A string with the content of the message.
-* file_ids: A list of File IDs that the message should use. There can be a maximum of 10 files attached to a message. Useful for tools like retrieval and code_interpreter that can access and use files.
-* metadata: Set of 16 key-value pairs that can be attached to an object. This can be useful for storing additional information about the object in a structured format. Keys can be a maximum of 64 characters long and values can be a maxium of 512 characters long.
+- thread_id (必須): メッセージを作成するスレッドの ID を含む文字列。
 
+**リクエストボディ**
 
-**Example Request**
+- role (必須): メッセージを作成するエンティティの役割を含む文字列。現在は user のみがサポートされています。
+- content (必須): メッセージの内容を含む文字列。
+- file_ids: メッセージで使用するファイルの ID のリスト。メッセージに最大 10 個のファイルを添付できます。ファイルにアクセスして使用するための retrieval や code_interpreter などのツールで便利です。
+- metadata: オブジェクトに添付できる 16 組のキーと値のセット。これにより、オブジェクトに関する追加情報を構造化形式で保存できます。キーは最大 64 文字、値は最大 512 文字です。
+
+**リクエスト例**
+
 ```shell
-
 curl 'https://rebyte.ai/api/sdk/threads/{thread_id}/messages' \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $REBYTE_KEY" \
@@ -28,158 +29,76 @@ curl 'https://rebyte.ai/api/sdk/threads/{thread_id}/messages' \
     }'
 ```
 
-**Return**
+**リターン**
 
-A message object.
+メッセージオブジェクト。
 
+**例**
 
-**Example**
 ```json
 {
-    "id": "W_DPv1bwUQ50PC52f44Uo",
-    "created_at": 1710415825,
-    "thread_id": "p_DFiNmczwUWZjcl47U9X",
-    "role": "user",
-    "content": "How does AI work? Explain it in simple terms.",
-    "metadata": {
-        "user": "czy1"
-    }
+  "id": "W_DPv1bwUQ50PC52f44Uo",
+  "created_at": 1710415825,
+  "thread_id": "p_DFiNmczwUWZjcl47U9X",
+  "role": "user",
+  "content": "How does AI work? Explain it in simple terms.",
+  "metadata": {
+    "user": "czy1"
+  }
 }
 ```
 
-## List Messages
+## メッセージの一覧表示
 
 `GET https://rebyte.ai/api/sdk/threads/{threadId}/messages`
 
-Get list of messages in a thread.
+スレッド内のメッセージの一覧を取得します。
 
-**Path parameters**
-* thread_id(required): A string with the ID of the thread to create a message for.
+**パスパラメータ**
 
-**Query parameters**
+- thread_id (必須): メッセージを作成するスレッドの ID を含む文字列。
 
-* limit: An integer, defaults to 20.A limit on the number of objects to be returned. Limit can range between 1 and 100, and the default is 20.
+**クエリパラメータ**
 
-* order: A string, defaults to desc. Sort order by the created_at timestamp of the objects. asc for ascending order and desc for descending order.
+- limit: 整数、デフォルトは 20。返されるオブジェクトの数の制限。制限は 1 から 100 の範囲内であり、デフォルトは 20 です。
 
-* after: A string, with a cursor for use in pagination. after is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with obj_foo, your subsequent call can include after=obj_foo in order to fetch the next page of the list.
+- order: 文字列、デフォルトは desc。オブジェクトの created_at タイムスタンプでのソート順序。昇順は asc、降順は desc です。
 
-* before: A string, with a cursor for use in pagination. before is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with obj_foo, your subsequent call can include before=obj_foo in order to fetch the previous page of the list.
+- after: 文字列、ページネーションに使用するカーソル。after はリスト内の位置を定義するオブジェクト ID です。例えば、リストリクエストを行い、obj_foo で終わる 100 オブジェクトを受け取った場合、次の呼び出しで after=obj_foo を含めると、次のページのリストを取得できます。
 
-**Example Request**
+- before: 文字列、ページネーションに使用するカーソル。before はリスト内の位置を定義するオブジェクト ID です。例えば、リストリクエストを行い、obj_foo で終わる 100 オブジェクトを受け取った場合、次の呼び出しで before=obj_foo を含めると、前のページのリストを取得できます。
+
+**リクエストの例**
+
 ```shell
 curl 'https://rebyte.ai/api/sdk/threads/{thread_id}/messages'     \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $REBYTE_KEY" \
 ```
 
-**Return**
+**リターン**
 
-Returns a lit of messages.
+メッセージのリストを返します。
 
+**例**
 
-**Example**
 ```json
 {
-    "list": [
-        {
-            "id": "W_DPv1bwUQ50PC52f44Uo",
-            "created_at": 1710415825,
-            "thread_id": "p_DFiNmczwUWZjcl47U9X",
-            "role": "user",
-            "content": "How does AI work? Explain it in simple terms.",
-            "metadata": {
-                "user": "czy4"
-            }
-        }
-    ]
-}
-```
-
-## Get message
-
-`GET https://rebyte.ai/api/sdk/threads/{threadId}/messages/{messageId}`
-
-Get a message by id.
-
-**Path parameters**
-
-* thread_id(required): A string, with the ID of the thread to which this message belongs.
-
-* message_id(required): A string, with the ID of the message to retrieve.
-
-**Example Request**
-```shell
-curl 'https://rebyte.ai/api/sdk/threads/{thread_id}/messages/{message_id}' \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $REBYTE_KEY" 
-```
-
-**Return**
-
-Returns a message object.
-
-**Example**
-```json
-{
-    "id": "W_DPv1bwUQ50PC52f44Uo",
-    "created_at": 1710415825,
-    "thread_id": "p_DFiNmczwUWZjcl47U9X",
-    "role": "user",
-    "content": "How does AI work? Explain it in simple terms.",
-    "metadata": {
+  "list": [
+    {
+      "id": "W_DPv1bwUQ50PC52f44Uo",
+      "created_at": 1710415825,
+      "thread_id": "p_DFiNmczwUWZjcl47U9X",
+      "role": "user",
+      "content": "How does AI work? Explain it in simple terms.",
+      "metadata": {
         "user": "czy4"
-    }
-}
-```
-
-## Update message 
-
-`POST https://rebyte.ai/api/sdk/threads/{threadId}/messages/{messageId}`
-
-Update a message by id.
-
-
-**Path parameters**
-
-* thread_id(required): A string, with the ID of the thread to which this message belongs.
-
-* message_id(required): A string, with the ID of the message to retrieve.
-
-
-**Request body**
-
-* metadata: A map. Set of 16 key-value pairs that can be attached to an object. This can be useful for storing additional information about the object in a structured format. Keys can be a maximum of 64 characters long and values can be a maxium of 512 characters long.
-
-**Example Request**
-```shell
-curl 'https://rebyte.ai/api/sdk/threads/{thread_id}/messages/{message_id}' \
-  -H 'Content-Type: application/json' \
-  -H "Authorization: Bearer REBYTE_KEY" \
-  -d '{
-     "role": "user",
-      "content": "Updated on 14th March,2024. Happy valentine'\''s day!",
-      "metadata":{
-        "user":"czy4"
       }
-}'
+    }
+  ]
+}
 ```
 
-**Return**
+## メッセージの取得
 
-Returns the modified message object.
-
-**Example**
-```json
-{
-    "id": "W_DPv1bwUQ50PC52f44Uo",
-    "created_at": 1710415825,
-    "thread_id": "p_DFiNmczwUWZjcl47U9X",
-    "role": "user",
-    "content": "How does AI work? Explain it in simple terms.",
-    "metadata": {
-        "user": "czy4"
-    }
-}
-``` 
-
+`GET https://rebyte.ai/api/sdk/threads/{threadId}/messages

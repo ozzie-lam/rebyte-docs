@@ -1,27 +1,27 @@
-- In the auto-generated template, we have already created some actions for you.
-- Add a "Knowledge Search" action using the plus button between different actions.
-
+- 自動生成されたテンプレートには、すでにいくつかのアクションが作成されています。
+- 異なるアクションの間にあるプラスボタンを使用して、「Knowledge Search」アクションを追加します。
 
 <figure><img src="../../images/deign-your-agent-1.png"></figure>
 
-- Choose the knowledge base you just created and set the number of results. This action allows you to perform a search on the given knowledge base and return the results.
-- You can see all the search results in the chunks.
+- 先ほど作成したナレッジベースを選択し、結果の数を設定します。このアクションにより、指定されたナレッジベースで検索を実行し、結果を返すことができます。
+- チャンク内で検索結果をすべて確認できます。
 
 <figure><img src="../../images/deign-your-agent-2.png"></figure>
 
-- For better usage, we have three "Code" actions in this agent.
-    - The first one is to extract content from the latest message.
+- より良い使用のために、このエージェントには3つの「コード」アクションがあります。
+    - 最初のものは、最新メッセージから内容を抽出するものです。
         
         <figure><img src="../../images/deign-your-agent-3.png"></figure>
         
-    - The second "Code" action is to concatenate the results from the "Knowledge Search" action.
+    - 2つ目の「コード」アクションは、「Knowledge Search」アクションの結果を連結するものです。
         
         <figure><img src="../../images/deign-your-agent-4.png"></figure>
         
-    - We use another "Code" action called "Generate Answer" to concatenate the search results and the response.
+    - もう1つの「Generate Answer」と呼ばれる「コード」アクションを使用して、検索結果と応答を連結します。
         
         <figure><img src="../../images/deign-your-agent-5.png"></figure>
         
-- Now use a "Language Model Chat Interface" action to get a response based on the search results.
-- Write the instructions for the model in the editor, describing what you want the model to do. And the model will generate a response for you.
+- 次に、「Language Model Chat Interface」アクションを使用して、検索結果に基づいて応答を取得します。
+- エディターでモデルに指示を書くことで、モデルに何をしてほしいかを記述します。モデルが応答を生成してくれます。
+
 <figure><img src="../../images/deign-your-agent-6.png"></figure>

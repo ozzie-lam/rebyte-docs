@@ -1,65 +1,65 @@
-# Quick Start
+# クイックスタート
 
-We will show you how to build a grammar agent in 5 minutes.
+5分で文法チェックエージェントを作成する方法を説明します。
 
-## Step 1: Create an Agent
+## ステップ1：エージェントを作成する
 
-* Navigate to the "My Agents" tab in the sidebar and then click on "Create Agent".
+* サイドバーの「マイエージェント」タブに移動し、「エージェントを作成」をクリックします。
 
-* Describe what you want to do with this agent and choose the right template for your agent. 
+* このエージェントで何をしたいかを説明し、適切なテンプレートを選択します。
 
 <figure><img src="../images/8.png" alt=""></figure>
 
-* Click the "Generate Agent Template" button and we will generate a basic template for you to build from. 
+* 「エージェントテンプレートを生成」ボタンをクリックすると、基本的なテンプレートが生成されます。
 
-* You can change the name, description and visibility of the agent and add tags for more information. Or you can simply regenerate the template if you don't like the current one.
+* エージェントの名前、説明、可視性を変更し、追加情報を提供するためにタグを追加できます。現在のテンプレートが気に入らない場合は、再生成することもできます。
 
 <figure><img src="../images/9.png" alt=""></figure>
 
-* Click the "Create Agent" and you will have your own agent in just a few seconds.
+* 「エージェントを作成」をクリックすると、数秒でエージェントが作成されます。
 
-## Step 2: Design Your Agent
+## ステップ2：エージェントを設計する
 
-* In the auto-generated template, we have already created some actions for you. 
+* 自動生成されたテンプレートには、いくつかのアクションが既に作成されています。
 
-* To build a simple agent like our grammar checker, there's no need to add more actions. For more complex agents, you can add actions by clicking the plus button between different actions.
+* 文法チェッカーのようなシンプルなエージェントを構築するためには、追加のアクションは必要ありません。より複雑なエージェントの場合は、異なるアクション間のプラスボタンをクリックしてアクションを追加できます。
 
-* Write the instructions more the model in the editor, describing what you want the model to do.
+* エディターでモデルに指示を書き、モデルに何をさせたいかを説明します。
 
 <figure><img src="../images/10.png" alt=""></figure>
 
-## Step 3: Test Your Agent
+## ステップ3：エージェントをテストする
 
-* Click the "Datasets" tab on the top, then click "Create Datasets". 
+* 上部の「データセット」タブをクリックし、「データセットを作成」をクリックします。
 
-* Fill in the name and description of your dataset.
+* データセットの名前と説明を記入します。
 
-* Since this is a chatbot, the testing dataset will be in the form of a (list of) json object representing a conversation.
+* これはチャットボットなので、テストデータセットは会話を表すJSONオブジェクト（リスト）の形式になります。
 
 <figure><img src="../images/11.png" alt=""></figure>
 
-* After you've created the dataset, go back to the "Design" panel and choose the new dataset as the input.
+* データセットを作成したら、「デザイン」パネルに戻り、新しいデータセットを入力として選択します。
 
 <figure><img src="../images/11-1.png" alt=""></figure>
 
-* Click "Run Testcases" to test your agent with the dataset.
+* 「テストケースを実行」をクリックして、データセットを使用してエージェントをテストします。
 
-* The results will be shown below each action. See if the output is what you want. If not, change the settings of your agent and try again.
+* 結果は各アクションの下に表示されます。出力が期待通りか確認し、そうでない場合はエージェントの設定を変更して再試行します。
 
 <figure><img src="../images/13.png" alt=""></figure>
 
-## Step 4: Deploy the Agent
+## ステップ4：エージェントをデプロイする
 
-* Click "Deploy Agent" on the top right, then click "Deploy A New Version". 
+* 右上の「エージェントをデプロイ」をクリックし、「新しいバージョンをデプロイ」をクリックします。
 
-* You can use your agent on your ReByte app or integrate it into your own app using the code we provide.
+* ReByteアプリでエージェントを使用するか、提供されるコードを使用して独自のアプリに統合できます。
 
 <figure><img src="../images/12.png" alt=""></figure>
 
-🎉 **Congratulations, you have created your first agent!**
+🎉 **おめでとうございます、最初のエージェントを作成しました！**
 
-View all your agents in the "My Agents" tab. You can also clone, save, or delete your agents here.
+「マイエージェント」タブですべてのエージェントを表示できます。ここでエージェントをクローン、保存、削除することもできます。
 
 <figure><img src="../images/14.png" alt=""></figure>
 
-**You can try this agent [here](https://rebyte.ai/p/21b2295005587a5375d8/callable/a6e8029461744868f576/editor)**.
+**このエージェントを[こちら](https://rebyte.ai/p/21b2295005587a5375d8/callable/a6e8029461744868f576/editor)で試すことができます。**

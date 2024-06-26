@@ -1,51 +1,45 @@
-# Quick Start
+# クイックスタート
 
-Here we tell you now to create and use knowledge.
+ここでは、ナレッジを作成し使用する方法を説明します。
 
-## Step 1: Create Knowledge
+## ステップ 1: ナレッジを作成する
 
-* Navigate to the "Knowledge" tab in the sidebar and then click "Create Knowledge".
+- サイドバーの「ナレッジ」タブに移動し、「ナレッジを作成」をクリックします。
 
-* Fill in the knowledge information and choose the source type for your knowledge. Here we choose "Self Managed" since we are going to use local files.
+- ナレッジ情報を入力し、ナレッジのソースタイプを選択します。ここではローカルファイルを使用するため、「ローカルファイル」を選択します。
 
 <figure><img src="../images/create-knowledge.png" alt=""></figure>
 
+## ステップ 2: ファイルをアップロードする
 
-## Step 2: Upload Files
+- 「ファイルをアップロード」をクリックし、ローカルファイルをアップロードします。
 
-* Click "Upload File" and upload your local file. 
+- アップロードが完了すると、ファイルに一意のドキュメント ID が生成されます。
 
-* Once uploaded, we will generate a unique document id for your file.
-
-* Click "Insert Document" to upload this file.
+- 「ドキュメントを挿入」をクリックして、このファイルをアップロードします。
 
 <figure><img src="../images/upload-file.png" alt=""></figure>
 
-**Now you have created your first knowledge!**
+**これで最初のナレッジが作成されました！**
 
-## Step 3: Use Your Knowledge
+## ステップ 3: ナレッジを使用する
 
-* You can search knowledge in the **search box** and hit ENTER. 
+- **検索ボックス**でナレッジを検索し、ENTER キーを押します。
 
 <figure><img src="../images/use-knowledge-1.png" alt=""></figure>
 
-<figure><img src="../images/use-knowledge-2.png" alt=""><figcaption>Search Results</figcaption></figure>
+<figure><img src="../images/use-knowledge-2.png" alt=""><figcaption>検索結果</figcaption></figure>
 
-Or you can use the knowledge in your **agent**(shown in Step 4). 
+または、**エージェント**でナレッジを使用することもできます（ステップ 4 で説明）。
 
-## Step 4: Use Knowledge in Agent
+## ステップ 4: エージェントでナレッジを使用する
 
-* Use "Search Knowledge" action and choose the knowledge you want to use.
+- 「ナレッジを検索」アクションを使用し、使用するナレッジを選択します。
 
-<figure><img src="../images/use-knowledge-3.png" alt=""><figcaption>Search Results</figcaption></figure>
+<figure><img src="../images/use-knowledge-3.png" alt=""><figcaption>検索結果</figcaption></figure>
 
-* You can fill in the query to the knowledge search and set the number of query results you'd like to have.
+- ナレッジ検索にクエリを入力し、取得したいクエリ結果の数を設定できます。
 
 <figure><img src="../images/use-knowledge-4.png" alt=""></figure>
 
-* The results are the same as searching in the "Knowledge" page
-
-
-
-
-
+- 結果は「ナレッジ」ページでの検索と同じです。

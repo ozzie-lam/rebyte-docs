@@ -1,17 +1,18 @@
-ReByte provides a set of APIs to make it easy to integrate ReByte into your own applications. There're three main APIs: File API, Agent API, and Thread API. 
+impriai は、impriai を独自のアプリケーションに簡単に統合するための一連の API を提供しています。主 API は、ファイル API、エージェント API、およびスレッド API です。
 
-## Agent API
+## エージェント API
 
-Agent API allows you to call the agent you created on ReByte. It supports:
+エージェント API は、impriai 上で作成したエージェントを呼び出すためのものです。以下の機能をサポートしています：
 
-* blocking and non-blocking calls
-* streaming
-* specifying agent version
-* specify config of action within agent
+- ブロッキングおよびノンブロッキング呼出し
+- ストリーミング
+- エージェントバージョンの指定
+- エージェント内のアクションの設定を指定
 
-## Thread API
+## スレッド API
 
-Thread API allows you to create a conversation thread and add messages to the thread. Combined with the Agent API, you can create an agent with memory without having your own backend.
+スレッド API は、会話スレッドを作成し、そのスレッドにメッセージを追加するためのものです。エージェント API と組み合わせることで、自分のバックエンドを持たなくてもメモリを持つエージェントを作成できます。
 
-## File API
-File API allows you to upload files to ReByte. Uploaded files can be used in the agent's actions, such as `File Loader` action.
+## ファイル API
+
+ファイル API は、impriai にファイルをアップロードするためのものです。アップロードされたファイルは、エージェントのアクション（例えば `File Loader` アクション）で使用できます。

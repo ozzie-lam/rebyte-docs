@@ -1,38 +1,37 @@
-# Overview of Testing
+# 概要
 
-Here, we will introduce some basic concepts and show you how to test your agent.
+ここでは、基本的な概念を紹介し、エージェントをテストする方法を説明します。
 
-## Create Testing Dataset
+## テストデータセットの作成
 
-* Datasets are used to test your agent. You can create a testing dataset by clicking the "Create Dataset" button in the dataset list page.
+- データセットはエージェントをテストするために使用されます。データセットリストページで「データセットを作成」ボタンをクリックしてテストデータセットを作成できます。
 
-## Test and Debug
+## テストとデバッグ
 
-* Once you've created the testing dataset, you can go the the "design" page and choose the dataset.
+- テストデータセットを作成したら、「デザイン」ページに移動し、データセットを選択します。
 
-* click the "Run TestCases" button to run the agent with your selected dataset.
+- 「テストケースの実行」ボタンをクリックして、選択したデータセットでエージェントを実行します。
 
-* The running results will be shown under each action. 
+- 実行結果は各アクションごとに表示されます。
 
-* If there's no bug in the running process, you will see green check marks on the left side. 
+- 実行プロセスにバグがない場合は、左側に緑色のチェックマークが表示されます。
 
 <figure><img src="../../images/no-bug.png" alt=""></figure>
 
-* Otherwise, you will see red cross marks on the action that went wrong.
+- それ以外の場合は、問題のあったアクションに赤いバツマークが表示されます。
 
 <figure><img src="../../images/bug.png" alt=""></figure>
 
-* After every run, we record the running results in the "Runs" tab. We provide the RunID, the time of the run, the status of the run, and the agent used in the run.
+- 各アクションが実行後、実行結果は「実行」タブに記録されます。実行 ID、実行時刻、実行ステータス、および実行に使用されたエージェントが提供されます。
 
-* Click on the "Run ID" of each run to see the details of the run.
+- 各実行の「実行 ID」をクリックして、実行の詳細を確認します。
 
 <figure><img src="../../images/runs.png" alt=""></figure>
 
-## Playground
+## プレイグラウンド
 
-* If you would like your testing to more flexible, you can use the playground to test your agent. 
+- テストをより柔軟に行いたい場合は、プレイグラウンドを使用してエージェントをテストすることができます。
 
-* You should make extensive use of this capability to test your agent before publishing.
+- 公開前にこの機能を十分に活用してエージェントをテストすることをお勧めします。
 
 <figure><img src="../../images/playground.png" alt=""></figure>
-

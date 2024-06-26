@@ -1,22 +1,20 @@
-# Design Your Agent
+# エージェントの設計
 
-## Mental Model of Agent Execution
+## エージェント実行のメンタルモデル
 
-* Agent contains a list of actions, for a single agent invocation, the actions will be executed in strict order. You can have multiple invocations of the same agent at the same time.
-* All actions except 'THREAD' are stateless across invocations.
-* 'THREAD' action is stateful across invocations, typically used to store the conversation history.
-* Downstream actions can access the output of actions that are executed before them.
+* エージェントはアクションのリストを含んでおり、単一のエージェント呼び出しの場合、アクションは厳密な順序で実行されます。同じエージェントを同時に複数回呼び出すことができます。
+* 'THREAD' アクションを除くすべてのアクションは、呼び出し間でステートレスです。
+* 'THREAD' アクションは呼び出し間でステートフルであり、通常は会話履歴を保存するために使用されます。
+* 下流のアクションは、それ以前に実行されたアクションの出力にアクセスできます。
 
-## Spec and Config
-* Each action has a spec and a config.
-* The difference between spec is immutable at runtime, while config is mutable at runtime, which means you can change the config of an action when calling this action, but you can not change the spec of an action at runtime.
-* Action also contains a default config, if you don't provide a config when calling the action, the default config will be used.
+## スペックとコンフィグ
+* 各アクションにはスペックとコンフィグがあります。
+* スペックは実行時に変更できないのに対し、コンフィグは実行時に変更可能です。つまり、アクションを呼び出すときにアクションのコンフィグを変更できますが、実行時にアクションのスペックを変更することはできません。
+* アクションにはデフォルトコンフィグも含まれており、アクションを呼び出すときにコンフィグを提供しない場合、デフォルトコンフィグが使用されます。
 
+## アクション
 
-## Action
+### アクション名
 
-### Action Name
-
-* Action name must be uppercase, e.g. `INPUT`, `OUTPUT`, `SEND_EMAIL`. `_` is allowed in the action name.
-* Action name must be unique in the agent.
-
+* アクション名は大文字でなければなりません。例: `INPUT`、`OUTPUT`、`SEND_EMAIL`。アクション名には `_` を含めることができます。
+* アクション名はエージェント内で一意でなければなりません。

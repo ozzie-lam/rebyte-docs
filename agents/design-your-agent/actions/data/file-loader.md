@@ -1,34 +1,31 @@
-# File Loader
+# ファイルローダー
 
-The `File Loader` action can load files previously uploaded to Rebyte either via the Rebyte UI or via API.
+`ファイルローダー` アクションは、以前に imprai にアップロードされたファイルを読み込むことができます。ファイルは imprai の UI または API を介してアップロードされます。
 
-A typical use case is you want your agent to process a file uploaded by a user. You can use the `File Loader` action to load the file and extract data from it.
+典型的なユースケースは、ユーザーがアップロードしたファイルを処理する必要がある場合です。`ファイルローダー` アクションを使用してファイルを読み込み、そのファイルからデータを抽出できます。
 
-This Action accepts a `file_id` as input and returns the extracted data from the file. 'file_id' is a unique identifier of the file uploaded to Rebyte.
+このアクションは、入力として `file_id` を受け取り、そのファイルから抽出されたデータを返します。 `file_id` は imprai にアップロードされたファイルの一意の識別子です。
 
+ファイル形式として。DOC、DOCX、IMG、EPUB、JPEG、JPG、PNG、XLS、XLSX、PPT、PPTX、MD、TXT、RTF、MD、TXT、RTF、RST、PDF、JSON、HTML、EML など様々なデータ型をサポートしています。
 
-We support various data types, including: DOC, DOCX, IMG, EPUB, JPEG, JPG, PNG, XLS, XLSX, PPT, PPTX, MD, TXT, RTF, MD, TXT, RTF, RST, PDF, JSON, HTML and EML.
+## 使い方
 
-## Usage
+- エージェントに `ファイルローダー` アクションを追加し、エージェントにアップロードするファイルを選択します。
 
-* Add a `File Loader` action to your agent and select the file you want to upload to your agent.
+- このファイルの `file_id` を指定し、この一意の `file_id` を必要なときに使用します。
 
-* Specify the `file_id` of this file and use this unique `file_id` whenever you want to refer to this file.
+- エージェントをアプリに接続すると、ユーザーがファイルをアップロードでき、その `file_id` がエージェントに渡されます。
 
-* If you connect your agent to an app, app users can upload files in the app, and the `file_id` will be passed to the agent.
-
-* The output of this action is in JSON format, containing extracted data from the file. 
+- このアクションの出力は、ファイルから抽出されたデータを含む JSON 形式です。
 
 <!-- **Config**
 
-* **File ID:** UUID of the file, can be fixed or reference to a variable.
+* **File ID:** ファイルの UUID、固定または変数への参照が可能です。
 
 **Output**
 
-* JSON Array of structure data extracted from the file
-* Depends on file type, structure data can be different. For example, for a PDF file, the structure data is a list of pages, each page is a list of paragraphs, each paragraph is a list of lines, each line is a list of words. For a JSON file, the structure data is the JSON object itself. --> 
-
-
+* ファイルから抽出された構造化データの JSON 配列
+* ファイルの種類に応じて、構造化データは異なります。例えば、PDF ファイルの場合、構造化データはページのリストで、各ページは段落のリストで、各段落は行のリストで、各行は単語のリストです。JSON ファイルの場合、構造化データは JSON オブジェクトそのものです。 -->
 
 <!-- **Example** -->
 
@@ -38,6 +35,6 @@ We support various data types, including: DOC, DOCX, IMG, EPUB, JPEG, JPG, PNG, 
 
 * If the file id is invalid, or the file is not supported, the action will return an empty array. -->
 
-## Example Agent
+## サンプルエージェント
 
-* [File Loader](https://rebyte.ai/p/21b2295005587a5375d8/callable/bb48d1c1658b5a08917a/editor)
+- [ファイルローダー](https://rebyte.ai/p/21b2295005587a5375d8/callable/bb48d1c1658b5a08917a/editor)

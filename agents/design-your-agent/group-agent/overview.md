@@ -1,10 +1,10 @@
-# Overview
+# 概要
 
-Group agent allows you to combine the abilities of multiple agents into one agent. 
+グループエージェントは、複数のエージェントの能力を1つのエージェントに統合することができます。
 
-## Usage 
-You can specify the agents you want to use in the group agent.
+## 使用方法
+グループエージェントで使用したいエージェントを指定することができます。
 
-You can also set the maximum number of previous runs(history messages) on thread and maximum rounds of conversation between agents.
+また、スレッド上の過去の実行（履歴メッセージ）の最大数と、エージェント間の会話の最大ラウンド数を設定することもできます。
 
-It is useful when you want to combine multiple agents to solve a complex problem.
+これは、複数のエージェントを組み合わせて複雑な問題を解決したい場合に便利です。

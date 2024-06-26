@@ -1,37 +1,37 @@
 # Call agent
 
-We provide `Call Agent` action so that you can call other agents in your agent as an action.
+`Call Agent` アクションを提供しており、エージェント内で他のエージェントをアクションとして呼び出すことができます。
 
-## Usage
+## 使用方法
 
-* Add a `Call Agent` action to your agent. 
+- エージェントに `Call Agent` アクションを追加します。
 
 <figure><img src="../../../../images/call-agent-1.png"></figure>
 
-* Choose the agent you want to call(let's call it **"Agent B"**) and select the right version.
+- 呼び出したいエージェント（ここでは **"エージェント B"** とします）を選択し、適切なバージョンを選択します。
 
 <figure><img src="../../../../images/call-agent-2.png"></figure>
 
 <figure><img src="../../../../images/call-agent-3.png"></figure>
 
-* Fill in the "Input Args" of Agent B; And the output of Agent B is the output of this action.
+- エージェント B の「Input Args」を入力します。エージェント B の出力はこのアクションの出力となります。
 
 <figure><img src="../../../../images/call-agent-4.png"></figure>
 
-* **NOTE**: Make sure you fully understand the input format of Agent B before filling in the "Input Args". Otherwise, the system will throw an error. 
+- **注意**: 「Input Args」 を入力する前に、エージェント B の入力形式を十分に理解してください。そうでないと、システムがエラーをスローします。
 
-* Use the "Block Configs" to configure Agent B's action.
+- 「Block Configs」を使用して、エージェント B のアクションを構成します。
 
-## Output
+## 出力
 
-The output of this action is as follows:
+このアクションの出力は以下のようになります:
 
 <figure><img src="../../../../images/call-agent-5.png"></figure>
 
 JSON
 
-| parameter  | type   | description                                |
-|------------|--------|--------------------------------------------|
-| status.run | object | the result of the calling(success or fail) |
-| results    | object | the response                               |
-| others     | object | the status of the agent being called       |
+| パラメーター | タイプ | 説明                             |
+| ------------ | ------ | -------------------------------- |
+| status.run   | object | 呼び出しの結果（成功または失敗） |
+| results      | object | レスポンス                       |
+| others       | object | 呼び出されたエージェントの状態   |

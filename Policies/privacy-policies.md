@@ -1,17 +1,29 @@
-# Privacy Policies
+# プライバシーポリシー
 
-At RealChar AI, we understand the importance of your privacy and we are committed to protecting it. This Privacy Policy explains how we collect, use, and disclose your personal information when you use our website, products, and services.
+RealChar AIでは、お客様のプライバシーの重要性を理解しており、その保護に努めています。このプライバシーポリシーでは、当社のウェブサイト、製品、およびサービスをご利用いただく際に、どのようにお客様の個人情報を収集、使用、および開示するかについて説明します。
 
-We take your privacy seriously and strive to ensure that your personal information is always kept safe and secure. To that end, we have implemented a number of security measures to prevent unauthorized access to your data.
+私たちはお客様のプライバシーを真剣に考え、お客様の個人情報が常に安全かつ確実に保護されるよう努めています。そのため、データへの不正アクセスを防止するための多くのセキュリティ対策を実施しています。
 
-Information we collect We may collect personal information such as your name, email address, and phone number when you sign up for our services or contact us for support. Additionally, we may collect information about your usage of our website and services, such as your IP address and browser type. We believe that transparency is key when it comes to collecting personal information, which is why we are always upfront about the data we collect and how we use it.
+## 収集する情報
 
-How we use your information We use your personal information to provide and improve our services, to communicate with you, and to comply with legal obligations. Your information may also be used for research and analysis purposes to improve our products and services. We understand that your personal information is valuable and we take great care to ensure that it is only used for the purposes for which it was collected.
+当社は、サービスにサインアップする際やサポートに連絡する際に、お名前、メールアドレス、電話番号などの個人情報を収集する場合があります。さらに、ウェブサイトやサービスの利用に関する情報（IPアドレスやブラウザの種類など）も収集することがあります。個人情報の収集においては透明性を重視しており、収集するデータとその使用方法について常に明示的にお知らせします。
 
-Disclosure of your information We do not sell or rent your personal information to third parties. However, we may share your information with our trusted partners who assist us in providing our services. We may also disclose your information if required by law or to protect our rights and interests. We believe that your personal information is just that - personal. That's why we will never share your data with anyone without your express consent.
+## 情報の使用方法
 
-Security of your information We take reasonable steps to ensure the security of your personal information and prevent unauthorized access, use, or disclosure. However, no data transmission over the internet or electronic storage system can be guaranteed to be 100% secure. We understand that your personal information is precious and we will always strive to keep it safe and secure.
+お客様の個人情報は、サービスの提供および改善、コミュニケーション、法的義務の遵守のために使用されます。また、製品やサービスの向上を目的とした研究および分析のためにも使用されることがあります。お客様の個人情報は貴重なものであり、その収集目的以外で使用されることがないよう細心の注意を払います。
 
-Changes to this Privacy Policy We may update this Privacy Policy from time to time and will notify you of any changes by posting the new policy on our website. Your continued use of our services after any such modifications will constitute your acknowledgement of the modified Privacy Policy and agreement to abide and be bound by the modified policy. We believe that transparency is key when it comes to privacy, which is why we will always keep you informed of any changes we make to our policies.
+## 情報の開示
 
-Contact us If you have any questions or concerns about our Privacy Policy, please contact us at support@rebyte.ai. We are always happy to help and will do our best to address any issues you may have.
+当社は、お客様の個人情報を第三者に販売または貸与することはありません。ただし、サービス提供を支援する信頼できるパートナーと情報を共有する場合があります。また、法的義務や当社の権利と利益を保護するために情報を開示する場合もあります。お客様の個人情報はまさに「個人情報」であり、明示的な同意なしにデータを共有することはありません。
+
+## 情報のセキュリティ
+
+個人情報のセキュリティを確保し、不正なアクセス、使用、開示を防ぐために合理的な措置を講じています。ただし、インターネット上のデータ伝送や電子ストレージシステムは100%安全であることを保証できません。お客様の個人情報は非常に重要なものであり、常に安全かつ確実に保護するよう努めています。
+
+## プライバシーポリシーの変更
+
+このプライバシーポリシーは随時更新されることがあります。変更があった場合は、当社のウェブサイトに新しいポリシーを掲載してお知らせします。変更後もサービスを継続して利用することで、改訂されたプライバシーポリシーを認識し、その内容に同意したものとみなされます。プライバシーに関しては透明性を重視しており、ポリシーの変更については常にお知らせします。
+
+## お問い合わせ
+
+プライバシーポリシーに関するご質問やご懸念がある場合は、support@rebyte.aiまでお問い合わせください。いつでも喜んでお手伝いし、可能な限り問題を解決いたします。

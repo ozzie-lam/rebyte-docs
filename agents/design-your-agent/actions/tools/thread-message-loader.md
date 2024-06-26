@@ -1,29 +1,29 @@
 # Thread Message Loader
 
-This action allows you to load history messages from a thread in your agent.
+このアクションを使用すると、エージェント内のスレッドから履歴メッセージをロードできます。
 
-## Usage
+## 使用方法
 
-* First add a `thread-message-loader` action to your agent.
+1. まず、エージェントに `thread-message-loader` アクションを追加します。
 
 <figure>
   <img src="../../../../images/thread-1.png" />
 </figure>
 
-* Set the "recent messages on the thread" to specify the number of recent messages you want to load.
+2. 「スレッド上の最近のメッセージ」を設定して、ロードしたい最近のメッセージ数を指定します。
 
 <figure>
   <img src="../../../../images/thread-2.png" />
 </figure>
 
-* Use the loaded messages in the following actions to add context to the conversation.
+3. ロードされたメッセージを会話にコンテキストとして追加するために、次のアクションで使用します。
 
-* Run the agent and see the messages loaded from the thread.
+4. エージェントを実行し、スレッドからロードされたメッセージを確認します。
 
 <figure>
   <img src="../../../../images/thread-3.png" />
 </figure>
 
-## Example Agent
+## サンプルエージェント
 
-[Here](https://rebyte.ai/p/21b2295005587a5375d8/callable/c6b378f9c462ebbe60a8/editor) is an example agent to show you how to use the `thread-message-loader` action.
+[こちら](https://rebyte.ai/p/21b2295005587a5375d8/callable/c6b378f9c462ebbe60a8/editor)は、`thread-message-loader` アクションの使用方法を示すサンプルエージェントです。

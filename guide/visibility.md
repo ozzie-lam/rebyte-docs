@@ -1,27 +1,26 @@
-# Visibility
+# 可視性
 
-In ReByte, you can set the visibility of your agent, app and knowledge.
+ReByteでは、エージェント、アプリ、およびナレッジの可視性を設定できます。
 
-## Agent
+## エージェント
 
-For agents, we provide 3 visibility options:
+エージェントには、以下の3つの可視性オプションがあります：
 
-* Public: Anyone can see and clone your agent, but only you can edit the agent and see the runs.
-* Private: Only you can see your agent.
-* Unlisted: Anyone with the link can see your agent, but only you can edit the agent and see the runs.
+* 公開（Public）：誰でもエージェントを閲覧し、クローンを作成できますが、編集や実行履歴の閲覧は作成者のみが行えます。
+* 非公開（Private）：作成者のみがエージェントを閲覧できます。
+* 非公開リンク（Unlisted）：リンクを知っている人は誰でもエージェントを閲覧できますが、編集や実行履歴の閲覧は作成者のみが行えます。
 
-## App
+## アプリ
 
-For apps, we provide 3 visibility options:
+アプリには、以下の3つの可視性オプションがあります：
 
-* Public: Anyone can see and use your app.
-* Private: Only you can see and edit your app.
-* Unlisted: Anyone with the link can use your app, but only you can edit the app.
+* 公開（Public）：誰でもアプリを閲覧および使用できます。
+* 非公開（Private）：作成者のみがアプリを閲覧および編集できます。
+* 非公開リンク（Unlisted）：リンクを知っている人は誰でもアプリを使用できますが、編集は作成者のみが行えます。
 
-## Knowledge
+## ナレッジ
 
-For knowledge, we provide 2 visibility options:
+ナレッジには、以下の2つの可視性オプションがあります：
 
-* Public: Anyone can see your knowledge.
-* Private: Only you and people you invite can see your knowledge.
-
+* 公開（Public）：誰でもナレッジを閲覧できます。
+* 非公開（Private）：作成者および招待された人のみがナレッジを閲覧できます。

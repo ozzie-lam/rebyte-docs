@@ -1,30 +1,26 @@
-# Knowledge Search
+# ナレッジ検索
 
-Search action allow agents to make queries to specified knowledge base. This is useful for retrieving information from a knowledge base , later those retrieved information can be used as context for further generation. Retrieval Augmented Generation (RAG) agent is a good example of this use case.
+検索アクションは、指定されたナレッジベースから情報を検索するためのものです。これは、ナレッジベースからの情報を取得し、それを後の生成に活用するために役立ちます。Retrieval Augmented Generation (RAG) エージェントは、このようなユースケースの良い例です。
 
-Search Action consist of the following fields:
+検索アクションには、以下のフィールドが含まれています：
 
-* **Query:** Provide the desired prompt to look for inside your knowledges
-* **Knowledge:** Knowledge that you want to search in. You can select multiple knowledge bases. Technically, each knowledge in rebyte can be unique identifier by its knowledge name and project who owns it.
-* **Include Tags:** Add tags that you want to include in your search. Notes tags are exact match which means if you add "tag1" it will only include documents that have "tag1"
-* **Exclude Tags:** Add tags that you want to exclude in your search. Notes tags are exact match which means if you add "tag1" it will exclude all documents that have "tag1"
-* **Max Documents:** Maximum number of chunks to return. Chunk size is determined when knowledge is created.
+- **クエリ：** ナレッジベース内で検索するためのプロンプトを指定します。
+- **ナレッジ：** 検索するナレッジベースを選択できます。imprai の各ナレッジベースは、その名前と所有するプロジェクトによって一意に識別されます。
+- **含むタグ：** 検索に含めたいタグを追加します。タグは完全一致ですので「tag1」を追加すると「tag1」を含むドキュメントのみが含まれます。
+- **除外するタグ：** 検索から除外したいタグを追加します。これらのタグも完全一致です。
+- **最大ドキュメント数：** 返される最大の結果数を指定します。各結果のサイズは、ナレッジが作成される際に決定され、チャンクに整理されます。
 
-<!-- ## Example
+### 仕様
 
-* [Knowledge Search](https://rebyte.ai/p/21b2295005587a5375d8/callable/7b4e664f3109d1aedbf1) -->
+| パラメータ | 説明                             |
+| ---------- | -------------------------------- |
+| クエリ     | ナレッジを検索するためのクエリ。 |
 
-### Spec
+### 設定
 
-| Parameter | Description                       |
-| --------- | --------------------------------- |
-| query     | query for searching the knowledge |
-
-### Config
-
-| Parameter           | Description                           |
-| ------------------- | --------------------------------------|
-| knowledge to search | list of knowledge to search in        |
-| number\_of\_results | number of results you'd like to have  |
-| include tags        |                                       |
-| exclude tags        |                                       |
+| パラメータ        | 説明                       |
+| ----------------- | -------------------------- |
+| 検索するナレッジ  | 検索するナレッジのリスト。 |
+| number_of_results | 返される結果の数。         |
+| 含むタグ          | 検索に含めるタグ。         |
+| 除外するタグ      | 検索結果から除外するタグ。 |

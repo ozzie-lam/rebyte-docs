@@ -1,30 +1,35 @@
-## Config **Revia**
+## **Revia** の設定
 
-Each team has exact one **Revia** assistant, which is the main interface for team members to interact with the AI assistant. You can config **Revia**'s behavior by clicking the **Config Revia** button in the top right corner of the UI, only builder and admin can config **Revia**.
+各チームにはチームメンバーが AI アシスタントと対話するためのメインインターフェイスである**Revia**アシスタントが 1 つあります。**Revia**の動作を設定するには、UI の右上にある **Revia の設定**ボタンをクリックします。設定はビルダーと管理者のみが行えます。
 
-## Build More Assistants
-Besides **Revia**, you can build more assistants to help your team. To build a new assistant, click the **Create Assistant** button in the top right corner of the UI, then follow the steps to create a new assistant. You can also invite other team members to join the assistant, so they can collaborate on the assistant with you.
+## さらにアシスタントを作成する
 
-## Configurations
+**Revia**のほかに、チームを助けるためにさらにアシスタントを作成することができます。新しいアシスタントを作成するには、UI の右上にある**アシスタントを作成**ボタンをクリックし、手順に従って新しいアシスタントを作成します。また、他のチームメンバーをアシスタントに招待して、一緒に協力してアシスタントを作成することもできます。
 
-There are several configurations you can set for your assistant, we only emphasize the most important configurations here.
+## 設定
 
-### Instructions
-Describe what you want the assistant to do. We will use this information in various places, such as making responsees more specific to your needs, or do query planning based on your instructions.
-We recommend you to write simple but clear instructions, so that the assistant can better understand your needs. For example, if you want the assistant to help you with data analysis, you can write:
+アシスタントに設定できるいくつかの設定項目がありますが、ここでは最も重要な設定項目に焦点を当てます。
 
-- analysis sales data stored in database xxx
-- generate a report based on the sales data
+### 指示
 
-### Agents available to the assistant
-This is the most important configuration for your assistant. You can select agents that you want to be available to the assistant. The assistant can use these agents to perform tasks for you. For example, if you want the assistant to help you with data analysis, you can select agents that can read data from your database, generate reports, and plot graphs.
-There're two categories of agents:
-** Agents made by you or your team members
-- pros: you can customize the agents to fit your needs
-- cons: you need to spend time building the agents
+アシスタントに何をしてほしいかを記述します。この情報は、ニーズに合わせて応答をより具体的したり、指示に基づいたクエリプランニングしたりするなど、さまざまな場所で使用されます。アシスタントがニーズをより徳理解できるために、シンプルかつ明確な指示を記述することをお勧めします。例えば、データ分析をアシスタントに依頼したい場合、以下のように記述します：
 
-** Agents made by Rebyte System
-- pros: you can use the agents immediately without building them, we will keep updating the agents to make them more powerful
-- cons: you may not modify the agents to fit your needs
+- データベース xxx に保存されている売上データを分析
+- 売上データに基づいたレポートを生成
 
-All system agents are open source, you clone the agent to your team and modify it to fit your needs.
+### アシスタントに利用可能なエージェント
+
+これはアシスタントにとって最も重要な設定です。アシスタントに利用可能なツールを選択できます。アシスタントはこれらのツールを使用してタスクを実行します。例えば、データ分析をアシスタントに依頼したい場合、データベースからデータを読込み、レポートを生成し、グラフを作成するエージェントを選択できます。
+エージェントには 2 つのカテゴリがあります：
+
+\*\* あなたやチームメンバーが作成したエージェント
+
+- 利点：ニーズに合わせてエージェントをカスタマイズできる
+- 欠点：エージェントを作成するのに時間がかかる
+
+\*\* imprai システムが作成したエージェント
+
+- 利点：すぐにツールを使用でき、ツールはより強力になるように更新され続ける
+- 欠点：ツールをニーズに合わせて変更できない可能性がある
+
+すべてのシステムツールはオープンソースであり、チームにクローンしてニーズに合わせて変更することができます。

@@ -1,16 +1,14 @@
-There are two pricing models for ReByte:
+ReByteには2つの料金モデルがあります：
 
-## Use ReByte as your team assistant
+## ReByteをチームアシスタントとして利用する場合
 
-We charge based on the number of team members. The price is $10 per member per month. Your team members can access all the features of ReByte, including creating agents, knowledge, and assistants, and all LLM models provided by ReByte without worrying about the total usage.
+チームメンバーの数に基づいて料金を請求します。料金は1メンバーあたり月額10ドルです。チームメンバーは、ReByteが提供するすべての機能（エージェントの作成、ナレッジの作成、アシスタントの作成、およびすべてのLLMモデル）にアクセスでき、総使用量を気にすることなく利用できます。
 
-In this model, your team can use API to access all the agents and knowledge created by your team, but subject to fair usage policy.
+このモデルでは、チームはAPIを使用してチームが作成したすべてのエージェントとナレッジにアクセスできますが、公平な使用ポリシーが適用されます。
 
+## ReByteを使用して顧客向けのアシスタントを構築する場合
 
-## Use ReByte to build assistant for your customers
+顧客向けのアシスタントを構築したい場合、アクションの使用量に基づいて料金を請求します。アクションの種類によって料金が異なります。以下に各種アクションの料金を示します：
 
-If you want to build an assistant for your customers, we charge based on the usage of actions, different type of actions have different price. Here is the price for different type of actions:
-
-* **LLM Actions**: actual token cost + $1 per 1000 action calls
-* **Other Actions**: $1 per 1000 action calls
-
+* **LLMアクション**: 実際のトークンコスト + 1000アクションコールあたり1ドル
+* **その他のアクション**: 1000アクションコールあたり1ドル

@@ -1,58 +1,58 @@
-# Quick Start
+# クイックスタート
 
-We will show to how to build an app using the customized UI.
+カスタマイズされたUIを使用してアプリを構築する方法を説明します。
 
-## Step 1: Create an App
+## ステップ1：アプリを作成する
 
-* Navigate to the "My Apps" tab in the sidebar and then click on "Create App" on the top right.
+* サイドバーの「マイアプリ」タブに移動し、右上の「アプリを作成」をクリックします。
 
-* Choose "App With Customized UI".
+* 「カスタマイズされたUI付きアプリ」を選択します。
 
-* Use the tools on the bottom of this page to draw a basic draft of your app interface.
+* このページの下部にあるツールを使用して、アプリインターフェースの基本的な下書きを描きます。
 
-* Click "Make It An App" on the bottom right.
+* 右下の「アプリにする」をクリックします。
 
 <figure><img src="../../images/cui-welcome.png"></figure>
 
-* Fill in the text prompt describing what you want your app to do.
+* アプリに何をさせたいかを説明するテキストプロンプトを入力します。
 
-* You can then click "Draw it" or "Make It An App".
+* その後、「描く」または「アプリにする」をクリックできます。
 
 
-## Step 2: Design you App
+## ステップ2：アプリをデザインする
 
-If you want to make some changes to your app, you can change your app in two ways:
+アプリに変更を加えたい場合、次の2つの方法で変更できます：
 
-* Image prompt: Draw the changes you want to make on the canvas.
+* イメージプロンプト：キャンバス上に変更したい部分を描きます。
 
 <figure><img src="../../images/image-prompt.png"/></figure>
 
-* Text prompt: Click the "Make It An App" and input the text prompt describing the changes you want to make.
+* テキストプロンプト：「アプリにする」をクリックし、変更したい内容を説明するテキストプロンプトを入力します。
 
 <figure><img src="../../images/text-prompt.png"></figure>
 
-Click "Make It An App" again and we will make changes for you based on your prompt and create a new version of your app.
+再度「アプリにする」をクリックすると、プロンプトに基づいて変更が加えられ、新しいバージョンのアプリが作成されます。
 
-* NOTE: This may not give you the desired results on just one try. We recommend you to try and improve one thing at a time and create more versions until you get the best results.
+* 注意：一度の試行では希望の結果が得られない場合があります。1つずつ改善し、最良の結果が得られるまで複数のバージョンを作成することをお勧めします。
 
-## Step 3: Connect your App with Agent
+## ステップ3：アプリとエージェントを接続する
 
-* Click the "Connect to Agent" on the top right and choose the agent you want to connect with.
+* 右上の「エージェントに接続」をクリックし、接続したいエージェントを選択します。
 
-* NOTE: You must be familiar with the agent's function. Make sure the agent is suitable for your app, otherwise it will not connect successfully.
+* 注意：エージェントの機能に精通している必要があります。エージェントがアプリに適していることを確認してください。そうしないと正常に接続できません。
 
 <figure><img src="../../images/connect.png"></figure>
 
-* Use the prompts to describe how you want to use the agent in your app. 
+* プロンプトを使用して、エージェントをアプリでどのように使用するかを説明します。
 
 <figure><img src="../../images/connect-describe.png"></figure>
 
-* Click "Make It An App" and we will automatically connect your app with the chosen agent.
+* 「アプリにする」をクリックすると、選択したエージェントと自動的にアプリが接続されます。
 
-## Tips
+## ヒント
 
-* To get better results, try describing your functions/changes you'd like to make one at a time and in details.
+* より良い結果を得るためには、変更したい機能や改善点を1つずつ、詳細に説明するように心がけてください。
 
-* Make good use of the drawing tools to tell us the changes you want to make to the current app.
+* 現在のアプリに対して行いたい変更を伝えるために、描画ツールをうまく活用してください。
 
-* Each time you click "Make It An App", we will generate a new version of your app. If you find the results unsatifactory, simply go back to previous versions and start from there again.
+* 「アプリにする」をクリックするたびに、新しいバージョンのアプリが生成されます。結果が満足いかない場合は、以前のバージョンに戻って再度試みることができます。

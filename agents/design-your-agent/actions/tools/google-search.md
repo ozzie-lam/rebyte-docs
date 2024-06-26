@@ -1,16 +1,16 @@
-# Google Search
+# Google検索
 
-### Description
+### 説明
 
-Search the web using Google Search API
+Google検索APIを使用してウェブを検索します。
 
-### spec
+### 仕様
 
-| Parameter         | Description                                   |
-| ----------------- | --------------------------------------------- |
-| query             | query sent to Google                          |
-| number of results | number of search results returned from Google |
+| パラメータ        | 説明                             |
+| ----------------- | --------------------------------- |
+| クエリ            | Googleに送信されるクエリ          |
+| 検索結果の数      | Googleから返される検索結果の数   |
 
-### config
+### 設定
 
-None
+なし

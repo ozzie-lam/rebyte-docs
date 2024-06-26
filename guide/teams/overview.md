@@ -1,36 +1,38 @@
-# User and Team
+# ユーザーとチーム
 
-## Team Overview
+## チームの概要
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-## User
+## ユーザー
 
-Currently, Rebyte support the following login methods:
+現在、imprai は以下のログイン方法をサポートしています：
 
-* Email
-* Google
-* Github
+- メール
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
-Rebyte uses email as the primary identifier for a user. Notably, GitHub does not provide **verifed email**, so if you log in with GitHub, you will be asked to provide an email address.
+<!-- - Google
+- GitHub -->
 
-## Team
+imprai はメールをユーザーの識別子として使用します。
 
-Team is a concept that allows multiple users in same organization to collaborate on the same knowledge/agent/assistant, also enforce access control. Team can have multiple members, and each member can have different access level. Each login user has one default team, named after the user's display name, for example, if your display name is "John Smith", then your default team name will be "John Smith's Personal Team".
+<!-- 特に、GitHub は**確認済みメール**を提供していないため、GitHub でログインする場合、メールアドレスを提供するよう求められます。 -->
 
-For example, if you are a developer in a company, you can create a team called "ACME" and invite your colleagues to join the team. Then you can create knowledge and agent under the team, and all your colleagues can access the knowledge and agent.
+## チーム
 
-* User can belong to multiple teams, he can change his default team in the team switcher in upper left corner of the UI.
-* Each team has its own API Key, which can be used to access all agents and knowledge that belongs to the team.
-* Team has a unique ID to identify the team, you can find the team ID in the team settings page. Team ID is particularly useful when you want to use ReByte via SDK.
+チームは、同じ組織内の複数のユーザーが同じナレッジやエージェント、アシスタントでコラボレーションし、アクセスコントロールを実施するための概念です。チームには複数のメンバーが存在し、各メンバーは異なるアクセスレベルを持つことができます。各ログインユーザーにはユーザーの表示名にちなんで名付けられたデフォルトのチームが 1 つありあす。例えば、表示名が「A」の場合、デフォルトのチーム名は「A's Personal Team」となります。
 
-#### Role
+例えば、あなたが企業の開発者である場合、「ACME」というチームを作成し、同僚をチームに招待することができます。その後、チームの下でナレッジやエージェントを作成し、すべての同僚がそのナレッジやエージェントにアクセスできるようになります。
 
-Each member in a team has a role, which determines the access level of the member. There are 4 roles in a team:
+- ユーザーは複数のチームに所属できます。UI の左上隅にあるチーム選択画面でデフォルトのチームを変更できます。
+- 各チームには独自の API キーがあり、チームに属するすべてのエージェントとナレッジにアクセスするために使用できます。
+- チームには一意の ID があり、チーム設定ページでチーム ID を確認できます。チーム ID は、特に SDK を介して imprai を使用する際に役立ちます。
 
-* **Owner**: User who sets up the team is the owner of the team, he has full access to the team, he can invite new members, change team settings, and access all agents and knowledge in the team.
-* **Admin**: Owner has full access to the team, he can invite new members, change team settings, and access all agents and knowledge in the team.
-* **Builder**: Builder can access create agents/knowledge/assistants in the team, but builder cannot change team settings or invite new members.
-* **User**: User can access assistant created by the team, User can also contribute knowledge to shared knowledge base. Other than that, User cannot access agents or change team settings.
+#### 役割
 
-[//]: # (see also: [Access Control]&#40;access-control.md&#41; for more details.)
+チーム内の各メンバーには役割があり、メンバーのアクセスレベルを決定します。チームには 4 つの役割があります：
+
+- **オーナー**：チームを設定したユーザーがチームのオーナーとなり、チームへの完全なアクセス権を持ちます。新しいメンバーを招待し、チーム設定を変更し、チーム内のすべてのエージェントとナレッジにアクセスできます。
+- **管理者**：オーナーはチームへの完全なアクセス権を持ち、新しいメンバーを招待し、チーム設定を変更し、チーム内のすべてのエージェントとナレッジにアクセスできます。
+- **ビルダー**：ビルダーはチーム内でエージェントやナレッジ、アシスタントを作成できますが、チーム設定を変更したり、新しいメンバーを招待したりすることはできません。
+- **ユーザー**：ユーザーはチームが作成したアシスタントにアクセスでき、共有ナレッジベースにナレッジを提供できます。それ以外では、エージェントにアクセスしたり、チーム設定を変更したりすることはできません。

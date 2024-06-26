@@ -1,34 +1,37 @@
-# Http Request Maker
+# HTTP リクエストメーカー
 
-### Description
+### 説明
 
-This module supports making requests to specific URLs and retrieving results.
+このモジュールは、特定の URL に対するリクエストを作成し、結果を取得することをサポートしています。
 
+### パラメーター
 
-### Parameters
-- Type
-	- POST
-	- GET
-- Protocol
-	- HTTP
-	- HTTPS
-- Address
-	- Request address
-	- Supports tera syntax, use {{ActionName}} to reference the output of the previous Action.
-- Headers
-	- Some URLs require sending specific headers with the request, usually to provide more metadata about the operation being performed.
-	- You can define what needs to be sent, or you can get the content output from the previous Action using `env.state.actionname`
+- タイプ
+  - POST
+  - GET
+- プロトコル
+  - HTTP
+  - HTTPS
+- アドレス
+  - リクエストアドレス
+  - Tera 構文をサポートしています。直前のアクションの出力を参照するには、{{ActionName}}を使用します。
+- ヘッダー
 
-	```javascript
-	_fun = (env) => {
-	  return {
-	  "Content-Type": "application/json"
-	    }
-    }
-	```
-- Body
-	- Whenever you need to add or update structured data, you need to send body data with the request. For example, if you want to send a request to add a new customer to the database, you can include the details in the Body.
-	- You can define what needs to be sent here, or you can get the content output from the previous Action. 
+  - 特定の URL には、リクエストとともに特定のヘッダーを送信する必要がある場合があります。実行される操作に関するより多くのメタデータを提供するためです。
+  - 送信する内容を定義することもできますし、前のアクションの出力を`env.state.actionname`を使用して取得することもできます。
 
-### Output
-Depends on the specific request URL.
+  ```javascript
+  _fun = (env) => {
+    return {
+      "Content-Type": "application/json",
+    };
+  };
+  ```
+
+- 本文
+  - 構造化データを追加または更新する必要がある場合は。常にリクエストと共に本文データを送信する必要があります。たとえば、データベースに新しい顧客を追加するリクエストを送信したい場合は、詳細を本文に含めることができます。
+  - ここで送信する内容を定義することもできますし、前のアクションの出力を取得することもできます。
+
+### 出力
+
+特定のリクエスト URL に依存します。

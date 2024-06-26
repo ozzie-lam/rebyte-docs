@@ -1,20 +1,19 @@
-# Advance Code Executor
+# 高度なコード実行
 
-We provide `Advance Code Executor` action to run your code in a sandbox.
+私たちはサンドボックスでコードを実行するための「高度なコード実行」アクションを提供しています。
 
-## Usage
+## 使用方法
 
-* Add a `Advance Code Executor` action to your agent. 
+- エージェントに「高度なコード実行」アクションを追加します。
 
 <figure><img src="../../../../images/deno-1.png"></figure>
 
-* Fill in the "Deno Code" with the code you want to run. You can input some code or refer to the output of other actions.
-  
-* **NOTE:** Must be JavaScript or TypeScript code
+- 「Deno コード」に実行したいコードを入力します。コードを直接入力するか、他のアクションの出力を参照することができます。
+
+- **注意:** 必ず JavaScript または TypeScript のコードを入力してください。
 
 <figure><img src="../../../../images/deno-2.png"></figure>
 
-## Output
+## 出力
 
-The output of this action is the code execution result shown above.
-
+このアクションの出力は、上記に示されているコードの実行結果です。

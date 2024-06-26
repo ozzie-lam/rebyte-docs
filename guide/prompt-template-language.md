@@ -1,23 +1,22 @@
-# Prompt Template Language
+# プロンプトテンプレート言語
 
-The Prompt Template Language is a simple language that allows you to create a prompt template that can be used to generate prompts for your LLM models. The Prompt Template Language is a subset of the [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) templating language. Here are some examples of how you can use the Prompt Template Language, for more information on the syntax, see the [Jinja documentation](https://jinja.palletsprojects.com/en/3.1.x/templates/).
+プロンプトテンプレート言語は、LLMモデルのプロンプトを生成するためのテンプレートを作成するためのシンプルな言語です。プロンプトテンプレート言語は[Jinja](https://jinja.palletsprojects.com/en/3.1.x/)テンプレート言語のサブセットです。以下にプロンプトテンプレート言語の使用例を示します。構文の詳細については、[Jinjaのドキュメント](https://jinja.palletsprojects.com/en/3.1.x/templates/)を参照してください。
 
-\{\{ and \}\} for expressions
+\{\{ と \}\} は式に使用します
 
 ```
 {{ 1 + 1 }}
 ```
 
-For referencing variables
+変数の参照
 
 ```
 {{ variable_name }}
 ```
 
-for statements
+ステートメントの場合
 
 ```markup
-
 {% raw %}
 {% for i in range(10) %}
 
@@ -25,44 +24,40 @@ for statements
 
 {% endfor %}
 {% endraw %}
-
 ```
 
-{# and #} for comments To comment out part of the template, wrap it in {# #}. Anything in between those tags will not be rendered.
+{# と #} はコメントのために使用します。テンプレートの一部をコメントアウトするには、{# #}で囲みます。これらのタグの間にあるものはレンダリングされません。
 
 ```
-{# This is a comment #}
+{# これはコメントです #}
 ```
 
-Construct and attributes can be accessed by using the dot (.) like \{\{ product.name \}\}. Specific members of an array or tuple are accessed by using the .i notation, where i is a zero-based index. In dot notation variable can not be used after the dot (.).
+構造体や属性にはドット (.) を使用してアクセスできます。例として \{\{ product.name \}\} のように使用します。配列やタプルの特定のメンバーには、0から始まるインデックスを使用して .i の形式でアクセスします。ドット表記では、ドット (.) の後に変数を使用することはできません。
 
 ```
 {{ product.name }}
 {{ product[0] }}
 ```
 
-Tests can be used against an expression to check some condition on it and are made in if blocks using the is keyword. For example, you would write the following to test if an expression is odd:
+テストは、if ブロック内で is キーワードを使用して、式に対して条件をチェックするために使用されます。例えば、式が奇数かどうかをテストするには、次のように記述します：
 
 ```markup
-
 {% raw %}
 {% if number is odd %}
 
-    This is an odd number
+    これは奇数です
 
 {% endif %}
 {% endraw %}
-
 ```
 
-Tests can also be negated:
+テストは否定形でも使用できます：
 
-```
-
+```markup
 {% raw %}
 {% if number is not odd %}
 
-    This is not an odd number
+    これは奇数ではありません
 
 {% endif %}
 {% endraw %}

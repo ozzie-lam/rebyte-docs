@@ -1,72 +1,74 @@
-# Quick Start
+# クイックスタート
 
-We will show to how to build a simple weather app using the customized UI.
+カスタマイズされたUIを使用してシンプルな天気アプリを構築する方法を説明します。
 
-## Step 1: Create an App
+## ステップ1：アプリを作成する
 
-* Navigate to the "My Apps" tab in the sidebar and then click on "Create App" on the top right.
+* サイドバーの「マイアプリ」タブに移動し、右上の「アプリを作成」をクリックします。
 
-* Choose "App With Customized UI".
+* 「カスタマイズされたUI付きアプリ」を選択します。
 
-* To build a basic version of your app, you can use the "image prompt" or the "text prompt". 
+* アプリの基本バージョンを構築するには、「イメージプロンプト」または「テキストプロンプト」を使用します。
 
-* The "image prompt" is to draw the app on the canvas. You can use the tools on the bottom to draw a basic draft of your app interface.
+* 「イメージプロンプト」はキャンバス上にアプリを描画するためのものです。下部のツールを使用して、アプリインターフェースの基本的な下書きを描くことができます。
 
 <figure><img src="../../images/cui-1.png"></figure>
   
-* Choose the drawings on your canvas and click the "Make It An App" button when you are finished.
+* キャンバス上の描画を選択し、完了したら「アプリにする」ボタンをクリックします。
 
 <figure><img src="../../images/cui-2.png"></figure>
   
-* Input "the "text prompt" to further describe the app using texts. 
+* 「テキストプロンプト」を入力して、テキストを使用してアプリをさらに説明します。
 
 <figure><img src="../../images/cui-3.png"></figure>
 
-* Click the "Make It An App" button to build the app.
+* 「アプリにする」ボタンをクリックしてアプリを構築します。
 
 
-## Step 2: Design you App
+## ステップ2：アプリをデザインする
 
-* After the first step, you should be able to see the first draft of your app.
+* 最初のステップが完了すると、アプリの最初のドラフトが表示されます。
 
 <figure><img src="../../images/cui-4.png"></figure>
 
-* You can make changes to the app by using the "image prompt" or "text prompt". It's just like the first step.
+* 「イメージプロンプト」または「テキストプロンプト」を使用してアプリに変更を加えることができます。これは最初のステップと同じです。
 
-* To use image prompts, use the boxes, arrows and the texts to draw the changes you want to make on the canvas.
+* イメージプロンプトを使用するには、ボックス、矢印、テキストを使用してキャンバス上に変更したい部分を描画します。
   
-* To use the text prompt, click the "Make It An App" and input the text prompt describing the changes you want to make.
+* テキストプロンプトを使用するには、「アプリにする」をクリックし、変更したい内容を説明するテキストプロンプトを入力します。
 
-* Click "Make It An App" again and we will make changes for you based on your prompt and create a new version of your app.
+* 再度「アプリにする」をクリックすると、プロンプトに基づいて変更が加えられ、新しいバージョンのアプリが作成されます。
 
-* **NOTE**: This may not give you the desired results on just one try. We recommend you to try and improve one thing at a time and create more versions until you get the best results.
+* **注意**：一度の試行では希望の結果が得られない場合があります。1つずつ改善し、最良の結果が得られるまで複数のバージョンを作成することをお勧めします。
 
-## Step 3: Connect your App with Agent
+## ステップ3：アプリとエージェントを接続する
 
-* Click the "Connect to Agent" on the top right.
+* 右上の「エージェントに接続」をクリックします。
 
 <figure><img src="../../images/cui-5-1.png"></figure>
 
-* Choose the agent you want to connect with and select the version.
+* 接続したいエージェントを選択し、バージョンを選択します。
 
 <figure><img src="../../images/cui-5-2.png"></figure>
 
-* **NOTE**: You must be familiar with the agent's function and the agent's input and output format. Make sure the agent is suitable for your app, otherwise it will not connect successfully.
+* **注意**：エージェントの機能と入力および出力形式に精通している必要があります。エージェントがアプリに適していることを確認してください。そうしないと正常に接続できません。
 
-* Use the "image prompt" or "text prompt" to describe how you want to use the agent in your app. In this app, the input is a user query like:"What's the weather now in New York?". And the output is a url of a base64 formatted picture. So for the text prompt, I used `"Use the input box's content as the input of the agent and the url in the output as the picture on the app."`
+* 「イメージプロンプト」または「テキストプロンプト」を使用して、エージェントをアプリでどのように使用するかを説明します。このアプリでは、入力は「ニューヨークの今の天気は？」のようなユーザーのクエリです。出力はbase64形式の画像のURLです。テキストプロンプトでは、`"入力ボックスの内容をエージェントの入力として使用し、出力のURLをアプリの画像として使用する。"`としました。
 
 <figure><img src="../../images/cui-6.png"></figure>
 
-* Click "Make It An App" and we will automatically connect your app with the chosen agent.
+* 「アプリにする」をクリックすると、選択したエージェントと自動的にアプリが接続されます。
 
-* **NOTE**: It might take a few tries before the agent is successfully connected to your app, be patient! 
-  
-* The one text prompt is not enough for the app to connect to the agent so I then used `"The url of the output picture is base64 format. Display the picture on the app below the input box."`. After a few tries, the app should work normally.
+* **注意**：エージェントがアプリに正常に接続されるまで数回試行する必要があるかもしれません。忍耐強く取り組んでください！
 
-## Tips
+* 1つのテキストプロンプトだけではアプリがエージェントに接続されないため、次に`"出力画像のURLはbase64形式です。入力ボックスの下にアプリに画像を表示します。"`を使用しました。数回の試行後、アプリは正常に動作するはずです。
 
-* To get better results, try describing your functions/changes you'd like to make one at a time and in details. 
+## ヒント
 
-* Make good use of the drawing tools to tell us the changes you want to make to the current app.
+* より良い結果を得るためには、変更したい機能や改善点を1つずつ、詳細に説明するように心がけてください。
 
-* Each time you click "Make It An App", we will generate a new version of your app. If you find the results unsatifactory, simply go back to previous versions and start from there again.
+* 現在のアプリに対して行いたい変更を伝えるために、描画ツールをうまく活用してください。
+
+* 「アプリにする」をクリックするたびに、新しいバージョンのアプリが生成されます。結果が満足いかない場合は、以前のバージョンに戻って再度試みることができます。
+
+これらのステップとヒントに従って、カスタマイズされたUIを使用してシンプルな天気アプリを成功裏に構築することができるでしょう。頑張ってください！

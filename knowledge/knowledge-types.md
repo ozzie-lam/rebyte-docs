@@ -1,26 +1,26 @@
-# Knowledge Types
+# ナレッジタイプ
 
-Many data sources are supported, including: local files, Notion, Github, Discord, etc.
+多くのデータソースがサポートされています。これにはローカルファイル、Notion、Github、Discordなどが含まれます。
 
-## Local files
+## ローカルファイル
 
-You can upload your files and store them in the knowledge. 
+ファイルをアップロードしてナレッジに保存できます。
 
-Supports files types: DOC, DOCX, IMG, EPUB, JPEG, JPG, PNG, XLS, XLSX, PPT, PPTX, MD, TXT, RTF, MD, TXT, RTF, RST, PDF, JSON, HTML, EML
+サポートされるファイルタイプ：DOC、DOCX、IMG、EPUB、JPEG、JPG、PNG、XLS、XLSX、PPT、PPTX、MD、TXT、RTF、MD、TXT、RTF、RST、PDF、JSON、HTML、EML
 
 ## Notion
 
-Connect your Notion account and import your Notion pages into the knowledge.
+Notionアカウントを接続し、Notionページをナレッジにインポートできます。
 
-* Choose Notion as the data source for your knowledge.
+* ナレッジのデータソースとしてNotionを選択します。
 
 <figure><img src="../images/notion.png" alt="notion"></figure>
 
-* In the pop-up page, login to your Notion account and choose the pages you want to import into your knowledge.
+* ポップアップページでNotionアカウントにログインし、ナレッジにインポートしたいページを選択します。
 
 <figure><img src="../images/notion-2.png" alt="notion-2"></figure>
 
-* We stay synced with Notion, makingå sure the content is updated in time.
+* Notionと同期し、コンテンツがタイムリーに更新されるようにします。
 
 <figure><img src="../images/notion-3.png" alt="notion-3"></figure>
 

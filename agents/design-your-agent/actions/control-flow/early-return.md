@@ -1,16 +1,15 @@
-# Early Return
+# 早期リターン
 
-This action allows you to return the result early without running the rest of the actions in the agent.It's very useful when you want to return the result early without running the rest of the actions.
+このアクションを使用すると、エージェント内の他のアクションを実行せずに結果を早期に返すことができます。これは、他のアクションを実行せずに結果を早期に返したい場合に非常に便利です。
 
-## Usage
+## 使用方法
 
-* You don't need to set anything for this action. Just add it to where you want to return early.
+* このアクションには特に設定する必要はありません。早期にリターンしたい場所に追加するだけです。
 
-* This is usually used in the `If Else` action. For example, you can add an `Early Return` action in the `If` block, and the system will return the result early if the condition is true. Otherwise, the system will skip the actions in the `If` block and continue to run the actions.
+* 通常、このアクションは`If Else`アクションで使用されます。例えば、`If`ブロックに`早期リターン`アクションを追加すると、条件が真の場合、システムは結果を早期に返します。そうでない場合、システムは`If`ブロック内のアクションをスキップし、他のアクションを続行します。
 
 <figure><img src="../../../../images/return.png"></figure>
 
+## エージェントの例
 
-## Example Agent
-
-[Early Return](https://rebyte.ai/p/21b2295005587a5375d8/callable/6b342c4a4042ccc17e58/editor#3)
+[早期リターン](https://rebyte.ai/p/21b2295005587a5375d8/callable/6b342c4a4042ccc17e58/editor#3)

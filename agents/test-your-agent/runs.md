@@ -1,15 +1,9 @@
-# Runs
+# 実行履歴
 
-Here we display all of your running records.
+ここには、すべての実行記録が表示されます。
 
 <figure><img src="../../images/runs.png" alt=""></figure>
 
-You can filter them by "Status" and "Last Update".
+「ステータス」や「最終更新」でフィルタリングすることができます。
 
-Click on the "Run ID" to see the detailed information of you run.
-
-
-
-
-
-
+「Run ID」をクリックすると、実行の詳細情報が表示されます。

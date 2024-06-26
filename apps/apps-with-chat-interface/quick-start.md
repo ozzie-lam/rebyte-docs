@@ -1,27 +1,27 @@
-# Quick Start
+# クイックスタート
 
-We will show you how to build an app with chat interface.
+チャットインターフェースを持つアプリを構築する方法を説明します。
 
-## Step 1: Create an App
+## ステップ1：アプリを作成する
 
-* Navigate to the "My Apps" tab in the sidebar and then click "Create App" on the top right. Choose "App With Chat Interface".
+* サイドバーの「マイアプリ」タブに移動し、右上の「アプリを作成」をクリックします。「チャットインターフェース付きアプリ」を選択します。
 
 <figure><img src="../../images/createapp.png" alt=""></figure>
 
-* Fill in the information about the app.
+* アプリに関する情報を入力します。
 
 <figure><img src="../../images/buildapp-2.png" alt=""></figure>
 
-* Select the agent you want to base your app on, remember to select the version of your agent. 
+* アプリのベースにしたいエージェントを選択し、エージェントのバージョンを選択します。
 
 <figure><img src="../../images/buildapp.png" alt=""></figure>
 
-* Click "Create App with Chat UI" and that's it!
+* 「チャットUIでアプリを作成」をクリックして完了です！
 
-## Step 2: Use your App
+## ステップ2：アプリを使用する
 
 <figure><img src="../../images/useapp.png" alt=""></figure>
 
-🎉 Now you can use your App in the chat interface!
+🎉 これでチャットインターフェースでアプリを使用できます！
 
-**You can try this app [here](https://rebyte.ai/copilot/b1518cc7d7d76055f4b3/session/2d1a606382)**
+**このアプリを[こちら](https://rebyte.ai/copilot/b1518cc7d7d76055f4b3/session/2d1a606382)で試すことができます**

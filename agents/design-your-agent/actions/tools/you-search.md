@@ -1,40 +1,39 @@
-# You.com search
+# You.com 検索
 
-With this "You.com" search action, you can go and search anything and you will get your results in seconds!
+この「You.com」検索アクションを使用すると、何でも検索して数秒で結果を取得できます！
 
 <figure><img src="../../../../images/you-1.png" /></figure>
 
-## Usage
+## 使用方法
 
-
-* First add a "You.com" search action with the plus signs.
+1. まず、プラスボタンを使用して「You.com」検索アクションを追加します。
 
 <figure><img src="../../../../images/you-2.1.png" /></figure>
 
-* Choose the "You.com search" action.
+2. 「You.com 検索」アクションを選択します。
 
 <figure><img src="../../../../images/you-2.2.png" /></figure>
 
-* There are some parameters you can set.
-  * query: the search query.
-  * num_web_results: the number of web results you want to get.
-  * offset: the offset of the search results. If the offset is 0, the first result will be the first result of the search results. If the offset is 10, the first result will be the 11th result of the search results.
-  * country: the country code. For example, "US" for United States.
-    * country list include:'AR', 'AU', 'AT', 'BE', 'BR', 'CA', 'CL', 'DK', 'FI', 'FR', 'DE', 'HK', 'IN', 'ID', 'IT', 'JP', 'KR', 'MY', 'MX', 'NL', 'NZ', 'NO', 'CN', 'PL', 'PT', 'PH', 'RU', 'SA', 'ZA', 'ES', 'SE', 'CH', 'TW', 'TR', 'GB', 'US'.
-  * safesearch: the safe search mode, it can be "strict", "moderate" or "off".
+3. 設定できるパラメータがいくつかあります。
+   - クエリ: 検索クエリ。
+   - num_web_results: 取得する Web 結果の数。
+   - オフセット: 検索結果のオフセット。オフセットが 0 の場合、最初の結果は検索結果の最初の結果です。オフセットが 10 の場合、最初の結果は検索結果の 11 番目の結果です。
+   - 国: 国コード。たとえば、アメリカ合衆国の場合は「US」です。
+     - 国リストには、'AR'、'AU'、'AT'、'BE'、'BR'、'CA'、'CL'、'DK'、'FI'、'FR'、'DE'、'HK'、'IN'、'ID'、'IT'、'JP'、'KR'、'MY'、'MX'、'NL'、'NZ'、'NO'、'CN'、'PL'、'PT'、'PH'、'RU'、'SA'、'ZA'、'ES'、'SE'、'CH'、'TW'、'TR'、'GB'、'US' が含まれています。
+   - safesearch: セーフサーチモードです。「strict」、「moderate」、または「off」のいずれかです。
 
 <figure><img src="../../../../images/you-3.png" /></figure>
 
-* Run the agent and see the search results.
+4. エージェントを実行し、検索結果を確認します。
 
-### Output
+### 出力
 
 <figure><img src="../../../../images/you-4.png" /></figure>
 
-* The output is a bit complex, it's a JSON object with two fields:"hits" and "latency". 
+- 出力は少し複雑で、2 つのフィールド、「hits」と「latency」があります。
 
-* The search results are in the "hits" field, it's an array with 10 most related search results.
+- 検索結果は「hits」フィールドに含まれており、最も関連性の高い検索結果が含まれています。
 
-## Example Agent
+## サンプルエージェント
 
-* To see and use this action, please check the example agent:[You.com Search](https://rebyte.ai/p/21b2295005587a5375d8/callable/b6e67fc59579d6304fef/editor).
+- このアクションを見て、使用するには、次のサンプルエージェントをご覧ください：[You.com 検索](https://rebyte.ai/p/21b2295005587a5375d8/callable/b6e67fc59579d6304fef/editor)。

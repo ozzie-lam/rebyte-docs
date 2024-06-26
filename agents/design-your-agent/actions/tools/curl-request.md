@@ -1,20 +1,19 @@
-# Http Request Maker
+# HTTP リクエストメーカー
 
-"Http Request Maker" is a tool action, which is used to curl http/https requests.
+「HTTP リクエストメーカー」は、HTTP/HTTPS リクエストを実行するためのツールアクションです。
 
-## Usage
+## 使用方法
 
-* Add a "Http Request" action to your agent.
+- エージェントに「HTTP リクエスト」アクションを追加します。
 
-* Fill in the "Host" with the host of the URL. It can be a domain name or an IP address.
+- 「ホスト」に URL のホストを入力します。ドメイン名または IP アドレスを使用できます。
 
-* Fill in the "Headers", this is the header of the HTTP request.
+- 「ヘッダー」に HTTP リクエストのヘッダーを入力します。
 
-* Fill in the "Body" if you want to send a POST request.(Only available in POST request)
+- POST リクエストを送信する場合は、「ボディ」を入力します。（POST リクエストのみ利用可能）
 
-## Specification
+## 仕様
 
-* Scheme: HTTP or HTTPS
+- スキーム：HTTP または HTTPS
 
-* Method: GET or POST
-
+- メソッド：GET または POST

@@ -1,16 +1,16 @@
-# Knowledge
+# ナレッジ
 
-In ReByte, we provide knowledge base capability, enabling agents to interact with your private data. Users can store and manage their personal data in the knowledge. 
+imprai では、ナレッジベース機能を提供し、エージェントがユーザーのプライベートデータと対話できるようにします。ユーザーはナレッジに個人データを保存および管理できます。
 
-Many data sources are supported, including: local files, notion, github, discord, etc.
+多くのデータソースがサポートされています。これにはローカルファイル、Notion、Github、Discord などが含まれます。
 
-## How Knowledge Works?
+## ナレッジの仕組み
 
-### Document
+### ドキュメント
 
-Each knowledge contains a list of documents, each document is identified by a unique document id within the knowledge.
+各ナレッジには複数のドキュメントが含まれており、各ドキュメントはナレッジ内で一意のドキュメント ID によって識別されます。
 
-### Chunk
+### チャンク
 
-Document will be chunked into many chunks, each chunk identified by a unique chunk id within the document. Chunks will be sent to LLM embedding service to get the embedding vector.
-When creating knowledge, user can specify the chunk size, which will determine how many chunks a document will have. Typically, chunk size range from a hundred to a few thousand tokens.
+ドキュメントは多くのチャンクに分割され、各チャンクはドキュメント内で一意のチャンク ID によって識別されます。チャンクは LLM 埋め込みサービスに送信され、埋め込みベクトルが取得されます。
+ナレッジを作成する際に、ユーザーはチャンクサイズを指定できます。これにより、ドキュメントがいくつのチャンクに分割されるかが決まります。通常、チャンクサイズは数百から数千トークンの範囲です。

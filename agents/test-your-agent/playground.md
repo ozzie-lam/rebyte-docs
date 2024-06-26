@@ -1,7 +1,7 @@
-# Playground
+# プレイグラウンド
 
-Here, you can test your agent with arbitrary input data.  
+ここでは、任意の入力データを使用してエージェントをテストすることができます。
 
-Note that the data you use in playground must be a json object.
+プレイグラウンドで使用するデータは、JSONオブジェクトである必要があることに注意してください。
 
 <figure><img src="../../images/playground.png" alt=""></figure>

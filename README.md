@@ -1,52 +1,51 @@
-# Welcome to Rebyte
+# imprai へようこそ
 
-## What is ReByte?
+## imprai とは？
 
-Rebyte is an AI assistant that helps to boot your team's productivity by helping tedious and repetitive tasks.
+imprai は、単調で反復的なタスクを支援することで、チームの生産性を向上させる AI アシスタントです。
 
-
-|                          | Rebyte        | ChatGpt For Team                                           |
-|--------------------------|---------------|------------------------------------------------------------|
-| Super Assistant          | Revia         | ChatGpt                                                    |
-| other assistants         | Assistants    | Gpts                                                       |
-| LLM                      | OpenAI/Gemini/Anthropic/Mistral/Other OS Models | Only OpenAI                                                |
-| Tools Used by Assistants | Any complex workflow, workflow will be run by Rebyte Workflow Runtime | By selecting Code interpreter/Browser/RAG/external API etc |
-| Data Integration         | Notion/Slack/Discord/Twitter... auto sync handled automatically | No Data Integration                                        |
-
-
+|                              | imprai                                                          | チーム向け ChatGPT                                            |
+| ---------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------- |
+| スーパーアシスタント         | Revia                                                           | ChatGPT                                                       |
+| その他のアシスタント         | Assistants                                                      | GPTs                                                          |
+| LLM                          | OpenAI/Gemini/Anthropic/Mistral/他の OS モデル                  | OpenAI のみ                                                   |
+| アシスタントが使用するツール | どんな複雑なワークフローも imprai Workflow Runtime によって実行 | コードインタープリタ/ブラウザ/RAG/外部 API などを選択して実行 |
+| データ統合                   | Notion/Slack/Discord/Twitter などとの同期が自動的に処理される   | データ統合なし                                                |
 
 <figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-## Rationale behind ReByte
+## imprai の背景
 
-There are already many AI assistants on the market, many of which are made by very good companies. However, we believe that the team AI assistant will be significantly different from these AI assistants in the following ways:
+市場には既に多くの AI アシスタントが存在し、その多くは非常に優れた企業によって作られています。しかし、チーム向けの AI アシスタントは、以下のの点でこれらの AI アシスタントとは大きく異なると考えています：
 
-Providing customized processes that can be seamlessly integrated into team's assistant. Each team has its own unique business processes.
+チームのアシスタントにシームレスに統合できるカスタマイズされたプロセスを提供します。各チームには独自のビジネスプロセスがあります。
 
-Each team's knowledge base is vastly different, and the AI assistant needs more context to better serve each team member.
+各チームのナレッジベースは大きく異なり、AI アシスタントは各チームメンバーにより良いサービスを提供するために、より多くのコンテキストを必要とします。
 
-All problems can be boiled down to providing more context to AI assistants, including the context of data and the context of business logic.
+すべての問題は、データのコンテキストやビジネスロジックのコンテキストを含む、AI アシスタントに対してより多くのコンテキスト提供することに集約されます。
 
-In order to address these challenges, we have designed a platform called Rebyte, which focuses on the following key areas:
+これらの課題に対処するために、imprai というプラットフォームを設計しました。このプラットフォームは次の主要な領域に焦点を当てています：
 
-### Universal User Interface
+### 汎用ユーザーインターフェース
 
-We provide a universal user interface called **Revia** that can be used by all team members to interact with the AI assistant. This interface is designed to handle various types of tasks, such as data retrieval, question and answer, document generation, and data analysis, and more advanced tasks such as interactive chart and table, form filling and more.
+私たちは、すべてのチームメンバーが AI アシスタントと対話するために使用できる汎用ユーザーインターフェースである**Revia**を提供します。このインターフェースは、データの取得、質問と回答、文書生成、データ分析、インタラクティブなチャートやテーブル、フォーム入力など、さまざまなタイプのタスクを処理するように設計されています。
 
-**Revia** will be available on all platforms, including web, mobile, and desktop.
+**Revia**は、Web、モバイル、デスクトップを含むすべてのプラットフォームで利用可能です。
 
-### Flow Engineering
+### フローエンジニアリング
 
-Rebyte provides a low-code platform, similar to Langchain, for extending the capabilities of team assistants. As mentioned this [cognitive architecture blog post by langchain](https://blog.langchain.dev/openais-bet-on-a-cognitive-architecture/)), large language model agents can be divided into two categories: those driven by the reasoning capabilities of large language models, such as Chain of Thoughts, and those driven by "flow engineering," where developers design LLM agents that align with the team's workflow. Rebyte provides a complete set of tools to support the development of such customized tools, while minimizing the programming requirements for developers. Our goal is to enable developers to build large language model agents with just an understanding of JSON.
+imprai は、チームアシスタントの機能を拡張するための、Langchain に似たローコードプラットフォームを提供します。Langchain の[認知アーキテクチャに関するブログ記事](https://blog.langchain.dev/openais-bet-on-a-cognitive-architecture/)で述べられているように、大規模言語モデルエージェントは、Chain of Thoughts のような大規模な言語モデルの推論能力によって駆動されるものと、「フローエンジニアリング」によって駆動されるものに分けることができます。後者では、開発者がチームのワークフローに合った LLM エージェントを設計します。imprai は、チームのワークフローに合わせて LLM エージェントを設計するための完全なツールセットを提供し、開発者のプログラミング要件を最小限に抑えることを目指しています。私たちの目標は、開発者が JSON の理解だけで大規模言語モデルエージェントを構築できるようにすることです。
 
-### Plan and Execute
+### 計画と実行
 
-ReByte Assistant uses a plan and execute model to interact with agents. It first creates a plan, run the plan step by step, and then execute the plan. For data analysis tasks, assistant can write python code itself, and then execute the code. Assistant is also self reflective and can correct itself if the plan is not executed as expected.
+imprai アシスタントは、エージェントと対話するために計画と実行モデルを使用します。最初に計画を立て、一歩ずつ計画を実行し、その後計画を実行します。データ分析タスクにおいては、アシスタントは自ら Python コードを書くことができ、そのコードを実行します。アシスタントは自己反省的であり、計画が期待通りに実行されない場合には自ら修正することができます。
 
-### Enterprise Data Integration
+### エンタープライズデータ統合
 
-Rebyte will help to create a unified team knowledge base by integrating data from authorized sources with the team's permission. This comprehensive and integrated knowledge base is crucial for subsequent processing by large language models. Initially, Rebyte will integrate data from sources such as files, GitHub, Notion, web pages, and Twitter, and this list will continue to expand in the future.
+imprai は、チームの認可を得たソースからデータを統合することにより、統合されたチームナレッジベースを作成するのに役立ちます。この包括的かつ統合されたナレッジベースは、その後の大規模言語モデルによる処理にとって非常に重要です。初期段階では、imprai はファイル、GitHub、Notion、ウェブページ、Twitter などのソースからデータを統合し、今後もこのリストを拡大していく予定です。
 
-### Access control
+### アクセスコントロール
 
-Data security is a constant concern within enterprises, and this is also true for team assistants. Rebyte has designed a role-based access control system that aims to provide enterprise IT personnel with the utmost flexibility in controlling which data can be accessed by whom.
+エンタープライズ内のデータセキュリティは常に懸念事項であり、これはチームアシスタントにも当てはまります。imprai は、どのデータが誰によってアクセスされるかを柔軟に制御するために、ロールベースのアクセスコントロールシステムを設計しました。これにより、企業の IT 担当者はデータのアクセス権を細かく管理することができます。
+
+imprai は、チームの生産性を最大限に引き出すための強力なツールセットを提供し、チーム固有のニーズに応じたカスタマイズが可能です。これにより、チームはより効率的かつ効果的に業務を遂行することができます。

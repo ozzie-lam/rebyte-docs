@@ -1,27 +1,25 @@
-# Loop
+# ループ
 
-This `Loop` action allows you to run actions repeatedly when the condition is true.
+この `ループ` アクションを使用すると、条件が真の間、アクションを繰り返し実行できます。
 
-## Usage
+## 使い方
 
+- 最初に `ループ Until` アクションを作成すると、2 つの「ループ」ブロックが作成されます。
 
-* First, cretae a `Loop Until` action and you will see two "Loop" blocks being created.
+<figure><img src="../../../../images/loop-2.png"></figure>
 
-<figure><img src="../../../../images/loop-2.png"></figure
-  
-* Fill in the condition in Javascript format. This function should return a boolean value.
-  
-* You can also set the maximum iteration count. If the iteration count reaches the maximum iteration count, the loop will stop even if the condition is still true.
+- JavaScript 形式の条件を入力します。この関数はブール値を返す必要があります。
+
+- 最大反復回数を設定することもできます。反復回数が最大反復回数に達すると、条件が依然として真であってもループは停止します。
 
 <figure><img src="../../../../images/loop.png"></figure>
 
-* Then, add the actions you want to run inside the loop.
+- 次に、ループ内で実行したいアクションを追加します。
 
-* During the execution, the system will judge if the condition is true. If so, the actions between the two loop blocks will be executed until the condition is no longer true. Otherwise, the execution will jump to after the second loop block.
+- 実行中、システムは条件が真かどうかを判断します。条件が真であれば、2 つのループブロックの間にあるアクションが条件が偽になるまで実行されます。それ以外の場合、実行は 2 番目のループブロックの後にジャンプします。
 
-* **NOTE**: The "Loop" action's results are arrays. Make sure to use formats like `env.state.LOOP_1[0]` or `{{LOOP_1[0]}}`.
+- **注意**: 「ループ」アクションの結果は配列です。 `env.state.LOOP_1[0]` や `{{LOOP_1[0]}}` のような形式を使用することを確認してください。
 
+## 例
 
-## Example Agent
-
-* [Loop Until](https://rebyte.ai/p/21b2295005587a5375d8/callable/0029ec181e52a9fc2bc3/editor)
+- [ループ Until](https://rebyte.ai/p/21b2295005587a5375d8/callable/0029ec181e52a9fc2bc3/editor)

@@ -1,16 +1,17 @@
-# Thread
+# スレッド
 
-## Create thread
+## スレッドの作成
 
-`POST https://rebyte.ai/api/sdk/threads`
+`POST https://rebyte.ai/api/sdk/threads`
 
-Create a new thread.
+新しいスレッドを作成します。
 
-**Request body**
-* messages: An array of messages to start the thread with.
-* metadata: Set of 16 key-value pairs that can be attached to an object. This can be useful for storing additional information about the object in a structured format. Keys can be a maximum of 64 characters long and values can be a maxium of 512 characters long.
+**リクエストボディ**
 
-**Example Request**
+- messages: スレッドを開始するためのメッセージの配列です。
+- metadata: オブジェクトに添付できる 16 組のキーと値のセットです。これにより、オブジェクトに関する追加情報を構造化形式で保存できます。キーは最大 64 文字、値は最大 512 文字です。
+
+**リクエスト例**
 
 ```shell
 curl 'https://rebyte.ai/api/sdk/threads' \
@@ -24,37 +25,37 @@ curl 'https://rebyte.ai/api/sdk/threads' \
 }'
 ```
 
-**Return**
+**リターン**
 
-A thread object.
+スレッドオブジェクト。
 
-**Example**
+**例**
+
 ```json
 {
-    "id": "2hWVPNfrHv1IiVN7ia-4P",
-    "created_at": 1710481773,
-    "metadata": {
-        "user": "abc123"
-    }
+  "id": "2hWVPNfrHv1IiVN7ia-4P",
+  "created_at": 1710481773,
+  "metadata": {
+    "user": "abc123"
+  }
 }
 ```
 
+### スレッドを一覧表示
 
-### List threads
+`GET https://rebyte.ai/api/sdk/threads`
 
-`GET https://rebyte.ai/api/sdk/threads`
+スレッドの一覧を取得します。
 
-Get list of threads.
+**クエリパラメータ**
 
-**Query parameters**
-* limit: An integer, with the maximum number of threads to return. Default is 20.
-* order: A string, with the order to return the threads. Default is desc.
-* before: A string, used as a cursor for use in pagination. after is an object ID that defines your place in the list.
-* after: A string, used as a cursor for use in pagination. before is an object ID that defines your place in the list.
+- limit: 返されるスレッドの最大数を指定する整数。デフォルトは 20。
+- order: スレッドの返却順序を指定する文字列。デフォルトは desc。
+- before: ページネーションで使用するカーソルとして使用される文字列。after はリスト内の位置を定義するオブジェクト ID です。
+- after: ページネーションで使用するカーソルとして使用される文字列。before はリスト内の位置を定義するオブジェクト ID です。
 
+**リクエストの例**
 
-
-**Example Request**
 ```shell
 curl  'https://rebyte.ai/api/sdk/threads?limit=10&order=desc' \
 -H 'Content-Type: application/json' \
@@ -62,46 +63,49 @@ curl  'https://rebyte.ai/api/sdk/threads?limit=10&order=desc' \
 -H 'Cookie: NEXT_LOCALE=en'
 ```
 
-**Return**
+**リターン**
 
-A list of thread objects.
+スレッドオブジェクトのリスト。
 
+**例**
 
-**Example**
 ```json
 {
-    "list": [
-        {
-            "id": "2hWVPNfrHv1IiVN7ia-4P",
-            "created_at": 1710481773,
-            "metadata": {
-                "user": "abc123"
-            }
-        },
-        {
-            "id": "NGXTNrg-34seXYc-PCVFu",
-            "created_at": 1710415453,
-            "metadata": {
-                "user": "abc123"
-            }
-        },
-        {
-            "id": "MRlX-SOAo5gAx1mxBe7S4",
-            "created_at": 1710407916
-        }
-    ]
+  "list": [
+    {
+      "id": "2hWVPNfrHv1IiVN7ia-4P",
+      "created_at": 1710481773,
+      "metadata": {
+        "user": "abc123"
+      }
+    },
+    {
+      "id": "NGXTNrg-34seXYc-PCVFu",
+      "created_at": 1710415453,
+      "metadata": {
+        "user": "abc123"
+      }
+    },
+    {
+      "id": "MRlX-SOAo5gAx1mxBe7S4",
+      "created_at": 1710407916
+    }
+  ]
 }
 ```
-### **Get thread**
 
-`GET https://rebyte.ai/api/sdk/threads/{thread_id}`
+### スレッドの取得
 
-Get a thread by id.
+`GET https://rebyte.ai/api/sdk/threads/{thread_id}`
 
-**Path parameters**
-* thread_id(required): A string, with the ID of the thread to retrieve.
+ID でスレッドを取得します。
 
-**Example Request**
+**パスパラメータ**
+
+- thread_id (必須): 取得するスレッドの ID を含む文字列。
+
+**リクエスト例**
+
 ```shell
 curl 'https://rebyte.ai/api/sdk/threads/{thread_id}' \
 -H 'Content-Type: application/json' \
@@ -109,41 +113,45 @@ curl 'https://rebyte.ai/api/sdk/threads/{thread_id}' \
 -H 'Cookie: NEXT_LOCALE=en'
 ```
 
-**Returns**
-The thread object matching the specified ID.
+**リターン**
+指定された ID に一致するスレッドオブジェクト。
 
-**Example**
+**例**
+
 ```json
 {
-    "id": "cB1-_3wh5ZWtUPJU4xIuU",
-    "created_at": 1710415223,
-    "metadata": {
-        "user": "czy",
-        "modified": "true"
-    }
+  "id": "cB1-_3wh5ZWtUPJU4xIuU",
+  "created_at": 1710415223,
+  "metadata": {
+    "user": "czy",
+    "modified": "true"
+  }
 }
 ```
 
-### **Update thread**
+### スレッドの更新
 
-`POST https://rebyte.ai/api/sdk/threads/{thread_id}`
+`POST https://rebyte.ai/api/sdk/threads/{thread_id}`
 
-Update a thread.
+スレッドを更新します。
 
-**Path parameters**
-* thread_id(required): A string, with the ID of the thread to retrieve.
+**パスパラメータ**
 
-**Request body**
-* metadata: Set of 16 key-value pairs that can be attached to an object. This can be useful for storing additional information about the object in a structured format. Keys can be a maximum of 64 characters long and values can be a maxium of 512 characters long.
+- thread_id (必須): 更新するスレッドの ID を含む文字列。
 
-**Example Request**
+**リクエストボディ**
+
+- metadata: オブジェクトに添付できる 16 組のキーと値のセット。これにより、オブジェクトに関する追加情報を構造化形式で保存できます。キーは最大 64 文字、値は最大 512 文字です。
+
+**リクエスト例**
+
 ```shell
 curl 'https://rebyte.ai/api/sdk/threads/{thread_id}' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer $REBYTE_KEY' \
 -H 'Cookie: NEXT_LOCALE=en' \
 --data ' {
-    "metadata": 
+    "metadata":
     {
         "modified": "true",
         "user": "czy"
@@ -151,17 +159,18 @@ curl 'https://rebyte.ai/api/sdk/threads/{thread_id}' \
  }'
 ```
 
-**Returns**
-The modified thread object matching the specified ID.
+**リターン**
+指定された ID に一致する変更されたスレッドオブジェクト。
 
-**Example**
+**例**
+
 ```json
 {
-    "id": "cB1-_3wh5ZWtUPJU4xIuU",
-    "created_at": 1710415223,
-    "metadata": {
-        "modified": "true",
-        "user": "czy"
-    }
+  "id": "cB1-_3wh5ZWtUPJU4xIuU",
+  "created_at": 1710415223,
+  "metadata": {
+    "modified": "true",
+    "user": "czy"
+  }
 }
 ```
