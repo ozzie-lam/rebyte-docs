@@ -14,7 +14,7 @@
 
 - これはモデルに送信されるメッセージです。
 - ここにプロンプトを書き込み、大規模言語モデルに何をするかを指示します。
-- [Tera](https://keats.github.io/tera/docs/) 形式をサポートしています。たとえば、`{{INPUT.messages[0].content}}` を使用してエージェントの最初のメッセージのコンテンツを取得できます。
+- [Tera](https://keats.github.io/tera/docs/) 形式をサポートしています。たとえば、`{{INPUT.messages[0].content}}` を使用してツールの最初のメッセージのコンテンツを取得できます。
 
 **Messages**
 
@@ -23,7 +23,7 @@
 - メッセージは文字列のリストまたはオブジェクトのリストにすることができます。オブジェクトのリストの場合、各オブジェクトに `role` フィールドと `content` フィールドがあることを確認してください。:
   - `role` フィールドはメッセージの役割を指定します。許可される役割は `user`、`assistant`、`system` です。
   - `content` はモデルに送信されるメッセージを含みます。
-- **Javascript** 形式を使用します。たとえば、`env.state.INPUT.messages` を使用してエージェントの入力を取得できます。
+- **Javascript** 形式を使用します。たとえば、`env.state.INPUT.messages` を使用してツールの入力を取得できます。
 - **注意:** 配列を返すことを確認してください。
 - **注意:** モデルチャットにコンテキストを持たせたい場合は、`Thread message loader` アクションを使用して過去のメッセージを記録および読み込む必要があります。このアクションについて詳しくは[こちら](../tools/thread-message-loader.md)を参照してください。
 
@@ -48,22 +48,22 @@
 
 <div align="center">
 
-<figure><img src="../../../../images/chat-config-2.png" alt="" height="60%" width="60%"><figcaption></figcaption></figure>
+<figure><img src="../../../../images/screenshot-20240627-160831.png" alt="" height="60%" width="60%"><figcaption></figcaption></figure>
 
 </div>
 
-**Temperature**
+**テンパラチャー**
 
-- 「Temperature」は、モデルの出力のランダム性を制御します。
-- モデルの Temperature が高いほど、出力がよりランダムになります。
+- 「テンパラチャー」は、モデルの出力のランダム性を制御します。
+- モデルのテンパラチャーテンパラチャーが高いほど、出力がよりランダムになります。
 
-**Maximum Output Tokens**
+**最大アウトプットトークン**
 
-- 「Maximum Output tokens」は、生成するトークンの最大数を指定します。
+- 「最大アウトプットトークン」は、生成するトークンの最大数を指定します。
 - プロンプトとモデルが返すコンテンツを含めて、最大 40,000 トークンまで使用できます（モデルによって制限が異なります）。
 
-**JSON Response**
+**JSON レスポンス**
 
-- 「JSON Response」ボタンを有効にすると、メッセージが JSON 形式で生成されることが保証される JSON モードが有効になります。
+- 「JSON レスポンス」ボタンを有効にすると、メッセージが JSON 形式で生成されることが保証される JSON モードが有効になります。
 - **注意:** この機能はベータ版の機能であり、現時点では OpenAI の「gpt-4-1106-preview」モデルのみがサポートしています。
-- **注意:** この機能
+<!-- - **注意:** この機能 -->
